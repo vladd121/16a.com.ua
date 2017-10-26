@@ -1,0 +1,50 @@
+# Config and Htaccess Files
+/.htaccess
+/admin/config.php
+/config.php
+
+
+# Some other Files
+/*.xls
+/*.xml
+/*.txt
+!/robots.txt
+
+
+# Ini Files
+/admin/php.ini
+/php.ini
+
+
+# Image File
+/image/catalog/*
+/image/new_image/*
+!/image/catalog/index.html
+
+
+# Image Cache Files
+/image/cache/*
+!/image/cache/index.html
+
+
+# System Cache Files
+/system/storage/cache/*
+!/system/storage/cache/index.html
+
+
+# System logs
+/system/storage/logs/*
+!/system/storage/logs/index.html
+
+# System modification files
+
+/system/storage/modification/*
+!/system/storage/modification/index.html
+
+
+# Download Files
+/system/storage/download/*
+!/system/storage/download/index.html
+
+# phpStorm
+.idea/*
