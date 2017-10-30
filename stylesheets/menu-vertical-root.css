@@ -3,17 +3,20 @@
 
 .menu-v-root-hid, #menu-v-root ul
 {
-    width: 330px; /* Main Menu Item widths */
+    /*width: 330px; !* Main Menu Item widths *!*/
     border: 1px solid #ccc;
     border-top:none;
     position: absolute; font-size:0;
-    list-style: none; margin: 0; padding: 0; display:block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:block;
     z-index:9;
 	visibility:visible;
 }                
 .menu-v-root-vis, #menu-v-root ul
 {
-    width: 330px; /* Main Menu Item widths */
+    /*width: 330px;  */
     border: 1px solid #ccc;
     border-top:none;
     position: absolute; font-size:0;
@@ -25,30 +28,21 @@
 .cat_but{
 	z-index:10;
 	position:relative;
-	
-	/*width: 100%;*/
-	/*height:40px;*/
 	margin-left: 5px;
  	padding: 0;
 	border:0;
 	text-align: left;
 }
 
-/*
-.cat_but:hover{
-	z-index:10;
-	background: #FCF;
-	cursor:pointer;
-}
-*/
+
+
 /* Top level menu links style
 ---------------------------------------*/
-
-
 #menu-v-root li
 {
     background: #FFF url(images/bg.gif) repeat-x 0 2px;
-    list-style: none; margin: 0; padding: 0;
+
+    padding-left: 14px;
 }
 
 
@@ -61,7 +55,7 @@
     color: #06C;
     text-decoration: none;
     line-height:35px;
-    padding-left:26px;            
+    /*padding-left:26px;            */
 }
 
 #menu-v-root li a:hover

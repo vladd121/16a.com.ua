@@ -40,8 +40,18 @@ function start_v_menu(i){
 										var f;if(b[a].offsetHeight>j)f=-d;
 										else f=j-b[a].offsetHeight-d;b[a].style.top=f+"px"}
 							}
-	
-	
+
+
+
+ var blackWrapper =	$(".bg_layer");
+	$(".menu-v-root-vis li").hover( function() {
+      blackWrapper.css({"display": "block"});
+
+    }, function() {
+        blackWrapper.css({"display": "none"});
+    });
+
+	/*
 	$(c).mouseenter(function(){
 											
 											if(g)this.className="onhover";
@@ -57,18 +67,9 @@ function start_v_menu(i){
 											
 											clearTimeout(timerMenuClose[a.id]); //поточний елемент не закривати (відповідно і не закриває всі підменю)
 
-											
-										/*		$("ul[id="+a.id+"]").parents("ul").each(function(indx, element){ //не закривати всі батьківськи елементи
-													if (element.id!="menu-v"){
-													clearTimeout(timerMenuClose[element.id]);
-													}
-												});
-										*/
-											
-										//	console.log("enter");
+
 											
 											if(a){
-											//	console.log(a.id);
 												var st_open_id = String(a.id);
 												lastMenuForOpen = a;
 											//	timerMenuOpen[st_open_id]
@@ -82,7 +83,7 @@ function start_v_menu(i){
 											
 	
 	});
-	
+	*/
 	
 	$(c).mouseleave(function(){
 				var elem=this.getElementsByTagName("ul")[0];
