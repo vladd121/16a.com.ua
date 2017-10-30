@@ -311,7 +311,7 @@
 .sub {
     font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #fff;
     font-style: normal;
     font-weight: bold;
 
@@ -1175,22 +1175,9 @@
     z-index: 501;
     _position: absolute;
     _top: expression( parseInt(document.body.clientHeight/2)+eval(document.documentElement.scrollTop||document.body.scrollTop) + 'px');
-    border-top-style: ridge;
-    border-right-style: ridge;
-    border-bottom-style: ridge;
-    border-left-style: ridge;
-    margin-top: -150px;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: -150px;
-    border-top-color: #9FC;
-    border-right-color: #9FC;
-    border-bottom-color: #9FC;
-    border-left-color: #9FC;
-    padding-top: 0;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    margin: -150px 0 0 -150px;
+    border: ridge #9FC;
+    padding: 0 10px 10px;
 }
 
 .popup_x {
@@ -1283,7 +1270,7 @@
 }
 
 .s_item_open:hover {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #FFAEC9;
     font-style: normal;
@@ -1293,7 +1280,7 @@
 }
 
 .s_type {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #000;
     font-style: normal;
@@ -1302,7 +1289,7 @@
 }
 
 .s_item_to_group {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #558055;
     font-style: normal;
@@ -1312,7 +1299,7 @@
 }
 
 .s_item_to_group:hover {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #903;
     font-style: normal;
@@ -1321,16 +1308,6 @@
     cursor: pointer;
 }
 
-/*
-.price-item-wrap-search {
-	position:relative;
-	float:none;
-	width:600px;
-	height:300px;
-	margin-bottom:1em;
-	overflow: hidden;
-}
-*/
 
 .oneSub {
     color: #066;
@@ -1346,7 +1323,7 @@
 }
 
 .next_item_button {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     cursor: pointer;
@@ -1357,7 +1334,7 @@
 }
 
 .basket_send_button {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     cursor: pointer;
@@ -1368,7 +1345,7 @@
 }
 
 .basket_truncate_but {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-style: normal;
     cursor: pointer;
@@ -1453,7 +1430,7 @@
     position: fixed;
     top: 40%;
     left: 98%;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0 0 5px;
 
 }
 
@@ -1473,7 +1450,7 @@
 }
 
 .send_text {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #009;
     font-style: normal;
@@ -1482,7 +1459,7 @@
 }
 
 .send_input {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #000;
     font-style: normal;
@@ -1491,7 +1468,7 @@
 }
 
 .send_comment {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #066;
     font-style: normal;
@@ -1500,7 +1477,7 @@
 }
 
 .b_table_item {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #000000;
     font-style: normal;
@@ -1509,7 +1486,7 @@
 }
 
 .b_table_item_link {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #00C;
     font-style: normal;
@@ -1518,7 +1495,7 @@
 }
 
 .b_table_item_link:hover {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #00C;
     font-style: normal;
@@ -1527,7 +1504,7 @@
 }
 
 .b_table_item_link_kod {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #00C;
     font-style: normal;
@@ -1536,7 +1513,7 @@
 }
 
 .b_table_item_link_kod:hover {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #00C;
     font-style: normal;
@@ -1545,7 +1522,7 @@
 }
 
 .b_table_item2 {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #000000;
     font-style: normal;
@@ -1554,7 +1531,7 @@
 }
 
 .addnum {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #000000;
     font-style: normal;
@@ -1748,8 +1725,6 @@
     font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
     font-size: 14px;
     color: #009;
-    -webkit-border-radius: 10px 10px 0 0;
-    -moz-border-radius: 10px 10px 0 0;
     border-radius: 10px 10px 0 0;
     text-decoration: none;
     white-space: nowrap;
@@ -2438,64 +2413,29 @@
 
 .subgr-list-block {
     position: relative;
-    float: left;
-    min-width: 195px;
-    width: 195px;
-    max-width: 195px;
-    height: 240px;
+    display: inline-block;
     min-height: 240px;
-    padding-left: 5px;
-    padding-top: 40px;
+    width: 50%;
+    padding-left: 10px;
+    max-width: 50%;
+    padding-top: 72px;
     padding-bottom: 10px;
     overflow: hidden;
-
 }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
-    overflow: visible;
-    height: auto;
-    background-color: #fff;
-
     border-bottom: 1px solid #c3c3c3;
-
-    /*	box-shadow:inset 0 1px 6px 0 #d8d8d8;*/
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.subgr-item-dv {
-    align: left;
-    text-align: left;
-    height: 25px;
-    width: 190px;
-    max-width: 190px;
-
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-}
-
-.subgr-item-dv:hover {
-    overflow: visible;
-
-}
-
-/*
-.blok_main_2_1_x_about_item:hover .subgr-item-dv{
- overflow: visible;
-}
-*/
 
 .subgr-list-item {
 
-    color: #066;
     font-size: 12px;
     font-weight: normal;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     text-align: left;
-    /*width:60%;*/
     background: #fff;
-
     color: #06C;
 
     text-decoration: none;
@@ -2514,30 +2454,19 @@
     color: #ff0000;
 }
 
-/*
-.subgr-list-item:hover .about_item_text_hlim{
-	color: #06C;
-}
-*/
 
 .about_item_box {
-    position: relative;
+    display: inline-block;
     float: left;
-    min-width: 200px;
-    width: 200px;
-    max-width: 200px;
-    height: 300px;
-    overflow: hidden;
-
+    width: 50%;
+    max-width:50%;
+    min-height: 300px;
 }
 
 .blok_main_2_1_x_about_item_cont {
     position: relative;
     float: left;
     width: 50%;
-    height: 310px;
-    max-height: 310px;
-
 }
 
 .about_item_im_fon {
@@ -2551,43 +2480,20 @@
 }
 
 .blok_main_2_1_x_about_item {
-    background-color: #FFF;
     position: relative;
-    float: none;
+    background-color: #fff;
     overflow: hidden;
-    min-width: 400px;
-    width: 400px;
-    max-width: 400px;
     height: 300px;
-    padding: 5px;
-    cursor: default;
-
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
+    padding: 5px 5px 10px;
     border-radius: 1px;
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 
 }
 
-.blok_main_2_1_x_about_item:hover {
-    position: relative;
-    float: left;
-    overflow: visible;
-    z-index: 1;
-    cursor: pointer;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-}
 
 .blok_main_2_1_x_about_item:hover .about_item_text_hlim {
     color: #ff0000;
+    text-decoration: none;
 }
 
 .about_item_im {
@@ -2614,7 +2520,7 @@
     padding-bottom: 10px;
     text-align: center;
     color: #06C;
-    height: 35px;
+    height: 74px;
     overflow: hidden;
 
 }
@@ -2652,8 +2558,7 @@
 }
 
 .page_svod {
-    background-image: url(pages/p_pic/image008.jpg);
-    background-repeat: no-repeat;
+    background: url(pages/p_pic/image008.jpg) no-repeat;
     height: 525px;
     width: 700px;
 }
@@ -2666,7 +2571,6 @@
 }
 
 .svod_z1 {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
     font-size: 18px;
     color: #fff;
     font-style: normal;
@@ -2677,7 +2581,6 @@
 }
 
 .svod_p1 {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
     font-size: 12px;
     color: #fff;
     font-style: normal;
@@ -2699,7 +2602,7 @@
 }
 
 .navItem_linkPage {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #006699;
     text-decoration: underline;
@@ -2708,7 +2611,7 @@
 }
 
 .navItem_linkPage:hover {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #CC0000;
     text-decoration: underline;
@@ -2716,7 +2619,7 @@
 }
 
 .textItem_linkPage {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     text-decoration: none;
@@ -2761,8 +2664,6 @@
 
 input[type=checkbox].css-checkbox-null {
     position: absolute;
-    /*z-index:-1000;
-							left:-1000px;*/
     overflow: hidden;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -2800,7 +2701,6 @@ label.css-label-null {
     background-image: url(/graf/csscheckbox_null.png);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -2809,8 +2709,6 @@ label.css-label-null {
 
 input[type=checkbox].css-checkbox {
     position: absolute;
-    /*z-index:-1000;
-							left:-1000px;*/
     overflow: hidden;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -2845,7 +2743,6 @@ input[type=checkbox].css-checkbox + label.css-label {
 
 input[type=checkbox].css-checkbox + label.css-label:hover {
     background-color: #EDFFED;
-    /*white-space: normal;*/
     overflow: visible;
     color: #CC0000;
 
@@ -2860,7 +2757,6 @@ label.css-label {
     background-image: url(/graf/csscheckbox.png);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -2871,19 +2767,6 @@ label.css-label {
     color: #a0a0a0;
 
 }
-
-/*
-.css-checkbox-background {
-							margin-left:7px;
-							cursor:pointer;
-
-						}
-
-.css-checkbox-background:hover {
-							background-color: #EDFFED;
-							cursor:pointer;
-						}
-*/
 
 .subkaskad-top {
     text-align: left;
@@ -2919,22 +2802,17 @@ label.css-label {
 .f_activ_del a {
     position: relative;
     float: left;
-    /*	width:50px;*/
     height: 20px;
     margin-left: 5px;
     background-color: #AAE9FF;
     display: block;
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
     font-size: 14px;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    text-decoration: none;
     white-space: nowrap;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     text-decoration: none;
     color: #3333FF;
 
@@ -2995,18 +2873,13 @@ label.css-label {
     cursor: pointer;
     font-style: normal;
     background: #FFF;
-    /*	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	border-radius: 10px;
-*/
     position: relative;
     float: left;
     height: auto;
     overflow: visible;
-    padding: 0px;
+    padding: 0;
     margin-left: 5px;
-    margin-top: 0px;
+    margin-top: 0;
 
 }
 
@@ -3020,11 +2893,9 @@ label.css-label {
     padding-top: 1px;
     padding-left: 1px;
     padding-right: 1px;
-    padding-left: 1px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-left: 10px;
     width: 95%;
     word-wrap: break-word;
     color: #06C;
@@ -3050,11 +2921,10 @@ label.css-label {
     padding-top: 1px;
     padding-left: 1px;
     padding-right: 1px;
-    padding-left: 1px;
+
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-left: 10px;
     width: 95%;
     word-wrap: break-word;
     color: #000;
@@ -3076,21 +2946,11 @@ label.css-label {
 
 }
 
-/*
-���������
-min-width: 600px;
-	max-width: 3000px;
-	18% 72% 5%
-	  108px 432px 30px
-*/
-
 .cl-container {
     font-size: 14px; /* for em size */
     width: auto;
     min-width: 90em;
     max-width: 1200em;
-    /*min-width: 600px;
-	max-width: 3000px;*/
     padding: 0;
     margin: 0;
 
@@ -3277,12 +3137,9 @@ min-width: 600px;
     border-radius: 10px 10px 10px 10px;
     text-decoration: none;
     white-space: nowrap;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     text-decoration: none;
-    color: #666666;
+    color: #666;
     border: 1px solid #FF6666;
 
 }
