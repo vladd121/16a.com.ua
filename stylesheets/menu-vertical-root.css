@@ -1,19 +1,21 @@
-
-#menu-v-root li, #menu-v-root a {
-    zoom: 1;
-}
-
-/* Hacks for IE6, IE7 */
-
-.menu-v-root-hid, .subCategory {
+.subCategory {
+    position: absolute;
+    top: 0;
+    right: -278px;
     border: 1px solid #ccc;
     border-top: none;
     list-style: none;
     margin: 0;
     padding: 0;
+    background-color: #fff;
     display: block;
     z-index: 9;
 }
+.subCategory .menu_categories__item .subCategory{
+    top: initial;
+    right: -128px;
+}
+
 
 .menu_categories{
     position: relative;
@@ -24,21 +26,17 @@
     z-index: 9;
 }
 
-.subCategory {
-    position: absolute;
-    border: 1px solid #ccc;
-    border-top: none;
-    margin: 0;
-    padding: 0;
-    z-index: 9;
-}
+.menu_categories__link{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: block;
+    color: #06C;
 
-.menu_categories__item{
-    position: relative;
-    top: 0;
-    right: -10px;
+    line-height: 35px;
+    padding-left: 26px;
+    padding-right: 10px;
+    text-decoration: none;
 }
-
 
 
 .cat_but {
