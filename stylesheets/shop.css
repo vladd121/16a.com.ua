@@ -222,24 +222,22 @@
     margin-top: 10px;
     height: 60px;
     width: 150px;
-    background-color: #ADEACD;
-    color: #4d4d4d;
     text-align: center;
     line-height: 60px;
-    display: table-cell;
 }
 
 .root-logo img {
-    width: 150px;
+    width: 100%;
 }
 
 .block_ssearch {
+
     width: 100%;
     max-width: 400px;
     position: relative;
     margin-top: 20px;
     display: inline-block;
-
+    z-index: 1;
 }
 
 .mini_basket {
@@ -748,7 +746,7 @@
     white-space: pre-wrap;
 }
 
-.gr-sub2 a { /*�� ��� �����*/
+.gr-sub2 a {
     background-color: #E0E6F3;
     color: #06C;
     display: block;
@@ -787,7 +785,6 @@
     text-decoration: none;
     text-align: left;
     padding-top: 10px;
-    /*padding-right: 30px;*/
     padding-bottom: 10px;
     padding-left: 15px;
     white-space: pre-wrap;
@@ -815,7 +812,6 @@
     text-decoration: none;
     text-align: left;
     padding-top: 10px;
-    /*padding-right: 30px;*/
     padding-bottom: 10px;
     padding-left: 15px;
     white-space: pre-wrap;
@@ -2631,6 +2627,10 @@
     float: right;
     padding-top: 15px;
     text-align: right;
+}
+
+.button_search-mobile{
+    top: 25px;
 }
 
 .navItem_linkPage {

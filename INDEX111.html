@@ -53,13 +53,12 @@
 
 
     <!------------------------------------------ HEADER ---------------------------------------------------------->
-    <header class="header">
+    <header id="top" class="header">
         <div class="mainWrapper">
             <div class="" id="info">
                 <div class="container">
                     <div class="col-xs-12">
-                        <div class="top-line-mob-link" id="pda_url"></div>
-                        <div class="top-info__inner">
+                        <div class="top-info__inner hidden-xs">
                             <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
                             <a class="top-line-delivery" href="#">Доставка і оплата</a>
                             <div class="top-phone">
@@ -82,6 +81,7 @@
                         <div class="root-logo"><a href="#"><img src="./graf/16a_web.png"></a></div>
 
 
+                        <button class="search_icon button_search-mobile visible-xs" type="button"></button>
                         <div class="block_ssearch">
                             <input id="searchInput" class="searchtext_def" name="getSearch" type="text"
                                    placeholder="Пошук"/>
@@ -988,62 +988,10 @@
 
     </script>
 
-    <div id="dialog_form" title="Оформлення замовлення" style="display:none">
-        <form id="form_b_send" name="form_b_send" method="post" action="?">
-            <p class="send_text" align="center">Для відправки Вашого замовлення, будь-ласка, заповніть поля наступної
-                форми
-                та натисніть кнопку &quot;надіслати замовлення&quot;. <br> <span class="send_comment">  Поля відмічені * повинні бути заповнені обов'язково.</span>
-            </p>
-            <table width="500" border="0" align="center">
-                <tr>
-                    <td nowrap="nowrap" class="send_text">
-                        <div align="right">Ім'я отримувача*</div>
-                    </td>
-                    <td class="send_text">
-                        <div class="form_error_text" id="user_name_text" style="display:none" align="right">(поле не
-                            заповнене)
-                        </div>
-                        <input name="user_name" type="text" id="user_name" onkeypress="onkeypressDialogs(event)"
-                               class="send_input" size="50" maxlength="250"/></td>
-                </tr>
-                <tr>
-                    <td nowrap="nowrap" class="send_text">
-                        <div align="right">Телефон(и)*</div>
-                    </td>
-                    <td class="send_text">
-                        <div class="form_error_text" id="user_phone_text" style="display:none" align="right">(поле не
-                            заповнене)
-                        </div>
-                        <input name="user_phone" type="text" id="user_phone" onkeypress="onkeypressDialogs(event)"
-                               class="send_input" size="50" maxlength="250"/></td>
-                </tr>
-                <tr>
-                    <td nowrap="nowrap" class="send_text">
-                        <div align="right">Адреса отримувача</div>
-                    </td>
-                    <td class="send_text"><input name="user_adres" type="text" id="user_adres"
-                                                 onkeypress="onkeypressDialogs(event)" class="send_input" size="50"
-                                                 maxlength="250"/></td>
-                </tr>
-                <tr>
-                    <td nowrap="nowrap" class="send_text">
-                        <div align="right">Назва організації</div>
-                    </td>
-                    <td class="send_text"><input name="user_firm" class="send_input" type="text" id="user_firm"
-                                                 onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/></td>
-                </tr>
-                <tr>
-                    <td nowrap="nowrap" class="send_text">
-                        <div align="right">Електронна пошта</div>
-                    </td>
-                    <td class="send_text"><input name="user_mail" type="text" id="user_mail" class="send_input"
-                                                 onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/>
-                        <div id="send_my_wait"></div>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+    <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable" aria-describedby="dialog" aria-labelledby="ui-id-1" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="dialog" class="ui-dialog-content ui-widget-content"></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div>
+    <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable" aria-describedby="dialog_delivery" aria-labelledby="ui-id-2" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-2" class="ui-dialog-title">Доставка і оплата</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>закрити</button></div><div id="dialog_delivery" class="dialog_delivery_basketClear ui-dialog-content ui-widget-content" style="">Доставка товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас перевізником.<br><br>
+        Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.<br><br>
+        (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div>
 
 <!-- ANCOR -->
     <div id="back-top">

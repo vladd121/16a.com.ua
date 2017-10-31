@@ -142,7 +142,6 @@ button {
     /*height: 100%; /* ������ ��� ����������� */
     background: #fff; /* ���� ����� ��� ����������� */
     margin: 0 auto; /* ������ ������ ����� � ������ auto ����� ��������� ������������ �� ������ */
-    margin-top: 0px;
     display: table;
 }
 
@@ -150,15 +149,13 @@ button {
 
 
 .blok_top {
+    position: relative;
     width: 100%;
-    /*margin-left: -15%;*/
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #fff;
     min-height: 80px;
-
+    z-index:4;
 }
 
 .top-info {
@@ -177,14 +174,9 @@ button {
 
 .blok_main_2 {
     width: 100%;
-    min-width: 680px; /*4 elements price-about  and 3 price-item*/
+    /*min-width: 680px; !*4 elements price-about  and 3 price-item*!*/
 }
 
-.blok_main_2_1 {
-
-    background-color: #fff;
-    width: 100%;
-}
 
 .blok_main_2_1_when_bl2_2_in_new_line {
     float: left;
