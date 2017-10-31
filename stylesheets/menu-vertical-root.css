@@ -1,21 +1,42 @@
+.menu_categories__item{
+    position: relative;
+    /*width: 100%;*/
+    /*width: 252px;*/
+    height: 100%;
+    background: #fff url(images/bg.gif) repeat-x;
+    z-index: 10;
+
+    /*padding-left: 26px;*/
+    /*padding-right: 10px;*/
+}
+
+.menu_categories__item:hover{
+    background-image: none;
+}
+
+.menu_categories__item ul:not(:first-child){
+    width:330px;
+    /*background-color: rgba(255,255,255,0.8);*/
+}
+
 .subCategory {
+    display: none;
     position: absolute;
     top: 0;
-    right: -278px;
+    right: -330px;
     border: 1px solid #ccc;
     border-top: none;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    display: block;
+    /*background-color: #fff;*/
+
     z-index: 9;
 }
-.subCategory .menu_categories__item .subCategory{
-    top: initial;
-    right: -128px;
-}
 
+.menu_categories__item:hover > .subCategory:nth-of-type(1){
+    display: block;
+}
 
 .menu_categories{
     position: relative;
@@ -27,80 +48,53 @@
 }
 
 .menu_categories__link{
+    display: block;
     width: 100%;
     border-top: 1px solid #ccc;
-    display: block;
-    color: #06C;
-
-    line-height: 35px;
-    padding-left: 26px;
-    padding-right: 10px;
-    text-decoration: none;
-}
-
-
-.cat_but {
-    z-index: 10;
-    position: relative;
-    margin-left: 5px;
-    padding: 0;
-    border: 0;
     text-align: left;
-}
-
-/* Top level menu links style
----------------------------------------*/
-#menu-v-root li {
-    position: relative;
-    background: #FFF url(images/bg.gif) repeat-x 0 2px;
-
-    padding-left: 14px;
-}
-
-#menu-v-root li a {
-    font: normal 14px Arial;
-    border-top: 1px solid #ccc;
-    display: block;
+    padding-left: 15px;
     color: #06C;
+    font-size: 14px;
+    line-height: 35px;
+
     text-decoration: none;
-    line-height: 35px;
 }
-
-#menu-v-root li a:hover {
+.menu_categories__link:hover{
+    text-decoration: none;
     color: #FF6666;
 }
 
-#menu-v-root ul li a {
-    line-height: 35px;
-}
-
-#menu-v-root ul li a:hover {
-    color: #FF6666;
-}
-
-#menu-v-root li a.arrow:hover {
-    background: url(images/arrowon.gif) no-repeat 97% 50%;
-    color: #FF6666;
-}
 
 /*Sub level menu items
 ---------------------------------------*/
 
-.menu_categories a.arrow {
-    background: url(images/arrow.gif) no-repeat 97% 50%;
+.decor_arrow:after {
+    position: absolute;
+    right:0;
+    top: 0;
+    content: '\f0da';
+    font-family: FontAwesome;
+    font-size: 12px;
+    width: 20px;
+    /*height: 100%;*/
+    color: #000;
+
+}
+
+
+.menu_categories__item.decor_arrow:after{
+    top: 35%;
+}
+
+.menu_categories__item ul:not(:first-child) .menu_categories__item.decor_arrow:after{
+    top: 30%;
+}
+
+.menu_categories__item:hover.decor_arrow:after{
+    color: #ff6666;
 }
 
 
-
-.menu_categories ul li {
-    background: rgba(255, 255, 255, 0.86);
-    background-image: none;
-}
-
-.menu_categories ul li:hover, .menu_categories ul li.onhover {
-    background: #FFF none;
-
-}
 
 .buttonStartMenu {
 

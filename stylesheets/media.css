@@ -1,0 +1,43 @@
+
+/* Large Devices, Wide Screens 1280px */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops 992px */
+@media only screen and (max-width: 991px) {
+
+    .top-info__inner{
+        justify-content: space-around;
+    }
+    .top-phone{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
+/* Small Devices, Tablets 768px */
+@media only screen and (max-width: 768px) {
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}
+
+/* Extra Small Devices, Phones 480px */
+@media only screen and (max-width: 480px) {
+
+
+}
+
+/* Custom, iPhone Retina 320px */
+@media only screen and (max-width: 320px) {
+
+
+}

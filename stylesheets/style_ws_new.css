@@ -181,9 +181,9 @@ button {
 }
 
 .blok_main_2_1 {
-    float: left;
+
     background-color: #fff;
-    width: 90%;
+    width: 100%;
 }
 
 .blok_main_2_1_when_bl2_2_in_new_line {
@@ -192,12 +192,6 @@ button {
     width: 100%;
 }
 
-.blok_main_2_2 {
-    float: left;
-    background-color: #fff;
-    width: 10%; /* ���� ������������, �� ���������� ��� 90% ��� 100 � 100 ��� ���� �����*/
-    word-wrap: break-word;
-}
 
 .blok_main_2_2_new_line { /*���� ������� ��� �����������*/
     float: left;

@@ -23,15 +23,22 @@
     <link rel="stylesheet" href="stylesheets/libs/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/libs/bootstrap-theme.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" href="stylesheets/shop.css" type="text/css">
     <link rel="stylesheet" href="stylesheets/style_ws_new.css" type="text/css">
     <link rel="stylesheet" href="stylesheets/menu-vertical-root.css" type="text/css">
+
 
     <link rel="stylesheet" href="js/jquery-ui.min.css">
 
     <link rel="stylesheet" href="./gal4css/demo.css" type="text/css"/>
     <link rel="stylesheet" href="./gal4css/elastislide.css" type="text/css"/>
     <link rel="stylesheet" href="./gal4css/custom.css" type="text/css"/>
+
+    <link rel="stylesheet" href="stylesheets/media.css" type="text/css"/>
+
 
 
 </head>
@@ -48,11 +55,23 @@
     <!------------------------------------------ HEADER ---------------------------------------------------------->
     <header class="header">
         <div class="mainWrapper">
-            <div class="top-info" id="info">
-                <div class="top-line-mob-link" id="pda_url"></div>
-                <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
-                <a class="top-line-delivery" href="#">Доставка і оплата</a>
-                <span class="top-phone"><b>(067)</b> 340-81-46, <b>(050)</b> 421-70-70, <b>(063)</b> 247-70-70, <b>(032)</b>247-70-70</span>
+            <div class="" id="info">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <div class="top-line-mob-link" id="pda_url"></div>
+                        <div class="top-info__inner">
+                            <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
+                            <a class="top-line-delivery" href="#">Доставка і оплата</a>
+                            <div class="top-phone">
+                               <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
+                               <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
+                               <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
+                               <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="container">
@@ -103,17 +122,30 @@
 
 
                         <button class="buttonStartMenu" type="button">Каталог товару</button>
-                        <nav class='left-group-menu' id='id-left-group-menu'>
+                        <nav class='left-group-menu'>
                             <ul class="menu_categories">
-                                <li class="menu_categories__item"><a class="menu_categories__link" href="#">Вентилятори та елементи вентиляційних систем</a>
+                                <!-- Класс decor_arrow добавляй только если есть потомки с ul-->
+                                <li class="menu_categories__item decor_arrow"><a class="menu_categories__link" href="#">Вентилятори та елементи вентиляційних систем</a>
                                     <ul class="subCategory">
                                         <li class="menu_categories__item"><a class="menu_categories__link" href="#">Побутові вентилятори</a></li>
                                         <li class="menu_categories__item"><a class="menu_categories__link" href="#">Промислові вентилятори</a></li>
                                         <li class="menu_categories__item"><a class="menu_categories__link" href="#">Вентиляційні решітки</a></li>
-                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">Повітроводи, розети, муфти</a>
+                                        <li class="menu_categories__item decor_arrow"><a class="menu_categories__link" href="#">Повітроводи, розети, муфти</a>
                                             <ul class="subCategory">
-                                                <li class="menu_categories__item"><a class="menu_categories__link" href="#">Повітроводи</a></li>
-                                                <li class="menu_categories__item"><a class="menu_categories__link" href="#">Муфти</a></li>
+                                                <li class="menu_categories__item decor_arrow"><a class="menu_categories__link" href="#">Повітроводи</a>
+                                                    <ul class="subCategory">
+                                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">ПРОБА1</a></li>
+                                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">ПРОБА2</a></li>
+                                                    </ul>
+
+                                                </li>
+                                                <li class="menu_categories__item decor_arrow"><a class="menu_categories__link" href="#">Муфти</a>
+                                                    <ul class="subCategory">
+                                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">ПРОБА1</a></li>
+                                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">ПРОБА2</a></li>
+                                                    </ul>
+
+                                                </li>
                                                 <li class="menu_categories__item"><a class="menu_categories__link" href="#">Розети</a></li>
                                             </ul>
                                         </li>
@@ -126,7 +158,26 @@
                                 <li class="menu_categories__item"><a class="menu_categories__link" href="?k=lighting_projectors">Світильники, прожектори</a></li>
                                 <li class="menu_categories__item"><a class="menu_categories__link" href="?k=switches_sockets">Вимикачі, розетки, подовжувачі, вилки</a></li>
                                 <li class="menu_categories__item"><a class="menu_categories__link" href="?k=cable_wire">Кабель, провід, СІП</a></li>
-                                <li class="menu_categories__item"><a class="menu_categories__link" href="?k=low_voltage">Низьковольтне обладнання</a></li>
+                                <li class="menu_categories__item decor_arrow"><a class="menu_categories__link" href="">Низьковольтне обладнання</a>
+                                    <ul class="subCategory">
+                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">Автоматичні вимикачі, ПЗВ, диференційні автомати</a></li>
+                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">Пристрої автоматики</a></li>
+                                        <li class="menu_categories__item decor_arrow"><a class="menu_categories__link" href="#">Різне силове та щитове обладнання</a>
+                                            <ul class="subCategory">
+                                                <li class="menu_categories__item decor_arrow"><a class="menu_categories__link" href="#">Запобiжники</a>
+                                                    <ul class="subCategory">
+                                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">Good1</a></li>
+                                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">Good2</a></li>
+                                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">Good3</a>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_categories__item"><a class="menu_categories__link" href="#">Магнітні пускачі, контактори, мікровимикачі</a></li>
+                                    </ul>
+
+
+                                </li>
                                 <li class="menu_categories__item"><a class="menu_categories__link" href="?k=elements_installation">Елементи для монтажу</a></li>
                                 <li class="menu_categories__item"><a class="menu_categories__link" href="?k=batteries_and_chargers">Батарейки та зарядні пристрої</a></li>
                                 <li class="menu_categories__item"><a class="menu_categories__link" href="?k=svod">Фільтри для води та побутова хімія СВОД</a></li>
@@ -156,37 +207,37 @@
                             <div class="blok_main_2_1_x_about_item_cont">
                                 <div class="blok_main_2_1_x_about_item">
 
+                                     <!--Это дополнительный фон если он назначен-->
+                                    <div class="about_item_im_fon">
+                                        <img src="./photo/group/gl3188.jpg" alt="">
+                                    </div>
+
                                     <a class="about_item_box" href="?k=ventilators">
                                             <p class="about_item_text_hlim">Вентилятори та елементи вентиляційних систем</p>
                                            <img class="about_item_im" src="./photo/group/vent-collage.jpg" alt="Вентилятори та елементи вентиляційних систем">
                                     </a>
-                                    <div class="subgr-list-block" onclick="window.location='?k=ventilators'">
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=household_fans">Побутові вентилятори</a>
-                                        </div>
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=industrial_funs">Промислові
-                                            вентилятори</a>
-                                        </div>
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=ventilation_lattice">Вентиляційні
-                                            решітки</a>
-                                        </div>
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=air_ducts_coupling">Повітроводи, розети,
-                                            муфти</a>
-                                        </div>
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=air_heating_units">Повітряно-опалювальні
-                                            агрегати</a>
-                                        </div>
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=deflectors">Дефлектори</a></div>
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=accessories_vent">Аксесуари</a></div>
-                                    </div>
+                                    <ul class="subgr-list-block" onclick="window.location='?k=ventilators'">
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="">Побутові вентилятори</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="">Промислові вентилятори</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="">Вентиляційні решітки</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="">Повітроводи, розети, муфти</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item" href="">Повітряно-опалювальніагрегати</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item" href="">Дефлектори</a></li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item" href="">Аксесуари</a></li>
+                                    </ul>
                                 </div>
                             </div>
+
+                            <!--/* Сюда можно не смотреть */-->
                             <div class="blok_main_2_1_x_about_item_cont">
                                 <div class="blok_main_2_1_x_about_item"
                                      onclick="window.location='?k=lamps'">
@@ -764,41 +815,6 @@
 
                     </div>
 
-                    <div id="blok_main_2_2" class='blok_main_2_2'>
-                        <p>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
-                        </p>
-                        <p align="center"><a href="?k=led_lamps&filter=producer_lamps=nasha_sila"
-                                             class="navItem_linkPage"><strong>Новинка!</strong>
-                            LED лампи НАША СИЛА - якість підтверджена часом!
-
-                        </a></p>
-                        <p>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
-                        </p>
-
-                        <p align="center"><a href="?k=led_lamps&filter=producer_lamps=nasha_sila"
-                                             class="navItem_linkPage">
-                            <strong>АКЦІЯ:</strong>
-                            при купівлі НАША СИЛА LED на 2000грн - Ліхтарик FL 8421 1хD турист НАША СИЛА в подарунок
-                            (роздрібна
-                            ціна 181.01грн).
-                        </a></p>
-                        <p>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
-                        </p>
-
-
-                    </div>
 
                 </div>
 
@@ -806,6 +822,7 @@
             </div>
 
         </div>
+
         <!-- CEO -->
         <div class="container">
             <div class="col-xs-12">
@@ -923,7 +940,7 @@
     </div>
 
 
-    <!--<div class="bg_layer"></div>-->
+    <div class="bg_layer"></div>
 
 
     <div id='my_popup'></div>
@@ -1028,24 +1045,30 @@
         </form>
     </div>
 
-
-    <p id="back-top" style="display:none">
-        <a href="#top"><span></span></a>
-    </p>
+<!-- ANCOR -->
+    <div id="back-top">
+        <a href="#top">
+            <span></span>
+        </a>
+    </div>
 
 
     <div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
 
 
-    <script>
-        var is_modal = false;
 
-    </script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" charset="windows-1251" src="js/js_fx.js?ver1504703937"></script>
-    <script type="text/javascript" charset="windows-1251" src="js/menu-vertical-root.js"></script>
+
+
+    <script type="text/javascript"  src="js/menu-vertical-root-func.js"></script>
+
+
+    <script type="text/javascript"  src="js/menu-vertical-root.js"></script>
     <script type="text/javascript" src="gal4js/modernizr.custom.17475.js"></script>
+
+
+
 
 
     <script>
@@ -1076,7 +1099,7 @@
 
     </script>
 
-    <script type="text/javascript" charset="windows-1251" src="js/menu-vertical-root-func.js"></script>
+
 
     <script type="text/javascript">
 
@@ -1085,13 +1108,7 @@
             else if (window.getComputedStyle) return window.getComputedStyle(e, null)
         }
 
-        /*
-        var elem = document.getElementById('elem');
-        var height_old = elem.offsetHeight;
-        elem.innerHTML="text";
-        var height = elem.offsetHeight;
-        alert(height_old+' '+height);
-        */
+
         var x = 0;
 
         function resize_body_f() {
@@ -1175,39 +1192,11 @@
                             user_phone: document.getElementById("user_phone").value,
                             user_adres: document.getElementById("user_adres").value,
                             user_firm: document.getElementById("user_firm").value,
-                            user_mail: document.getElementById("user_mail").value,
+                            user_mail: document.getElementById("user_mail").value;
                         }
                     });
                 }
             }]
-        });
-
-
-        $(document).ready(function () {
-
-            // hide #back-top first
-            $("#back-top").hide();
-
-
-            // fade in #back-top
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 500) {
-                        $('#back-top').fadeIn();
-                    } else {
-                        $('#back-top').fadeOut();
-                    }
-                });
-
-                // scroll body to 0px on click
-                $('#back-top a').click(function () {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 'slow');
-                    return false;
-                });
-            });
-
         });
 
 

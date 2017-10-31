@@ -1367,7 +1367,20 @@
 .top-line-info {
     color: #FFF;
     background-color: #006600;
-    height: 20px;
+
+}
+
+
+.top-info__inner{
+    width: 100%;
+    min-height: 36px;
+    line-height: 36px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    flex-wrap: wrap;
 }
 
 .top-line-mob-link {
@@ -1398,7 +1411,7 @@
 }
 
 .top-line-adr {
-    margin-left: 22%;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 
@@ -1407,7 +1420,6 @@
 .top-line-delivery {
     color: #4d4d4d;
     text-decoration: underline;
-    margin-left: 9%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
@@ -1417,10 +1429,16 @@
 }
 
 .top-phone {
-    margin-left: 15%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
+.top-phone p {
+    display: inline-block;
+}
+.top-phone_bold{
+    font-weight:bold;
+}
+
 
 .get_help {
     color: #000;
@@ -2420,26 +2438,35 @@
     max-width: 50%;
     padding-top: 72px;
     padding-bottom: 10px;
-    overflow: hidden;
+    list-style-type:none;
+    /*overflow: hidden;*/
+}
+
+.subgr-item-dv{
+
+    text-align: left;
+    height: 25px;
+    width: 190px;
+    max-width: 190px;
+    text-overflow: ellipsis;
 }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
     border-bottom: 1px solid #c3c3c3;
     box-sizing: border-box;
+    overflow: visible;
 }
 
 
 .subgr-list-item {
 
     font-size: 12px;
-    font-weight: normal;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    text-align: left;
+
     background: #fff;
     color: #06C;
 
     text-decoration: none;
-    white-space: nowrap;
 
     /*
 	display:block;
@@ -2470,26 +2497,31 @@
 }
 
 .about_item_im_fon {
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
+
     max-height: 310px;
     overflow: hidden;
-    opacity: 0.1
-
+    opacity: 0.1;
+    z-index: 1;
 }
 
 .blok_main_2_1_x_about_item {
     position: relative;
     background-color: #fff;
-    overflow: hidden;
-    height: 300px;
+
+    height:300px;
     padding: 5px 5px 10px;
     border-radius: 1px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-
+    overflow: hidden;
+    z-index: 3;
 }
 
+.blok_main_2_1_x_about_item:hover{
+    overflow: visible;
+}
 
 .blok_main_2_1_x_about_item:hover .about_item_text_hlim {
     color: #ff0000;
@@ -2837,10 +2869,7 @@ label.css-label {
     border-radius: 10px 10px 10px 10px;
     text-decoration: none;
     white-space: nowrap;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px 10px;
     text-decoration: none;
     color: #666666;
     border: 1px solid #FF6666;
@@ -2863,6 +2892,7 @@ label.css-label {
 }
 
 .left-group-menu {
+    position: relative;
     width: 100%;
     word-wrap: break-word;
     color: #06C;
@@ -2870,13 +2900,10 @@ label.css-label {
     font-size: 14px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     text-decoration: none;
-    cursor: pointer;
     font-style: normal;
-    background: #FFF;
-    position: relative;
-    float: left;
-    height: auto;
-    overflow: visible;
+    background: #fff;
+
+
     padding: 0;
     margin-left: 5px;
     margin-top: 0;
@@ -3431,4 +3458,8 @@ label.css-label {
     margin-top: 8px;
     position: relative;
     float: left;
+}
+
+#back-top{
+    display: none;
 }
