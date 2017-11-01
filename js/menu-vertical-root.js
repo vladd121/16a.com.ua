@@ -12,6 +12,9 @@ $(document).ready(function () {
            blackWrapper.css({"display": "none"});
         }
     );
+
+
+
 /// Search button
     $(".button_search-mobile").on("click", function () {
        $(".block_ssearch").slideToggle(400);
