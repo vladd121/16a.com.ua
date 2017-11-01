@@ -2442,9 +2442,8 @@
 
     text-align: left;
     height: 25px;
-    width: 190px;
-    max-width: 190px;
-    text-overflow: ellipsis;
+    min-width: 190px;
+    hyphens: auto;
 }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
