@@ -1,0 +1,155 @@
+@import "../components/variables";
+/*********************************************/
+/*Desktop First Method*/
+/*********************************************/
+
+/* Large Devices, Wide Screens 1280px */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops 992px */
+@media only screen and (max-width: 991px) {
+
+  .top-info__inner {
+    justify-content: space-around;
+  }
+
+  .top-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .copyr {
+    margin-top: 20px;
+  }
+
+  .footer > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer_part1 {
+    order: 1;
+  }
+
+  .footer_part2 {
+    order: 2;
+  }
+
+  .footer_part3 {
+    order: 3;
+  }
+}
+
+/* Small Devices, Tablets 768px */
+@media only screen and (max-width: 768px) {
+  .header {
+    background-color: #9fcea0;
+    margin-bottom: 35px;
+  }
+
+  .block_ssearch {
+    display: none;
+
+    position: absolute;
+    top: 57px;
+    left: 35%;
+    max-width: 300px;
+
+  }
+
+  .blok_main_2_1_x_about_item{
+    height:auto;
+    padding: 0;
+  }
+  .subgr-list-block{
+    padding: 0;
+    min-height:initial;
+  }
+
+  .about_item_box{
+    min-height:initial;
+  }
+
+  .searchtext_def {
+    width: 75%;
+  }
+
+  .minBasket_full{
+    margin-left: 0;
+  }
+
+
+  .button_menu-mobile{
+    font-size: 22px;
+    padding-left: 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+  .logo_link {
+    width: 100px;
+  }
+  .binfo_image{
+    float: left;
+  }
+  .button_menu-mobile{
+    font-size: 26px;
+  }
+  .logo_link{
+    width: 94px;
+  }
+
+  .binfo{
+    min-width:initial;
+  }
+
+
+}
+/* Extra Small Devices, Phones 480px */
+@media only screen and (max-width: 480px) {
+  .block_ssearch {
+    left: 15%;
+  }
+  .logo_link{
+    width: 70px;
+  }
+
+  .button_menu-mobile{
+    font-size: 18px;
+    padding-left: 28px;
+  }
+
+  .root-logo{
+    left: -20px;
+    float: none;
+  }
+  .decor_burger{
+    font-size: 24px;
+  }
+  .button_menu-mobile{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .root-logo{
+    left: -30px;
+  }
+  .button_menu-mobile{
+    font-size: 12px;
+  }
+
+  .logo_link{
+    width: 50px;
+  }
+}
+/* Custom, iPhone Retina 320px */
+@media only screen and (max-width: 320px) {
+
+}

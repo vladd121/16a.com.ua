@@ -422,6 +422,7 @@
     width: 90%;
     font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
     font-size: 16px;
+    height: 20px;
     color: #999;
     outline: none !important;
     border: 1px solid #0080c0;
@@ -433,7 +434,9 @@
     box-shadow: 0 0 10px #719ECE;
     color: #3e3e3e;
 }
-
+.searchtext_def::placeholder{
+    font-style: italic;
+}
 
 .bh1:hover {
     font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -671,21 +674,6 @@
     /*text-decoration: none*/
 /*}*/
 
-.bl_breadcrumbs__link {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-    font-size: 14px;
-    color: #8DAEBF;
-    font-style: normal;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.bl_breadcrumbs__link:hover {
-    color: #006699;
-    font-style: normal;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .subGr_line_last {
     font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -2960,16 +2948,46 @@ label.css-label {
 
 }
 
-.bl_breadcrumbs,
-.subkaskad-top {
-    text-align: left;
-    height: 30px;
+.bl_breadcrumbs {
     position: relative;
-    float: none;
+    width: 100%;
+    min-height: 30px;
 }
 
 .bl_breadcrumbs__item{
+    position: relative;
+    display: inline-block;
+    padding-right: 1%;
+}
+.bl_breadcrumbs__item:not(:last-child):after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: 0;
 
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-size: 14px;
+    color: #8DAEBF;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.bl_breadcrumbs__link {
+    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+    font-size: 14px;
+    color: #8DAEBF;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bl_breadcrumbs__link:hover {
+    color: #006699;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
