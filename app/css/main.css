@@ -976,6 +976,17 @@ button {
 .blok_main_1 {
   min-width: 250px; }
 
+.blok_main_1.category_menu .left-group-menu {
+  display: none; }
+
+.category_menu .buttonStartMenu:hover + .left-group-menu {
+  display: block;
+  position: absolute;
+  z-index: 9; }
+
+.blok_main_1.category_menu .left-group-menu:hover {
+  display: block; }
+
 .blok_main_2 {
   width: 100%; }
 
@@ -1137,6 +1148,7 @@ button {
 
 .menu_categories {
   position: relative;
+  top: 0;
   border: 1px solid #ccc;
   border-top: none;
   margin: 0;
@@ -1149,6 +1161,7 @@ button {
   border-top: 1px solid #ccc;
   text-align: left;
   padding-left: 15px;
+  padding-right: 5px;
   color: #06C;
   font-size: 14px;
   line-height: 35px;
@@ -1188,26 +1201,25 @@ button {
   line-height: 40px;
   vertical-align: middle;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
   text-shadow: 0 -1px 1px #777;
   color: #FFF;
   outline: none;
   border: 2px solid #F64C2B;
   border-radius: 5px;
-  text-transform: uppercase;
+  box-shadow: 0 0 0 60px transparent inset, 0.1em 0.1em 0.2em #800;
   background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
   cursor: default;
-  left: .3em;
-  box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset;
   z-index: 10; }
-
-.buttonStartMenu:hover .left-group-menu {
-  display: block; }
-
-.buttonStartMenu:active,
-.buttonStartMenu:hover {
-  left: .3em;
-  box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset; }
+  .buttonStartMenu:hover {
+    /* top: .3em; */
+    color: #fff;
+    text-decoration: none;
+    left: .3em;
+    box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset; }
+  .buttonStartMenu:active {
+    color: #66FF99; }
 
 .binfo_image {
   display: inline-block;
@@ -2225,6 +2237,10 @@ button {
     width: 40px;
     height: 40px; }
 
+.footer .cell-group_m1 img {
+  width: 30px;
+  height: 32px; }
+
 .top-line-adr {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px; }
@@ -2946,10 +2962,6 @@ button {
   max-width: 400px; }
 
 .one_search_rest {
-  /*	position:relative;
-  float:left;
-*/
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
   color: #093;
   font-style: normal;
@@ -2957,9 +2969,6 @@ button {
   margin-left: 10px; }
 
 .one_search_norest {
-  /*	position:relative;
-  float:left;*/
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
   color: #999;
   font-style: normal;
@@ -3079,11 +3088,18 @@ button {
   /*overflow: hidden;*/ }
 
 .subgr-item-dv {
+  position: relative;
   text-align: left;
   height: 25px;
-  width: 190px;
-  max-width: 190px;
-  text-overflow: ellipsis; }
+  width: 190px; }
+
+.blok_main_2_1_x_about_item:hover {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: visible;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
   border-bottom: 1px solid #c3c3c3;
@@ -3095,7 +3111,17 @@ button {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   background: #fff;
   color: #06C;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.subgr-item-dv:hover .subgr-list-item {
+  position: absolute;
+  width: auto;
+  background-color: #fff;
+  z-index: 8; }
 
 .subgr-list-item:hover {
   color: #ff0000; }
@@ -3127,12 +3153,10 @@ button {
   height: 300px;
   padding: 5px 5px 10px;
   border-radius: 1px;
+  box-sizing: border-box;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   z-index: 3; }
-
-.blok_main_2_1_x_about_item:hover {
-  overflow: visible; }
 
 .blok_main_2_1_x_about_item:hover .about_item_text_hlim {
   color: #ff0000;
@@ -3383,7 +3407,6 @@ label.css-label {
   position: absolute;
   top: 0;
   right: 0;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
@@ -3391,7 +3414,6 @@ label.css-label {
   text-decoration: none; }
 
 .bl_breadcrumbs__link {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
@@ -3431,7 +3453,6 @@ label.css-label {
   margin-left: 5px;
   background-color: #AAE9FF;
   display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   border-radius: 10px 10px 10px 10px;
   white-space: nowrap;
@@ -3471,24 +3492,15 @@ label.css-label {
   height: 25px; }
 
 .left-group-menu {
-  position: relative;
+  position: absolute;
   width: 100%;
   word-wrap: break-word;
   color: #06C;
   font-weight: normal;
   font-size: 14px;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-style: normal;
-  background: #fff;
-  padding: 0;
-  margin-left: 5px;
-  margin-top: 0; }
-
-.left-group-menu-hid {
-  display: none;
-  /*visibility:hidden;*/
-  /*hidden;*/ }
+  background: #fff; }
 
 .left-group-menu2 {
   padding-top: 1px;
@@ -3785,15 +3797,30 @@ label.css-label {
   margin-top: 7px;
   margin-bottom: 7px; }
 
-.left_cascad_line {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 14px;
+.left_cascad__item {
+  position: relative;
+  margin-top: 5px;
+  text-indent: 15px;
   color: #006699;
+  font-size: 14px; }
+  .left_cascad__item:before {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    content: "<";
+    color: inherit; }
+  .left_cascad__item:hover {
+    color: #CC0000;
+    text-decoration: underline; }
+
+.left_cascad_line {
+  width: 100%;
+  display: block;
+  color: inherit;
   font-style: normal;
   text-decoration: none; }
 
 .left_cascad_line:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #CC0000;
   font-style: normal;

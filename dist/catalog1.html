@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Інтернет-магазин 16А</title>
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
+
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="css/libs.min.css">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+    <!--<link rel="stylesheet" href="js/jquery-ui.min.css">-->
+
+    <!--<link rel="stylesheet" href="./gal4css/demo.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="./gal4css/elastislide.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="./gal4css/custom.css" type="text/css"/>-->
+
+
+</head>
+
+<body class="body" onresize="resize_body_f()">
+<div class="wrapperBlock">
+    <!--[if lt IE 10]>
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a
+            href="http://browsehappy.com/">обновите</a>
+        его.</p>
+    <![endif]-->
+
+
+    <!------------------------------------------ HEADER ---------------------------------------------------------->
+    <header id="top" class="header">
+        <div class="mainWrapper">
+            <div class="" id="info">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <div class="top-info__inner hidden-xs">
+                            <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
+                            <a class="top-line-delivery" href="#">Доставка і оплата</a>
+                            <div class="top-phone">
+                                <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
+                                <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
+                                <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
+                                <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="blok_top">
+
+
+                        <div class="root-logo">
+                            <button class="button_menu-mobile decor_burger visible-xs-inline-block" type="button">
+                                Каталог
+                            </button>
+                            <a class="logo_link" href="#"><img src="image/logo.png"></a>
+                        </div>
+
+
+                        <button class="search_icon button_search-mobile visible-xs" type="button"></button>
+                        <div class="block_ssearch">
+                            <input id="searchInput" class="searchtext_def" name="getSearch" type="text"
+                                   placeholder="Пошук"/>
+                            <button class="search_icon" type="button" title="Пошук"></button>
+                        </div>
+
+
+                        <div class="mini_basket" id="mini_basket">
+                            <a class="binfo" href="#">
+                                <img class="binfo_image" src="image/b_min1.gif" alt="Ваш кошик">
+                                <div class="minBasket_full">
+                                    <p class="minBasket">Кошик</p>
+                                    <p>
+                                        <span class="minBasket_param">Товарів</span>
+                                        <span class="minBasket_text">0</span>
+                                    </p>
+                                    <p>
+                                        <span class="minBasket_param">Сума</span>
+                                        <span class="minBasket_text">0</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!------------------------------------------- MAIN ----------------------------------------------------------->
+    <main class="main">
+        <div class="container">
+            <div class="col-md-3">
+                <div class='blok_main_1 category_menu'>
+ <!-- класс category_menu добавляется если мы не на главной странице -->
+
+                    <button class="buttonStartMenu" type="button">Каталог товару</button>
+                    <nav class='left-group-menu'>
+                        <ul class="menu_categories">
+                            <!-- Класс decor_arrow добавляй только если есть потомки с ul-->
+                            <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
+                                                                             href="#">Вентилятори та елементи вентиляційних систем</a>
+                                <ul class="subCategory">
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="#">Побутові вентилятори</a></li>
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="#">Промислові вентилятори</a></li>
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="#">Вентиляційні решітки</a></li>
+                                    <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
+                                                                                     href="#">Повітроводи, розети, муфти</a>
+                                        <ul class="subCategory">
+                                            <li class="menu_categories__item decor_arrow"><a
+                                                    class="menu_categories__link" href="#">Повітроводи</a>
+                                                <ul class="subCategory">
+                                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                                         href="#">ПРОБА1</a></li>
+                                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                                         href="#">ПРОБА2</a></li>
+                                                </ul>
+
+                                            </li>
+                                            <li class="menu_categories__item decor_arrow"><a
+                                                    class="menu_categories__link" href="#">Муфти</a>
+                                                <ul class="subCategory">
+                                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                                         href="#">ПРОБА1</a></li>
+                                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                                         href="#">ПРОБА2</a></li>
+                                                </ul>
+
+                                            </li>
+                                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                                 href="#">Розети</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="?k=air_heating_units">Повітряно-опалювальні агрегати</a>
+                                    </li>
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="?k=deflectors">Дефлектори</a></li>
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="?k=accessories_vent">Аксесуари</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link" href="?k=lamps">Лампи</a>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=lighting_projectors">Світильники, прожектори</a>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=switches_sockets">Вимикачі, розетки, подовжувачі, вилки</a>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=cable_wire">Кабель, провід, СІП</a></li>
+                            <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
+                                                                             href="">Низьковольтне обладнання</a>
+                                <ul class="subCategory">
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="#">Автоматичні вимикачі, ПЗВ, диференційні автомати</a>
+                                    </li>
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="#">Пристрої автоматики</a></li>
+                                    <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
+                                                                                     href="#">Різне силове та щитове обладнання</a>
+                                        <ul class="subCategory">
+                                            <li class="menu_categories__item decor_arrow"><a
+                                                    class="menu_categories__link" href="#">Запобiжники</a>
+                                                <ul class="subCategory">
+                                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                                         href="#">Good1</a></li>
+                                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                                         href="#">Good2</a></li>
+                                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                                         href="#">Good3</a>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                         href="#">Магнітні пускачі, контактори, мікровимикачі</a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=elements_installation">Елементи для монтажу</a>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=batteries_and_chargers">Батарейки та зарядні пристрої</a>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=svod">Фільтри для води та побутова хімія СВОД</a>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=instrument">Обжимний, різальний інструмент</a>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=magnetic_holders">Магнітні тримачі, захвати</a>
+                            </li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=metal_structures">Металоконструкції</a></li>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="?k=ozonizers">Озонатори</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="left-group-menu2">
+                        <a class="left_cascad_line" href="/">Інтернет магазин 16А</a>
+                        <ul class="left_cascad">
+                            <li class="left_cascad__item"> <a href="#" class="left_cascad_line ">Вентилятори та елементи вентиляційних систем</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="left-group-menu2">
+                        <div class="left-group-i-box">
+                            <p class="#">Категорії</p>
+                            <ul>                                
+                                <li class="gr-sub-level2"><a href="#">Побутові вентилятори</a></li>
+                                <li class="gr-sub-level2"><a href="#">Промислові вентилятори</a></li>
+                                <li class="gr-sub-level2"><a href="#">Вентиляційні решітки</a></li>
+                                <li class="gr-sub-level2"><a href="#">Повітроводи, розети, муфти</a></li>
+                                <li class="gr-sub-level2"><a href="#">Повітряно-опалювальні агрегати</a></li>
+                                <li class="gr-sub-level2"><a href="#">Дефлектори</a></li>
+                                <li class="gr-sub-level2"><a href="#">Аксесуари</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+
+
+                <div class='blok_main_2'>
+
+                    <div id="blok_main_2_1" class='blok_main_2_1'>
+
+                        <div id="elements-zone" class="cl-price-item">
+
+<!--BREADCRUMBS-->
+                            <ul class="bl_breadcrumbs clearfix">
+                                <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link"
+                                                                    href="#">16А</a></li>
+                                <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">
+                                    Вентилятори та елементи вентиляційних систем</p></li>
+                            </ul>
+<!---->
+
+
+                            <p class="oneSub">Вентилятори та елементи вентиляційних систем</p>
+
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div   class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=household_fans'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/pob-vent-collage.jpg"
+                                                                        width="410" border="0"></div>
+                                    <a href="?k=household_fans">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Побутові вентилятори</div>
+                                            <div class="about_item_im"><img src="./photo/group/pob-vent-collage.jpg"
+                                                                            alt="Побутові вентилятори" width="180"
+                                                                            border="0"></div>
+                                            <div class="about_item_text1"></div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div   class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=industrial_funs'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/prom-vent-collage.jpg"
+                                                                        width="410" border="0"></div>
+                                    <a href="?k=industrial_funs">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Промислові вентилятори</div>
+                                            <div class="about_item_im"><img src="./photo/group/prom-vent-collage.jpg"
+                                                                            alt="Промислові вентилятори" width="180"
+                                                                            border="0"></div>
+                                            <div class="about_item_text1"></div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div   class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=ventilation_lattice'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/kmz.jpg" width="410"
+                                                                        border="0"></div>
+                                    <a href="?k=ventilation_lattice">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Вентиляційні решітки</div>
+                                            <div class="about_item_im"><img src="./photo/group/kmz.jpg"
+                                                                            alt="Вентиляційні решітки" width="180"
+                                                                            border="0"></div>
+                                            <div class="about_item_text1"></div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div   class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=air_ducts_coupling'">
+
+                                    <a href="?k=air_ducts_coupling">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Повітроводи, розети, муфти</div>
+                                            <div class="about_item_im"><img src="./photo/group/g1.jpg"
+                                                                            alt="Повітроводи, розети, муфти" width="180"
+                                                                            border="0"></div>
+                                            <div class="about_item_text1"></div>
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block" onclick="window.location='?k=air_ducts_coupling'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=air_ducts">Повітроводи</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=coupling">Муфти</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=rosettes">Розети</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div   class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=air_heating_units'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/kom2.jpg" width="410"
+                                                                        border="0"></div>
+                                    <a href="?k=air_heating_units">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Повітряно-опалювальні агрегати</div>
+                                            <div class="about_item_im"><img src="./photo/group/kom2.jpg"
+                                                                            alt="Повітряно-опалювальні агрегати"
+                                                                            width="180" border="0"></div>
+                                            <div class="about_item_text1"></div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div   class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=deflectors'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/trn.jpg" width="410"
+                                                                        border="0"></div>
+                                    <a href="?k=deflectors">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Дефлектори</div>
+                                            <div class="about_item_im"><img src="./photo/group/trn.jpg" alt="Дефлектори"
+                                                                            width="180" border="0"></div>
+                                            <div class="about_item_text1"></div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div   class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=accessories_vent'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/vent-el-collage.jpg"
+                                                                        width="410" border="0"></div>
+                                    <a href="?k=accessories_vent">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Аксесуари</div>
+                                            <div class="about_item_im"><img src="./photo/group/vent-el-collage.jpg"
+                                                                            alt="Аксесуари" width="180" border="0">
+                                            </div>
+                                            <div class="about_item_text1"></div>
+                                        </div>
+                                    </a>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CEO -->
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="bottom_info">
+                    <span style="font-weight: bold;">Батарейки та зарядні пристрої</span><br>
+                    <br>
+                    Інтернет-магазин 16А пропонує своїм покупцям різні батарейки та зарядні
+                    пристрої до них. Є такі побутові прилади, в яких постійно повинні
+                    знаходитися батарейки, наприклад, в пультах дистанційного керування,
+                    комп'ютерних мишках, ліхтарях, дитячих іграшках, фотоапаратах та інших
+                    пристроях. Саме тому батарейки є одним з найбільш затребуваних товарів.<br>
+                    <br>
+                    Якщо Ви не хочете постійно викидати гроші на покупку нових батарейок,
+                    можна один раз вкласти трохи більше коштів в акумуляторні батарейки та
+                    зарядний пристрій до них. І більше не повертатися до цього питання.<br>
+                    Як звичайні (марганцево-цинкові), так і акумуляторні батарейки
+                    випускаються в різних розмірах:<br>
+                    •&nbsp;&nbsp;&nbsp; мізинчикові (ААА);<br>
+                    •&nbsp;&nbsp;&nbsp; пальчикові (АА);<br>
+                    •&nbsp;&nbsp;&nbsp; паралелепіпедні.<br>
+                    Існують і круглі батарейки, а також батарейки великого розміру, але
+                    вони не випускаються в акумуляторному типі. Купуючи необхідні
+                    батарейки, особливо якщо вони мають круглу форму, необхідно знати
+                    спеціальне маркування, щоб не прогадати з розміром. Також при покупці
+                    продукції, Ви можете проконсультуватися з менеджером магазину.<br>
+                    <br style="font-weight: bold;">
+                    <span style="font-weight: bold;">Зарядні пристрої для акумуляторних
+батарей - характеристика продукції</span><br>
+                    Купуючи зарядні пристрої, звертайте увагу на кількість батарейок, які
+                    можливо потрібно буде заряджати одночасно. Мінімальна кількість
+                    одночасно установлених батарей – дві штуки. Такий пристрій підходить в
+                    тому випадку, коли Ви використовуєте тільки дві батарейки, тобто один
+                    пристрій з ними. Купуючи більшу кількість батарейок, вибирайте і той
+                    зарядний пристрій, який зможе їх одночасно заряджати. Також зарядний
+                    пристрій для батарейок може працювати від мережі, від прикурювача і від
+                    USB.<br>
+                    <br>
+                    Сольові і алкалінові батарейки є одноразовими, їх перезаряджати не
+                    можна.<br>
+                    <br>
+                    Вся представлена продукція має різних виробників, а також ємність, від
+                    цих параметрів залежить тривалість їх використання. Широкий асортимент
+                    і найнижчі ціни - це те, що пропонує інтернет-магазин 16А.<br>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!---------------------------------------- FOOTER --------------------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="col-md-4 footer_part3">
+                <div class="bt_div">
+                    <p class="bt_text"><b>Режим роботи Call center</b> (при замовленні по телефону):<br>
+                        <b>Пн-Пт: 9:00-18:00<br>
+                            Cб: 10:00-15:00</b><br>
+                        При замовленні по телефону прохання вказувати код товару.</p>
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"><img src="../image/ks_m1.png"></div>
+                        <div class="cell-logo-t1">(067) 340-81-46</div>
+                    </div>
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"><img src="../image/vf_m1.png"></div>
+                        <div class="cell-logo-t1">(050) 421-70-70</div>
+                    </div>
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"><img src="../image/lf_m1.png"></div>
+                        <div class="cell-logo-t1">(063) 247-70-70</div>
+                    </div>
+
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"><img src="../image/lviv_m1.png"></div>
+                        <div class="cell-logo-t1">(032) 247-70-70</div>
+                    </div>
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"></div>
+                        <div class="cell-logo-t1">(050) 421-70-70 (Viber)</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-4 footer_part1">
+                <div class="bt_div"><a class="bt_lnk" href="/?page=about">Про нас</a></div>
+                <div class="bt_div"><a class="bt_lnk" href="/?page=contact">Контакти</a></div>
+                <div class="bt_div"><a class="bt_lnk" href="/?page=delivery">Доставка і оплата</a></div>
+                <div class="mob-link_constant" id="pda_url_constant">
+                    <div align="left" class="mob_ver"><a onclick="document.cookie='npr=0';"
+                                                         href="http://m.16a.com.ua/?no-full-redir=1">Мобільна версія</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 footer_part2">
+                <div class="bt_div">
+                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А<br> в соціальних
+                    мережах:</span>
+                    <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png" alt="facebook"></a>
+                    <a href="https://plus.google.com/109777980768435551079" target="_blank"><img src="../image/google.png" alt="google+"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyr">
+            <a class="wt" href="#" target="_blank">2016-2017 &copy; &quot;Інтернет-магазин
+                16А.&quot;</a>
+        </div>
+    </footer>
+</div>
+
+
+<div class="blackWrapper"></div>
+
+
+<div id='my_popup'></div>
+<div class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">
+    Доставка
+    товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас
+    перевізником.<br><br>
+    Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.<br><br>
+    (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
+</div>
+
+
+<form id="searchformHide" action="/" method="post" style="display:none">
+    <input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>
+</form>
+
+
+<div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно
+    бажаєте видалити всі товари з кошику?
+</div>
+
+<script>
+    $("#dialog_truncate").dialog({autoOpen: false});
+    $("#dialog_truncate").dialog({closeText: "закрити"});
+    $("#dialog_truncate").dialog({
+        buttons: [{
+            text: "Так", click: function () {
+                $(this).dialog("close");
+                truncate_basket();
+            }
+        },
+            {
+                text: "Ні", click: function () {
+                $(this).dialog("close");
+            }
+            }]
+    });
+
+</script>
+
+<div tabindex="-1" role="dialog"
+     class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable"
+     aria-describedby="dialog" aria-labelledby="ui-id-1" style="display: none; position: absolute;">
+    <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span
+            id="ui-id-1" class="ui-dialog-title">&nbsp;</span>
+        <button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"
+                title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span
+                class="ui-button-icon-space"> </span>Close
+        </button>
+    </div>
+    <div id="dialog" class="ui-dialog-content ui-widget-content"></div>
+    <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"
+         style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+</div>
+<div tabindex="-1" role="dialog"
+     class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable"
+     aria-describedby="dialog_delivery" aria-labelledby="ui-id-2" style="display: none; position: absolute;">
+    <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span
+            id="ui-id-2" class="ui-dialog-title">Доставка і оплата</span>
+        <button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"
+                title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span
+                class="ui-button-icon-space"> </span>закрити
+        </button>
+    </div>
+    <div id="dialog_delivery" class="dialog_delivery_basketClear ui-dialog-content ui-widget-content" style="">
+        Доставка товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас
+        перевізником.<br><br>
+        Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.<br><br>
+        (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
+    </div>
+    <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"
+         style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+    <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+</div>
+
+
+
+<!-- ANCOR -->
+<div id="back-top">
+    <a href="#top">
+        <span></span>
+    </a>
+</div>
+
+<div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
+
+
+
+
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/menu-vertical-root-func.js"></script>
+<script type="text/javascript" src="js/menu-vertical-root.js"></script>
+<script type="text/javascript" src="gal4js/modernizr.custom.17475.js"></script>
+
+
+<script src="js/libs.min.js"></script>
+
+<script src="js/common.min.js"></script>
+
+
+
+
+<script>
+
+
+    $("#dialog_pic_full").dialog({autoOpen: false});
+    $("#dialog_pic_full").dialog({closeText: "закрити"});
+    $("#dialog_pic_full").dialog({
+        buttons: [{
+            text: "Ok", click: function () {
+                $(this).dialog("close");
+            }
+        }]
+    });
+
+
+    window.onload = function () {
+        setTimeout(function () {
+
+            window.addEventListener("popstate", function (e) {
+                window.location = location.href;
+            }, false);
+
+
+        }, 0);
+    }
+
+
+</script>
+
+
+<script type="text/javascript">
+
+    function GetCssStyle(e) {
+        if (e.currentStyle) return e.currentStyle;
+        else if (window.getComputedStyle) return window.getComputedStyle(e, null)
+    }
+
+
+    var x = 0;
+
+    function resize_body_f() {
+        //return;
+        var txt = x += 1;
+        // document.getElementById("blok1").innerHTML = txt;
+        var elem2 = document.getElementById("blok_main_2");
+
+        var str = GetCssStyle(elem2).width;
+        var width2 = str.substr(0, str.length - 2);
+        var elem21 = document.getElementById("blok_main_2_1");
+
+
+        var elem22 = document.getElementById("blok_main_2_2");
+
+        var str21 = GetCssStyle(elem21).width;
+        var width21 = str21.substr(0, str21.length - 2);
+
+        var elem2_1_x = document.getElementById("blok_main_2_1_x");
+        if (elem2_1_x == null) {
+            return;
+        }
+        var str2_1_x = GetCssStyle(elem2_1_x).width;
+        var width2_1_x = str2_1_x.substr(0, str2_1_x.length - 2);
+
+        var full_21x_count = (Number(width21)) / (Number(width2_1_x) + 10);
+        var info = document.getElementById("info");
+        //var info1 = document.getElementById("info1");
+//	info.innerHTML = "21x: "+width2_1_x + ", count: "+full_21x_count+ ", 21: "+width21;
+
+        //
+//	elem22.innerHTML = width;
+        if (Number(width2) < Number('950')) {//перенос блока инфо вниз
+            //	console.log(width);
+            elem21.removeAttribute("style");
+
+            elem21.className = "blok_main_2_1_when_bl_main_2_2_in_new_line";
+            elem22.className = "blok_main_2_2_new_line";
+        } else {
+            elem21.className = "blok_main_2_1";
+            elem22.className = "blok_main_2_2";
+
+            //width2
+            var w_left_max = 0.9 * Number(width2);
+            var left_num_max = Math.floor(Number(w_left_max) / (Number(width2_1_x) + 10));
+            var w_left_new = left_num_max * (Number(width2_1_x) + 10);
+            var w_left_new_procent = Math.floor(w_left_new * 100 / Number(width2));
+            w_left_new_procent = w_left_new_procent + 1;
+            var w_right_new_procent = 100 - w_left_new_procent;
+//		info1.innerHTML =width2_1_x;
+
+            //	info1.innerHTML =w_left_new_procent + " - "+w_left_new+",  "+ w_right_new_procent;
+            elem21.style.width = w_left_new_procent + "%";
+            elem22.style.width = w_right_new_procent + "%";
+
+
+            //	var x_proc = (Math.floor(Number(full_21x_count))*170*90)/Number(width21);
+            //	info1.innerHTML =x_proc;
+            //	elem21.style.width = Math.floor(Number(x_proc))+"%";
+            //	elem22.style.width = Math.floor(100-Math.floor(Number(x_proc)))+"%";
+            //	console.log(Math.floor(Number(x_proc))+"%");
+            //	console.log(Math.floor(100-Math.floor(Number(x_proc)))+"%");
+
+        }
+
+    }
+
+</script>
+
+
+<script>
+    $("#dialog_form").dialog({autoOpen: false});
+    $("#dialog_form").dialog({closeText: "закрити (замовлення не буде відправлене!)"});
+    $("#dialog_form").dialog({
+        buttons: [{
+            id: "dialogSendbut", text: "Надіслати замовлення", click: function () {
+                send_basket_dialog({
+                    data: {
+                        bsend: "bsend",
+                        user_name: document.getElementById("user_name").value,
+                        user_phone: document.getElementById("user_phone").value,
+                        user_adres: document.getElementById("user_adres").value,
+                        user_firm: document.getElementById("user_firm").value,
+                        user_mail: document.getElementById("user_mail").value;
+            }
+            });
+            }
+        }]
+    });
+
+
+    resize_body_f();
+
+
+</script>
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-38360333-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function () {
+        var widget_id = '8xIrJ3Ggeb';
+        var d = document;
+        var w = window;
+
+        function l() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//code.jivosite.com/script/widget/' + widget_id;
+            var ss = document.getElementsByTagName('script')[0];
+            ss.parentNode.insertBefore(s, ss);
+        }
+
+        if (d.readyState == 'complete') {
+            l();
+        } else {
+            if (w.attachEvent) {
+                w.attachEvent('onload', l);
+            } else {
+                w.addEventListener('load', l, false);
+            }
+        }
+    })();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
+
+</body>
+
+</html>
