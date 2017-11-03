@@ -170,21 +170,19 @@ button {
 .blok_main_1 {
   min-width: 250px;
 }
-.blok_main_1.category_menu .left-group-menu{
+
+.blok_main_1.category_menu .left-group-menu {
   display: none;
 }
 
-.category_menu .buttonStartMenu:hover + .left-group-menu{
+.category_menu .buttonStartMenu:hover + .left-group-menu {
   display: block;
   position: absolute;
-  z-index:9;
 }
 
 .blok_main_1.category_menu .left-group-menu:hover {
   display: block;
 }
-
-
 
 .blok_main_2 {
   width: 100%;
@@ -311,21 +309,29 @@ button {
   height: 100px
 }
 
-.navItem {
+.decor_lineVertical{
 
-  font-size: 16px;
-  color: #006699;
-  text-decoration: none;
-  font-weight: normal;
-  cursor: pointer;
+  &:after{
+    font-size: 16px;
+    color: #006699;
+    text-decoration: none;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
 }
 
-.navItem:hover {
-
-  font-size: 16px;
+.decor_lineVertical:hover {
   color: #CC0000;
-  text-decoration: none;
-  cursor: pointer;
+}
+
+.decor_gantel{
+  &:after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include sprite($icon-arrows);
+  }
 }
 
 .navItem_n_activ {
@@ -402,7 +408,7 @@ button {
   border-top: 1px solid #ccc;
   text-align: left;
   padding-left: 15px;
-  padding-right:5px;
+  padding-right: 5px;
   color: #06C;
   font-size: 14px;
   line-height: 35px;
@@ -458,24 +464,23 @@ button {
   outline: none;
   border: 2px solid #F64C2B;
   border-radius: 5px;
-  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 0.1em 0.1em 0.2em #800;
+  box-shadow: 0 0 0 60px rgba(0, 0, 0, 0) inset, 0.1em 0.1em 0.2em #800;
   background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
   cursor: default;
   z-index: 10;
 
-  &:hover{
+  &:hover {
     /* top: .3em; */
     color: #fff;
     text-decoration: none;
     left: .3em;
-    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+    box-shadow: 0 0 0 60px rgba(0, 0, 0, .05) inset;
   }
-  &:active{
+  &:active {
     color: #66FF99;
   }
 
 }
-
 
 .binfo_image {
 
@@ -1648,18 +1653,16 @@ button {
   text-align: center;
   padding-top: 10px;
 
-  img{
+  img {
     width: 40px;
     height: 40px;
   }
 }
 
-.footer .cell-group_m1 img{
+.footer .cell-group_m1 img {
   width: 30px;
   height: 32px;
 }
-
-
 
 .top-line-adr {
 
@@ -1877,7 +1880,6 @@ button {
     background-color: #B3D1FF;
   }
 }
-
 
 #back-top span {
   display: block;
@@ -2672,7 +2674,7 @@ button {
   width: 190px;
 }
 
-.blok_main_2_1_x_about_item:hover{
+.blok_main_2_1_x_about_item:hover {
   position: relative;
   float: left;
   width: 100%;
@@ -2680,12 +2682,10 @@ button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
   border-bottom: 1px solid #c3c3c3;
@@ -2706,11 +2706,12 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.subgr-item-dv:hover .subgr-list-item{
+
+.subgr-item-dv:hover .subgr-list-item {
   position: absolute;
-  width:auto;
+  width: auto;
   background-color: #fff;
-  z-index:8;
+  z-index: 8;
 }
 
 .subgr-list-item:hover {
@@ -2730,9 +2731,6 @@ button {
   float: left;
   width: 50%;
 }
-
-
-
 
 .about_item_im_fon {
   position: absolute;
@@ -3164,7 +3162,6 @@ label.css-label {
   background: #fff;
 }
 
-
 .left-group-menu2 {
   padding-top: 1px;
   padding-left: 1px;
@@ -3310,37 +3307,26 @@ label.css-label {
 }
 
 .vlast-top {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
-  color: #009900;
-  text-decoration: none;
-  font-weight: normal;
+  color: #090;
   margin-left: 5px;
   margin-bottom: 10px;
-  height: 100px;
-
 }
 
 .vlast-name {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
-  color: #333333;
-  text-decoration: none;
-  font-weight: normal;
-  cursor: default;
+  color: #333;
   margin-left: 5px;
   margin-top: 12px;
   margin-bottom: 5px;
 }
 
 .vlast-name-price {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
   color: #333333;
   text-decoration: none;
   font-weight: normal;
   cursor: default;
-  /*margin-left: 5px;*/
   margin-top: 12px;
   margin-bottom: 5px;
 }
@@ -3356,18 +3342,17 @@ label.css-label {
 
 }
 
-.minmax-price {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+.price_fild {
+  display: inline-block;
+  width: 66px;
+  height: 22px;
   font-size: 1em;
   color: #C0C0C0;
   font-style: normal;
   font-weight: normal;
-
-}
-
-.minmax-price:focus {
-  color: #999999;
-
+  &:focus {
+    color: #999999;
+  }
 }
 
 .minmax-price-user {
@@ -3390,44 +3375,24 @@ label.css-label {
 
 .f_price_del {
   position: relative;
-  float: left;
-}
-
-.f_price_del a {
-  position: relative;
-  float: left;
-  height: 17px;
-  margin-left: 5px;
+  display: inline-block;
+  height: 22px;
+  margin-left: 2px;
   background-color: #FFF;
-  display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 14px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   text-decoration: none;
   white-space: nowrap;
   padding: 0 10px;
-  text-decoration: none;
   color: #666;
   border: 1px solid #FF6666;
-
-}
-
-.f_price_del a:hover {
-  color: #FF6666;
-
+  &:hover {
+    color: #FF6666;
+  }
 }
 
 .price-filtr {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
-  color: #333333;
-  text-decoration: none;
-  font-weight: normal;
-  cursor: default;
-  position: relative;
-  float: left;
+  color: #333;
 }
 
 .wait_im1 {
@@ -3521,13 +3486,14 @@ label.css-label {
   margin-top: 7px;
   margin-bottom: 7px;
 }
-.left_cascad__item{
+
+.left_cascad__item {
   position: relative;
   margin-top: 5px;
   text-indent: 15px;
   color: #006699;
   font-size: 14px;
-  &:before{
+  &:before {
     position: absolute;
     top: 0;
     left: -15px;
@@ -3535,16 +3501,12 @@ label.css-label {
     color: inherit;
 
   }
-  &:hover{
+  &:hover {
     color: #CC0000;
     text-decoration: underline;
   }
 
 }
-
-
-
-
 
 .left_cascad_line {
   width: 100%;

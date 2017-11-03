@@ -9,6 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$icon-arrows-name: 'icon-arrows';
+$icon-arrows-x: 37px;
+$icon-arrows-y: 0px;
+$icon-arrows-offset-x: -37px;
+$icon-arrows-offset-y: 0px;
+$icon-arrows-width: 18px;
+$icon-arrows-height: 9px;
+$icon-arrows-total-width: 55px;
+$icon-arrows-total-height: 32px;
+$icon-arrows-image: '../image/sprite.png';
+$icon-arrows: (37px, 0px, -37px, 0px, 18px, 9px, 55px, 32px, '../image/sprite.png', 'icon-arrows', );
 $up-arrow-name: 'up-arrow';
 $up-arrow-x: 0px;
 $up-arrow-y: 0px;
@@ -16,15 +27,15 @@ $up-arrow-offset-x: 0px;
 $up-arrow-offset-y: 0px;
 $up-arrow-width: 32px;
 $up-arrow-height: 32px;
-$up-arrow-total-width: 32px;
+$up-arrow-total-width: 55px;
 $up-arrow-total-height: 32px;
 $up-arrow-image: '../image/sprite.png';
-$up-arrow: (0px, 0px, 0px, 0px, 32px, 32px, 32px, 32px, '../image/sprite.png', 'up-arrow', );
-$spritesheet-width: 32px;
+$up-arrow: (0px, 0px, 0px, 0px, 32px, 32px, 55px, 32px, '../image/sprite.png', 'up-arrow', );
+$spritesheet-width: 55px;
 $spritesheet-height: 32px;
 $spritesheet-image: '../image/sprite.png';
-$spritesheet-sprites: ($up-arrow, );
-$spritesheet: (32px, 32px, '../image/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($icon-arrows, $up-arrow, );
+$spritesheet: (55px, 32px, '../image/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //

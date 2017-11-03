@@ -981,8 +981,7 @@ button {
 
 .category_menu .buttonStartMenu:hover + .left-group-menu {
   display: block;
-  position: absolute;
-  z-index: 9; }
+  position: absolute; }
 
 .blok_main_1.category_menu .left-group-menu:hover {
   display: block; }
@@ -1087,18 +1086,24 @@ button {
 .tbl {
   height: 100px; }
 
-.navItem {
+.decor_lineVertical:after {
   font-size: 16px;
   color: #006699;
   text-decoration: none;
   font-weight: normal;
   cursor: pointer; }
 
-.navItem:hover {
-  font-size: 16px;
-  color: #CC0000;
-  text-decoration: none;
-  cursor: pointer; }
+.decor_lineVertical:hover {
+  color: #CC0000; }
+
+.decor_gantel:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(../image/sprite.png);
+  background-position: -37px 0px;
+  width: 18px;
+  height: 9px; }
 
 .navItem_n_activ {
   font-size: 16px;
@@ -3626,34 +3631,24 @@ label.css-label {
   margin-left: 0px; }
 
 .vlast-top {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
-  color: #009900;
-  text-decoration: none;
-  font-weight: normal;
+  color: #090;
   margin-left: 5px;
-  margin-bottom: 10px;
-  height: 100px; }
+  margin-bottom: 10px; }
 
 .vlast-name {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
-  color: #333333;
-  text-decoration: none;
-  font-weight: normal;
-  cursor: default;
+  color: #333;
   margin-left: 5px;
   margin-top: 12px;
   margin-bottom: 5px; }
 
 .vlast-name-price {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
   color: #333333;
   text-decoration: none;
   font-weight: normal;
   cursor: default;
-  /*margin-left: 5px;*/
   margin-top: 12px;
   margin-bottom: 5px; }
 
@@ -3665,15 +3660,16 @@ label.css-label {
   height: 120px;
   display: inline-block; }
 
-.minmax-price {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+.price_fild {
+  display: inline-block;
+  width: 66px;
+  height: 22px;
   font-size: 1em;
   color: #C0C0C0;
   font-style: normal;
   font-weight: normal; }
-
-.minmax-price:focus {
-  color: #999999; }
+  .price_fild:focus {
+    color: #999999; }
 
 .minmax-price-user {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -3692,37 +3688,22 @@ label.css-label {
 
 .f_price_del {
   position: relative;
-  float: left; }
-
-.f_price_del a {
-  position: relative;
-  float: left;
-  height: 17px;
-  margin-left: 5px;
+  display: inline-block;
+  height: 22px;
+  margin-left: 2px;
   background-color: #FFF;
-  display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 14px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   text-decoration: none;
   white-space: nowrap;
   padding: 0 10px;
-  text-decoration: none;
   color: #666;
   border: 1px solid #FF6666; }
-
-.f_price_del a:hover {
-  color: #FF6666; }
+  .f_price_del:hover {
+    color: #FF6666; }
 
 .price-filtr {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
-  color: #333333;
-  text-decoration: none;
-  font-weight: normal;
-  cursor: default;
-  position: relative;
-  float: left; }
+  color: #333; }
 
 .wait_im1 {
   position: absolute;

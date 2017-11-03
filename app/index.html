@@ -238,319 +238,266 @@
                     </nav>
 
 
-
-
                     <div class="left-group-menu2">
                         <a class="left_cascad_line" href="/">Інтернет магазин 16А</a>
                         <ul class="left_cascad">
-                            <li class="left_cascad__item"> <a href="#" class="left_cascad_line ">Вентилятори та елементи вентиляційних систем</a></li>
-                            <li class="left_cascad__item"> <a href="#" class="left_cascad_line ">Побутові вентилятори</a></li>
+                            <li class="left_cascad__item"><a href="#"
+                                                             class="left_cascad_line ">Вентилятори та елементи вентиляційних систем</a>
+                            </li>
+                            <li class="left_cascad__item"><a href="#" class="left_cascad_line ">Побутові вентилятори</a>
+                            </li>
                         </ul>
                     </div>
 
+                    <div class="left-group-vlast">
+                        <p class="vlast-top">Підбір по параметрам:</p>
 
-                    <div class="left-group-menu2"></div>
-                    <div id="vlast-zone" class="left-group-vlast">
-                        <div class="vlast-top">Підбір по параметрам:
-                            <div class="price_filtr_container">
-                                <div id="wait_im1_price_filter" class="wait_im1"></div>
-                            </div>
+                        <div class="price_filtr_container">
+                            <div id="wait_im1_price_filter" class="wait_im1"></div>
 
-                            <div class="vlast-name-price">Ціна, грн</div>
+                            <p class="vlast-name-price">Ціна, грн</p>
                             <div class="price-filtr"> від
-                                <input name="pr-start" type="text" class="minmax-price" id="pr-start" value="168.73"
-                                       size="7" maxlength="7"
-
-                                       onkeyup="ChangeNumPriceFilter(document.getElementById('pr-start').value, 168.73, 'pr-start');"
-
-                                       onkeypress="onkeypressPriceFilter(event, '?k=household_fans&filter=producer=dospel', '168.73', document.getElementById('pr-start').value, 168.73, 168.73, 1101.65, 'pr-start');"
-
-                                       onblur="ChangeNumPriceFilterOut(document.getElementById('pr-start').value, 168.73, '?k=household_fans&filter=producer=dospel', '168.73', 168.73, 1101.65, 'pr-start');"
-                                />
-
-                                до
-
-                                <input name="pr-stop" type="text" class="minmax-price" id="pr-stop" value="1101.65"
-                                       size="7" maxlength="7"
-
-                                       onkeyup="ChangeNumPriceFilter(document.getElementById('pr-stop').value, 1101.65, 'pr-stop');"
-
-                                       onkeypress="onkeypressPriceFilter(event, '?k=household_fans&filter=producer=dospel', '1101.65', document.getElementById('pr-stop').value, 1101.65, 168.73, 1101.65, 'pr-stop');"
-
-                                       onblur="ChangeNumPriceFilterOut(document.getElementById('pr-stop').value, 1101.65, '?k=household_fans&filter=producer=dospel', '1101.65', 168.73, 1101.65, 'pr-stop');"
-                                />
-
+                                <input type="text" class="price_fild" placeholder="1"/>
+                                <span>до</span>
+                                <input type="text" class="price_fild" placeholder="999"/>
+                                <button type="button" class="f_price_del">X</button>
                             </div>
-                            <div class="f_price_del"><a href="?k=household_fans&filter=producer=dospel">X</a></div>
                         </div>
-                        <div class="vlast-name">Виробник</div>
+
+
+                        <p class="vlast-name">Виробник</p>
                         <div class="vlast_zn_container">
-                            <input name="dospel" id="dospel" class="css-checkbox" type="checkbox" checked="checked"
-                                   onclick="change_zn_no_reload_page('?k=household_fans', 'dospel')">
-                            <label for="dospel" class="css-label">Dospel</label><br>
+                            <input name="dospel" id="dospel" class="css-checkbox" type="checkbox" checked="checked">
+                            <label for="dospel" class="css-label">Dospel</label>
                             <div id="wait_im1_dospel" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="gorenje" id="gorenje" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel:gorenje', 'gorenje')">
+                            <input name="gorenje" id="gorenje" class="css-checkbox" type="checkbox">
                             <label for="gorenje" class="css-label">Gorenje<span
-                                    class="css-label-count"> (+6)</span></label><br>
+                                    class="css-label-count"> (+6)</span></label>
                             <div id="wait_im1_gorenje" class="wait_im1"></div>
                         </div>
                         <div class="vlast-name">Можливі виконання</div>
                         <div class="vlast_zn_container">
-                            <input name="standard" id="standard" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;performance=standard', 'standard')">
+                            <input name="standard" id="standard" class="css-checkbox" type="checkbox">
                             <label for="standard" class="css-label">Стандарт<span
-                                    class="css-label-count"> (32)</span></label><br>
+                                    class="css-label-count"> (32)</span></label>
                             <div id="wait_im1_standard" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
                             <input name="automatic_shutters" id="automatic_shutters" class="css-checkbox"
-                                   type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;performance=automatic_shutters', 'automatic_shutters')">
+                                   type="checkbox">
                             <label for="automatic_shutters" class="css-label">Автоматичні жалюзі<span
-                                    class="css-label-count"> (9)</span></label><br>
+                                    class="css-label-count"> (9)</span></label>
                             <div id="wait_im1_automatic_shutters" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="timer" id="timer" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;performance=timer', 'timer')">
+                            <input name="timer" id="timer" class="css-checkbox" type="checkbox">
                             <label for="timer" class="css-label">Таймер<span
-                                    class="css-label-count"> (2)</span></label><br>
+                                    class="css-label-count"> (2)</span></label>
                             <div id="wait_im1_timer" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="humidity_sensor" id="humidity_sensor" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;performance=humidity_sensor', 'humidity_sensor')">
+                            <input name="humidity_sensor" id="humidity_sensor" class="css-checkbox" type="checkbox">
                             <label for="humidity_sensor" class="css-label">Датчик вологості<span
-                                    class="css-label-count"> (9)</span></label><br>
+                                    class="css-label-count"> (9)</span></label>
                             <div id="wait_im1_humidity_sensor" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="return_valve" id="return_valve" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;performance=return_valve', 'return_valve')">
+                            <input name="return_valve" id="return_valve" class="css-checkbox" type="checkbox">
                             <label for="return_valve" class="css-label">Зворотний клапан<span
-                                    class="css-label-count"> (6)</span></label><br>
+                                    class="css-label-count"> (6)</span></label>
                             <div id="wait_im1_return_valve" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="switch" id="switch" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;performance=switch', 'switch')">
+                            <input name="switch" id="switch" class="css-checkbox" type="checkbox">
                             <label for="switch" class="css-label">Шнурковий вимикач<span
-                                    class="css-label-count"> (20)</span></label><br>
+                                    class="css-label-count"> (20)</span></label>
                             <div id="wait_im1_switch" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="ball_bearing" id="ball_bearing" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;performance=ball_bearing', 'ball_bearing')">
+                            <input name="ball_bearing" id="ball_bearing" class="css-checkbox" type="checkbox">
                             <label for="ball_bearing" class="css-label">Кульковий підшипник<span
-                                    class="css-label-count"> (3)</span></label><br>
+                                    class="css-label-count"> (3)</span></label>
                             <div id="wait_im1_ball_bearing" class="wait_im1"></div>
                         </div>
                         <div class="vlast-name">Діаметр, мм</div>
                         <div class="vlast_zn_container">
-                            <input name="100" id="100" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;diameter=100', '100')">
-                            <label for="100" class="css-label">100<span class="css-label-count"> (26)</span></label><br>
+                            <input name="100" id="100" class="css-checkbox" type="checkbox">
+                            <label for="100" class="css-label">100<span class="css-label-count"> (26)</span></label>
                             <div id="wait_im1_100" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="120" id="120" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;diameter=120', '120')">
-                            <label for="120" class="css-label">120<span class="css-label-count"> (19)</span></label><br>
+                            <input name="120" id="120" class="css-checkbox" type="checkbox">
+                            <label for="120" class="css-label">120<span class="css-label-count"> (19)</span></label>
                             <div id="wait_im1_120" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="125" id="125" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;diameter=125', '125')">
+                            <input name="125" id="125" class="css-checkbox" type="checkbox">
                             <label for="125" class="css-label">125<span
-                                    class="css-label-count"> (7)</span></label><br>
+                                    class="css-label-count"> (7)</span></label>
                             <div id="wait_im1_125" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="150" id="150" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;diameter=150', '150')">
-                            <label for="150" class="css-label">150<span class="css-label-count"> (12)</span></label><br>
+                            <input name="150" id="150" class="css-checkbox" type="checkbox">
+                            <label for="150" class="css-label">150<span class="css-label-count"> (12)</span></label>
                             <div id="wait_im1_150" class="wait_im1"></div>
                         </div>
                         <div class="vlast-name">Монтаж</div>
                         <div class="vlast_zn_container">
-                            <input name="wall" id="wall" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;montage=wall', 'wall')">
+                            <input name="wall" id="wall" class="css-checkbox" type="checkbox">
                             <label for="wall" class="css-label">Настінний<span
-                                    class="css-label-count"> (58)</span></label><br>
+                                    class="css-label-count"> (58)</span></label>
                             <div id="wait_im1_wall" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="ceiling" id="ceiling" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;montage=ceiling', 'ceiling')">
+                            <input name="ceiling" id="ceiling" class="css-checkbox" type="checkbox">
                             <label for="ceiling" class="css-label">На стелю<span
-                                    class="css-label-count"> (3)</span></label><br>
+                                    class="css-label-count"> (3)</span></label>
                             <div id="wait_im1_ceiling" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="channel" id="channel" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;montage=channel', 'channel')">
+                            <input name="channel" id="channel" class="css-checkbox" type="checkbox">
                             <label for="channel" class="css-label">Канальний<span
-                                    class="css-label-count"> (5)</span></label><br>
+                                    class="css-label-count"> (5)</span></label>
                             <div id="wait_im1_channel" class="wait_im1"></div>
                         </div>
                         <div class="vlast-name">Продуктивність, м3/год</div>
                         <div class="vlast_zn_container">
                             <input name="70p" id="70p" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="70p" class="css-label-null">70 </label><br>
+                            <label for="70p" class="css-label-null">70 </label>
                             <div id="wait_im1_70p" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="100p" id="100p" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;productivity=100p', '100p')">
+                            <input name="100p" id="100p" class="css-checkbox" type="checkbox">
                             <label for="100p" class="css-label">100<span
-                                    class="css-label-count"> (25)</span></label><br>
+                                    class="css-label-count"> (25)</span></label>
                             <div id="wait_im1_100p" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
                             <input name="120p" id="120p" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="120p" class="css-label-null">120 </label><br>
+                            <label for="120p" class="css-label-null">120 </label>
                             <div id="wait_im1_120p" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="150p" id="150p" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;productivity=150p', '150p')">
+                            <input name="150p" id="150p" class="css-checkbox" type="checkbox">
                             <label for="150p" class="css-label">150<span
-                                    class="css-label-count"> (25)</span></label><br>
+                                    class="css-label-count"> (25)</span></label>
                             <div id="wait_im1_150p" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="180p" id="180p" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;productivity=180p', '180p')">
-                            <label for="180p" class="css-label">180<span class="css-label-count"> (1)</span></label><br>
+                            <input name="180p" id="180p" class="css-checkbox" type="checkbox">
+                            <label for="180p" class="css-label">180<span class="css-label-count"> (1)</span></label>
                             <div id="wait_im1_180p" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
                             <input name="210p" id="210p" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="210p" class="css-label-null">210 </label><br>
+                            <label for="210p" class="css-label-null">210 </label>
                             <div id="wait_im1_210p" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="240p" id="240p" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;productivity=240p', '240p')">
-                            <label for="240p" class="css-label">240<span class="css-label-count"> (1)</span></label><br>
+                            <input name="240p" id="240p" class="css-checkbox" type="checkbox">
+                            <label for="240p" class="css-label">240<span class="css-label-count"> (1)</span></label>
                             <div id="wait_im1_240p" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="280p" id="280p" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;productivity=280p', '280p')">
+                            <input name="280p" id="280p" class="css-checkbox" type="checkbox">
                             <label for="280p" class="css-label">280<span
-                                    class="css-label-count"> (12)</span></label><br>
+                                    class="css-label-count"> (12)</span></label>
                             <div id="wait_im1_280p" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="400p" id="400p" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;productivity=400p', '400p')">
-                            <label for="400p" class="css-label">400<span class="css-label-count"> (2)</span></label><br>
+                            <input name="400p" id="400p" class="css-checkbox" type="checkbox">
+                            <label for="400p" class="css-label">400<span class="css-label-count"> (2)</span></label>
                             <div id="wait_im1_400p" class="wait_im1"></div>
                         </div>
                         <div class="vlast-name">Габарити (В*Ш), мм</div>
                         <div class="vlast_zn_container">
-                            <input name="125_156" id="125_156" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=125_156', '125_156')">
+                            <input name="125_156" id="125_156" class="css-checkbox" type="checkbox">
                             <label for="125_156" class="css-label">125*156<span
-                                    class="css-label-count"> (1)</span></label><br>
+                                    class="css-label-count"> (1)</span></label>
                             <div id="wait_im1_125_156" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="144_179" id="144_179" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=144_179', '144_179')">
+                            <input name="144_179" id="144_179" class="css-checkbox" type="checkbox">
                             <label for="144_179" class="css-label">144*179<span
-                                    class="css-label-count"> (1)</span></label><br>
+                                    class="css-label-count"> (1)</span></label>
                             <div id="wait_im1_144_179" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="147_147" id="147_147" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=147_147', '147_147')">
+                            <input name="147_147" id="147_147" class="css-checkbox" type="checkbox">
                             <label for="147_147" class="css-label">147*147<span
-                                    class="css-label-count"> (5)</span></label><br>
+                                    class="css-label-count"> (5)</span></label>
                             <div id="wait_im1_147_147" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="147_171" id="147_171" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=147_171', '147_171')">
+                            <input name="147_171" id="147_171" class="css-checkbox" type="checkbox">
                             <label for="147_171" class="css-label">147*171<span
-                                    class="css-label-count"> (1)</span></label><br>
+                                    class="css-label-count"> (1)</span></label>
                             <div id="wait_im1_147_171" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
                             <input name="150_150" id="150_150" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="150_150" class="css-label-null">150*150 </label><br>
+                            <label for="150_150" class="css-label-null">150*150 </label>
                             <div id="wait_im1_150_150" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="154_156" id="154_156" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=154_156', '154_156')">
+                            <input name="154_156" id="154_156" class="css-checkbox" type="checkbox">
                             <label for="154_156" class="css-label">154*156<span
-                                    class="css-label-count"> (6)</span></label><br>
+                                    class="css-label-count"> (6)</span></label>
                             <div id="wait_im1_154_156" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="158_158" id="158_158" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=158_158', '158_158')">
+                            <input name="158_158" id="158_158" class="css-checkbox" type="checkbox">
                             <label for="158_158" class="css-label">158*158<span
-                                    class="css-label-count"> (16)</span></label><br>
+                                    class="css-label-count"> (16)</span></label>
                             <div id="wait_im1_158_158" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="164_163" id="164_163" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=164_163', '164_163')">
+                            <input name="164_163" id="164_163" class="css-checkbox" type="checkbox">
                             <label for="164_163" class="css-label">164*163<span
-                                    class="css-label-count"> (4)</span></label><br>
+                                    class="css-label-count"> (4)</span></label>
                             <div id="wait_im1_164_163" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="171_171" id="171_171" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=171_171', '171_171')">
+                            <input name="171_171" id="171_171" class="css-checkbox" type="checkbox">
                             <label for="171_171" class="css-label">171*171<span
-                                    class="css-label-count"> (6)</span></label><br>
+                                    class="css-label-count"> (6)</span></label>
                             <div id="wait_im1_171_171" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="174_216" id="174_216" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=174_216', '174_216')">
+                            <input name="174_216" id="174_216" class="css-checkbox" type="checkbox">
                             <label for="174_216" class="css-label">174*216<span
-                                    class="css-label-count"> (1)</span></label><br>
+                                    class="css-label-count"> (1)</span></label>
                             <div id="wait_im1_174_216" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
                             <input name="175_175" id="175_175" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="175_175" class="css-label-null">175*175 </label><br>
+                            <label for="175_175" class="css-label-null">175*175 </label>
                             <div id="wait_im1_175_175" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="179_181" id="179_181" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=179_181', '179_181')">
+                            <input name="179_181" id="179_181" class="css-checkbox" type="checkbox">
                             <label for="179_181" class="css-label">179*181<span
-                                    class="css-label-count"> (6)</span></label><br>
+                                    class="css-label-count"> (6)</span></label>
                             <div id="wait_im1_179_181" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="200_200" id="200_200" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=200_200', '200_200')">
+                            <input name="200_200" id="200_200" class="css-checkbox" type="checkbox">
                             <label for="200_200" class="css-label">200*200<span
-                                    class="css-label-count"> (3)</span></label><br>
+                                    class="css-label-count"> (3)</span></label>
                             <div id="wait_im1_200_200" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="208_209" id="208_209" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=208_209', '208_209')">
+                            <input name="208_209" id="208_209" class="css-checkbox" type="checkbox">
                             <label for="208_209" class="css-label">208*209<span
-                                    class="css-label-count"> (6)</span></label><br>
+                                    class="css-label-count"> (6)</span></label>
                             <div id="wait_im1_208_209" class="wait_im1"></div>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="264_264" id="264_264" class="css-checkbox" type="checkbox"
-                                   onclick="change_zn_no_reload_page('?k=household_fans&filter=producer=dospel;dimensions=264_264', '264_264')">
+                            <input name="264_264" id="264_264" class="css-checkbox" type="checkbox">
                             <label for="264_264" class="css-label">264*264<span
-                                    class="css-label-count"> (2)</span></label><br>
+                                    class="css-label-count"> (2)</span></label>
                             <div id="wait_im1_264_264" class="wait_im1"></div>
                         </div>
                     </div>
@@ -558,7 +505,7 @@
             </div>
 
 
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <div id="blok_main_2" class='blok_main_2'>
 
                     <div id="blok_main_2_1" class='blok_main_2_1'>
@@ -583,32 +530,24 @@
                             </select>
                             </div>
 
-                            <div class="oneSub">&nbsp;&nbsp;&nbsp;&nbsp;Побутові вентилятори</div>
+                            <div class="oneSub">Побутові вентилятори</div>
 
-                            <div class="f-activ-group">
-                                <div class="f_activ_del_group">Вибрані параметри:</div>
-                                <div class="f_activ_del">
-                                    <a href="?k=household_fans">Dospel X</a>
-                                </div>
 
-                                <div class="f_activ_del_group_cl"><a href="?k=household_fans">Скинути</a>
-                                    <div class="f_activ_del_group_stat">Підібрано 66 товар(ів) з 72</div>
-                                </div>
+                            <!-- PAGINATION -->
+                            <div class="numpage_navigation"><p align="left"><span class="style2b decor_gantel">Сторінки:</span>
+                                <a class="navItem" href=""> &lt;
+                                &lt;ПОПЕРЕДНЯ </a><a class="navItem">|</a><a class="navItem"
+                                                                             href=""> 1 </a><a
+                                        class="navItem_n_activ">|</a><a class="navItemSel"> 2 <span
+                                        class="navItem_n_activ">|</span></a><a class="navItem"
+                                                                               href=""> 3 </a><a
+                                        class="navItem_n_activ">|</a><a class="navItem"
+                                                                        href=""> 4 </a><a
+                                        class="navItem_n_activ">|</a><a class="navItem"
+                                                                        href=""> НАСТУПНА&gt;&gt; </a>
                             </div>
+                            <!-- PAGINATION END -->
 
-                            <div class="numpage_navigation"><p align="left"><span class="style2b">Сторінки:</span><img
-                                    src="images/arrows.jpg" width="18" height="9" border="0"><a class="navItem"
-                                                                                                href="?k=household_fans&p=1&filter=producer=dospel"> &lt;
-                            &lt;ПОПЕРЕДНЯ </a><a class="navItem">|</a><a class="navItem"
-                                                                         href="?k=household_fans&p=1&filter=producer=dospel"> 1 </a><a
-                                    class="navItem_n_activ">|</a><a class="navItemSel"> 2 <span
-                                    class="navItem_n_activ">|</span></a><a class="navItem"
-                                                                           href="?k=household_fans&p=3&filter=producer=dospel"> 3 </a><a
-                                    class="navItem_n_activ">|</a><a class="navItem"
-                                                                    href="?k=household_fans&p=4&filter=producer=dospel"> 4 </a><a
-                                    class="navItem_n_activ">|</a><a class="navItem"
-                                                                    href="?k=household_fans&p=3&filter=producer=dospel"> НАСТУПНА&gt;&gt; </a>
-                            </div>
 
                             <div class="shop_items">
                                 <div id="blok_main_2_1_x" class="price-item-wrap1">
@@ -3082,44 +3021,44 @@
 
 
     <div class="bottom_info">
-        <span style="font-weight: bold;">Побутові вентилятори</span><br>
-        <br>
+        <span style="font-weight: bold;">Побутові вентилятори</span>
+
         Для деякого підвищення потужності вентиляції, без необхідності
         порушувати систему природної вентиляції будівлі, додатково застосовують
         побутові вентилятори, які служать для поліпшення якості повітрообміну.
         Їх використовують в невеликих побутових приміщеннях: санвузлах, ванних
-        кімнатах, кухнях та житлових приміщеннях.<br>
+        кімнатах, кухнях та житлових приміщеннях.
         Люди навіть не підозрюють, наскільки вентиляція важлива для
         мікроклімату в приміщенні. Навіть побутові приміщення мають пилові
-        забруднення, бактерії, грибки, вологість та інші шкідливі домішки.<br>
-        <br>
-        <span style="font-weight: bold;">Класифікація побутових вентиляторів</span><br>
+        забруднення, бактерії, грибки, вологість та інші шкідливі домішки.
+
+        <span style="font-weight: bold;">Класифікація побутових вентиляторів</span>
         Вентилятори побутові мають різну класифікацію. Використовувати треба
         той тип вентиляції, котрий буде мати потрібну для того чи іншого
         приміщення міцність. Крім цього, побутові системи вентиляції можна
         доповнювати іонізацією, кондиціюванням, зволоженням, охолодженням або
-        підігрівом повітря.<br>
-        <br>
-        Побутова вентиляція має два варіанти виконання:<br>
+        підігрівом повітря.
+
+        Побутова вентиляція має два варіанти виконання:
         •&nbsp;&nbsp;&nbsp; стаціонарна, яка встановлюється в будь-яких
         житлових приміщеннях, наприклад, в багатоквартирних будинках, котеджах
-        і приватних будинках, громадських будівлях;<br>
-        •&nbsp;&nbsp;&nbsp; мобільна, що встановлюється в вагончиках, підсобках.<br>
-        <br>
-        Класифікація пристроїв по побутових приміщеннях<br>
+        і приватних будинках, громадських будівлях;
+        •&nbsp;&nbsp;&nbsp; мобільна, що встановлюється в вагончиках, підсобках.
+
+        Класифікація пристроїв по побутових приміщеннях
         Досить часто в туалетах застосовуються звичайна решітка вентиляції, але
         набагато ефективніше замінити її на повноцінний настінний вентилятор.
         Найбільш часто така вентиляція має з'єднання з вимикачем світла. Таким
-        чином, буде відбуватися максимальна економія електроенергії.<br>
+        чином, буде відбуватися максимальна економія електроенергії.
         Ванна кімната - приміщення з великою вологістю, тому елементи
         вентиляції повинні бути вологонепроникними. Корпус вентилятора
         виконують з вологонепроникних матеріалів. Кухня - це приміщення, в
         якому вентилятор встановлювати необхідно, на відміну від інших
         приміщень. Найкраще, якщо система буде встановлена в вікні, але
-        припустимі й інші варіанти.<br>
-        <br>
+        припустимі й інші варіанти.
+
         Інтернет-магазин 16А пропонує якісні елементи для того, щоб зробити
-        побутову систему вентиляції.<br>
+        побутову систему вентиляції.
     </div>
 
 
@@ -3127,9 +3066,9 @@
         <div class="container">
             <div class="col-md-4 footer_part3">
                 <div class="bt_div">
-                    <p class="bt_text"><b>Режим роботи Call center</b> (при замовленні по телефону):<br>
-                        <b>Пн-Пт: 9:00-18:00<br>
-                            Cб: 10:00-15:00</b><br>
+                    <p class="bt_text"><b>Режим роботи Call center</b> (при замовленні по телефону):
+                        <b>Пн-Пт: 9:00-18:00
+                            Cб: 10:00-15:00</b>
                         При замовленні по телефону прохання вказувати код товару.</p>
 
                     <div class="cell-group_m1">
@@ -3175,7 +3114,7 @@
 
             <div class="col-md-4 footer_part2">
                 <div class="bt_div">
-                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А<br> в соціальних
+                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А  в соціальних
                     мережах:</span>
                     <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png"
                                                                                         alt="facebook"></a>
@@ -3193,15 +3132,14 @@
     </footer>
 </div>
 
-
 <div class="blackWrapper"></div>
 
 
 <div id='my_popup'>
 </div>
 <div id="dialog_delivery" class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">Доставка
-    товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас перевізником.<br><br>
-    Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.<br><br>
+    товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас перевізником.
+    Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.
     (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
 </div>
 
@@ -3244,7 +3182,7 @@
 <div id="dialog_form" title="Оформлення замовлення" style="display:none">
     <form id="form_b_send" name="form_b_send" method="post" action="?">
         <p class="send_text" align="center">Для відправки Вашого замовлення, будь-ласка, заповніть поля наступної форми
-            та натисніть кнопку &quot;надіслати замовлення&quot;. <br> <span class="send_comment">  Поля відмічені * повинні бути заповнені обов'язково.</span>
+            та натисніть кнопку &quot;надіслати замовлення&quot;. <span class="send_comment">  Поля відмічені * повинні бути заповнені обов'язково.</span>
         </p>
         <table width="500" border="0" align="center">
             <tr>
