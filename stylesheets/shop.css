@@ -2556,13 +2556,9 @@
     opacity: 1;
 }
 
-.dialog_delivery_basketClear {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-    font-size: 18px;
-}
-
+.dialog_delivery_basketClear,
 .dialog_pic_full {
-    font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+
     font-size: 18px;
 }
 
@@ -2584,7 +2580,6 @@
     padding-top: 72px;
     padding-bottom: 10px;
     list-style-type:none;
-    /*overflow: hidden;*/
 }
 
 .subgr-item-dv{
@@ -2605,20 +2600,9 @@
 .subgr-list-item {
 
     font-size: 12px;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-
     background: #fff;
     color: #06C;
-
     text-decoration: none;
-
-    /*
-	display:block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 5px;
-	white-space:pre-wrap;
-	*/
 }
 
 .subgr-list-item:hover {
