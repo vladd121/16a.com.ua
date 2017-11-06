@@ -10,9 +10,6 @@
 /*FONTS*/
 /*********************************************/
 
-@include font-face("Tahoma", "../fonts/Tahoma/Tahoma", 400, normal, eot ttf woff);
-@include font-face("Arial Narrow", "../fonts/Arial Narrow/Arial Narrow", 400, normal, eot ttf woff);
-@include font-face("Arial Narrow Bold", "../fonts/Arial Narrow Bold/Arial Narrow Bold", 700, normal, eot ttf woff);
 @include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, eot ttf woff woff2);
 
 /*********************************************/
@@ -322,33 +319,97 @@ button {
 }
 
 .decor_lineVertical:hover {
-  color: #CC0000;
+  color: #C00;
 }
 
 .decor_gantel{
   &:after{
+    content: '';
+    right: -10px;
+    top: 2px;
     position: absolute;
-    right: 0;
-    top: 0;
     @include sprite($icon-arrows);
+    z-index: 2;
   }
 }
 
-.navItem_n_activ {
 
-  font-size: 16px;
-  color: #000;
-  text-decoration: none;
-  font-weight: normal;
+//PAGINATION
+
+.bl_pagination {
+  //margin: 20px 10px;
+  //float: left;
+  //width: 100%;
 }
 
-.navItemSel {
+
+.bl_pagination__item{
+  &:not(:first-child){
+    &:before{
+      content: '|';
+      position: absolute;
+      left: -4px;
+      color: inherit;
+      z-index: 2;
+    }
+  }
+}
+
+
+
+.bl_pagination__full{
+  display: inline-block;
+
+}
+
+.bl_pagination__item{
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+
+
+}
+
+.bl_pagination__link{
+  display: block;
+  color: #006699;
+  padding: 0 6px;
+  &:hover,
+  &:active{
+    text-decoration: none;
+    color: #CC0000;
+  }
+}
+
+
+.bl_pagination__link_active {
 
   font-size: 18px;
   color: #096;
   text-decoration: none;
   font-weight: bold
 }
+
+.bl_pagination__before{
+  text-transform: uppercase;
+  &:before{
+    content: '<<';
+    color: inherit;
+  }
+}
+
+.bl_pagination__next{
+  text-transform: uppercase;
+  &:after{
+    content: '>>';
+    color: inherit;
+  }
+}
+
+
+
+///////////
+
 
 .nav {
 
@@ -435,6 +496,8 @@ button {
   color: #000;
 
 }
+
+
 
 .menu_categories__item.decor_arrow:after {
   top: 35%;
@@ -750,7 +813,10 @@ button {
   font-size: 12px;
 }
 
-.style2b {
+.style2b,
+.nav_text{
+  position: relative;
+  padding-right: 10px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -2866,7 +2932,7 @@ button {
 }
 
 .navItem_linkPage {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
+
   font-size: 14px;
   color: #006699;
   text-decoration: underline;
@@ -2875,7 +2941,7 @@ button {
 }
 
 .navItem_linkPage:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
+
   font-size: 14px;
   color: #CC0000;
   text-decoration: underline;
@@ -2883,7 +2949,7 @@ button {
 }
 
 .textItem_linkPage {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
+
   font-size: 14px;
   color: #000;
   text-decoration: none;
@@ -3551,14 +3617,11 @@ label.css-label {
 
 }
 
-.numpage_navigation {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  float: left;
 
-}
+
+
+
+
 
 .mob_ver {
   text-align: center;
