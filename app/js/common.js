@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     var blackWrapper = $(".blackWrapper"),
         navMenu = $(".left-group-menu"),
+        basketLink = $(".binfo"),
         body = $("body");
 
 
@@ -75,6 +76,8 @@ $(document).ready(function () {
             inputFild.addClass("hidden");
 
             $(this).prev(".price_box").addClass("active");
+
+            basketLink.addClass("active");
         }
 
     });

@@ -265,7 +265,8 @@ button {
   font-weight: bold;
   margin: 5px;
   border-radius: 3px;
-  &:hover {
+  &:hover,
+  &:focus{
     background-color: #3a923e;
   }
 }
@@ -3023,17 +3024,17 @@ input[type=checkbox].css-checkbox + label.css-label {
   cursor: pointer;
   color: #006699;
 
-  white-space: nowrap; /* �������� ������� ������ */
-  overflow: hidden; /* �������� ���������� */
-  text-overflow: ellipsis; /* ... � �����*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
 }
 
-input[type=checkbox].css-checkbox + label.css-label:hover {
+input[type=checkbox].css-checkbox + label.css-label:hover,
+input[type=checkbox].css-checkbox + label.css-label:focus{
   background-color: #EDFFED;
   overflow: visible;
   color: #CC0000;
-
 }
 
 input[type=checkbox].css-checkbox:checked + label.css-label {

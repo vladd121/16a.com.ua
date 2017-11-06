@@ -1037,7 +1037,7 @@ button {
   font-weight: bold;
   margin: 5px;
   border-radius: 3px; }
-  .addbutton:hover {
+  .addbutton:hover, .addbutton:focus {
     background-color: #3a923e; }
 
 .addbuttonNowInBasket,
@@ -3342,13 +3342,11 @@ input[type=checkbox].css-checkbox + label.css-label {
   cursor: pointer;
   color: #006699;
   white-space: nowrap;
-  /* �������� ������� ������ */
   overflow: hidden;
-  /* �������� ���������� */
-  text-overflow: ellipsis;
-  /* ... � �����*/ }
+  text-overflow: ellipsis; }
 
-input[type=checkbox].css-checkbox + label.css-label:hover {
+input[type=checkbox].css-checkbox + label.css-label:hover,
+input[type=checkbox].css-checkbox + label.css-label:focus {
   background-color: #EDFFED;
   overflow: visible;
   color: #CC0000; }
