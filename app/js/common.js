@@ -41,6 +41,46 @@ $(document).ready(function () {
     });
 
 
+///// Button Buy
+
+    var  buttonAddToBasket = $(".addbutton"),
+         fildQuantityOgGoods = $(".addnum"),
+         activeButtonAddToBasket= "addbutton_active";
+
+    fildQuantityOgGoods.on('keyup', function(e) {
+        var val = $(this).val();
+        var new_str = val.replace(/[^0-9]/gim,'');
+        $(this).val(new_str);
+    });
+
+    fildQuantityOgGoods.on('blur', function(e) {
+        var val = $(this).val();
+        var new_str = val.replace(/[^0-9]/gim,'');
+        $(this).val(new_str);
+    });
+
+    buttonAddToBasket.on("click", function () {
+
+        var inputFild = $(this).prev().find(".addnum"),
+            priceAfterAdd = $(this).prev().find(".price_afterAdd"),
+            textInputField = inputFild.val();
+
+
+        if (textInputField !== ""){
+
+            $(this).text("в кошику");
+            $(this).addClass(activeButtonAddToBasket);
+
+            priceAfterAdd.text(textInputField);
+            inputFild.addClass("hidden");
+
+            $(this).prev(".price_box").addClass("active");
+        }
+
+    });
+
+
+
 
 });
 

@@ -1011,53 +1011,41 @@ button {
   color: #990000;
   font-style: normal; }
 
+.price {
+  width: 100%;
+  position: relative;
+  font-size: 16px; }
+
 .price_box {
   position: relative;
-  float: left;
-  display: block;
+  display: inline-block;
   background-color: #DFFFEF;
   border-radius: 3px;
   white-space: nowrap;
   text-align: center;
-  padding: 5px 0; }
+  padding: 5px 0;
+  font-size: 16px; }
 
-.price {
-  font-size: 16px;
-  color: #000;
-  font-style: normal;
-  font-weight: normal; }
+.price_box.active {
+  background-color: inherit; }
 
 .addbutton {
-  font-size: 14px;
-  color: #FFF;
-  font-style: normal;
-  cursor: pointer;
   width: 80px;
   height: 35px;
+  color: #fff;
   background-color: #47AF4B;
   font-weight: bold;
   margin: 5px;
   border-radius: 3px; }
+  .addbutton:hover {
+    background-color: #3a923e; }
 
-.addbutton:hover {
-  background-color: #3a923e;
-  border-radius: 3px; }
-
-.addbuttonNowInBasket {
-  font-size: 14px;
-  color: #FFF;
-  font-style: normal;
-  cursor: pointer;
-  width: 80px;
-  height: 35px;
-  background-color: #36F;
-  font-weight: bold;
-  margin: 5px;
-  border-radius: 3px; }
-
-.addbuttonNowInBasket:hover {
-  background-color: #33F;
-  border-radius: 3px; }
+.addbuttonNowInBasket,
+.addbutton_active {
+  background-color: #36F; }
+  .addbuttonNowInBasket:hover,
+  .addbutton_active:hover {
+    background-color: #33F; }
 
 .nojs {
   font-family: Arial, Helvetica, sans-serif;
@@ -1088,6 +1076,9 @@ button {
   width: 18px;
   height: 9px;
   z-index: 2; }
+
+.bl_pagination {
+  clear: both; }
 
 .bl_pagination__item:not(:first-child):before {
   content: '|';
@@ -1283,6 +1274,16 @@ button {
 
 .binfo:hover {
   text-decoration: none; }
+
+.binfo.active:after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 11px;
+  background-color: #1F83C5;
+  width: 10px;
+  height: 20px;
+  z-index: 2; }
 
 .root-logo {
   position: relative;
@@ -1942,16 +1943,16 @@ button {
   color: #006699;
   text-decoration: none; }
 
-.rest {
+.rest,
+.norest {
+  margin-top: 5px;
   font-size: 12px;
   color: #093;
-  font-style: normal;
   font-weight: bold; }
 
 .norest {
   font-size: 12px;
   color: #999;
-  font-style: normal;
   font-weight: normal; }
 
 .tovInfo {
@@ -2015,14 +2016,13 @@ button {
   background-clip: padding-box;
   box-shadow: 5px 5px 13px 0 rgba(54, 69, 102, 0.5); }
 
-.price-item-box {
-  background: #fff; }
-
 .price-item-pic-wrap {
+  display: block;
   position: relative;
   width: 180px;
   height: 180px;
-  overflow: hidden; }
+  overflow: hidden;
+  box-sizing: border-box; }
 
 .price-item-name-wrap {
   position: relative;
@@ -2087,7 +2087,6 @@ button {
   clear: both; }
 
 .s_item {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #00F;
   font-style: normal;
@@ -2096,7 +2095,6 @@ button {
   cursor: pointer; }
 
 .s_item:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #903;
   font-style: normal;
@@ -2105,25 +2103,16 @@ button {
   cursor: pointer; }
 
 .s_item_expand {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #558055;
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
   cursor: pointer; }
-
-.s_item_expand:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 14px;
-  color: #558055;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: underline;
-  cursor: pointer; }
+  .s_item_expand:hover {
+    text-decoration: underline; }
 
 .s_item_open {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #FFF;
   font-style: normal;
@@ -2132,7 +2121,6 @@ button {
   cursor: pointer; }
 
 .s_item_open:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #FFAEC9;
   font-style: normal;
@@ -2149,7 +2137,6 @@ button {
   text-decoration: none; }
 
 .s_item_to_group {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #558055;
   font-style: normal;
@@ -2158,7 +2145,6 @@ button {
   cursor: pointer; }
 
 .s_item_to_group:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #903;
   font-style: normal;
@@ -2167,16 +2153,16 @@ button {
   cursor: pointer; }
 
 .oneSub {
+  clear: both;
+  display: inline-block;
+  width: 100%;
   color: #066;
   font-size: 16px;
   font-weight: bold;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   position: relative;
-  float: none;
-  text-align: left;
-  /*width:60%;*/
   background-color: #CFEEDF;
-  height: 25px; }
+  min-height: 25px; }
 
 .next_item_button {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
@@ -2194,7 +2180,7 @@ button {
   font-style: normal;
   cursor: pointer;
   width: 300px;
-  height: 3 opx;
+  height: 3px;
   font-weight: bold;
   color: #009; }
 
@@ -2382,27 +2368,19 @@ button {
   background-color: #D7F4F4; }
 
 .addnum {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 20px;
+  margin-left: 10px;
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #000000;
-  font-style: normal;
-  font-weight: normal;
-  outline: none !important;
   border: 1px solid #0080c0;
+  box-sizing: border-box;
   margin-top: 5px; }
-
-.addnum:focus {
-  outline: none !important;
-  border: 1px solid #0080c0;
-  box-shadow: 0 0 10px #719ECE;
-  font-style: normal;
-  color: #3e3e3e; }
-
-.addnum:hover {
-  outline: none !important;
-  border: 1px solid #0080c0;
-  box-shadow: 0 0 10px #719ECE;
-  color: #3e3e3e; }
+  .addnum:hover, .addnum:focus {
+    box-shadow: 0 0 10px #719ECE;
+    color: #3e3e3e; }
 
 .search_input {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -2410,19 +2388,14 @@ button {
   color: #999;
   font-style: oblique;
   font-weight: normal;
-  border: 1px solid #0080c0;
-  /*    box-shadow: 0 0 10px #719ECE;*/ }
+  border: 1px solid #0080c0; }
 
 .search_input:focus {
-  outline: none !important;
-  border: 1px solid #0080c0;
   box-shadow: 0 0 10px #719ECE;
   font-style: normal;
   color: #3e3e3e; }
 
 .search_input:hover {
-  outline: none !important;
-  border: 1px solid #0080c0;
   box-shadow: 0 0 10px #719ECE;
   color: #3e3e3e; }
 
@@ -2913,52 +2886,38 @@ button {
 
 .one_tov_info {
   position: relative;
-  float: none;
   clear: both;
-  text-align: left;
-  color: #4d4d4d;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  /*   width: 400px;*/
-  /* 	white-space: nowrap; /* �������� ������� ������ */
-  /*  overflow: hidden; /* �������� ���������� */
-  /*  text-overflow: ellipsis; /* ... � �����*/
-  font-weight: normal; }
+  color: #4d4d4d; }
+
+.bl_description {
+  width: 100%;
+  position: relative;
+  font-size: 13px; }
+
+.bl_description__short,
+.bl_description__attributes {
+  width: 100%;
+  text-align: left; }
+
+.bl_description__attributes li {
+  margin: 5px 0;
+  padding: 0 5px; }
+
+.bl_description__attributes li:nth-of-type(odd) {
+  background-color: #E5E5E5; }
 
 .one_tov_info_1line {
-  position: relative;
-  float: none;
-  clear: both;
   background-color: #E5E5E5;
-  /*	height: 25px;
-  line-height: 25px;*/
   padding: 5px; }
 
 .one_tov_info_2line {
   position: relative;
-  float: none;
-  clear: both;
   background-color: #FFF;
-  /*	height: 25px;
-  line-height: 25px;*/
   padding: 5px; }
 
-/*
-.price-item-wrap_one_search {
-	position:relative;
-	float:left;
-	height:auto;
-	margin: 20px;
-	overflow: visible;
-	min-width: 300px;
-	max-width: 800px;
-	background-color: #CCC;
-}
-*/
 .one_search_name {
   position: relative;
   float: none;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #FFF;
   font-style: normal;
@@ -3502,12 +3461,10 @@ label.css-label {
   color: #FF6666; }
 
 .sort_all {
+  float: right;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
-  margin-top: 30px;
-  margin-right: 25px;
-  float: right;
-  height: 25px; }
+  margin-right: 2%; }
 
 .left-group-menu {
   position: absolute;
@@ -3585,9 +3542,6 @@ label.css-label {
   width: 100%;
   margin-right: 15px;
   padding-top: 5px; }
-
-.cl-price-item {
-  text-align: left; }
 
 .cl-price-item-loading {
   opacity: 0.3; }
@@ -3839,9 +3793,9 @@ label.css-label {
   margin-left: 20px; }
 
 .shop_items {
-  float: left;
-  text-align: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 20px;
+  text-align: center; }
 
 .mob_ver {
   text-align: center; }
@@ -3984,6 +3938,10 @@ label.css-label {
 /*Desktop First Method*/
 /*********************************************/
 /* Large Devices, Wide Screens 1280px */
+@media only screen and (max-width: 1200px) {
+  .blok_main_1 {
+    min-width: initial; } }
+
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
   .top-info__inner {

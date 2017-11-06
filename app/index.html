@@ -95,7 +95,7 @@
 
 
                         <div class="mini_basket" id="mini_basket">
-                            <a class="binfo" href="#">
+                            <a class="binfo" href="#"> <!-- ЕСЛИ В КОРЗИНЕ ЕСТЬ ТОВАР ДОБАВЛЯЙ КЛАСС active-->
                                 <img class="binfo_image" src="image/b_min1.gif" alt="Ваш кошик">
                                 <div class="minBasket_full">
                                     <p class="minBasket">Кошик</p>
@@ -509,29 +509,28 @@
                 <div id="blok_main_2" class='blok_main_2'>
 
                     <div id="blok_main_2_1" class='blok_main_2_1'>
+                        <div class="cl-price-item">
 
-                        <div id="elements-zone" class="cl-price-item">
-                            <div class="subkaskad-top"><a class="subGr_line" href="/">16А</a> <a
-                                    class="subGr_separator"> / </a>
-                                <a href="?k=ventilators"
-                                   class="subGr_line">Вентилятори та елементи вентиляційних систем</a><a
-                                        class="subGr_separator"> / </a>
-                                <a href="?k=household_fans" class="subGr_line">Побутові вентилятори</a></div>
+                            <!--BREADCRUMBS-->
+                            <ul class="bl_breadcrumbs clearfix">
+                                <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">16А</a></li>
+                                <li class="bl_breadcrumbs__item"><a
+                                        class="bl_breadcrumbs__link">Вентилятори та елементи вентиляційних систем</a>
+                                </li>
+                                <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">
+                                    Побутові вентиляторим</p></li>
+                            </ul>
+                            <!---->
 
+                            <h1 class="oneSub">Побутові вентилятори</h1>
 
-                            <div class="sort_all">Сортування:<select name="sortmenu"
-                                                                     onchange="window.location=this.value"
-                                                                     value="?k=household_fans&o=a&filter=producer=dospel">
-                                <option value="?k=household_fans&filter=producer=dospel" selected>по рейтингу</option>
-                                <option value="?k=household_fans&o=a&filter=producer=dospel">від дешевших до дорожчих
-                                </option>
-                                <option value="?k=household_fans&o=d&filter=producer=dospel">від дорожчих до дешевших
-                                </option>
-                            </select>
+                            <div class="sort_all">Сортування:
+                                <select title="Sorter" name="sortmenu">
+                                    <option value="" selected>по рейтингу</option>
+                                    <option value="">від дешевших до дорожчих</option>
+                                    <option value="">від дорожчих до дешевших</option>
+                                </select>
                             </div>
-
-                            <div class="oneSub">Побутові вентилятори</div>
-
 
                             <!-- PAGINATION -->
                             <nav class="bl_pagination clearfix">
@@ -552,257 +551,150 @@
 
 
                             <div class="shop_items">
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
-                                    <div id="tov-box00018044" class="price-item-box">
-                                        <form onsubmit='return false;'>
-                                            <table id="fon00018044" onMouseOver="tovItemOver('00018044');"
-                                                   onMouseOut="tovItemOut('00018044');" border="0" cellpadding="0"
-                                                   cellspacing="5">
-                                                <tbody itemscope itemtype="http://schema.org/Product" id="?i=00018044">
-                                                <tr>
-                                                    <td width="150" align="center" valign="top">
-                                                        <div class="price-item-pic-wrap">
-                                                            <table style="border:1px solid #9296A2" cellspacing="2">
-                                                                <td><a href="?i=00018044"><img itemprop="image"
-                                                                                               src="./photo/preview/ventilators/1.jpg"
-                                                                                               alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)"
-                                                                                               border="0"></a></td>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                    <td rowspan="4" align="left" valign="top" class="tovInfo">
-                                                    </td>
-                                                </tr>
-                                                <tr valign="top">
-                                                    <td width="150" align="center"><a class="pricename"
-                                                                                      href="?i=00018044"><span
-                                                            itemprop="name">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</span>
-                                                        <span style="display:none" itemprop="url">http://16a.com.ua/?i=00018044</span>
-                                                    </a><br/>
-                                                        <span class="rest">(є в наявності)</span>
-                                                </tr>
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
 
-                                                <tr itemprop="offers" itemscope itemtype="http://schema.org/Offer"
-                                                    valign="top">
+                                        <a href="" class="price-item-pic-wrap">
+                                            <img src="./photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
 
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
 
-                                                    <td id="tdAddNum00018044" align="center" nowrap="nowrap"
-                                                        class="price">
-                                                        <span style="display:none" itemprop="priceCurrency">UAH</span>
-                                                        <div class="price_box"><span itemprop="price">402.07</span> грн.
-                                                        </div>
-                                                        x
-                                                        <input name="AddNum"
-                                                               type="text" class="addnum" id="AddNum00018044"
-                                                               onkeypress="onkeypressAddItem(event, 'Button00018044')"
-                                                               onkeyup="ChangeNumAdd(document.getElementById('AddNum00018044').value, 'AddNum00018044')"
-                                                               value="1" size="3" maxlength="3"/>
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
 
-                                                    </td>
-                                                </tr>
-                                                <tr valign="top">
-                                                    <td width="150" align="center" class="price">
-                                                        <input name="Button00018044" id="Button00018044" type="button"
-                                                               class="addbutton" onclick='addbasket({
-  BuyItem:"00018044",
-  AddNum:document.getElementById("AddNum00018044").value,
-  butId:"Button00018044",
-  itemPrice:"402.07"
-  }
-  )' value="  Купити!  "/>
-                                                        <div id="vote_my_wait00018044"></div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td rowspan="3" align="left" valign="top" class="tovInfo">
-                                                        <div itemprop="description" id="tovInfo00018044">
-                                                            <div class="one_tov_info_2line">Побутові вентилятори Dospel
-                                                                універсальні. Вони використовуються для вентиляції у
-                                                                ванних
-                                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
-                                                                квартирах. Доступні чотири типорозміри вентиляторів для
-                                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
-                                                                Корпуси
-                                                                побутових вентиляторів виготовляються з високоякісного
-                                                                АБС-а
-                                                                з добавкою антистатика для захисту від пилу.
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Тип: Настінний вентилятор
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Призначення: побутові
-                                                                приміщення
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Діаметр, мм:125</div>
-                                                            <div class="one_tov_info_2line">Монтажний розмір товору, мм:
-                                                                124
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Габарити (В*Ш), мм: 171*171
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Виконання:PLAY Classic 125
-                                                                S(стандарт)
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Продуктивність м3/г::150
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Статичний тиск, Па: 40</div>
-                                                            <div class="one_tov_info_1line">Акустичний тиск, дБ :35
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Напруга/частота, ВГц : 230
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Обороти двигуна, обр./хв.:
-                                                                2150
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Потужність, Вт: 10</div>
-                                                            <div class="one_tov_info_1line">Споживаний струм, А: 0,09
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Робоча темп. макс.: 40</div>
-                                                            <div class="one_tov_info_1line">Вага, кг: 0,66</div>
-                                                            <div class="one_tov_info_2line">Матеріал: Пластик АВS</div>
-                                                            <div class="one_tov_info_1line">Колір: білий</div>
-                                                            <div class="one_tov_info_2line">Ступінь захисту двигуна Х4
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Виробник: Dospel (Доспел),
-                                                                Польща
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Термін гарантії: 5 років
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </form>
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
-                                    <div id="tov-box00034342" class="price-item-box">
-                                        <form onsubmit='return false;'>
-                                            <table id="fon00034342" onMouseOver="tovItemOver('00034342');"
-                                                   onMouseOut="tovItemOut('00034342');" border="0" cellpadding="0"
-                                                   cellspacing="5">
-                                                <tbody itemscope itemtype="http://schema.org/Product" id="?i=00034342">
-                                                <tr>
-                                                    <td width="150" align="center" valign="top">
-                                                        <div class="price-item-pic-wrap">
-                                                            <table style="border:1px solid #9296A2" cellspacing="2">
-                                                                <td><a href="?i=00034342"><img itemprop="image"
-                                                                                               src="./photo/preview/ventilators/styl.jpg"
-                                                                                               alt="Вентилятор STYL d100 WCH-P (зі зворотним клапаном) Dospel (Доспел)"
-                                                                                               border="0"></a></td>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                    <td rowspan="4" align="left" valign="top" class="tovInfo">
-                                                    </td>
-                                                </tr>
-                                                <tr valign="top">
-                                                    <td width="150" align="center"><a class="pricename"
-                                                                                      href="?i=00034342"><span
-                                                            itemprop="name">Вентилятор STYL d100 WCH-P (зі зворотним клапаном) Dospel (Доспел)</span>
-                                                        <span style="display:none" itemprop="url">http://16a.com.ua/?i=00034342</span>
-                                                    </a><br/>
-                                                        <span class="rest">(є в наявності)</span>
-                                                </tr>
-
-                                                <tr itemprop="offers" itemscope itemtype="http://schema.org/Offer"
-                                                    valign="top">
 
 
-                                                    <td id="tdAddNum00034342" align="center" nowrap="nowrap"
-                                                        class="price">
-                                                        <span style="display:none" itemprop="priceCurrency">UAH</span>
-                                                        <div class="price_box"><span itemprop="price">369.66</span> грн.
-                                                        </div>
-                                                        x
-                                                        <input name="AddNum"
-                                                               type="text" class="addnum" id="AddNum00034342"
-                                                               onkeypress="onkeypressAddItem(event, 'Button00034342')"
-                                                               onkeyup="ChangeNumAdd(document.getElementById('AddNum00034342').value, 'AddNum00034342')"
-                                                               value="1" size="3" maxlength="3"/>
+                                <!-- Дальше в этот блок можно не смотреть там творится дичь. -->
 
-                                                    </td>
-                                                </tr>
-                                                <tr valign="top">
-                                                    <td width="150" align="center" class="price">
-                                                        <input name="Button00034342" id="Button00034342" type="button"
-                                                               class="addbutton" onclick='addbasket({
-  BuyItem:"00034342",
-  AddNum:document.getElementById("AddNum00034342").value,
-  butId:"Button00034342",
-  itemPrice:"369.66"
-  }
-  )' value="  Купити!  "/>
-                                                        <div id="vote_my_wait00034342"></div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td rowspan="3" align="left" valign="top" class="tovInfo">
-                                                        <div itemprop="description" id="tovInfo00034342">
-                                                            <div class="one_tov_info_2line">Побутові вентилятори Dospel
-                                                                універсальні. Вони використовуються для вентиляції у
-                                                                ванних
-                                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
-                                                                квартирах. Доступні чотири типорозміри вентиляторів для
-                                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
-                                                                Корпуси
-                                                                побутових вентиляторів виготовляються з високоякісного
-                                                                АБС-а
-                                                                з добавкою антистатика для захисту від пилу.
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Тип: настінний вентилятор
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Призначення: побутові
-                                                                приміщення
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Діаметр, мм:100</div>
-                                                            <div class="one_tov_info_2line">Монтажний розмір отвору, мм:
-                                                                99
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Габарити (В*Ш), мм: 158*158
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Монтажна глибина, мм: 56
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Виконання:STYL 100 WCH-P
-                                                                (гідростат) зі зворотним клапаном
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Продуктивність, м3/г: :100
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Статичний тиск, Па: 34</div>
-                                                            <div class="one_tov_info_2line">Акустичний тиск, дБ: 40
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Напруга/частота, ВГц :
-                                                                230/50
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Обороти двигуна, обр./хв.:
-                                                                2650
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Потужність, Вт: 15</div>
-                                                            <div class="one_tov_info_2line">Споживаний струм, А: 0,12
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Робоча темп. макс.: 40</div>
-                                                            <div class="one_tov_info_2line">Вага, кг: 0,50</div>
-                                                            <div class="one_tov_info_1line">Матеріал: Пластик АВS</div>
-                                                            <div class="one_tov_info_2line">Колір: білий</div>
-                                                            <div class="one_tov_info_1line">Ступінь захисту двигуна Х4
-                                                            </div>
-                                                            <div class="one_tov_info_2line">Виробник: Dospel (Доспел),
-                                                                Польща
-                                                            </div>
-                                                            <div class="one_tov_info_1line">Термін гарантії: 5 років
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </form>
+
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
+
+                                        <a href="" class="price-item-pic-wrap">
+                                            <img src="./photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
+
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00018657" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00018657" onMouseOver="tovItemOver('00018657');"
-                                                   onMouseOut="tovItemOut('00018657');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00018657">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -918,12 +810,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00034345" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00034345" onMouseOver="tovItemOver('00034345');"
-                                                   onMouseOut="tovItemOut('00034345');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00034345">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -1042,12 +932,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00018043" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00018043" onMouseOver="tovItemOver('00018043');"
-                                                   onMouseOut="tovItemOut('00018043');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00018043">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -1164,12 +1052,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00018045" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00018045" onMouseOver="tovItemOver('00018045');"
-                                                   onMouseOut="tovItemOut('00018045');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00018045">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -1286,12 +1172,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00031083" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00031083" onMouseOver="tovItemOver('00031083');"
-                                                   onMouseOut="tovItemOut('00031083');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00031083">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -1407,12 +1291,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00004235" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00004235" onMouseOver="tovItemOver('00004235');"
-                                                   onMouseOut="tovItemOut('00004235');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00004235">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -1531,12 +1413,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00033823" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00033823" onMouseOver="tovItemOver('00033823');"
-                                                   onMouseOut="tovItemOut('00033823');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00033823">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -1652,12 +1532,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00033824" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00033824" onMouseOver="tovItemOver('00033824');"
-                                                   onMouseOut="tovItemOut('00033824');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00033824">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -1773,12 +1651,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00018659" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00018659" onMouseOver="tovItemOver('00018659');"
-                                                   onMouseOut="tovItemOut('00018659');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00018659">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -1894,12 +1770,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00004256" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00004256" onMouseOver="tovItemOver('00004256');"
-                                                   onMouseOut="tovItemOut('00004256');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00004256">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -2019,12 +1893,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00004216" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00004216" onMouseOver="tovItemOver('00004216');"
-                                                   onMouseOut="tovItemOut('00004216');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00004216">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -2139,12 +2011,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00033960" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00033960" onMouseOver="tovItemOver('00033960');"
-                                                   onMouseOut="tovItemOut('00033960');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00033960">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -2260,12 +2130,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00018660" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00018660" onMouseOver="tovItemOver('00018660');"
-                                                   onMouseOut="tovItemOut('00018660');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00018660">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -2382,12 +2250,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00018656" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00018656" onMouseOver="tovItemOver('00018656');"
-                                                   onMouseOut="tovItemOut('00018656');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00018656">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -2504,12 +2370,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00033961" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00033961" onMouseOver="tovItemOver('00033961');"
-                                                   onMouseOut="tovItemOut('00033961');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00033961">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -2625,12 +2489,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00004232" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00004232" onMouseOver="tovItemOver('00004232');"
-                                                   onMouseOut="tovItemOut('00004232');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00004232">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -2749,12 +2611,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00018654" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00018654" onMouseOver="tovItemOver('00018654');"
-                                                   onMouseOut="tovItemOut('00018654');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00018654">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -2871,12 +2731,10 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div id="blok_main_2_1_x" class="price-item-wrap1">
+                                <div class="price-item-wrap1">
                                     <div id="tov-box00004215" class="price-item-box">
                                         <form onsubmit='return false;'>
-                                            <table id="fon00004215" onMouseOver="tovItemOver('00004215');"
-                                                   onMouseOut="tovItemOut('00004215');" border="0" cellpadding="0"
-                                                   cellspacing="5">
+                                            <table>
                                                 <tbody itemscope itemtype="http://schema.org/Product" id="?i=00004215">
                                                 <tr>
                                                     <td width="150" align="center" valign="top">
@@ -3152,36 +3010,36 @@
 <form id="searchformHide" action="/" method="post" style="display:none">
     <input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>
 </form>
-<script>
-    document.getElementById('searchformHide').style.display = 'none';
-    $("#dialog").dialog({autoOpen: false});
-    $("#dialog_delivery").dialog({autoOpen: false});
-    $("#dialog_delivery").dialog({closeText: "закрити"});
+<!--<script>-->
+<!--document.getElementById('searchformHide').style.display = 'none';-->
+<!--$("#dialog").dialog({autoOpen: false});-->
+<!--$("#dialog_delivery").dialog({autoOpen: false});-->
+<!--$("#dialog_delivery").dialog({closeText: "закрити"});-->
 
-</script>
+<!--</script>-->
 
 <div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно
     бажаєте видалити всі товари з кошику?
 </div>
 
-<script>
-    $("#dialog_truncate").dialog({autoOpen: false});
-    $("#dialog_truncate").dialog({closeText: "закрити"});
-    $("#dialog_truncate").dialog({
-        buttons: [{
-            text: "Так", click: function () {
-                $(this).dialog("close");
-                truncate_basket();
-            }
-        },
-            {
-                text: "Ні", click: function () {
-                $(this).dialog("close");
-            }
-            }]
-    });
+<!--<script>-->
+<!--$("#dialog_truncate").dialog({autoOpen: false});-->
+<!--$("#dialog_truncate").dialog({closeText: "закрити"});-->
+<!--$("#dialog_truncate").dialog({-->
+<!--buttons: [{-->
+<!--text: "Так", click: function () {-->
+<!--$(this).dialog("close");-->
+<!--truncate_basket();-->
+<!--}-->
+<!--},-->
+<!--{-->
+<!--text: "Ні", click: function () {-->
+<!--$(this).dialog("close");-->
+<!--}-->
+<!--}]-->
+<!--});-->
 
-</script>
+<!--</script>-->
 
 <div id="dialog_form" title="Оформлення замовлення" style="display:none">
     <form id="form_b_send" name="form_b_send" method="post" action="?">
@@ -3248,43 +3106,62 @@
 <div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
 
 
-<script>
+<script type="text/javascript" src="libs/jquery.min.js"></script>
 
-    $('#bg_layer').hide();
-
-    $("#dialog_pic_full").dialog({autoOpen: false});
-    $("#dialog_pic_full").dialog({closeText: "закрити"});
-    $("#dialog_pic_full").dialog({
-        buttons: [{
-            text: "Ok", click: function () {
-                $(this).dialog("close");
-            }
-        }]
-    });
+<!--<script type="text/javascript" src="js/menu-vertical-root-func.js"></script>-->
+<!--<script type="text/javascript" src="js/menu-vertical-root.js"></script>-->
+<!--<script type="text/javascript" src="gal4js/modernizr.custom.17475.js"></script>-->
 
 
-    window.onload = function () {
-        setTimeout(function () {
+<!-- build:js js/libs.min.js -->
 
-            window.addEventListener("popstate", function (e) {
-                window.location = location.href;
-            }, false);
+<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+<!-- endbuild -->
+
+<!-- build:js js/common.min.js -->
+<script src="js/common.js"></script>
+<!-- endbuild -->
 
 
-        }, 0);
-    }
+<!--<script>-->
+
+<!--$('#bg_layer').hide();-->
+
+<!--$("#dialog_pic_full").dialog({autoOpen: false});-->
+<!--$("#dialog_pic_full").dialog({closeText: "закрити"});-->
+<!--$("#dialog_pic_full").dialog({-->
+<!--buttons: [{-->
+<!--text: "Ok", click: function () {-->
+<!--$(this).dialog("close");-->
+<!--}-->
+<!--}]-->
+<!--});-->
 
 
-</script>
+<!--window.onload = function () {-->
+<!--setTimeout(function () {-->
 
-<script type="text/javascript" charset="windows-1251" src="js/menu-vertical-func.js"></script>
+<!--window.addEventListener("popstate", function (e) {-->
+<!--window.location = location.href;-->
+<!--}, false);-->
+
+
+<!--}, 0);-->
+<!--}-->
+
+
+<!--</script>-->
+
+<!--<script type="text/javascript" charset="windows-1251" src="js/menu-vertical-func.js"></script>-->
 
 <script type="text/javascript">
 
-    function GetCssStyle(e) {
-        if (e.currentStyle) return e.currentStyle;
-        else if (window.getComputedStyle) return window.getComputedStyle(e, null)
-    }
+    //    function GetCssStyle(e) {
+    //        if (e.currentStyle) return e.currentStyle;
+    //        else if (window.getComputedStyle) return window.getComputedStyle(e, null)
+    //    }
 
     /*
 var elem = document.getElementById('elem');
@@ -3364,77 +3241,77 @@ alert(height_old+' '+height);
 
 
 <script>
-    $("#dialog_form").dialog({autoOpen: false});
-    $("#dialog_form").dialog({closeText: "закрити (замовлення не буде відправлене!)"});
-    $("#dialog_form").dialog({
-        buttons: [{
-            id: "dialogSendbut", text: "Надіслати замовлення", click: function () {
-                send_basket_dialog({
-                    data: {
-                        bsend: "bsend",
-                        user_name: document.getElementById("user_name").value,
-                        user_phone: document.getElementById("user_phone").value,
-                        user_adres: document.getElementById("user_adres").value,
-                        user_firm: document.getElementById("user_firm").value,
-                        user_mail: document.getElementById("user_mail").value,
+    //    $("#dialog_form").dialog({autoOpen: false});
+    //    $("#dialog_form").dialog({closeText: "закрити (замовлення не буде відправлене!)"});
+    //    $("#dialog_form").dialog({
+    //        buttons: [{
+    //            id: "dialogSendbut", text: "Надіслати замовлення", click: function () {
+    //                send_basket_dialog({
+    //                    data: {
+    //                        bsend: "bsend",
+    //                        user_name: document.getElementById("user_name").value,
+    //                        user_phone: document.getElementById("user_phone").value,
+    //                        user_adres: document.getElementById("user_adres").value,
+    //                        user_firm: document.getElementById("user_firm").value,
+    //                        user_mail: document.getElementById("user_mail").value,
+    //                    }
+    //                });
+    //            }
+    //        }]
+    //    });
+
+    /*
+        $(document).ready(function () {
+
+            // hide #back-top first
+            $("#back-top").hide();
+
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 500) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
                     }
                 });
-            }
-        }]
-    });
 
-
-    $(document).ready(function () {
-
-        // hide #back-top first
-        $("#back-top").hide();
-
-
-        // fade in #back-top
-        $(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 500) {
-                    $('#back-top').fadeIn();
-                } else {
-                    $('#back-top').fadeOut();
-                }
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 'slow');
+                    return false;
+                });
             });
 
-            // scroll body to 0px on click
-            $('#back-top a').click(function () {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 'slow');
-                return false;
-            });
         });
 
-    });
 
+        resize_body_f();
 
-    resize_body_f();
-
-
-</script>
-
-
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-38360333-2', 'auto');
-    ga('send', 'pageview');
+    */
 
 </script>
+
+<!--<script>-->
+<!--(function (i, s, o, g, r, a, m) {-->
+<!--i['GoogleAnalyticsObject'] = r;-->
+<!--i[r] = i[r] || function () {-->
+<!--(i[r].q = i[r].q || []).push(arguments)-->
+<!--}, i[r].l = 1 * new Date();-->
+<!--a = s.createElement(o),-->
+<!--m = s.getElementsByTagName(o)[0];-->
+<!--a.async = 1;-->
+<!--a.src = g;-->
+<!--m.parentNode.insertBefore(a, m)-->
+<!--})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');-->
+
+<!--ga('create', 'UA-38360333-2', 'auto');-->
+<!--ga('send', 'pageview');-->
+
+<!--</script>-->
 
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
