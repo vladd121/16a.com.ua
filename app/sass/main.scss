@@ -455,6 +455,44 @@ button {
   color: #FF6666;
 }
 
+// PRODUCT SLIDER
+
+
+
+.bl_mainProduct{
+  position: relative;
+  width: 100%;
+}
+
+
+.product_slider{
+
+  position: relative;
+  padding: 10px 40px;
+  background-color: #fff;
+  margin: 0 auto;
+  min-height: 60px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.bl_mainProduct__mainImgBlock{
+  position: relative;
+  //max-width: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Sub level menu items
 ---------------------------------------*/
 
@@ -1666,7 +1704,6 @@ button {
 
 .top-info__inner {
   width: 100%;
-  min-height: 36px;
   line-height: 36px;
 
   display: flex;
@@ -2209,14 +2246,10 @@ button {
 }
 
 .buy_container {
-  float: left;
-  width: 250px;
-  min-width: 250px;
+  display: inline-block;
   max-width: 250px;
-  height: auto;
   box-shadow: 0 0 3px #9fcea0;
-  margin-top: 10px;
-  margin-left: 20px;
+  padding: 10px 20px;
 
 }
 
@@ -2311,90 +2344,28 @@ button {
 
 }
 
-.one_rest {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 12px;
-  color: #093;
-  font-style: normal;
-  font-weight: bold;
-
-  text-align: left;
-  padding-left: 20px;
-  padding-top: 20px;
-  float: left;
-}
-
-.one_norest {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 12px;
-  color: #999;
-  font-style: normal;
-  font-weight: bold;
-
-  text-align: left;
-  padding-left: 20px;
-  padding-top: 20px;
-  float: left;
-
-}
 
 .one_name {
   position: relative;
-  float: none;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 18px;
+  text-indent: 5px;
   color: #FFF;
-  font-style: normal;
-  font-weight: normal;
   background-color: #09C;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   text-align: left;
 }
 
-.one_name a {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 18px;
-  color: #FFF;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
-}
 
-.one_name a:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 18px;
-  color: #e0e0e0;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: underline;
-}
 
 .one_price {
-  position: relative;
-  float: left;
-  display: block;
-  /*	width: 150px;
-  min-width: 150px;
-  */
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 14px;
-  color: #000000;
+  color: #000;
   font-style: normal;
   font-weight: bold;
   background-color: #DFFFEF;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   white-space: nowrap;
   text-align: center;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  margin-left: 20px;
+  padding: 15px;
   margin-top: 10px;
 
 }
@@ -2410,7 +2381,7 @@ button {
 }
 
 .one_addbutton {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+
   font-size: 14px;
   color: #FFF;
   font-style: normal;
@@ -2420,13 +2391,6 @@ button {
   background-color: #62c206;
   font-weight: bold;
   margin: 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.one_addbutton:hover {
-  background-color: #4e9a06;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -2846,93 +2810,93 @@ button {
 .blok_main_2_1_x_about_item:hover:before {
   display: none
 }
-
-.page_svod {
-  background: url(pages/p_pic/image008.jpg) no-repeat;
-  height: 525px;
-  width: 700px;
-}
-
-.page_svod_1 {
-  background-image: url(pages/p_pic/image006.jpg);
-  background-repeat: no-repeat;
-  height: 525px;
-  width: 700px;
-}
-
-.svod_z1 {
-  font-size: 18px;
-  color: #fff;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: none;
-  padding-top: 30px;
-  padding-left: 220px;
-}
-
-.svod_p1 {
-  font-size: 12px;
-  color: #fff;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: none;
-  padding-left: 220px;
-  width: 450px;
-  padding-top: 20px;
-  text-align: justify;
-}
-
-.search_help {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  position: relative;
-  float: right;
-  padding-top: 15px;
-  text-align: right;
-}
-
-.button_search-mobile {
-  top: 25px;
-}
-
-.navItem_linkPage {
-
-  font-size: 14px;
-  color: #006699;
-  text-decoration: underline;
-  font-weight: normal;
-  cursor: pointer;
-}
-
-.navItem_linkPage:hover {
-
-  font-size: 14px;
-  color: #CC0000;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.textItem_linkPage {
-
-  font-size: 14px;
-  color: #000;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.expo_pic_electrika {
-  position: relative;
-  float: left;
-  padding: 4px;
-  background-color: #F00;
-}
-
-.expo_pic {
-  position: relative;
-  float: left;
-  padding: 4px;
-  background-color: #0F6;
-}
+//
+//.page_svod {
+//  background: url(pages/p_pic/image008.jpg) no-repeat;
+//  height: 525px;
+//  width: 700px;
+//}
+//
+//.page_svod_1 {
+//  background-image: url(pages/p_pic/image006.jpg);
+//  background-repeat: no-repeat;
+//  height: 525px;
+//  width: 700px;
+//}
+//
+//.svod_z1 {
+//  font-size: 18px;
+//  color: #fff;
+//  font-style: normal;
+//  font-weight: bold;
+//  text-decoration: none;
+//  padding-top: 30px;
+//  padding-left: 220px;
+//}
+//
+//.svod_p1 {
+//  font-size: 12px;
+//  color: #fff;
+//  font-style: normal;
+//  font-weight: bold;
+//  text-decoration: none;
+//  padding-left: 220px;
+//  width: 450px;
+//  padding-top: 20px;
+//  text-align: justify;
+//}
+//
+//.search_help {
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 12px;
+//  position: relative;
+//  float: right;
+//  padding-top: 15px;
+//  text-align: right;
+//}
+//
+//.button_search-mobile {
+//  top: 25px;
+//}
+//
+//.navItem_linkPage {
+//
+//  font-size: 14px;
+//  color: #006699;
+//  text-decoration: underline;
+//  font-weight: normal;
+//  cursor: pointer;
+//}
+//
+//.navItem_linkPage:hover {
+//
+//  font-size: 14px;
+//  color: #CC0000;
+//  text-decoration: underline;
+//  cursor: pointer;
+//}
+//
+//.textItem_linkPage {
+//
+//  font-size: 14px;
+//  color: #000;
+//  text-decoration: none;
+//  font-weight: normal;
+//}
+//
+//.expo_pic_electrika {
+//  position: relative;
+//  float: left;
+//  padding: 4px;
+//  background-color: #F00;
+//}
+//
+//.expo_pic {
+//  position: relative;
+//  float: left;
+//  padding: 4px;
+//  background-color: #0F6;
+//}
 
 .logo_box {
   position: relative;

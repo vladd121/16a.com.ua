@@ -84,6 +84,47 @@ $(document).ready(function () {
 
 
 
+    $(".product_slider").owlCarousel({
+        items: 4,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 4
+            },
+            991: {
+                items: 4
+            },
+            550: {
+                items: 2
+
+            },
+            450: {
+                items: 1
+
+            },
+
+            320: {
+                items: 1
+            }
+
+        }
+    });
+
+
+
+
+
+
+
 
 });
 
