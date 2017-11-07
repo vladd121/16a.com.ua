@@ -121,15 +121,17 @@ $(document).ready(function () {
 
     function showBigSliderPhoto(){
 
-        var index,
-            fullSlides = $(".product_slider__item"),
-            numberOfSlides = $(".product_slider__item").length,
+        var fullSlides = $(".product_slider__item"),
             activeSlide = "product_slider__item_active";
 
         fullSlides.on("click", function () {
 
             fullSlides.removeClass(activeSlide);
             $(this).addClass(activeSlide);
+
+            var thisSrc = $(this).find(".product_slider__img").attr('src');
+
+            $(".bl_mainProduct__mainImg").attr('src', thisSrc);
 
         });
 

@@ -2777,60 +2777,76 @@ button {
 
 .vlast_deliv_container {
   position: relative;
-  float: left;
-  min-width: 600px;
   width: 100%;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 14px;
   color: #093;
   font-style: normal;
   font-weight: bold; }
 
 .deliv_container {
-  box-shadow: 0 0 3px #9fcea0;
   position: relative;
-  float: left;
   min-width: 150px;
-  width: 40%;
-  text-align: left;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 14px;
   color: #3f6e9f;
-  font-style: normal;
-  font-weight: bold;
+  font-size: 14px;
   margin: 20px;
-  padding: 10px; }
+  padding: 10px;
+  box-shadow: 0 0 3px #9fcea0; }
 
 .deliv_line {
   color: #2e3436;
   font-weight: normal; }
 
 .tovInfoFull_container {
+  clear: both;
   position: relative;
-  float: left;
-  min-width: 600px;
   width: 100%;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  color: #4d4d4d;
+  margin-top: 20px; }
+
+.table_characteristic {
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
   font-size: 14px;
   color: #4d4d4d;
-  font-style: normal;
-  font-weight: normal;
-  margin-top: 20px;
-  text-align: justify; }
+  font-weight: normal; }
+
+.table_characteristic tr th,
+.device_layout__table tr th {
+  width: 80px;
+  text-align: center;
+  background-color: #0099cc;
+  color: #fff; }
+  .table_characteristic tr th:first-child,
+  .device_layout__table tr th:first-child {
+    width: 120px; }
+
+.table_characteristic tr,
+.device_layout__table tr {
+  background-color: #fff; }
+  .table_characteristic tr:nth-of-type(odd),
+  .device_layout__table tr:nth-of-type(odd) {
+    background-color: #eee; }
 
 .one_container_info {
-  padding: 10px;
-  box-shadow: 0 0 3px #9fcea0;
   position: relative;
-  float: left;
+  width: 100%;
   margin-top: 20px;
   min-width: 150px;
-  width: 40%;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #093;
-  font-style: normal;
-  font-weight: bold; }
+  box-shadow: 0 0 3px #9fcea0;
+  background-color: #fff; }
+
+.one_container_info .bl_description__short,
+.one_container_info .bl_description__attributes {
+  font-weight: normal;
+  background-color: #E5E5E5; }
+
+.one_container_info .bl_description__short {
+  padding: 0 5px; }
+
+.one_container_info .bl_description__attributes li:nth-of-type(odd) {
+  background-color: #fff; }
 
 .one_name {
   position: relative;
@@ -3633,14 +3649,6 @@ label.css-label {
   margin-bottom: 10px; }
 
 .f_del_all_no_item_found {
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height:100px;
-  background: #f0f0f0;
-  transform: translate(-50%, -50%);*/
-  /* ���� ������� ���*/
   width: 155px;
   height: 25px;
   margin: 0 auto;
@@ -3658,10 +3666,7 @@ label.css-label {
   border-radius: 10px 10px 10px 10px;
   text-decoration: none;
   white-space: nowrap;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 10px;
   text-decoration: none;
   color: #666666;
   border: 1px solid #FF6666;
@@ -3757,13 +3762,19 @@ label.css-label {
   text-decoration: underline; }
 
 .bottom_info {
-  text-align: justify;
-  /*	overflow: hidden;
-  max-height: 120px;*/
+  width: 100%;
   font-family: Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   font-size: 14px;
   color: #999;
-  padding-top: 20px; }
+  margin-top: 20px; }
+
+.description_product {
+  width: 100%;
+  margin-top: 15px;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #4d4d4d; }
 
 .user_info {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -3773,10 +3784,12 @@ label.css-label {
   font-weight: normal;
   text-decoration: none; }
 
-.one_im_promgraf {
+.device_layout {
+  margin-top: 15px;
+  width: 100%; }
+
+.device_layout__blockImg {
   position: relative;
-  float: left;
-  width: auto;
   min-width: 300px;
   max-width: 650px;
   height: 100%;
@@ -3784,10 +3797,13 @@ label.css-label {
   box-shadow: 0 0 3px #9fcea0;
   margin-top: 10px; }
 
-.one_im_promgraf img {
-  max-width: 100%;
-  height: auto;
-  width: 100%; }
+.device_layout__table {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #4d4d4d;
+  font-weight: normal;
+  text-align: center; }
 
 .cell-group {
   position: relative;
