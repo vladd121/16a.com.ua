@@ -235,7 +235,7 @@
             </div>
 
 
-            <div class="col-md-8">
+            <div class="col-md-9">
 
                 <div id="blok_main_2" class='blok_main_2'>
 
@@ -987,91 +987,94 @@
     <div class="blackWrapper"></div>
 
 
-    <div id='my_popup'></div>
-    <div class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">
-        Доставка
-        товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас
-        перевізником.<br><br>
-        Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.<br><br>
-        (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
-    </div>
+    <!--<div id='my_popup'></div>-->
+    <!--<div class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">-->
+        <!--Доставка-->
+        <!--товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас-->
+        <!--перевізником.-->
+        <!--Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.-->
+        <!--(після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)-->
+    <!--</div>-->
 
 
-    <form id="searchformHide" action="/" method="post" style="display:none">
-        <input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>
-    </form>
+    <!--<form id="searchformHide" action="/" method="post" style="display:none">-->
+        <!--<input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>-->
+    <!--</form>-->
 
 
-    <div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно
-        бажаєте видалити всі товари з кошику?
-    </div>
+    <!--<div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно-->
+        <!--бажаєте видалити всі товари з кошику?-->
+    <!--</div>-->
 
-    <script>
-        $("#dialog_truncate").dialog({autoOpen: false});
-        $("#dialog_truncate").dialog({closeText: "закрити"});
-        $("#dialog_truncate").dialog({
-            buttons: [{
-                text: "Так", click: function () {
-                    $(this).dialog("close");
-                    truncate_basket();
-                }
-            },
-                {
-                    text: "Ні", click: function () {
-                    $(this).dialog("close");
-                }
-                }]
-        });
+    <!--<script>-->
+        <!--$("#dialog_truncate").dialog({autoOpen: false});-->
+        <!--$("#dialog_truncate").dialog({closeText: "закрити"});-->
+        <!--$("#dialog_truncate").dialog({-->
+            <!--buttons: [{-->
+                <!--text: "Так", click: function () {-->
+                    <!--$(this).dialog("close");-->
+                    <!--truncate_basket();-->
+                <!--}-->
+            <!--},-->
+                <!--{-->
+                    <!--text: "Ні", click: function () {-->
+                    <!--$(this).dialog("close");-->
+                <!--}-->
+                <!--}]-->
+        <!--});-->
 
-    </script>
+    <!--</script>-->
 
-    <div tabindex="-1" role="dialog"
-         class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable"
-         aria-describedby="dialog" aria-labelledby="ui-id-1" style="display: none; position: absolute;">
-        <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span
-                id="ui-id-1" class="ui-dialog-title">&nbsp;</span>
-            <button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"
-                    title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span
-                    class="ui-button-icon-space"> </span>Close
-            </button>
-        </div>
-        <div id="dialog" class="ui-dialog-content ui-widget-content"></div>
-        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"
-             style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
-    </div>
-    <div tabindex="-1" role="dialog"
-         class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable"
-         aria-describedby="dialog_delivery" aria-labelledby="ui-id-2" style="display: none; position: absolute;">
-        <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span
-                id="ui-id-2" class="ui-dialog-title">Доставка і оплата</span>
-            <button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"
-                    title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span
-                    class="ui-button-icon-space"> </span>закрити
-            </button>
-        </div>
-        <div id="dialog_delivery" class="dialog_delivery_basketClear ui-dialog-content ui-widget-content" style="">
-            Доставка товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас
-            перевізником.<br><br>
-            Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.<br><br>
-            (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
-        </div>
-        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"
-             style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
-        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
-    </div>
+    <!--<div tabindex="-1" role="dialog"-->
+         <!--class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable"-->
+         <!--aria-describedby="dialog" aria-labelledby="ui-id-1" style="display: none; position: absolute;">-->
+        <!--<div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span-->
+                <!--id="ui-id-1" class="ui-dialog-title">&nbsp;</span>-->
+            <!--<button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"-->
+                    <!--title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span-->
+                    <!--class="ui-button-icon-space"> </span>Close-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div id="dialog" class="ui-dialog-content ui-widget-content"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"-->
+             <!--style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>-->
+    <!--</div>-->
+
+
+
+    <!--<div tabindex="-1" role="dialog"-->
+         <!--class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable"-->
+         <!--aria-describedby="dialog_delivery" aria-labelledby="ui-id-2" style=" position: absolute;">-->
+        <!--<div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span-->
+                <!--id="ui-id-2" class="ui-dialog-title">Доставка і оплата</span>-->
+            <!--<button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"-->
+                    <!--title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span-->
+                    <!--class="ui-button-icon-space"> </span>закрити-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div id="dialog_delivery" class="dialog_delivery_basketClear ui-dialog-content ui-widget-content" style="">-->
+            <!--Доставка товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас-->
+            <!--перевізником.<br><br>-->
+            <!--Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.<br><br>-->
+            <!--(після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)-->
+        <!--</div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"-->
+             <!--style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>-->
+    <!--</div>-->
 
 
 
@@ -1085,154 +1088,16 @@
     <div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
 
 
-
-
     <script type="text/javascript" src="libs/jquery.min.js"></script>
    
-    <script type="text/javascript" src="js/menu-vertical-root-func.js"></script>
-    <script type="text/javascript" src="js/menu-vertical-root.js"></script>
-    <script type="text/javascript" src="gal4js/modernizr.custom.17475.js"></script>
+    <!--<script type="text/javascript" src="js/menu-vertical-root-func.js"></script>-->
+    <!--<script type="text/javascript" src="js/menu-vertical-root.js"></script>-->
+    <!--<script type="text/javascript" src="gal4js/modernizr.custom.17475.js"></script>-->
 
 
 <script src="js/libs.min.js"></script>
 
 <script src="js/common.min.js"></script>
-
-
-
-
-    <script>
-
-
-        $("#dialog_pic_full").dialog({autoOpen: false});
-        $("#dialog_pic_full").dialog({closeText: "закрити"});
-        $("#dialog_pic_full").dialog({
-            buttons: [{
-                text: "Ok", click: function () {
-                    $(this).dialog("close");
-                }
-            }]
-        });
-
-
-        window.onload = function () {
-            setTimeout(function () {
-
-                window.addEventListener("popstate", function (e) {
-                    window.location = location.href;
-                }, false);
-
-
-            }, 0);
-        }
-
-
-    </script>
-
-
-    <script type="text/javascript">
-
-        function GetCssStyle(e) {
-            if (e.currentStyle) return e.currentStyle;
-            else if (window.getComputedStyle) return window.getComputedStyle(e, null)
-        }
-
-
-        var x = 0;
-
-        function resize_body_f() {
-            //return;
-            var txt = x += 1;
-            // document.getElementById("blok1").innerHTML = txt;
-            var elem2 = document.getElementById("blok_main_2");
-
-            var str = GetCssStyle(elem2).width;
-            var width2 = str.substr(0, str.length - 2);
-            var elem21 = document.getElementById("blok_main_2_1");
-
-
-            var elem22 = document.getElementById("blok_main_2_2");
-
-            var str21 = GetCssStyle(elem21).width;
-            var width21 = str21.substr(0, str21.length - 2);
-
-            var elem2_1_x = document.getElementById("blok_main_2_1_x");
-            if (elem2_1_x == null) {
-                return;
-            }
-            var str2_1_x = GetCssStyle(elem2_1_x).width;
-            var width2_1_x = str2_1_x.substr(0, str2_1_x.length - 2);
-
-            var full_21x_count = (Number(width21)) / (Number(width2_1_x) + 10);
-            var info = document.getElementById("info");
-            //var info1 = document.getElementById("info1");
-//	info.innerHTML = "21x: "+width2_1_x + ", count: "+full_21x_count+ ", 21: "+width21;
-
-            //
-//	elem22.innerHTML = width;
-            if (Number(width2) < Number('950')) {//перенос блока инфо вниз
-                //	console.log(width);
-                elem21.removeAttribute("style");
-
-                elem21.className = "blok_main_2_1_when_bl_main_2_2_in_new_line";
-                elem22.className = "blok_main_2_2_new_line";
-            } else {
-                elem21.className = "blok_main_2_1";
-                elem22.className = "blok_main_2_2";
-
-                //width2
-                var w_left_max = 0.9 * Number(width2);
-                var left_num_max = Math.floor(Number(w_left_max) / (Number(width2_1_x) + 10));
-                var w_left_new = left_num_max * (Number(width2_1_x) + 10);
-                var w_left_new_procent = Math.floor(w_left_new * 100 / Number(width2));
-                w_left_new_procent = w_left_new_procent + 1;
-                var w_right_new_procent = 100 - w_left_new_procent;
-//		info1.innerHTML =width2_1_x;
-
-                //	info1.innerHTML =w_left_new_procent + " - "+w_left_new+",  "+ w_right_new_procent;
-                elem21.style.width = w_left_new_procent + "%";
-                elem22.style.width = w_right_new_procent + "%";
-
-
-                //	var x_proc = (Math.floor(Number(full_21x_count))*170*90)/Number(width21);
-                //	info1.innerHTML =x_proc;
-                //	elem21.style.width = Math.floor(Number(x_proc))+"%";
-                //	elem22.style.width = Math.floor(100-Math.floor(Number(x_proc)))+"%";
-                //	console.log(Math.floor(Number(x_proc))+"%");
-                //	console.log(Math.floor(100-Math.floor(Number(x_proc)))+"%");
-
-            }
-
-        }
-
-    </script>
-
-
-    <script>
-        $("#dialog_form").dialog({autoOpen: false});
-        $("#dialog_form").dialog({closeText: "закрити (замовлення не буде відправлене!)"});
-        $("#dialog_form").dialog({
-            buttons: [{
-                id: "dialogSendbut", text: "Надіслати замовлення", click: function () {
-                    send_basket_dialog({
-                        data: {
-                            bsend: "bsend",
-                            user_name: document.getElementById("user_name").value,
-                            user_phone: document.getElementById("user_phone").value,
-                            user_adres: document.getElementById("user_adres").value,
-                            user_firm: document.getElementById("user_firm").value,
-                            user_mail: document.getElementById("user_mail").value;
-                }
-                });
-                }
-            }]
-        });
-
-
-        resize_body_f();
-
-
-    </script>
 
 
     <script>
