@@ -6,6 +6,27 @@ $(document).ready(function () {
         body = $("body");
 
 
+
+//  hideShowEffect
+    function hideShowEffect(button, element) {
+        button.click(function () {
+            element.toggleClass("hidden");
+        });
+    }
+
+
+    var buttonLanguage = $(".bl_language__active"),
+        fieldWithOtherLanguage = $(".bl_language__variables"),
+        buttonChooseRigthLanguage = $(".bl_language__variables_item");
+
+    hideShowEffect(buttonLanguage, fieldWithOtherLanguage);
+    hideShowEffect(buttonChooseRigthLanguage, fieldWithOtherLanguage);
+
+
+
+
+
+
     navMenu.hover(
         function() {
             blackWrapper.css({"display": "block"})
@@ -138,6 +159,30 @@ $(document).ready(function () {
     }showBigSliderPhoto();
 
 
+
+
+
+
+
+
+    $(".block_quantity__plus").on("click", function () {
+
+        var  quantityProduct = $(this).siblings(".block_quantity__input");
+
+        quantityProduct.val(Number( quantityProduct.val()) + 1);
+    });
+
+    $(".block_quantity__minus").on("click", function () {
+
+        var  quantityProduct = $(this).siblings(".block_quantity__input");
+
+        if (quantityProduct.val() > 1) {
+            quantityProduct.val(Number( quantityProduct.val()) - 1);
+        }
+        else {
+            quantityProduct.val(1);
+        }
+    });
 
 
 
