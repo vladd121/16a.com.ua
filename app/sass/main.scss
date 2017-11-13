@@ -1926,11 +1926,6 @@ button {
 }
 
 
-
-
-
-
-
 .get_help {
   color: #000;
   background-color: #CCC;
@@ -2156,7 +2151,6 @@ button {
   position: relative;
   float: left;
   display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #009;
   -webkit-border-radius: 10px 10px 0 0;
@@ -2174,7 +2168,6 @@ button {
   position: relative;
   float: left;
   display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #FFFFFF;
   -webkit-border-radius: 0 0 10px 10px;
@@ -2196,7 +2189,6 @@ button {
   position: relative;
   float: left;
   display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #009;
   border-radius: 10px 10px 0 0;
@@ -2213,7 +2205,6 @@ button {
   position: relative;
   float: left;
   display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #009;
   -webkit-border-radius: 10px 10px 0 0;
@@ -2231,7 +2222,6 @@ button {
   position: relative;
   float: left;
   display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #009;
   -webkit-border-radius: 10px 10px 0 0;
@@ -2375,13 +2365,10 @@ button {
 .price-item-wrap1_one {
   position: relative;
   float: none;
-  width: 100%;
   height: auto;
   margin: 20px;
   overflow: visible;
-  width: auto;
   min-width: 300px;
-  /*	max-width: 600px;*/
   clear: both;
 
 }
@@ -2408,7 +2395,6 @@ button {
   float: left;
   width: 30%;
   min-width: 250px;
-  /*max-width: 500px;*/
   height: 100%;
   padding: 10px;
   cursor: pointer;
@@ -2422,7 +2408,6 @@ button {
   max-width: 100%;
   height: auto;
   width: 100%;
-  /*display: block;*/
 }
 
 .vlast_deliv_container {
@@ -2665,8 +2650,6 @@ button {
 
   width: 150px;
   min-width: 150px;
-
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
   color: #000000;
   font-style: normal;
@@ -2675,12 +2658,9 @@ button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   white-space: nowrap;
   text-align: center;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 15px;
   margin: 5px;
 
 }
@@ -2695,7 +2675,6 @@ button {
 }
 
 .one_search_addbutton {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #FFF;
   font-style: normal;
@@ -2718,7 +2697,6 @@ button {
 }
 
 .one_search_addbuttonNowInBasket {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 80%;
   color: #FFF;
   font-style: normal;
@@ -2742,7 +2720,6 @@ button {
 .one_search_tov_info {
   position: relative;
   float: left;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #000;
   margin: 5px;
@@ -2799,7 +2776,6 @@ button {
   padding-top: 72px;
   padding-bottom: 10px;
   list-style-type: none;
-  /*overflow: hidden;*/
 }
 
 .subgr-item-dv {
@@ -2996,9 +2972,7 @@ button {
 //  text-align: right;
 //}
 //
-//.button_search-mobile {
-//  top: 25px;
-//}
+
 //
 //.navItem_linkPage {
 //
@@ -3038,6 +3012,11 @@ button {
 //  padding: 4px;
 //  background-color: #0F6;
 //}
+
+.button_search-mobile {
+  top: 25px;
+}
+
 
 .logo_box {
   position: relative;
@@ -3254,15 +3233,13 @@ label.css-label {
   margin-left: 5px;
   background-color: #FFF;
   display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
   text-decoration: none;
   white-space: nowrap;
-  padding: 0px 10px;
-  text-decoration: none;
+  padding: 0 10px;
   color: #666666;
   border: 1px solid #FF6666;
 
@@ -3282,7 +3259,6 @@ label.css-label {
 }
 
 .left-group-menu {
-  //position: relative;
   position: absolute;
   width: 100%;
 
@@ -3340,10 +3316,10 @@ label.css-label {
   text-decoration: none;
   cursor: default;
   font-style: normal;
-  background: #FFF; /* ���� ���� */
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* ��� Firefox */
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* ��� Safari � Chrome */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* ��������� ���� */
+  background: #FFF;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   position: relative;
   float: left;
@@ -3353,7 +3329,7 @@ label.css-label {
 }
 
 .cl-container {
-  font-size: 14px; /* for em size */
+  font-size: 14px;
   width: auto;
   min-width: 90em;
   max-width: 1200em;
@@ -3540,8 +3516,7 @@ label.css-label {
   position: relative;
 }
 
-.no_item_found_container {
-}
+
 
 .no_item_found {
   color: #066;
@@ -3579,7 +3554,6 @@ label.css-label {
   height: 17px;
   background-color: #FFF;
   display: block;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
@@ -3587,8 +3561,7 @@ label.css-label {
   text-decoration: none;
   white-space: nowrap;
   padding: 0px 10px;
-  text-decoration: none;
-  color: #666666;
+  color: #666;
   border: 1px solid #FF6666;
   /*left:45%;*/
 
@@ -3641,7 +3614,6 @@ label.css-label {
 }
 
 .left_cascad_line_last {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #000;
   font-style: normal;
@@ -3651,7 +3623,6 @@ label.css-label {
 }
 
 .left_group_menu_top {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #000;
   font-style: normal;
@@ -3727,7 +3698,6 @@ label.css-label {
 
 
 .user_info {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #006699;
   font-style: normal;
@@ -3780,7 +3750,6 @@ label.css-label {
 }
 
 .cell-logo-text {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #555753;
   font-style: normal;

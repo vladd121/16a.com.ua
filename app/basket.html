@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Інтернет-магазин 16А</title>
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
+
+
+    <!-- Styles -->
+
+    <!-- build:css css/libs.min.css -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+
+    <!--<link rel="stylesheet" href="js/jquery-ui.min.css">-->
+
+    <!--<link rel="stylesheet" href="./gal4css/demo.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="./gal4css/elastislide.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="./gal4css/custom.css" type="text/css"/>-->
+
+
+</head>
+
+<body class="body" onresize="resize_body_f()">
+<div class="wrapperBlock">
+    <!--[if lt IE 10]>
+    <p class="browsehappy">Ваш браузер устарел. Пожалуйста <a
+            href="http://browsehappy.com/">обновите</a>
+        его.</p>
+    <![endif]-->
+
+
+    <!------------------------------------------ HEADER ---------------------------------------------------------->
+    <header id="top" class="header">
+        <div class="mainWrapper">
+            <div class="" id="info">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <div class="top-info__inner hidden-xs">
+                            <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
+                            <a class="top-line-delivery" href="#">Доставка і оплата</a>
+                            <div class="top-phone">
+                                <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
+                                <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
+                                <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
+                                <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
+                            </div>
+
+                            <form class="bl_language" method="" action="">
+                                <span class="bl_language__active">ua</span>
+                                <ul class="bl_language__variables hidden">
+                                    <li class="bl_language__variables_item language-select">ua</li>
+                                    <li class="bl_language__variables_item language-select">ru</li>
+                                </ul>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="blok_top">
+
+
+                        <div class="root-logo">
+                            <button class="button_menu-mobile decor_burger visible-xs-inline-block" type="button">
+                                Каталог
+                            </button>
+                            <a class="logo_link" href="#"><img src="image/logo.png"></a>
+                        </div>
+
+
+                        <button class="search_icon button_search-mobile visible-xs" type="button"></button>
+                        <div class="block_ssearch">
+                            <input id="searchInput" class="searchtext_def" name="getSearch" type="text"
+                                   placeholder="Пошук"/>
+                            <button class="search_icon" type="button" title="Пошук"></button>
+                        </div>
+
+
+                        <div class="mini_basket" id="mini_basket">
+                            <a class="binfo" href="#"> <!-- ЕСЛИ В КОРЗИНЕ ЕСТЬ ТОВАР ДОБАВЛЯЙ КЛАСС active к binfo-->
+                                <img class="binfo_image" src="image/b_min1.gif" alt="Ваш кошик">
+                                <div class="minBasket_full">
+                                    <p class="minBasket">Кошик</p>
+                                    <p>
+                                        <span class="minBasket_param">Товарів</span>
+                                        <span class="minBasket_text">0</span>
+                                    </p>
+                                    <p>
+                                        <span class="minBasket_param">Сума</span>
+                                        <span class="minBasket_text">0</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="container">
+
+
+            <ul class="bl_breadcrumbs clearfix">
+                <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">16А</a></li>
+                <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">
+                    Корзина покупок</p></li>
+            </ul>
+
+
+
+
+            <div class="row row-flex row-flex-wrapss clearfix">
+                <div class="col-xs-12 col-md-5 col-md-offset-1 ">
+                    <div class="bl_receiver">
+                        <h2 class="text_title text_title__margin">Получатель</h2>
+                        <form class="bl_receiver__form" role="form" action="">
+
+                            <div class="form-group ">
+
+                                <!-- Добавляй класс text_decor__importantField если атрибут у них назначен как обязвтельный -->
+
+
+                                <label for="user_name" class="text_paragraph text_decor__importantField">Имя:</label>
+                                <input class="form-control form-lineStyle" id="user_name" type="text" autofocus>
+                            </div>
+                            <div class="form-group form_telephone">
+                                <label for="user_tel" class="text_paragraph text_decor__importantField">Телефон:</label>
+                                <input class="form-control" id="user_tel" type="tel" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="user_email" class="text_paragraph">E-mail:</label>
+                                <input class=" form-control" id="user_email" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_refinement" class="text_paragraph">Адресс доставки:</label>
+                                <textarea class=" form-control" name="" id="user_refinement" cols="30" rows="5"></textarea>
+                            </div>
+                        </form>
+                        <p class="text_error">*Обязательные к заполнению поля</p>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-md-5 ">
+                    <div class="bl_deliveryMethod">
+                        <h2 class="text_title text_title__margin">Способ доставки</h2>
+                        <label class="shoppingBasket_label">
+                            <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio" checked>
+                            <p class="shoppingBasket_text">Отправить Новой Почтой</p>
+                        </label>
+                        <label class="shoppingBasket_label">
+                            <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio">
+                            <p class="shoppingBasket_text">Доставить курьером по Киеву</p>
+                        </label>
+                        <label class="shoppingBasket_label">
+                            <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio">
+                            <p class="shoppingBasket_text">Самовывоз из магазина</p>
+                        </label>
+
+                        <div class="form-group group_selects">
+                            <select name="zone_id" id="input-payment-zone" class="form-control">
+                                <option value=""> Выберете область</option>
+                                <option value="">Киевская</option>
+                                <option value="">Волынская</option>
+                                <option value="">Одесская</option>
+                            </select>
+                        </div>
+                        <div class="form-group group_selects">
+                            <select name="city" id="input-payment-city" class="form-control">
+                                <option value=""> Выберите город</option>
+                                <option value="">Киев</option>
+                                <option value="">Луцк</option>
+                                <option value="">Одесса</option>
+                            </select>
+                        </div>
+                        <div class="form-group group_selects">
+                            <select name="department" id="input-payment-department" class="form-control">
+                                <option value=""> Выберите отделение</option>
+                                <option value="">№15</option>
+                                <option value="">№3</option>
+                                <option value="">№11</option>
+                            </select>
+                        </div>
+
+
+                        <h2 class="text_title text_title__margin">Способ оплаты</h2>
+
+
+                        <label class="shoppingBasket_label">
+                            <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio" checked>
+                            <p class="shoppingBasket_text">Оплата наличными</p>
+                        </label>
+
+                        <label class="shoppingBasket_label">
+                            <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                            <p class="shoppingBasket_text">Оплата через сайт</p>
+                        </label>
+
+
+                        <label class="shoppingBasket_label">
+                            <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                            <p class="shoppingBasket_text">Оплата на карту</p>
+                        </label>
+
+                        <label class="shoppingBasket_label">
+                            <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                            <p class="shoppingBasket_text">Самовывоз из магазина</p>
+                        </label>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="shoppingBasket_product">
+                <div class="row">
+
+                    <div class="shoppingBasket_product__title clearfix">
+
+                        <div class="visible-xs visible-sm col-xs-12">
+                            <p class="table_title">Товары к покупке</p>
+                        </div>
+
+
+                        <div class="hidden-xs hidden-sm col-xs-12 col-md-5">
+                            <p class="table_title table_title__left">Товар</p>
+                        </div>
+                        <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                            <p class="table_title ">Код товара</p>
+                        </div>
+                        <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                            <p class="table_title">Количество</p>
+                        </div>
+
+                        <div class="hidden-xs hidden-sm col-xs-6 col-md-1">
+                            <p class="table_title">Цена</p>
+                        </div>
+                        <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                            <p class="table_title">Итого</p>
+                        </div>
+                    </div>
+
+
+                    <!--  GOODS -->
+
+                    <!-- product 1-->
+
+                    <div class="shoppingBasket_product__good clearfix">
+                        <div class="col-xs-12 col-md-5">
+
+                            <div class="shoppingBasket_product__item">
+
+                                <div class="shoppingBasket_product__wrapper">
+                                    <button class="delite_product">
+                                        <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                                    </button>
+                                    <img class="shoppingBasket_product__img" src="image/Products/zefir/z5.jpg" alt="">
+
+                                    <div class="shoppingBasket_product__description">
+                                        <h2 class="shoppingBasket_product__name">Вентилятор NV 12 120 на стелю Dospel</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-6 col-md-2">
+
+                            <div class="shoppingBasket_product__item">
+                                <p class="shoppingBasket_product__mark">FR-528M</p>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-6 col-md-2">
+
+
+                            <div class="shoppingBasket_product__item">
+                                <div class="block_quantity__box">
+                                    <button class="block_quantity__minus"><span>-</span></button>
+                                    <input class="block_quantity__input" type="text" value="1" title="Количество продуктов">
+                                    <button class="block_quantity__plus"><span>+</span></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-6 col-md-1">
+
+
+                            <div class="shoppingBasket_product__item" >
+                                <!--<span class="good-price__normal good-price__minSize">2 990 грн</span>-->
+                                <!-- Если есть акция то выподить эти цены -->
+                                <span class="good-price__old">5000 грн</span>
+                                <span class="good-price__new">2 990 грн</span>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-6 col-md-2">
+
+
+                            <div class="shoppingBasket_product__item" >
+                                <span class="good-price__normal">9150 грн</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- product 2-->
+
+                    <div class="shoppingBasket_product__good clearfix">
+                        <div class="col-xs-12 col-md-5">
+
+                            <div class="shoppingBasket_product__item" >
+
+                                <div class="shoppingBasket_product__wrapper">
+                                    <button class="delite_product">
+                                        <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                                    </button>
+                                    <img class="shoppingBasket_product__img" src="image/Products/zefir/z1.jpg" alt="">
+                                    <div class="shoppingBasket_product__description">
+                                        <h2 class="shoppingBasket_product__name">Вентилятор NV 12 120 на стелю Dospel</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-6 col-md-2">
+
+                            <div class="shoppingBasket_product__item" >
+                                <p class="shoppingBasket_product__mark">FR-528M</p>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-6 col-md-2">
+
+
+                            <div class="shoppingBasket_product__item">
+                                <div class="block_quantity__box">
+                                    <button class="block_quantity__minus"><span>-</span></button>
+                                    <input class="block_quantity__input" type="text" value="1" title="Количество продуктов">
+                                    <button class="block_quantity__plus"><span>+</span></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-6 col-md-1">
+
+
+                            <div class="shoppingBasket_product__item" >
+                                <span class="good-price__normal ">2 990 грн</span>
+                                <!-- Если есть акция то выподить эти цены -->
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-6 col-md-2">
+
+
+                            <div class="shoppingBasket_product__item" >
+                                <span class="good-price__normal">99999999 грн</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+
+            <div class="col-xs-12 col-md-2 col-md-offset-10">
+                <div class="shoppingBasket_product__fullPrise">
+                    <span class="shoppingBasket_fullPrise_text">Всего:</span>
+                    <span class="shoppingBasket_fullPrise_text">99999999 грн</span>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 clearfix">
+                <button class="button_buyProduct">Оформить заказ</button>
+
+              <a class="button_buyProduct__text button_continueBuying__link" href="#">Продолжить покупки</a>
+
+
+
+
+            </div>
+
+
+            <div class="col-xs-12">
+                <div class="decor_line"></div>
+            </div>
+        </div>
+
+
+        
+    </main>
+
+    <!-- CEO -->
+    <div class="container">
+        <div class="col-xs-12">
+            <div class="bottom_info">
+                <p>Інтернет-магазин 16А. Кабель – Світло – Вентиляція - Електрика – Фільтри для води та багато
+                    іншого.</p>
+
+                <p>Ви робите ремонт проводки, електрики, замінюєте вимикачі та розетки, встановлюєте світильники,
+                    плануєте зробити вентиляцію приміщення або потрібні лампи освітлення, автоматичні вимикачі, реле
+                    напруги, ізоляційні та кріпильні елементи або інше обладнання, наш Інтернет-магазин допоможе зручно
+                    підібрати якісний і відповідний Вашими вимогам товар.</p>
+
+                <p>
+                    Серед представлених товарів можна виділити основні групи:
+                    - побутові та промислові вентилятори, вентиляційні решітки; - вимикачі, розетки, подовжувачі, вилки;
+                    - кабель, провід; - світлодіодні, енергозберігаючі, інші лампи;- світильники, ліхтарики; -
+                    світлодіодна стрічка та комплектуючі; - автоматичні вимикачі, пристрої захисного відключення (ПЗВ),
+                    дифавтомати, реле напруги; - батарейки, зарядні пристрої; - кріплення для кабелю та трубки,
+                    ізоляційна стрічка та ізоляційні матеріали; - промислове обладнання (магнітні пускачі, контактори,
+                    пости, кнопки, кабельні наконечники, клемники); - інструмент для затискання наконечників, зняття
+                    ізоляції; - фільтри для води та побутова хімія; - клей, магнітні тримачі та захвати.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-md-4 footer_part3">
+                <div class="bt_div">
+                    <p class="bt_text">Режим роботи Call center (при замовленні по телефону):
+                        Пн-Пт: 9:00-18:00
+                        Cб: 10:00-15:00
+                        При замовленні по телефону прохання вказувати код товару.</p>
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"><img src="../image/ks_m1.png"></div>
+                        <div class="cell-logo-t1">(067) 340-81-46</div>
+                    </div>
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"><img src="../image/vf_m1.png"></div>
+                        <div class="cell-logo-t1">(050) 421-70-70</div>
+                    </div>
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"><img src="../image/lf_m1.png"></div>
+                        <div class="cell-logo-t1">(063) 247-70-70</div>
+                    </div>
+
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"><img src="../image/lviv_m1.png"></div>
+                        <div class="cell-logo-t1">(032) 247-70-70</div>
+                    </div>
+
+                    <div class="cell-group_m1">
+                        <div class="cell-logo"></div>
+                        <div class="cell-logo-t1">(050) 421-70-70 (Viber)</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-4 footer_part1">
+                <div class="bt_div"><a class="bt_lnk" href="/?page=about">Про нас</a></div>
+                <div class="bt_div"><a class="bt_lnk" href="/?page=contact">Контакти</a></div>
+                <div class="bt_div"><a class="bt_lnk" href="/?page=delivery">Доставка і оплата</a></div>
+                <div class="mob-link_constant" id="pda_url_constant">
+                    <div align="left" class="mob_ver"><a onclick="document.cookie='npr=0';"
+                                                         href="http://m.16a.com.ua/?no-full-redir=1">Мобільна версія</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 footer_part2">
+                <div class="bt_div">
+                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А  в соціальних
+                    мережах:</span>
+                    <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png"
+                                                                                        alt="facebook"></a>
+                    <a href="https://plus.google.com/109777980768435551079" target="_blank"><img
+                            src="../image/google.png"
+                            alt="google+"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyr">
+            <a class="wt" href="#" target="_blank">2016-2017 &copy; &quot;Інтернет-магазин
+                16А.&quot;</a>
+        </div>
+    </footer>
+</div>
+
+<div class="blackWrapper"></div>
+
+
+<div id='my_popup'>
+</div>
+<div id="dialog_delivery" class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">Доставка
+    товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас перевізником.
+    Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.
+    (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
+</div>
+
+<div id="dialog"></div>
+
+<form id="searchformHide" action="/" method="post" style="display:none">
+    <input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>
+</form>
+<!--<script>-->
+<!--document.getElementById('searchformHide').style.display = 'none';-->
+<!--$("#dialog").dialog({autoOpen: false});-->
+<!--$("#dialog_delivery").dialog({autoOpen: false});-->
+<!--$("#dialog_delivery").dialog({closeText: "закрити"});-->
+
+<!--</script>-->
+
+<div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно
+    бажаєте видалити всі товари з кошику?
+</div>
+
+<!--<script>-->
+<!--$("#dialog_truncate").dialog({autoOpen: false});-->
+<!--$("#dialog_truncate").dialog({closeText: "закрити"});-->
+<!--$("#dialog_truncate").dialog({-->
+<!--buttons: [{-->
+<!--text: "Так", click: function () {-->
+<!--$(this).dialog("close");-->
+<!--truncate_basket();-->
+<!--}-->
+<!--},-->
+<!--{-->
+<!--text: "Ні", click: function () {-->
+<!--$(this).dialog("close");-->
+<!--}-->
+<!--}]-->
+<!--});-->
+
+<!--</script>-->
+
+<!--<div id="dialog_form" title="Оформлення замовлення" style="display:none">-->
+    <!--<form id="form_b_send" name="form_b_send" method="post" action="?">-->
+        <!--<p class="send_text" align="center">Для відправки Вашого замовлення, будь-ласка, заповніть поля наступної форми-->
+            <!--та натисніть кнопку &quot;надіслати замовлення&quot;. <span class="send_comment">  Поля відмічені * повинні бути заповнені обов'язково.</span>-->
+        <!--</p>-->
+        <!--<table width="500" border="0" align="center">-->
+            <!--<tr>-->
+                <!--<td nowrap="nowrap" class="send_text">-->
+                    <!--<div align="right">Ім'я отримувача*</div>-->
+                <!--</td>-->
+                <!--<td class="send_text">-->
+                    <!--<div class="form_error_text" id="user_name_text" style="display:none" align="right">(поле не-->
+                        <!--заповнене)-->
+                    <!--</div>-->
+                    <!--<input name="user_name" type="text" id="user_name" onkeypress="onkeypressDialogs(event)"-->
+                           <!--class="send_input" size="50" maxlength="250"/></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td nowrap="nowrap" class="send_text">-->
+                    <!--<div align="right">Телефон(и)*</div>-->
+                <!--</td>-->
+                <!--<td class="send_text">-->
+                    <!--<div class="form_error_text" id="user_phone_text" style="display:none" align="right">(поле не-->
+                        <!--заповнене)-->
+                    <!--</div>-->
+                    <!--<input name="user_phone" type="text" id="user_phone" onkeypress="onkeypressDialogs(event)"-->
+                           <!--class="send_input" size="50" maxlength="250"/></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td nowrap="nowrap" class="send_text">-->
+                    <!--<div align="right">Адреса отримувача</div>-->
+                <!--</td>-->
+                <!--<td class="send_text"><input name="user_adres" type="text" id="user_adres"-->
+                                             <!--onkeypress="onkeypressDialogs(event)" class="send_input" size="50"-->
+                                             <!--maxlength="250"/></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td nowrap="nowrap" class="send_text">-->
+                    <!--<div align="right">Назва організації</div>-->
+                <!--</td>-->
+                <!--<td class="send_text"><input name="user_firm" class="send_input" type="text" id="user_firm"-->
+                                             <!--onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td nowrap="nowrap" class="send_text">-->
+                    <!--<div align="right">Електронна пошта</div>-->
+                <!--</td>-->
+                <!--<td class="send_text"><input name="user_mail" type="text" id="user_mail" class="send_input"-->
+                                             <!--onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/>-->
+                    <!--<div id="send_my_wait"></div>-->
+                <!--</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+    <!--</form>-->
+<!--</div>-->
+
+
+<p id="back-top" style="display:none">
+    <a href="#top"><span></span></a>
+</p>
+
+
+<div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
+
+
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+
+
+<!-- build:js js/libs.min.js -->
+
+<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+<!-- endbuild -->
+
+<!-- build:js js/common.min.js -->
+<script src="js/common.js"></script>
+<!-- endbuild -->
+
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function () {
+        var widget_id = '8xIrJ3Ggeb';
+        var d = document;
+        var w = window;
+
+        function l() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//code.jivosite.com/script/widget/' + widget_id;
+            var ss = document.getElementsByTagName('script')[0];
+            ss.parentNode.insertBefore(s, ss);
+        }
+
+        if (d.readyState == 'complete') {
+            l();
+        } else {
+            if (w.attachEvent) {
+                w.attachEvent('onload', l);
+            } else {
+                w.addEventListener('load', l, false);
+            }
+        }
+    })();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
+
+</body>
+</html>

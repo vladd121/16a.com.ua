@@ -6,7 +6,6 @@ $(document).ready(function () {
         body = $("body");
 
 
-
 //  hideShowEffect
     function hideShowEffect(button, element) {
         button.click(function () {
@@ -23,18 +22,13 @@ $(document).ready(function () {
     hideShowEffect(buttonChooseRigthLanguage, fieldWithOtherLanguage);
 
 
-
-
-
-
     navMenu.hover(
-        function() {
+        function () {
             blackWrapper.css({"display": "block"})
-        }, function() {
+        }, function () {
             blackWrapper.css({"display": "none"});
         }
     );
-
 
 
 /// Search button
@@ -65,19 +59,19 @@ $(document).ready(function () {
 
 ///// Button Buy
 
-    var  buttonAddToBasket = $(".addbutton"),
-         fildQuantityOgGoods = $(".addnum"),
-         activeButtonAddToBasket= "addbutton_active";
+    var buttonAddToBasket = $(".addbutton"),
+        fildQuantityOgGoods = $(".addnum"),
+        activeButtonAddToBasket = "addbutton_active";
 
-    fildQuantityOgGoods.on('keyup', function(e) {
+    fildQuantityOgGoods.on('keyup', function (e) {
         var val = $(this).val();
-        var new_str = val.replace(/[^0-9]/gim,'');
+        var new_str = val.replace(/[^0-9]/gim, '');
         $(this).val(new_str);
     });
 
-    fildQuantityOgGoods.on('blur', function(e) {
+    fildQuantityOgGoods.on('blur', function (e) {
         var val = $(this).val();
-        var new_str = val.replace(/[^0-9]/gim,'');
+        var new_str = val.replace(/[^0-9]/gim, '');
         $(this).val(new_str);
     });
 
@@ -88,7 +82,7 @@ $(document).ready(function () {
             textInputField = inputFild.val();
 
 
-        if (textInputField !== ""){
+        if (textInputField !== "") {
 
             $(this).text("в кошику");
             $(this).addClass(activeButtonAddToBasket);
@@ -103,11 +97,19 @@ $(document).ready(function () {
 
     });
 
+    var productSlides = $(".product_slider__item"),
+        quantitySlides = productSlides.length,
+        HowManySlides = 4;
+    var currentLoop = true;
+
+    if (quantitySlides < HowManySlides) {
+        currentLoop = false;
+    }
 
 
     $(".product_slider").owlCarousel({
-        items: 4,
-        loop: true,
+        items: HowManySlides,
+        loop: currentLoop,
         nav: true,
         navText: true,
         dots: false,
@@ -126,21 +128,16 @@ $(document).ready(function () {
             },
             550: {
                 items: 2
-
-            },
-            450: {
-                items: 1
-
             },
 
             320: {
-                items: 1
+                items: 2
             }
 
         }
     });
 
-    function showBigSliderPhoto(){
+    function showBigSliderPhoto() {
 
         var fullSlides = $(".product_slider__item"),
             activeSlide = "product_slider__item_active";
@@ -156,37 +153,29 @@ $(document).ready(function () {
 
         });
 
-    }showBigSliderPhoto();
+    }
 
-
-
-
-
-
+    showBigSliderPhoto();
 
 
     $(".block_quantity__plus").on("click", function () {
 
-        var  quantityProduct = $(this).siblings(".block_quantity__input");
+        var quantityProduct = $(this).siblings(".block_quantity__input");
 
-        quantityProduct.val(Number( quantityProduct.val()) + 1);
+        quantityProduct.val(Number(quantityProduct.val()) + 1);
     });
 
     $(".block_quantity__minus").on("click", function () {
 
-        var  quantityProduct = $(this).siblings(".block_quantity__input");
+        var quantityProduct = $(this).siblings(".block_quantity__input");
 
         if (quantityProduct.val() > 1) {
-            quantityProduct.val(Number( quantityProduct.val()) - 1);
+            quantityProduct.val(Number(quantityProduct.val()) - 1);
         }
         else {
             quantityProduct.val(1);
         }
     });
-
-
-
-
 
 
 });

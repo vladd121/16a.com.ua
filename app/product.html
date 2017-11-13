@@ -43,7 +43,7 @@
 
 </head>
 
-<body class="body" onresize="resize_body_f()">
+<body class="body">
 <div class="wrapperBlock">
     <!--[if lt IE 10]>
     <p class="browsehappy">Ваш браузер устарел. Пожалуйста <a
@@ -121,7 +121,7 @@
 
     <main class="main">
         <div class="container">
-            <div class="col-md-3">
+            <div class="col-md-3 hidden-xs">
                 <div class='blok_main_1 category_menu'>
 
                     <button class="buttonStartMenu" type="button">Каталог товару</button>
@@ -276,10 +276,10 @@
 
                             <div class="bl_mainProduct clearfix">
 
-                                <div class="col-md-6 col-xs-6">
+                                <div class="col-xs-12 col-md-6">
 
-                                  <div class="slider_wrapper">
-                                    <ul class="product_slider owl-carousel hidden-xs">
+                                  <div class="slider_wrapper hidden-xs">
+                                    <ul class="product_slider owl-carousel ">
                                         <li class="product_slider__item product_slider__item_active"><img
                                                 class="product_slider__img" src='image/Products/zefir/a-zefir.jpg'
                                                 alt=""/></li>
@@ -292,29 +292,28 @@
                                                                               src='image/Products/zefir/z2.jpg'
                                                                               alt='Вентилятор ZEFIR 100S (стандарт) Dospel (Доспел)'/>
                                         </li>
-                                        <li class="product_slider__item"><img class="product_slider__img"
-                                                                              src='image/Products/zefir/z3.jpg'
-                                                                              alt='Вентилятор ZEFIR 100S (стандарт) Dospel (Доспел)'/>
-                                        </li>
-                                        <li class="product_slider__item"><img class="product_slider__img"
-                                                                              src='image/Products/zefir/z4.jpg'
-                                                                              alt='Вентилятор ZEFIR 100S (стандарт) Dospel (Доспел)'/>
-                                        </li>
-                                        <li class="product_slider__item"><img class="product_slider__img"
-                                                                              src='image/Products/zefir/z5.jpg'
-                                                                              alt='Вентилятор ZEFIR 100S (стандарт) Dospel (Доспел)'/>
-                                        </li>
+                                        <!--<li class="product_slider__item"><img class="product_slider__img"-->
+                                                                              <!--src='image/Products/zefir/z3.jpg'-->
+                                                                              <!--alt='Вентилятор ZEFIR 100S (стандарт) Dospel (Доспел)'/>-->
+                                        <!--</li>-->
+                                        <!--<li class="product_slider__item"><img class="product_slider__img"-->
+                                                                              <!--src='image/Products/zefir/z4.jpg'-->
+                                                                              <!--alt='Вентилятор ZEFIR 100S (стандарт) Dospel (Доспел)'/>-->
+                                        <!--</li>-->
+                                        <!--<li class="product_slider__item"><img class="product_slider__img"-->
+                                                                              <!--src='image/Products/zefir/z5.jpg'-->
+                                                                              <!--alt='Вентилятор ZEFIR 100S (стандарт) Dospel (Доспел)'/>-->
+                                        <!--</li>-->
                                     </ul>
                                   </div>
-
-                                    <div class="bl_mainProduct__mainImgBlock">
+                                  <div class="bl_mainProduct__mainImgBlock">
                                         <img class="bl_mainProduct__mainImg" src='image/Products/zefir/a-zefir.jpg'
                                              alt=""/>
                                     </div>
 
                                 </div>
 
-                                <div class="col-md-6 col-xs-6">
+                                <div class="col-xs-12 col-md-6 ">
                                     <div class="buy_container">
                                         <p class="rest">(є в наявності)</p>
                                         <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
