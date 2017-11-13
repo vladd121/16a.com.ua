@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="body" onresize="resize_body_f()">
+<body class="body">
 <div class="wrapperBlock">
     <!--[if lt IE 10]>
     <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a
@@ -113,7 +113,7 @@
 
     <main class="main">
         <div class="container">
-            <div class="col-md-3">
+            <div class="col-xs-12 col-md-3">
                 <div class='blok_main_1 category_menu'>
 
                     <button class="buttonStartMenu" type="button">Каталог товару</button>
@@ -241,7 +241,15 @@
                         </ul>
                     </div>
 
+
+                    <!-- FILTERS -->
+
+                    <button class="button_filtr visible-xs visible-sm">Фільтри</button>
+
                     <div class="left-group-vlast">
+
+
+
                         <p class="vlast-top">Підбір по параметрам:</p>
 
                         <div class="price_filtr_container">
@@ -256,6 +264,7 @@
                             </div>
                         </div>
 
+                        <!-- -->
 
                         <p class="vlast-name">Виробник</p>
                         <div class="vlast_zn_container">
@@ -269,7 +278,9 @@
                                     class="css-label-count"> (+6)</span></label>
                             <div id="wait_im1_gorenje" class="wait_im1"></div>
                         </div>
-                        <div class="vlast-name">Можливі виконання</div>
+                        <!---->
+
+                        <p class="vlast-name">Можливі виконання</p>
                         <div class="vlast_zn_container">
                             <input name="standard" id="standard" class="css-checkbox" type="checkbox">
                             <label for="standard" class="css-label">Стандарт<span
@@ -313,7 +324,8 @@
                                     class="css-label-count"> (3)</span></label>
                             <div id="wait_im1_ball_bearing" class="wait_im1"></div>
                         </div>
-                        <div class="vlast-name">Діаметр, мм</div>
+                        <!---->
+                        <p class="vlast-name">Діаметр, мм</p>
                         <div class="vlast_zn_container">
                             <input name="100" id="100" class="css-checkbox" type="checkbox">
                             <label for="100" class="css-label">100<span class="css-label-count"> (26)</span></label>
@@ -335,7 +347,9 @@
                             <label for="150" class="css-label">150<span class="css-label-count"> (12)</span></label>
                             <div id="wait_im1_150" class="wait_im1"></div>
                         </div>
-                        <div class="vlast-name">Монтаж</div>
+                        <!---->
+
+                        <p class="vlast-name">Монтаж</p>
                         <div class="vlast_zn_container">
                             <input name="wall" id="wall" class="css-checkbox" type="checkbox">
                             <label for="wall" class="css-label">Настінний<span
@@ -354,7 +368,9 @@
                                     class="css-label-count"> (5)</span></label>
                             <div id="wait_im1_channel" class="wait_im1"></div>
                         </div>
-                        <div class="vlast-name">Продуктивність, м3/год</div>
+                        <!---->
+
+                        <p class="vlast-name">Продуктивність, м3/год</p>
                         <div class="vlast_zn_container">
                             <input name="70p" id="70p" class="css-checkbox-null" type="checkbox" disabled>
                             <label for="70p" class="css-label-null">70 </label>
@@ -403,7 +419,9 @@
                             <label for="400p" class="css-label">400<span class="css-label-count"> (2)</span></label>
                             <div id="wait_im1_400p" class="wait_im1"></div>
                         </div>
-                        <div class="vlast-name">Габарити (В*Ш), мм</div>
+                        <!---->
+
+                        <p class="vlast-name">Габарити (В*Ш), мм</p>
                         <div class="vlast_zn_container">
                             <input name="125_156" id="125_156" class="css-checkbox" type="checkbox">
                             <label for="125_156" class="css-label">125*156<span
@@ -492,12 +510,13 @@
                                     class="css-label-count"> (2)</span></label>
                             <div id="wait_im1_264_264" class="wait_im1"></div>
                         </div>
+                        <!---->
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-md-9">
+            <div class="col-xs-12 col-md-9">
                 <div id="blok_main_2" class='blok_main_2'>
 
                     <div id="blok_main_2_1" class='blok_main_2_1'>
@@ -3155,72 +3174,72 @@ elem.innerHTML="text";
 var height = elem.offsetHeight;
 alert(height_old+' '+height);
 */
-    var x = 0;
-
-    function resize_body_f() {
-        //return;
-        var txt = x += 1;
-        // document.getElementById("blok1").innerHTML = txt;
-        var elem2 = document.getElementById("blok_main_2");
-
-        var str = GetCssStyle(elem2).width;
-        var width2 = str.substr(0, str.length - 2);
-        var elem21 = document.getElementById("blok_main_2_1");
-        var elem22 = document.getElementById("blok_main_2_2");
-
-        var elem22 = document.getElementById("blok_main_2_2");
-
-        var str21 = GetCssStyle(elem21).width;
-        var width21 = str21.substr(0, str21.length - 2);
-
-        var elem2_1_x = document.getElementById("blok_main_2_1_x");
-        if (elem2_1_x == null) {
-            return;
-        }
-        var str2_1_x = GetCssStyle(elem2_1_x).width;
-        var width2_1_x = str2_1_x.substr(0, str2_1_x.length - 2);
-
-        var full_21x_count = (Number(width21)) / (Number(width2_1_x) + 10);
-        var info = document.getElementById("info");
-        //var info1 = document.getElementById("info1");
-//	info.innerHTML = "21x: "+width2_1_x + ", count: "+full_21x_count+ ", 21: "+width21;
-
-        //
-//	elem22.innerHTML = width;
-        if (Number(width2) < Number('950')) {//перенос блока инфо вниз
-            //	console.log(width);
-            elem21.removeAttribute("style");
-            elem22.removeAttribute("style");
-            elem21.className = "blok_main_2_1_when_bl_main_2_2_in_new_line";
-            elem22.className = "blok_main_2_2_new_line";
-        } else {
-            elem21.className = "blok_main_2_1";
-            elem22.className = "blok_main_2_2";
-
-            //width2
-            var w_left_max = 0.9 * Number(width2);
-            var left_num_max = Math.floor(Number(w_left_max) / (Number(width2_1_x) + 10));
-            var w_left_new = left_num_max * (Number(width2_1_x) + 10);
-            var w_left_new_procent = Math.floor(w_left_new * 100 / Number(width2));
-            w_left_new_procent = w_left_new_procent + 1;
-            var w_right_new_procent = 100 - w_left_new_procent;
-//		info1.innerHTML =width2_1_x;
-
-            //	info1.innerHTML =w_left_new_procent + " - "+w_left_new+",  "+ w_right_new_procent;
-            elem21.style.width = w_left_new_procent + "%";
-            elem22.style.width = w_right_new_procent + "%";
-
-
-            //	var x_proc = (Math.floor(Number(full_21x_count))*170*90)/Number(width21);
-            //	info1.innerHTML =x_proc;
-            //	elem21.style.width = Math.floor(Number(x_proc))+"%";
-            //	elem22.style.width = Math.floor(100-Math.floor(Number(x_proc)))+"%";
-            //	console.log(Math.floor(Number(x_proc))+"%");
-            //	console.log(Math.floor(100-Math.floor(Number(x_proc)))+"%");
-
-        }
-
-    }
+//    var x = 0;
+//
+//    function resize_body_f() {
+//        //return;
+//        var txt = x += 1;
+//        // document.getElementById("blok1").innerHTML = txt;
+//        var elem2 = document.getElementById("blok_main_2");
+//
+//        var str = GetCssStyle(elem2).width;
+//        var width2 = str.substr(0, str.length - 2);
+//        var elem21 = document.getElementById("blok_main_2_1");
+//        var elem22 = document.getElementById("blok_main_2_2");
+//
+//        var elem22 = document.getElementById("blok_main_2_2");
+//
+//        var str21 = GetCssStyle(elem21).width;
+//        var width21 = str21.substr(0, str21.length - 2);
+//
+//        var elem2_1_x = document.getElementById("blok_main_2_1_x");
+//        if (elem2_1_x == null) {
+//            return;
+//        }
+//        var str2_1_x = GetCssStyle(elem2_1_x).width;
+//        var width2_1_x = str2_1_x.substr(0, str2_1_x.length - 2);
+//
+//        var full_21x_count = (Number(width21)) / (Number(width2_1_x) + 10);
+//        var info = document.getElementById("info");
+//        //var info1 = document.getElementById("info1");
+////	info.innerHTML = "21x: "+width2_1_x + ", count: "+full_21x_count+ ", 21: "+width21;
+//
+//        //
+////	elem22.innerHTML = width;
+//        if (Number(width2) < Number('950')) {//перенос блока инфо вниз
+//            //	console.log(width);
+//            elem21.removeAttribute("style");
+//            elem22.removeAttribute("style");
+//            elem21.className = "blok_main_2_1_when_bl_main_2_2_in_new_line";
+//            elem22.className = "blok_main_2_2_new_line";
+//        } else {
+//            elem21.className = "blok_main_2_1";
+//            elem22.className = "blok_main_2_2";
+//
+//            //width2
+//            var w_left_max = 0.9 * Number(width2);
+//            var left_num_max = Math.floor(Number(w_left_max) / (Number(width2_1_x) + 10));
+//            var w_left_new = left_num_max * (Number(width2_1_x) + 10);
+//            var w_left_new_procent = Math.floor(w_left_new * 100 / Number(width2));
+//            w_left_new_procent = w_left_new_procent + 1;
+//            var w_right_new_procent = 100 - w_left_new_procent;
+////		info1.innerHTML =width2_1_x;
+//
+//            //	info1.innerHTML =w_left_new_procent + " - "+w_left_new+",  "+ w_right_new_procent;
+//            elem21.style.width = w_left_new_procent + "%";
+//            elem22.style.width = w_right_new_procent + "%";
+//
+//
+//            //	var x_proc = (Math.floor(Number(full_21x_count))*170*90)/Number(width21);
+//            //	info1.innerHTML =x_proc;
+//            //	elem21.style.width = Math.floor(Number(x_proc))+"%";
+//            //	elem22.style.width = Math.floor(100-Math.floor(Number(x_proc)))+"%";
+//            //	console.log(Math.floor(Number(x_proc))+"%");
+//            //	console.log(Math.floor(100-Math.floor(Number(x_proc)))+"%");
+//
+//        }
+//
+//    }
 
 </script>
 

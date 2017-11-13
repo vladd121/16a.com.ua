@@ -31,11 +31,31 @@ $(document).ready(function () {
     );
 
 
-/// Search button
-    $(".button_search-mobile").on("click", function () {
-        $(".block_ssearch").slideToggle(400);
 
-    });
+///  sliderEffect
+    function sliderEffectForButtons(button, element, duration) {
+        button.click(function () {
+            element.slideToggle(duration);
+        });
+    }
+
+
+
+///ButtonForSlideEffect
+
+    var buttonSearch =$(".button_search-mobile"),
+        fildSearch = $(".block_ssearch"),
+
+
+        buttonFilters = $(".button_filtr"),
+        fieldFilters = $(".left-group-vlast");
+
+
+
+    sliderEffectForButtons(buttonSearch, fildSearch, 400);
+    sliderEffectForButtons(buttonFilters, fieldFilters, 400);
+
+
 
 //    ANCOR
     $(function () {
@@ -176,6 +196,10 @@ $(document).ready(function () {
             quantityProduct.val(1);
         }
     });
+
+
+
+
 
 
 });

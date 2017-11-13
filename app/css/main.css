@@ -1280,7 +1280,6 @@ button {
 
 .buttonStartMenu {
   position: relative;
-  display: inline-block;
   width: 190px;
   height: 40px;
   line-height: 40px;
@@ -3555,7 +3554,6 @@ label.css-label {
     color: #999999; }
 
 .minmax-price-user {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 1em;
   color: #009900;
   /*#333333;*/
@@ -3563,11 +3561,25 @@ label.css-label {
   font-weight: normal; }
 
 .minmax-price-user-error {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 1em;
-  color: #FF0000;
+  color: #F00;
   font-style: normal;
   font-weight: normal; }
+
+.button_filtr {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  width: 190px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  outline: none;
+  border: 2px solid #F64C2B;
+  background-color: #FFC0CB;
+  border-radius: 5px;
+  text-transform: uppercase;
+  z-index: 10; }
 
 .f_price_del {
   position: relative;
@@ -4232,7 +4244,8 @@ label.css-label {
     width: 100%; }
   .buttonStartMenu {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    cursor: pointer; }
   .top-info__inner {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
@@ -4244,6 +4257,8 @@ label.css-label {
     -ms-flex-pack: justify;
         justify-content: space-between;
     width: 100%; }
+  .left-group-vlast {
+    display: none; }
   .copyr {
     margin-top: 20px; }
   .footer > .container {
