@@ -255,10 +255,10 @@ button {
   padding: 5px 0;
   font-size: 14px;
 }
-.price_box.active{
+
+.price_box.active {
   background-color: inherit;
 }
-
 
 .addbutton {
   width: 80px;
@@ -269,13 +269,13 @@ button {
   margin: 5px;
   border-radius: 3px;
   &:hover,
-  &:focus{
+  &:focus {
     background-color: #3a923e;
   }
 }
 
 .addbuttonNowInBasket,
-.addbutton_active{
+.addbutton_active {
   background-color: #36F;
   &:hover {
     background-color: #33F;
@@ -460,52 +460,49 @@ button {
 
 // PRODUCT SLIDER
 
-
-
-.bl_mainProduct{
+.bl_mainProduct {
   position: relative;
   width: 100%;
 }
 
-.slider_wrapper{
+.slider_wrapper {
   width: 100%;
   margin: 0 auto;
   min-height: 60px;
   padding: 10px 40px;
   box-sizing: border-box;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
 
-
-.product_slider{
+.product_slider {
 
   position: relative;
-
 
   margin: 0 auto;
   min-height: 60px;
 
 }
 
-.bl_mainProduct__mainImgBlock{
+.bl_mainProduct__mainImgBlock {
   position: relative;
   width: 100%;
 }
 
-.product_slider{
+.product_slider {
   padding: 0 4px;
 }
 
-.product_slider__item{
+.product_slider__item {
 
 }
-.product_slider__item_active{
+
+.product_slider__item_active {
   border-radius: 10px;
   border: 2px solid rgba(25, 194, 21, 0.8);
 }
 
-.product_slider__img{
+.product_slider__img {
   border-radius: 10px;
   box-sizing: border-box;
   border: none;
@@ -513,11 +510,7 @@ button {
   cursor: pointer;
 }
 
-
-
 // OWL
-
-
 
 .owl-carousel .owl-nav {
   position: absolute;
@@ -530,16 +523,16 @@ button {
   z-index: 999;
 
   .owl-prev,
-  .owl-next{
+  .owl-next {
 
     position: absolute;
-    left:-10%;
+    left: -10%;
     width: 23px;
     height: 23px;
     box-sizing: border-box;
     border-radius: 50%;
     background-color: #666;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
 
     line-height: 25px;
     transition: all 0.2s;
@@ -567,16 +560,6 @@ button {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 /*Sub level menu items
 ---------------------------------------*/
@@ -838,10 +821,12 @@ button {
 
 }
 
-.z1 {
+.z1,
+.title_paragraph {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 18px;
   color: #006699;
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   text-decoration: none
@@ -852,23 +837,11 @@ button {
   font-size: 12px;
   color: #006699;
   font-style: normal;
-  font-weight: bold
-}
+  font-weight: bold;
+  &:hover {
+    color: #CC0000;
+  }
 
-.sub:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 12px;
-  color: #990000;
-  font-style: normal;
-  font-weight: bold
-}
-
-.sub2:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  font-size: 12px;
-  color: #CC0000;
-  font-style: normal;
-  font-weight: bold
 }
 
 .style1 {
@@ -1016,8 +989,6 @@ button {
   text-decoration: none;
 }
 
-
-
 /*//////////////////////////////////////*/
 /*.subGr_separator {*/
 /*font-family: "MS Sans Serif", Verdana, Helvetica, Arial;*/
@@ -1053,14 +1024,26 @@ button {
   text-decoration: none;
 }
 
-.z2 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+.z2,
+.delivery_text{
   font-size: 16px;
-  color: #000000;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  p{
+    margin-top: 10px;
+  }
 }
+
+.delivery_container .deliv_container{
+  padding-top: 30px;
+
+  .delivery_nameParagraph{
+    color: #3f6e9f;
+    font-weight: bold;
+  }
+}
+
+
+
 
 .z2_0 {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -1478,9 +1461,6 @@ button {
   font-weight: normal
 }
 
-
-
-
 .tovInfo {
 
   font-size: 13px;
@@ -1552,7 +1532,6 @@ button {
 
 }
 
-
 .price-item-pic-wrap {
   display: block;
   position: relative;
@@ -1562,10 +1541,6 @@ button {
   box-sizing: border-box;
 
 }
-
-
-
-
 
 .price-item-name-wrap {
   position: relative;
@@ -1669,7 +1644,6 @@ button {
     text-decoration: underline;
   }
 }
-
 
 .s_item_open {
 
@@ -1860,10 +1834,7 @@ button {
 
 //// Language
 
-
-
 //// Language
-
 
 .bl_language {
   position: relative;
@@ -1915,7 +1886,7 @@ button {
 .bl_language__variables_item:hover:after {
   position: absolute;
   top: 0;
-  right:0;
+  right: 0;
   content: "\f0d9";
   font-size: 20px;
   color: #000;
@@ -1923,7 +1894,6 @@ button {
   height: 8px;
   font-family: $FontAwesome;
 }
-
 
 .get_help {
   color: #000;
@@ -2442,35 +2412,33 @@ button {
   margin-top: 20px;
 }
 
-.table_characteristic{
+.table_characteristic {
   width: 100%;
   margin-top: 15px;
   text-align: center;
   font-size: 14px;
   color: #4d4d4d;
-  font-weight:normal;
+  font-weight: normal;
 }
+
 .table_characteristic tr th,
-.device_layout__table tr th{
+.device_layout__table tr th {
   width: 80px;
   text-align: center;
   background-color: rgb(0, 153, 204);
   color: #fff;
-  &:first-child{
+  &:first-child {
     width: 120px;
   }
 }
+
 .table_characteristic tr,
 .device_layout__table tr {
   background-color: #fff;
-  &:nth-of-type(odd){
+  &:nth-of-type(odd) {
     background-color: #eee;
   }
 }
-
-
-
-
 
 .one_container_info {
   position: relative;
@@ -2483,23 +2451,19 @@ button {
   background-color: #fff;
 }
 
-
-
 .one_container_info .bl_description__short,
-.one_container_info .bl_description__attributes{
+.one_container_info .bl_description__attributes {
   font-weight: normal;
   background-color: #E5E5E5;
 }
 
-.one_container_info .bl_description__short{
+.one_container_info .bl_description__short {
   padding: 0 5px;
 }
 
-.one_container_info .bl_description__attributes li:nth-of-type(odd){
+.one_container_info .bl_description__attributes li:nth-of-type(odd) {
   background-color: #fff;
 }
-
-
 
 .one_name {
   position: relative;
@@ -2510,8 +2474,6 @@ button {
   border-radius: 3px;
   text-align: left;
 }
-
-
 
 .one_price {
   color: #000;
@@ -2536,13 +2498,12 @@ button {
 
 }
 
-.buy_container .addbutton{
+.buy_container .addbutton {
   background-color: #62c206;
-  &:hover{
+  &:hover {
     background-color: #4e9a06;
   }
 }
-
 
 .one_tov_info {
   position: relative;
@@ -2550,27 +2511,26 @@ button {
   color: #4d4d4d;
 }
 
-.bl_description{
+.bl_description {
   width: 100%;
   position: relative;
   font-size: 13px;
 }
 
 .bl_description__short,
-.bl_description__attributes{
+.bl_description__attributes {
   width: 100%;
   text-align: left;
 }
-.bl_description__attributes li{
+
+.bl_description__attributes li {
   margin: 5px 0;
-  padding:0 5px;
+  padding: 0 5px;
 }
-.bl_description__attributes li:nth-of-type(odd){
+
+.bl_description__attributes li:nth-of-type(odd) {
   background-color: #E5E5E5;
 }
-
-
-
 
 // убрать эти классы
 .one_tov_info_1line {
@@ -2586,8 +2546,6 @@ button {
 }
 
 //
-
-
 
 .one_search_name {
   position: relative;
@@ -2926,6 +2884,7 @@ button {
 .blok_main_2_1_x_about_item:hover:before {
   display: none
 }
+
 //
 //.page_svod {
 //  background: url(pages/p_pic/image008.jpg) no-repeat;
@@ -3015,7 +2974,6 @@ button {
 .button_search-mobile {
   top: 25px;
 }
-
 
 .logo_box {
   position: relative;
@@ -3114,7 +3072,7 @@ input[type=checkbox].css-checkbox + label.css-label {
 }
 
 input[type=checkbox].css-checkbox + label.css-label:hover,
-input[type=checkbox].css-checkbox + label.css-label:focus{
+input[type=checkbox].css-checkbox + label.css-label:focus {
   background-color: #EDFFED;
   overflow: visible;
   color: #CC0000;
@@ -3476,8 +3434,7 @@ label.css-label {
 
 }
 
-
-.button_filtr{
+.button_filtr {
   position: relative;
   clear: both;
   margin: 0 auto;
@@ -3492,7 +3449,6 @@ label.css-label {
   text-transform: uppercase;
   z-index: 10;
 }
-
 
 .f_price_del {
   position: relative;
@@ -3532,8 +3488,6 @@ label.css-label {
 .price_filtr_container {
   position: relative;
 }
-
-
 
 .no_item_found {
   color: #066;
@@ -3703,16 +3657,14 @@ label.css-label {
   margin-top: 20px;
 }
 
-.description_product{
+.description_product {
   width: 100%;
   margin-top: 15px;
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  font-weight:normal;
+  font-weight: normal;
   color: #4d4d4d;
 }
-
-
 
 .user_info {
   font-size: 14px;
@@ -3722,12 +3674,10 @@ label.css-label {
   text-decoration: none
 }
 
-
-.device_layout{
+.device_layout {
   margin-top: 15px;
   width: 100%;
 }
-
 
 .device_layout__blockImg {
   position: relative;
@@ -3739,16 +3689,14 @@ label.css-label {
   margin-top: 10px;
 }
 
-.device_layout__table{
+.device_layout__table {
   width: 100%;
   margin-top: 15px;
   font-size: 14px;
   color: #4d4d4d;
-  font-weight:normal;
+  font-weight: normal;
   text-align: center;
 }
-
-
 
 .cell-group {
   position: relative;
@@ -3805,7 +3753,6 @@ label.css-label {
 }
 
 ////////// BASCKET
-
 
 .bl_receiver,
 .bl_deliveryMethod {
@@ -4042,6 +3989,7 @@ label.css-label {
   justify-content: center;
 
 }
+
 .shoppingBasket_product__name {
   text-align: center !important;
   margin: 0 0 25px;
@@ -4108,7 +4056,7 @@ label.css-label {
   font-size: 16px;
   line-height: 30px;
   text-align: right;
-  &:first-child{
+  &:first-child {
     text-transform: uppercase;
   }
 
@@ -4117,7 +4065,7 @@ label.css-label {
 .button_continueBuying {
   margin-top: 18px;
   width: 100%;
-  max-width:206px;
+  max-width: 206px;
   min-height: 35px;
   box-sizing: border-box;
   background-color: #000;
@@ -4129,19 +4077,16 @@ label.css-label {
   }
 }
 
-
-.button_buyProduct{
+.button_buyProduct {
   float: right;
   width: 200px;
   margin-top: 20px;
   background-color: #d7ebf9;
   border: 1px solid #aed0ea;
-  color:#2779aa;
+  color: #2779aa;
 }
 
-
-
-.button_continueBuying__link{
+.button_continueBuying__link {
 
   color: $color_blue;
 
@@ -4169,7 +4114,7 @@ label.css-label {
   }
 }
 
-.decor_close{
+.decor_close {
   &:after {
     content: "\f00d";
     position: absolute;
@@ -4178,12 +4123,11 @@ label.css-label {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family:$FontAwesome;
+    font-family: $FontAwesome;
     font-size: 24px;
-    line-height:24px;
+    line-height: 24px;
   }
 }
-
 
 ///
 
@@ -4213,7 +4157,7 @@ label.css-label {
 }
 
 .block_quantity__minus,
-.block_quantity__plus{
+.block_quantity__plus {
   position: absolute;
   left: 0;
   top: 0;
@@ -4224,7 +4168,7 @@ label.css-label {
   background-color: $color_blue;
   font-weight: bold;
   color: #fff;
-  &:hover{
+  &:hover {
     background-color: $color_blue2;
   }
 }
@@ -4256,9 +4200,6 @@ label.css-label {
 .options .form-group {
   margin-bottom: 0 !important;
 }
-
-
-
 
 /*********************************************/
 /*TYPOGRAPHY*/
