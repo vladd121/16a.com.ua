@@ -43,7 +43,7 @@
 
 </head>
 
-<body class="body">
+<body class="body" onresize="resize_body_f()">
 <div class="wrapperBlock">
     <!--[if lt IE 10]>
     <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a
@@ -95,7 +95,7 @@
 
 
                         <div class="mini_basket" id="mini_basket">
-                            <a class="binfo" href="#"> <!-- ЕСЛИ В КОРЗИНЕ ЕСТЬ ТОВАР ДОБАВЛЯЙ КЛАСС active к binfo-->
+                            <a class="binfo" href="#">
                                 <img class="binfo_image" src="image/b_min1.gif" alt="Ваш кошик">
                                 <div class="minBasket_full">
                                     <p class="minBasket">Кошик</p>
@@ -117,20 +117,21 @@
 
         </div>
     </header>
-
-
+    <!------------------------------------------- MAIN ----------------------------------------------------------->
     <main class="main">
         <div class="container">
-            <div class="col-xs-12 col-md-3">
-                <div class='blok_main_1 category_menu'>
+            <div class="col-md-3 col-xs-12">
 
+
+                <div class='blok_main_1'>
                     <button class="buttonStartMenu" type="button">Каталог товару</button>
 
                     <nav class='left-group-menu'>
                         <ul class="menu_categories">
                             <!-- Класс decor_arrow добавляй только если есть потомки с ul-->
-                            <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
+                            <li class="menu_categories__item"><a class="menu_categories__link"
                                                                              href="#">Вентилятори та елементи вентиляційних систем</a>
+                                <button class="btn_menu decor_arrow" type="button"></button>
                                 <ul class="subCategory">
                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                          href="#">Побутові вентилятори</a></li>
@@ -138,11 +139,13 @@
                                                                          href="#">Промислові вентилятори</a></li>
                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                          href="#">Вентиляційні решітки</a></li>
-                                    <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
-                                                                                     href="#">Повітроводи, розети, муфти</a>
+                                    <li class="menu_categories__item">
+                                        <a class="menu_categories__link" href="#">Повітроводи, розети, муфти</a>
+                                        <button class="btn_menu decor_arrow" type="button"></button>
                                         <ul class="subCategory">
-                                            <li class="menu_categories__item decor_arrow"><a
-                                                    class="menu_categories__link" href="#">Повітроводи</a>
+                                            <li class="menu_categories__item">
+                                                <a class="menu_categories__link" href="#">Повітроводи</a>
+                                                <button class="btn_menu decor_arrow" type="button"></button>
                                                 <ul class="subCategory">
                                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                                          href="#">ПРОБА1</a></li>
@@ -151,8 +154,9 @@
                                                 </ul>
 
                                             </li>
-                                            <li class="menu_categories__item decor_arrow"><a
-                                                    class="menu_categories__link" href="#">Муфти</a>
+                                            <li class="menu_categories__item">
+                                                <a class="menu_categories__link" href="#">Муфти</a>
+                                                <button class="btn_menu decor_arrow" type="button"></button>
                                                 <ul class="subCategory">
                                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                                          href="#">ПРОБА1</a></li>
@@ -184,19 +188,22 @@
                             </li>
                             <li class="menu_categories__item"><a class="menu_categories__link"
                                                                  href="?k=cable_wire">Кабель, провід, СІП</a></li>
-                            <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
-                                                                             href="">Низьковольтне обладнання</a>
+                            <li class="menu_categories__item">
+                                <a class="menu_categories__link" href="">Низьковольтне обладнання</a>
+                                <button class="btn_menu decor_arrow" type="button"></button>
                                 <ul class="subCategory">
                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                          href="#">Автоматичні вимикачі, ПЗВ, диференційні автомати</a>
                                     </li>
                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                          href="#">Пристрої автоматики</a></li>
-                                    <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
-                                                                                     href="#">Різне силове та щитове обладнання</a>
+                                    <li class="menu_categories__item">
+                                        <a class="menu_categories__link" href="#">Різне силове та щитове обладнання</a>
+                                        <button class="btn_menu decor_arrow" type="button"></button>
                                         <ul class="subCategory">
-                                            <li class="menu_categories__item decor_arrow"><a
-                                                    class="menu_categories__link" href="#">Запобiжники</a>
+                                            <li class="menu_categories__item">
+                                                <a class="menu_categories__link" href="#">Запобiжники</a>
+                                                <button class="btn_menu decor_arrow" type="button"></button>
                                                 <ul class="subCategory">
                                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                                          href="#">Good1</a></li>
@@ -236,88 +243,701 @@
                                                                  href="?k=ozonizers">Озонатори</a></li>
                         </ul>
                     </nav>
+
+
                 </div>
+
             </div>
 
 
-            <div class="col-xs-12 col-md-9 delivery_container">
-                <h1 class="title_paragraph">Доставка і оплата</h1>
+            <div class="col-md-9 col-xs-12">
+
+                <div id="blok_main_2" class='blok_main_2'>
+
+                    <div id="blok_main_2_1" class='blok_main_2_1'>
+
+                        <div id="elements-zone" class="cl-price-item">
 
 
-                <div class="delivery_text">
-                    <p>Доставка товару по всій території України відбувається за узгодженням сторін будь-яким зручним
-                        для Вас перевізником.</p>
-                    <p>Cамовивіз за адресою: у м.Львові вул.Городоцька, 224.</p>
-                    <p>(після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та
-                        доставки)</p>
-                </div>
+                            <!-- Pagination -->
+                        <div class="col-xs-12 hidden-xs">
+                                <ul class="bl_breadcrumbs">
+                                    <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">16А</p></li>
+                                </ul>
+                        </div>
+                            <!-- -->
 
-                <div class="col-xs-12 col-md-8">
-                    <div class="deliv_container">
-                        <p class="delivery_nameParagraph">Доставка</p>
-                        <div class="deliv_line">- зручним для вас перевізником в будь-яке місто або
-                            населений пункт України
-                            - самовивіз
-                        </div>
-                        <p class="delivery_nameParagraph">Оплата</p>
-                        <div class="deliv_line">- готівка
-                            - оплата при отриманні
-                            - безготівка (в т.ч. з ПДВ)
-                            - Visa/MasterCard
-                        </div>
-                        <p class="delivery_nameParagraph">Гарантія</p>
-                        <div class="deliv_line">100% гарантія обміну/повернення коштів на протязі 14
-                            днів
-                        </div>
-                        <div class="deliv_line">Офіційна гарантія.</div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item">
 
-                        <p class="delivery_nameParagraph">Call center</p>
-                        <div class="deliv_line">
-                            <p>- (067) 340-81-46</p>
-                            <p>- (032) 247-70-70</p>
-                            <p>При замовленні по телефону прохання вказувати код товару.</p>
+                                    <!--Это дополнительный фон если он назначен в админке, то назначить-->
+                                    <div class="about_item_im_fon">
+                                        <img src="./photo/group/gl3188.jpg" alt="">
+                                    </div>
+
+                                    <a class="about_item_box" href="?k=ventilators">
+                                        <p class="about_item_text_hlim">Вентилятори та елементи вентиляційних систем</p>
+                                        <img class="about_item_im" src="./photo/group/vent-collage.jpg"
+                                             alt="Вентилятори та елементи вентиляційних систем">
+                                    </a>
+                                    <ul class="subgr-list-block hidden-xs">
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                     href="">Побутові вентилятори</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                     href="">Промислові вентилятори</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                     href="">Вентиляційні решітки</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                     href="">Повітроводи, розети, муфти</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item"
+                                                                     href="">Повітряно-опалювальніагрегати</a>
+                                        </li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item" href="">Дефлектори</a></li>
+                                        <li class="subgr-item-dv"><a class="subgr-list-item" href="">Аксесуари</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--/* Сюда можно не смотреть */-->
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=lamps'">
+
+                                    <a href="?k=lamps">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Лампи</div>
+                                            <div class="about_item_im"><img src="./photo/group/299.jpg" alt="Лампи"
+                                                                            width="180"
+                                                                            border="0"></div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs" onclick="window.location='?k=lamps'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=led_lamps">Світлодіодні (LED) лампи</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=energy_saving">Енергозберігаючі лампи</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=luminescent_lamps">Люмінісцентні
+                                        лампи</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=halogen_lamps">Галогенні лампи</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=incandescence">Розжарювання лампи</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=reflex">Рефлекторні лампи</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=metalhalide_sodium">Металогалогенні та
+                                        натрієві
+                                        лампи</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=mercury">Ртутні
+                                        лампи</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=mercury_tungsten">Ртутно-вольфрамові
+                                        лампи</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=lighting_projectors'">
+
+                                    <a href="?k=lighting_projectors">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Світильники, прожектори</div>
+                                            <div class="about_item_im"><img src="./photo/group/svit-collage.jpg"
+                                                                            alt="Світильники, прожектори" width="180"
+                                                                            border="0"></div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs"
+                                         onclick="window.location='?k=lighting_projectors'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=spotlights">Точкові світильники</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=lighting">Світильники декоративні</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=led_lights">Світильники LED</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=walllamps">Настінні світильники</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=lumin_lamps">Люмінісцентні
+                                        світильники</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=projector">Прожектори</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=street_lights">Вуличні світильники</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=watertight">Світильники
+                                        вологозахищені</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=emergency_lighting">Світильники
+                                        аварійного
+                                        освітлення</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=lighting_raster">Растрові світильники</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=electronic_ignition">Світильники з
+                                        електронним запалюванням</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=table_lamps">Настільні та переносні
+                                        світильники, лампи</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=nightlights">Нічники</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=garlands">Гірлянди</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=lighting_accessories">Комплектуючі до
+                                        світильників</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=flashlight">Ліхтарики</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=led_tape_accessories">Світлодіодна
+                                        стрічка та
+                                        комплектуючі</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=switches_sockets'">
+
+                                    <a href="?k=switches_sockets">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Вимикачі, розетки, подовжувачі, вилки
+                                            </div>
+                                            <div class="about_item_im"><img src="./photo/group/vum.poz-collage.jpg"
+                                                                            alt="Вимикачі, розетки, подовжувачі, вилки"
+                                                                            width="180" border="0"></div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs"
+                                         onclick="window.location='?k=switches_sockets'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=switches">Вимикачі</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=sockets">Розетки</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=block">Блок (вимикач та розетка)</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=forks">Вилки,
+                                        гніздо</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=buttons">Кнопки</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=power_strips">Мережеві фільтри</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=adapters_splitters">Перехідники,
+                                        розгалужувачі</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=extension_cords">Подовжувачі, колодки</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=framework">Рамки</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=dimmers">Світлорегулятори</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=furniture">Фурнітура</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=cable_wire'">
+
+                                    <a href="?k=cable_wire">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Кабель, провід, СІП</div>
+                                            <div class="about_item_im"><img src="./photo/group/kabel-collage.jpg"
+                                                                            alt="Кабель, провід, СІП" width="180"
+                                                                            border="0">
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs" onclick="window.location='?k=cable_wire'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=avvh_akvvh">АВВГ, АКВВГ</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=apv_appv">АПВ,
+                                        АППВ</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=vvh">ВВГ</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=vvh_p">ВВГ-П</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=vvp">ВВП</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=kg">КГ</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=pv">ПВ</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=pvs">ПВС</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=ppv">ППВ</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=sip">СІП</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=power_cable">Телевізійний, телефонний та
+                                        мережевий кабель</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=shvvp">ШВВП</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=low_voltage'">
+
+                                    <a href="?k=low_voltage">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Низьковольтне обладнання</div>
+                                            <div class="about_item_im"><img src="./photo/group/perspective-1.jpg"
+                                                                            alt="Низьковольтне обладнання" width="180"
+                                                                            border="0"></div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs" onclick="window.location='?k=low_voltage'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=automatic_switch">Автоматичні вимикачі,
+                                        ПЗВ,
+                                        диференційні автомати</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=automatics">Пристрої автоматики</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=power_equipment">Різне силове та щитове
+                                        обладнання</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=magnetic_starters_contactors_microswitch">Магнітні
+                                        пускачі, контактори, мікровимикачі</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=elements_installation'">
+
+                                    <a href="?k=elements_installation">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Елементи для монтажу</div>
+                                            <div class="about_item_im"><img src="./photo/group/el-montagy-collage.jpg"
+                                                                            alt="Елементи для монтажу" width="180"
+                                                                            border="0">
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs"
+                                         onclick="window.location='?k=elements_installation'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=terminal_blocks">Клемники, клемні
+                                        колодки</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item" href="?k=tires">Шини</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=insulation_materials">Ізоляційні
+                                        (дієлектричні) матеріали</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=seals">Сальники (ущільнювачі)</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=fasteners_pipes_cables">Кріплення для
+                                        труби і
+                                        кабеля</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=safety_signs">Знаки енергобезпеки</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=distribution_boxes">Розподільчі коробки,
+                                        підрозетники</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=cable_tips">Кабельні наконечники</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=tv_computer_adapters">Роз'єми,
+                                        телевізійні,
+                                        комп'ютерні та телефонні перехідники</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=cable_marking">Кабельна маркіровка</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=batteries_and_chargers'">
+
+                                    <a href="?k=batteries_and_chargers">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Батарейки та зарядні пристрої</div>
+                                            <div class="about_item_im"><img src="./photo/group/batar-collage.jpg"
+                                                                            alt="Батарейки та зарядні пристрої"
+                                                                            width="180"
+                                                                            border="0"></div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs"
+                                         onclick="window.location='?k=batteries_and_chargers'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=batteries_chargers">Зарядні пристрої</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=accumulators_batteries">Батарейки</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=svod'">
+
+                                    <a href="?k=svod">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Фільтри для води та побутова хімія СВОД
+                                            </div>
+                                            <div class="about_item_im"><img src="./photo/group/svod-collage.jpg"
+                                                                            alt="Фільтри для води та побутова хімія СВОД"
+                                                                            width="180" border="0"></div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs" onclick="window.location='?k=svod'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=svod_household_chemicals">СВОД - побутова
+                                        хімія</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=svod_as">СВОД-АС - фільтри, катріджі,
+                                        наповнювачі</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=svod_professional">СВОД 'ТВН Professional' -
+                                        Професiйнi засоби для видалення вiдкладень</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=svod_effect">СВОД 'Ефект' - елітна серія
+                                        по
+                                        догляду за сантехнікою</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=svod_silver_life">СВОД-АС - фільтри,
+                                        катріджі
+                                        «Silver Life» з посрібненим модулем</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=svod_tvn">СВОД-ТВН для очищення
+                                        кавомашин</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=svod_ekofiltr">СТИРОВІТ екофільтр для
+                                        пральних
+                                        машин</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=re_shine">RE:SHINE</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=completing_filters">Комплектуючі та
+                                        корпуса
+                                        до фільтрів</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=svod_blu">СВОД-BLU - фільтри,
+                                        катріджі</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=glue'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/kley-collage.jpg" width="410"
+                                                                        border="0"></div>
+                                    <a class="about_item_box" href="#">
+                                        <p class="about_item_text_hlim">Клей</p>
+                                        <img class="about_item_im" src="./photo/group/kley-collage.jpg"
+                                             alt="">
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div id="blok_main_2_1_x" class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=ammunition'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/f-patron.jpg" width="410"
+                                                                        border="0">
+                                    </div>
+                                    <a href="?k=ammunition">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Патрони</div>
+                                            <div class="about_item_im"><img src="./photo/group/f-patron.jpg"
+                                                                            alt="Патрони"
+                                                                            width="180" border="0"></div>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=button_switches_positions'">
+
+                                    <a href="?k=button_switches_positions">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Кнопки, перемикачі, пости</div>
+                                            <div class="about_item_im"><img src="./photo/group/knopku-collage.jpg"
+                                                                            alt="Кнопки, перемикачі, пости" width="180"
+                                                                            border="0"></div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs"
+                                         onclick="window.location='?k=button_switches_positions'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=switches_disconnectors">Вимикачі-розє’днувачі</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=control_buttons">Кнопки управління</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=housings_posts">Корпуси пластикові до
+                                        постів</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=packet_switches">Пакетні кулачкові
+                                        перемикачі</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=keyboard_switches">Переключателі
+                                        клавішні</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=posts_management">Пости управління</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=armature">Сигнальная арматура</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=armature_led">Сигнальная арматура
+                                        світлодіодна</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=posts">Тельферні пости</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=tumbler">Тумблери</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=accessories">Аксесуари для кнопок</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=instrument'">
+
+                                    <a href="?k=instrument">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Обжимний, різальний інструмент</div>
+                                            <div class="about_item_im"><img src="../photo/group/instrument-collage.jpg"
+                                                                            alt="Обжимний, різальний інструмент"
+                                                                            width="180"
+                                                                            border="0"></div>
+
+                                        </div>
+                                    </a>
+                                    <div class="subgr-list-block hidden-xs" onclick="window.location='?k=instrument'">
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=hydraulic_tool">Гідравлічний
+                                        інструмент</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=spare_parts">Запасні частини</a></div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=tool_clamps">Інструмент для затяжки
+                                        хомутів</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=tool_isolation_removing">Інструмент для
+                                        зняття ізоляції</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=tool_tips_without_isolation">Інструмент
+                                        для
+                                        наконечників без ізоляції</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=tool_tips_insulated">Інструмент для
+                                        наконечників з ізоляцією</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=tool_telephony_computer_networks">Інструмент
+                                        для телефонії, комп'ютерних мереж</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=kablerizu">Каблерізи</a>
+                                        </div>
+                                        <div class="subgr-item-dv"><a class="subgr-list-item"
+                                                                      href="?k=universal_tool">Універсальний
+                                        інструмент</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=magnetic_holders'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/7002-collage.jpg" width="410"
+                                                                        border="0"></div>
+                                    <a href="?k=magnetic_holders">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Магнітні тримачі, захвати</div>
+                                            <div class="about_item_im"><img src="./photo/group/7002-collage.jpg"
+                                                                            alt="Магнітні тримачі, захвати" width="180"
+                                                                            border="0"></div>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=metal_structures'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/shchrv-24-ip21.jpg"
+                                                                        width="410"
+                                                                        border="0"></div>
+                                    <a href="?k=metal_structures">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Металоконструкції</div>
+                                            <div class="about_item_im"><img src="./photo/group/shchrv-24-ip21.jpg"
+                                                                            alt="Металоконструкції" width="180"
+                                                                            border="0">
+                                            </div>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="blok_main_2_1_x_about_item_cont">
+                                <div class="blok_main_2_1_x_about_item"
+                                     onclick="window.location='?k=ozonizers'">
+                                    <div class="about_item_im_fon"><img src="./photo/group/gl3188.jpg" width="410"
+                                                                        border="0">
+                                    </div>
+                                    <a href="?k=ozonizers">
+                                        <div class="about_item_box">
+                                            <div class="about_item_text_hlim">Озонатори</div>
+                                            <div class="about_item_im"><img src="./photo/group/gl3188.jpg"
+                                                                            alt="Озонатори"
+                                                                            width="180" border="0"></div>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
                         </div>
+
                     </div>
+
+
                 </div>
 
 
-
             </div>
-        </div>
-    </main>
 
-    <!-- CEO -->
-    <div class="container">
-        <div class="col-xs-12">
-            <div class="bottom_info">
+        </div>
+
+        <!-- CEO -->
+        <div class="container">
+            <div class="col-xs-12">
                 <div class="bottom_info">
                     Інтернет-магазин 16А. Кабель – Світло – Вентиляція - Електрика – Фільтри для води та багато
                     іншого.<br><br>
                     Ви робите ремонт проводки, електрики, замінюєте вимикачі та розетки, встановлюєте світильники,
-                    плануєте зробити вентиляцію приміщення або потрібні лампи освітлення, автоматичні вимикачі, реле
-                    напруги, ізоляційні та кріпильні елементи або інше обладнання, наш Інтернет-магазин допоможе зручно
-                    підібрати якісний і відповідний Вашими вимогам товар.
+                    плануєте
+                    зробити
+                    вентиляцію приміщення або потрібні лампи освітлення, автоматичні вимикачі, реле напруги, ізоляційні
+                    та
+                    кріпильні
+                    елементи або інше обладнання, наш Інтернет-магазин допоможе зручно підібрати якісний і відповідний
+                    Вашими
+                    вимогам товар.
                     <br><br>
                     Серед представлених товарів можна виділити основні групи:<br>
                     - побутові та промислові вентилятори, вентиляційні решітки; - вимикачі, розетки, подовжувачі, вилки;
-                    - кабель, провід; - світлодіодні, енергозберігаючі, інші лампи;- світильники, ліхтарики; -
-                    світлодіодна стрічка та комплектуючі; - автоматичні вимикачі, пристрої захисного відключення (ПЗВ),
-                    дифавтомати, реле напруги; - батарейки, зарядні пристрої; - кріплення для кабелю та трубки,
-                    ізоляційна стрічка та ізоляційні матеріали; - промислове обладнання (магнітні пускачі, контактори,
-                    пости, кнопки, кабельні наконечники, клемники); - інструмент для затискання наконечників, зняття
-                    ізоляції; - фільтри для води та побутова хімія; - клей, магнітні тримачі та захвати.
+                    -
+                    кабель,
+                    провід; - світлодіодні, енергозберігаючі, інші лампи;- світильники, ліхтарики; - світлодіодна
+                    стрічка та
+                    комплектуючі; - автоматичні вимикачі, пристрої захисного відключення (ПЗВ), дифавтомати, реле
+                    напруги; -
+                    батарейки, зарядні пристрої; - кріплення для кабелю та трубки, ізоляційна стрічка та ізоляційні
+                    матеріали; -
+                    промислове обладнання (магнітні пускачі, контактори, пости, кнопки, кабельні наконечники, клемники);
+                    -
+                    інструмент для затискання наконечників, зняття ізоляції; - фільтри для води та побутова хімія; -
+                    клей,
+                    магнітні
+                    тримачі та захвати.
+
                 </div>
+
             </div>
         </div>
-    </div>
-
+    </main>
+    <!---------------------------------------- FOOTER --------------------------------------------------------->
     <footer class="footer">
         <div class="container">
             <div class="col-md-4 footer_part3">
                 <div class="bt_div">
-                    <p class="bt_text"><b>Режим роботи Call center</b> (при замовленні по телефону):
-                        <b>Пн-Пт: 9:00-18:00
-                            Cб: 10:00-15:00</b>
+                    <p class="bt_text"><b>Режим роботи Call center</b> (при замовленні по телефону):<br>
+                        <b>Пн-Пт: 9:00-18:00<br>
+                            Cб: 10:00-15:00</b><br>
                         При замовленні по телефону прохання вказувати код товару.</p>
 
                     <div class="cell-group_m1">
@@ -363,13 +983,10 @@
 
             <div class="col-md-4 footer_part2">
                 <div class="bt_div">
-                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А  в соціальних
+                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А<br> в соціальних
                     мережах:</span>
-                    <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png"
-                                                                                        alt="facebook"></a>
-                    <a href="https://plus.google.com/109777980768435551079" target="_blank"><img
-                            src="../image/google.png"
-                            alt="google+"></a>
+                    <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png" alt="facebook"></a>
+                    <a href="https://plus.google.com/109777980768435551079" target="_blank"><img src="../image/google.png" alt="google+"></a>
                 </div>
             </div>
 
@@ -381,123 +998,116 @@
     </footer>
 </div>
 
-<div class="blackWrapper"></div>
+
+    <div class="blackWrapper"></div>
 
 
-<div id='my_popup'>
-</div>
-<div id="dialog_delivery" class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">Доставка
-    товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас перевізником.
-    Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.
-    (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
-</div>
-
-<div id="dialog"></div>
-
-<form id="searchformHide" action="/" method="post" style="display:none">
-    <input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>
-</form>
-<!--<script>-->
-<!--document.getElementById('searchformHide').style.display = 'none';-->
-<!--$("#dialog").dialog({autoOpen: false});-->
-<!--$("#dialog_delivery").dialog({autoOpen: false});-->
-<!--$("#dialog_delivery").dialog({closeText: "закрити"});-->
-
-<!--</script>-->
-
-<div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно
-    бажаєте видалити всі товари з кошику?
-</div>
-
-<!--<script>-->
-<!--$("#dialog_truncate").dialog({autoOpen: false});-->
-<!--$("#dialog_truncate").dialog({closeText: "закрити"});-->
-<!--$("#dialog_truncate").dialog({-->
-<!--buttons: [{-->
-<!--text: "Так", click: function () {-->
-<!--$(this).dialog("close");-->
-<!--truncate_basket();-->
-<!--}-->
-<!--},-->
-<!--{-->
-<!--text: "Ні", click: function () {-->
-<!--$(this).dialog("close");-->
-<!--}-->
-<!--}]-->
-<!--});-->
-
-<!--</script>-->
-
-<div id="dialog_form" title="Оформлення замовлення" style="display:none">
-    <form id="form_b_send" name="form_b_send" method="post" action="?">
-        <p class="send_text" align="center">Для відправки Вашого замовлення, будь-ласка, заповніть поля наступної форми
-            та натисніть кнопку &quot;надіслати замовлення&quot;. <span class="send_comment">  Поля відмічені * повинні бути заповнені обов'язково.</span>
-        </p>
-        <table width="500" border="0" align="center">
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Ім'я отримувача*</div>
-                </td>
-                <td class="send_text">
-                    <div class="form_error_text" id="user_name_text" style="display:none" align="right">(поле не
-                        заповнене)
-                    </div>
-                    <input name="user_name" type="text" id="user_name" onkeypress="onkeypressDialogs(event)"
-                           class="send_input" size="50" maxlength="250"/></td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Телефон(и)*</div>
-                </td>
-                <td class="send_text">
-                    <div class="form_error_text" id="user_phone_text" style="display:none" align="right">(поле не
-                        заповнене)
-                    </div>
-                    <input name="user_phone" type="text" id="user_phone" onkeypress="onkeypressDialogs(event)"
-                           class="send_input" size="50" maxlength="250"/></td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Адреса отримувача</div>
-                </td>
-                <td class="send_text"><input name="user_adres" type="text" id="user_adres"
-                                             onkeypress="onkeypressDialogs(event)" class="send_input" size="50"
-                                             maxlength="250"/></td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Назва організації</div>
-                </td>
-                <td class="send_text"><input name="user_firm" class="send_input" type="text" id="user_firm"
-                                             onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/></td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Електронна пошта</div>
-                </td>
-                <td class="send_text"><input name="user_mail" type="text" id="user_mail" class="send_input"
-                                             onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/>
-                    <div id="send_my_wait"></div>
-                </td>
-            </tr>
-        </table>
-    </form>
-</div>
+    <!--<div id='my_popup'></div>-->
+    <!--<div class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">-->
+        <!--Доставка-->
+        <!--товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас-->
+        <!--перевізником.-->
+        <!--Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.-->
+        <!--(після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)-->
+    <!--</div>-->
 
 
-<p id="back-top" style="display:none">
-    <a href="#top"><span></span></a>
-</p>
+    <!--<form id="searchformHide" action="/" method="post" style="display:none">-->
+        <!--<input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>-->
+    <!--</form>-->
 
 
-<div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
+    <!--<div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно-->
+        <!--бажаєте видалити всі товари з кошику?-->
+    <!--</div>-->
+
+    <!--<script>-->
+        <!--$("#dialog_truncate").dialog({autoOpen: false});-->
+        <!--$("#dialog_truncate").dialog({closeText: "закрити"});-->
+        <!--$("#dialog_truncate").dialog({-->
+            <!--buttons: [{-->
+                <!--text: "Так", click: function () {-->
+                    <!--$(this).dialog("close");-->
+                    <!--truncate_basket();-->
+                <!--}-->
+            <!--},-->
+                <!--{-->
+                    <!--text: "Ні", click: function () {-->
+                    <!--$(this).dialog("close");-->
+                <!--}-->
+                <!--}]-->
+        <!--});-->
+
+    <!--</script>-->
+
+    <!--<div tabindex="-1" role="dialog"-->
+         <!--class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable"-->
+         <!--aria-describedby="dialog" aria-labelledby="ui-id-1" style="display: none; position: absolute;">-->
+        <!--<div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span-->
+                <!--id="ui-id-1" class="ui-dialog-title">&nbsp;</span>-->
+            <!--<button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"-->
+                    <!--title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span-->
+                    <!--class="ui-button-icon-space"> </span>Close-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div id="dialog" class="ui-dialog-content ui-widget-content"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"-->
+             <!--style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>-->
+    <!--</div>-->
 
 
-<script type="text/javascript" src="libs/jquery.min.js"></script>
 
-<!--<script type="text/javascript" src="js/menu-vertical-root-func.js"></script>-->
-<!--<script type="text/javascript" src="js/menu-vertical-root.js"></script>-->
-<!--<script type="text/javascript" src="gal4js/modernizr.custom.17475.js"></script>-->
+    <!--<div tabindex="-1" role="dialog"-->
+         <!--class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable"-->
+         <!--aria-describedby="dialog_delivery" aria-labelledby="ui-id-2" style=" position: absolute;">-->
+        <!--<div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span-->
+                <!--id="ui-id-2" class="ui-dialog-title">Доставка і оплата</span>-->
+            <!--<button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"-->
+                    <!--title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span-->
+                    <!--class="ui-button-icon-space"> </span>закрити-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div id="dialog_delivery" class="dialog_delivery_basketClear ui-dialog-content ui-widget-content" style="">-->
+            <!--Доставка товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас-->
+            <!--перевізником.<br><br>-->
+            <!--Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.<br><br>-->
+            <!--(після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)-->
+        <!--</div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"-->
+             <!--style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>-->
+        <!--<div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>-->
+    <!--</div>-->
+
+
+
+    <!-- ANCOR -->
+    <div id="back-top">
+        <a href="#top">
+            <span></span>
+        </a>
+    </div>
+
+    <div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
+
+
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+   
+    <!--<script type="text/javascript" src="js/menu-vertical-root-func.js"></script>-->
+    <!--<script type="text/javascript" src="js/menu-vertical-root.js"></script>-->
+    <!--<script type="text/javascript" src="gal4js/modernizr.custom.17475.js"></script>-->
 
 
 <!-- build:js js/libs.min.js -->
@@ -512,34 +1122,54 @@
 <!-- endbuild -->
 
 
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-    (function () {
-        var widget_id = '8xIrJ3Ggeb';
-        var d = document;
-        var w = window;
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        function l() {
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = '//code.jivosite.com/script/widget/' + widget_id;
-            var ss = document.getElementsByTagName('script')[0];
-            ss.parentNode.insertBefore(s, ss);
-        }
+        ga('create', 'UA-38360333-2', 'auto');
+        ga('send', 'pageview');
 
-        if (d.readyState == 'complete') {
-            l();
-        } else {
-            if (w.attachEvent) {
-                w.attachEvent('onload', l);
-            } else {
-                w.addEventListener('load', l, false);
+    </script>
+
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+        (function () {
+            var widget_id = '8xIrJ3Ggeb';
+            var d = document;
+            var w = window;
+
+            function l() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//code.jivosite.com/script/widget/' + widget_id;
+                var ss = document.getElementsByTagName('script')[0];
+                ss.parentNode.insertBefore(s, ss);
             }
-        }
-    })();</script>
-<!-- {/literal} END JIVOSITE CODE -->
+
+            if (d.readyState == 'complete') {
+                l();
+            } else {
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();</script>
+    <!-- {/literal} END JIVOSITE CODE -->
 
 
 </body>
+
 </html>
+

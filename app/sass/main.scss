@@ -398,9 +398,26 @@ button {
 
 .menu_categories__item {
   position: relative;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
   height: 100%;
-  background: #fff url(../image/bg.gif) repeat-x;
+  min-height: 30px;
+  background: #fff url(../image/bg.gif) repeat-x 0 2px;
   z-index: 10;
+}
+
+.btn_menu {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 30px;
+  height: 100%;
+  min-height: 35px;
+  background: none;
+
+  //transform: translateY(50%);
+
+  border: 1px solid #000; ///////////
 }
 
 .menu_categories__item:hover {
@@ -441,9 +458,9 @@ button {
 }
 
 .menu_categories__link {
-  display: block;
-  width: 100%;
-  border-top: 1px solid #ccc;
+  display: inline-block;
+  width: calc(100% - 30px);
+
   text-align: left;
   padding-left: 15px;
   padding-right: 5px;
@@ -566,26 +583,23 @@ button {
 
 .decor_arrow:after {
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: transform, .3s;
   content: '\f0da';
   font-family: $FontAwesome;
   font-size: 11px;
-  width: 20px;
-  /*height: 100%;*/
-  color: #000;
-
+  color: inherit;
 }
 
-.menu_categories__item.decor_arrow:after {
-  top: 35%;
+.active.decor_arrow:after {
+
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform, .3s;
 }
 
-.menu_categories__item ul:not(:first-child) .menu_categories__item.decor_arrow:after {
-  top: 30%;
-}
-
-.menu_categories__item:hover.decor_arrow:after {
+.menu_categories__item:hover > .btn_menu {
   color: #ff6666;
 }
 
@@ -1025,25 +1039,22 @@ button {
 }
 
 .z2,
-.delivery_text{
+.delivery_text {
   font-size: 16px;
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-  p{
+  p {
     margin-top: 10px;
   }
 }
 
-.delivery_container .deliv_container{
+.delivery_container .deliv_container {
   padding-top: 30px;
 
-  .delivery_nameParagraph{
+  .delivery_nameParagraph {
     color: #3f6e9f;
     font-weight: bold;
   }
 }
-
-
-
 
 .z2_0 {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -1505,8 +1516,7 @@ button {
   right: 0;
   bottom: 0;
   height: 30px;
-  background: #fff;
-  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 100%);
+  background-color: #fff;
 }
 
 .price-item-wrap1:hover:before {
@@ -1526,7 +1536,6 @@ button {
   margin: -2px -5px 0 -7px;
   padding: 0 15px 1.5em 20px;
   background: #fff;
-  background: linear-gradient(to bottom, #fff 0%, #fff 60%, #f2f2f2 95%, #fff 100%);
   background-clip: padding-box;
   box-shadow: 5px 5px 13px 0 rgba(54, 69, 102, .5)
 
@@ -1621,15 +1630,9 @@ button {
   font-weight: normal;
   text-decoration: none;
   cursor: pointer;
-}
-
-.s_item:hover {
-  font-size: 14px;
-  color: #903;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: underline;
-  cursor: pointer;
+  &:hover {
+    color: #903;
+  }
 }
 
 .s_item_expand {
@@ -1665,7 +1668,6 @@ button {
 }
 
 .s_type {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #000;
   font-style: normal;
@@ -2747,11 +2749,7 @@ button {
   float: left;
   width: 100%;
   overflow: visible;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -2980,11 +2978,7 @@ button {
   float: left;
   padding: 10px;
   margin: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
 }
@@ -3000,14 +2994,12 @@ button {
 input[type=checkbox].css-checkbox-null {
   position: absolute;
   overflow: hidden;
-  clip: rect(0 0 0 0);
   height: 1px;
   width: 1px;
   margin: 1px;
   padding: 0;
-  border: 0;
+  border: none;
   cursor: default;
-
 }
 
 input[type=checkbox].css-checkbox-null + label.css-label-null {
@@ -3245,8 +3237,6 @@ label.css-label {
   cursor: default;
   font-style: normal;
   background: #FFF;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   position: relative;
@@ -3274,8 +3264,6 @@ label.css-label {
   cursor: default;
   font-style: normal;
   background: #FFF;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   position: relative;
@@ -3534,13 +3522,9 @@ label.css-label {
   padding: 0px 10px;
   color: #666;
   border: 1px solid #FF6666;
-  /*left:45%;*/
-
-}
-
-.f_del_all_no_item_found a:hover {
-  color: #FF6666;
-
+  &:hover {
+    color: #F66;
+  }
 }
 
 .left_cascad {
@@ -3619,15 +3603,12 @@ label.css-label {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #FF9B9B;
-  /*#999999;*/
   text-align: center;
-
 }
 
 .mob_ver a:hover {
   color: #FF6666;
   text-decoration: none;
-
 }
 
 .bt_text {

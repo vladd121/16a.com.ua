@@ -3,6 +3,7 @@ $(document).ready(function () {
     var blackWrapper = $(".blackWrapper"),
         navMenu = $(".left-group-menu"),
         basketLink = $(".binfo"),
+        active = "active",
         body = $("body");
 
 
@@ -29,6 +30,17 @@ $(document).ready(function () {
             blackWrapper.css({"display": "none"});
         }
     );
+
+    var buttonSubmenu = $(".btn_menu");
+
+    buttonSubmenu.on("click", function () {
+
+        $(this).toggleClass(active);
+        $(this).siblings(".subCategory").toggleClass(active);
+
+        console.log("1");
+
+    });
 
 
 
