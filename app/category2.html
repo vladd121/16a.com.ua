@@ -129,8 +129,9 @@
                     <nav class='left-group-menu'>
                         <ul class="menu_categories">
                             <!-- Класс decor_arrow добавляй только если есть потомки с ul-->
-                            <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
-                                                                             href="#">Вентилятори та елементи вентиляційних систем</a>
+                            <li class="menu_categories__item"><a class="menu_categories__link"
+                                                                 href="#">Вентилятори та елементи вентиляційних систем</a>
+                                <button class="btn_menu decor_arrow" type="button"></button>
                                 <ul class="subCategory">
                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                          href="#">Побутові вентилятори</a></li>
@@ -138,11 +139,13 @@
                                                                          href="#">Промислові вентилятори</a></li>
                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                          href="#">Вентиляційні решітки</a></li>
-                                    <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
-                                                                                     href="#">Повітроводи, розети, муфти</a>
+                                    <li class="menu_categories__item">
+                                        <a class="menu_categories__link" href="#">Повітроводи, розети, муфти</a>
+                                        <button class="btn_menu decor_arrow" type="button"></button>
                                         <ul class="subCategory">
-                                            <li class="menu_categories__item decor_arrow"><a
-                                                    class="menu_categories__link" href="#">Повітроводи</a>
+                                            <li class="menu_categories__item">
+                                                <a class="menu_categories__link" href="#">Повітроводи</a>
+                                                <button class="btn_menu decor_arrow" type="button"></button>
                                                 <ul class="subCategory">
                                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                                          href="#">ПРОБА1</a></li>
@@ -151,8 +154,9 @@
                                                 </ul>
 
                                             </li>
-                                            <li class="menu_categories__item decor_arrow"><a
-                                                    class="menu_categories__link" href="#">Муфти</a>
+                                            <li class="menu_categories__item">
+                                                <a class="menu_categories__link" href="#">Муфти</a>
+                                                <button class="btn_menu decor_arrow" type="button"></button>
                                                 <ul class="subCategory">
                                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                                          href="#">ПРОБА1</a></li>
@@ -184,19 +188,22 @@
                             </li>
                             <li class="menu_categories__item"><a class="menu_categories__link"
                                                                  href="?k=cable_wire">Кабель, провід, СІП</a></li>
-                            <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
-                                                                             href="">Низьковольтне обладнання</a>
+                            <li class="menu_categories__item">
+                                <a class="menu_categories__link" href="">Низьковольтне обладнання</a>
+                                <button class="btn_menu decor_arrow" type="button"></button>
                                 <ul class="subCategory">
                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                          href="#">Автоматичні вимикачі, ПЗВ, диференційні автомати</a>
                                     </li>
                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                          href="#">Пристрої автоматики</a></li>
-                                    <li class="menu_categories__item decor_arrow"><a class="menu_categories__link"
-                                                                                     href="#">Різне силове та щитове обладнання</a>
+                                    <li class="menu_categories__item">
+                                        <a class="menu_categories__link" href="#">Різне силове та щитове обладнання</a>
+                                        <button class="btn_menu decor_arrow" type="button"></button>
                                         <ul class="subCategory">
-                                            <li class="menu_categories__item decor_arrow"><a
-                                                    class="menu_categories__link" href="#">Запобiжники</a>
+                                            <li class="menu_categories__item">
+                                                <a class="menu_categories__link" href="#">Запобiжники</a>
+                                                <button class="btn_menu decor_arrow" type="button"></button>
                                                 <ul class="subCategory">
                                                     <li class="menu_categories__item"><a class="menu_categories__link"
                                                                                          href="#">Good1</a></li>
@@ -3013,116 +3020,49 @@
     </footer>
 </div>
 
-<div class="blackWrapper"></div>
 
+<div class="blackWrapper hidden"></div>
 
-<div id='my_popup'>
-</div>
-<div id="dialog_delivery" class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">Доставка
-    товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас перевізником.
-    Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.
-    (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
-</div>
-
-<div id="dialog"></div>
-
-<form id="searchformHide" action="/" method="post" style="display:none">
-    <input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>
-</form>
-<!--<script>-->
-<!--document.getElementById('searchformHide').style.display = 'none';-->
-<!--$("#dialog").dialog({autoOpen: false});-->
-<!--$("#dialog_delivery").dialog({autoOpen: false});-->
-<!--$("#dialog_delivery").dialog({closeText: "закрити"});-->
-
-<!--</script>-->
-
-<div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно
-    бажаєте видалити всі товари з кошику?
+<!-- ANCOR -->
+<div id="back-top">
+    <a href="#top">
+        <span></span>
+    </a>
 </div>
 
-<!--<script>-->
-<!--$("#dialog_truncate").dialog({autoOpen: false});-->
-<!--$("#dialog_truncate").dialog({closeText: "закрити"});-->
-<!--$("#dialog_truncate").dialog({-->
-<!--buttons: [{-->
-<!--text: "Так", click: function () {-->
-<!--$(this).dialog("close");-->
-<!--truncate_basket();-->
-<!--}-->
-<!--},-->
-<!--{-->
-<!--text: "Ні", click: function () {-->
-<!--$(this).dialog("close");-->
-<!--}-->
-<!--}]-->
-<!--});-->
+<!-- POPUP BIFORE ADD TO SHOPBAG-->
 
-<!--</script>-->
+<div class="TEST_BUTTON"></div>  <!--  уберешь эту кнопку и повесешь собитие на то что тебе надо-->
 
-<div id="dialog_form" title="Оформлення замовлення" style="display:none">
-    <form id="form_b_send" name="form_b_send" method="post" action="?">
-        <p class="send_text" align="center">Для відправки Вашого замовлення, будь-ласка, заповніть поля наступної форми
-            та натисніть кнопку &quot;надіслати замовлення&quot;. <span class="send_comment">  Поля відмічені * повинні бути заповнені обов'язково.</span>
-        </p>
-        <table width="500" border="0" align="center">
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Ім'я отримувача*</div>
-                </td>
-                <td class="send_text">
-                    <div class="form_error_text" id="user_name_text" style="display:none" align="right">(поле не
-                        заповнене)
-                    </div>
-                    <input name="user_name" type="text" id="user_name" onkeypress="onkeypressDialogs(event)"
-                           class="send_input" size="50" maxlength="250"/></td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Телефон(и)*</div>
-                </td>
-                <td class="send_text">
-                    <div class="form_error_text" id="user_phone_text" style="display:none" align="right">(поле не
-                        заповнене)
-                    </div>
-                    <input name="user_phone" type="text" id="user_phone" onkeypress="onkeypressDialogs(event)"
-                           class="send_input" size="50" maxlength="250"/></td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Адреса отримувача</div>
-                </td>
-                <td class="send_text"><input name="user_adres" type="text" id="user_adres"
-                                             onkeypress="onkeypressDialogs(event)" class="send_input" size="50"
-                                             maxlength="250"/></td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Назва організації</div>
-                </td>
-                <td class="send_text"><input name="user_firm" class="send_input" type="text" id="user_firm"
-                                             onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/></td>
-            </tr>
-            <tr>
-                <td nowrap="nowrap" class="send_text">
-                    <div align="right">Електронна пошта</div>
-                </td>
-                <td class="send_text"><input name="user_mail" type="text" id="user_mail" class="send_input"
-                                             onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/>
-                    <div id="send_my_wait"></div>
-                </td>
-            </tr>
-        </table>
-    </form>
+<div class="popup_likeShopbag hidden">
+    <div class="wrapperBlock">
+        <button class="popup_likeShopbag__close">
+            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
+        </button>
+        <p class="popup_likeShopbag__text_main">Подтверждение</p>
+
+        <!-- Возможно этот кусок надо будет дублировать если добавляеться ещё один товар в корзину-->
+        <div class="popup_likeShopbag__product">
+            <img class="shoppingBasket_product__image" src="image/Products/zefir/z1.jpg" alt="">
+            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываываываыва</p>
+        </div>
+        <!---->
+
+        <p class="popup_likeShopbag__text_main">добавлен в корзину</p>
+
+        <div class="popup_likeShopbag__buttons">
+            <button class="button_buyProduct popup_likeShopbag__continueBuying" type="button" title="continue buying">
+                <span class="popup_likeShopbag__text">Продолжить покупки</span>
+            </button>
+            <div class="button_buyProduct popup_likeShopbag__goToShopbag" title="go to shopbag">
+                <a href="#" class="popup_likeShopbag__text">Оформление заказа</a>
+            </div>
+        </div>
+
+    </div>
 </div>
+<!-- -->
 
-
-<p id="back-top" style="display:none">
-    <a href="#top"><span></span></a>
-</p>
-
-
-<div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
 
 
 <script type="text/javascript" src="libs/jquery.min.js"></script>
@@ -3144,193 +3084,7 @@
 <!-- endbuild -->
 
 
-<!--<script>-->
 
-<!--$('#bg_layer').hide();-->
-
-<!--$("#dialog_pic_full").dialog({autoOpen: false});-->
-<!--$("#dialog_pic_full").dialog({closeText: "закрити"});-->
-<!--$("#dialog_pic_full").dialog({-->
-<!--buttons: [{-->
-<!--text: "Ok", click: function () {-->
-<!--$(this).dialog("close");-->
-<!--}-->
-<!--}]-->
-<!--});-->
-
-
-<!--window.onload = function () {-->
-<!--setTimeout(function () {-->
-
-<!--window.addEventListener("popstate", function (e) {-->
-<!--window.location = location.href;-->
-<!--}, false);-->
-
-
-<!--}, 0);-->
-<!--}-->
-
-
-<!--</script>-->
-
-<!--<script type="text/javascript" charset="windows-1251" src="js/menu-vertical-func.js"></script>-->
-
-<script type="text/javascript">
-
-    //    function GetCssStyle(e) {
-    //        if (e.currentStyle) return e.currentStyle;
-    //        else if (window.getComputedStyle) return window.getComputedStyle(e, null)
-    //    }
-
-    /*
-var elem = document.getElementById('elem');
-var height_old = elem.offsetHeight;
-elem.innerHTML="text";
-var height = elem.offsetHeight;
-alert(height_old+' '+height);
-*/
-//    var x = 0;
-//
-//    function resize_body_f() {
-//        //return;
-//        var txt = x += 1;
-//        // document.getElementById("blok1").innerHTML = txt;
-//        var elem2 = document.getElementById("blok_main_2");
-//
-//        var str = GetCssStyle(elem2).width;
-//        var width2 = str.substr(0, str.length - 2);
-//        var elem21 = document.getElementById("blok_main_2_1");
-//        var elem22 = document.getElementById("blok_main_2_2");
-//
-//        var elem22 = document.getElementById("blok_main_2_2");
-//
-//        var str21 = GetCssStyle(elem21).width;
-//        var width21 = str21.substr(0, str21.length - 2);
-//
-//        var elem2_1_x = document.getElementById("blok_main_2_1_x");
-//        if (elem2_1_x == null) {
-//            return;
-//        }
-//        var str2_1_x = GetCssStyle(elem2_1_x).width;
-//        var width2_1_x = str2_1_x.substr(0, str2_1_x.length - 2);
-//
-//        var full_21x_count = (Number(width21)) / (Number(width2_1_x) + 10);
-//        var info = document.getElementById("info");
-//        //var info1 = document.getElementById("info1");
-////	info.innerHTML = "21x: "+width2_1_x + ", count: "+full_21x_count+ ", 21: "+width21;
-//
-//        //
-////	elem22.innerHTML = width;
-//        if (Number(width2) < Number('950')) {//перенос блока инфо вниз
-//            //	console.log(width);
-//            elem21.removeAttribute("style");
-//            elem22.removeAttribute("style");
-//            elem21.className = "blok_main_2_1_when_bl_main_2_2_in_new_line";
-//            elem22.className = "blok_main_2_2_new_line";
-//        } else {
-//            elem21.className = "blok_main_2_1";
-//            elem22.className = "blok_main_2_2";
-//
-//            //width2
-//            var w_left_max = 0.9 * Number(width2);
-//            var left_num_max = Math.floor(Number(w_left_max) / (Number(width2_1_x) + 10));
-//            var w_left_new = left_num_max * (Number(width2_1_x) + 10);
-//            var w_left_new_procent = Math.floor(w_left_new * 100 / Number(width2));
-//            w_left_new_procent = w_left_new_procent + 1;
-//            var w_right_new_procent = 100 - w_left_new_procent;
-////		info1.innerHTML =width2_1_x;
-//
-//            //	info1.innerHTML =w_left_new_procent + " - "+w_left_new+",  "+ w_right_new_procent;
-//            elem21.style.width = w_left_new_procent + "%";
-//            elem22.style.width = w_right_new_procent + "%";
-//
-//
-//            //	var x_proc = (Math.floor(Number(full_21x_count))*170*90)/Number(width21);
-//            //	info1.innerHTML =x_proc;
-//            //	elem21.style.width = Math.floor(Number(x_proc))+"%";
-//            //	elem22.style.width = Math.floor(100-Math.floor(Number(x_proc)))+"%";
-//            //	console.log(Math.floor(Number(x_proc))+"%");
-//            //	console.log(Math.floor(100-Math.floor(Number(x_proc)))+"%");
-//
-//        }
-//
-//    }
-
-</script>
-
-
-<script>
-    //    $("#dialog_form").dialog({autoOpen: false});
-    //    $("#dialog_form").dialog({closeText: "закрити (замовлення не буде відправлене!)"});
-    //    $("#dialog_form").dialog({
-    //        buttons: [{
-    //            id: "dialogSendbut", text: "Надіслати замовлення", click: function () {
-    //                send_basket_dialog({
-    //                    data: {
-    //                        bsend: "bsend",
-    //                        user_name: document.getElementById("user_name").value,
-    //                        user_phone: document.getElementById("user_phone").value,
-    //                        user_adres: document.getElementById("user_adres").value,
-    //                        user_firm: document.getElementById("user_firm").value,
-    //                        user_mail: document.getElementById("user_mail").value,
-    //                    }
-    //                });
-    //            }
-    //        }]
-    //    });
-
-    /*
-        $(document).ready(function () {
-
-            // hide #back-top first
-            $("#back-top").hide();
-
-
-            // fade in #back-top
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 500) {
-                        $('#back-top').fadeIn();
-                    } else {
-                        $('#back-top').fadeOut();
-                    }
-                });
-
-                // scroll body to 0px on click
-                $('#back-top a').click(function () {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 'slow');
-                    return false;
-                });
-            });
-
-        });
-
-
-        resize_body_f();
-
-    */
-
-</script>
-
-<!--<script>-->
-<!--(function (i, s, o, g, r, a, m) {-->
-<!--i['GoogleAnalyticsObject'] = r;-->
-<!--i[r] = i[r] || function () {-->
-<!--(i[r].q = i[r].q || []).push(arguments)-->
-<!--}, i[r].l = 1 * new Date();-->
-<!--a = s.createElement(o),-->
-<!--m = s.getElementsByTagName(o)[0];-->
-<!--a.async = 1;-->
-<!--a.src = g;-->
-<!--m.parentNode.insertBefore(a, m)-->
-<!--})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');-->
-
-<!--ga('create', 'UA-38360333-2', 'auto');-->
-<!--ga('send', 'pageview');-->
-
-<!--</script>-->
 
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>

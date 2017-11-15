@@ -1958,43 +1958,6 @@ button {
   text-decoration: none;
   cursor: pointer; }
 
-.popup_text {
-  color: #FF0;
-  font-weight: bold;
-  font-size: 12px;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  cursor: pointer; }
-
-.popup_text:hover {
-  color: #0F3;
-  font-weight: bold;
-  font-size: 12px;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  cursor: pointer; }
-
-.popup_textB {
-  color: #FF0;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  cursor: pointer; }
-
-.popup_textB:hover {
-  color: #0F3;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  cursor: pointer; }
-
-.popup_z1 {
-  font-size: 14px;
-  color: #000;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: none; }
-
 .style16new {
   color: #FFFFFF;
   font-weight: bold;
@@ -3475,9 +3438,8 @@ label.css-label {
   clear: both; }
 
 .blackWrapper {
-  display: none;
   position: fixed;
-  z-index: 8;
+  z-index: 20;
   width: 100%;
   height: 100%;
   background: #000;
@@ -4022,9 +3984,13 @@ label.css-label {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.shoppingBasket_product__image {
+  float: left;
+  max-width: 100px; }
+
 .shoppingBasket_product__name {
   text-align: center !important;
-  margin: 0 0 25px;
+  margin-left: 10px;
   font-size: 16px;
   color: #000; }
 
@@ -4089,14 +4055,6 @@ label.css-label {
   .button_continueBuying:hover {
     transition: all .3s;
     background-color: #0160ac; }
-
-.button_buyProduct {
-  float: right;
-  width: 200px;
-  margin-top: 20px;
-  background-color: #d7ebf9;
-  border: 1px solid #aed0ea;
-  color: #2779aa; }
 
 .button_continueBuying__link {
   color: #0160ac; }
@@ -4230,10 +4188,13 @@ label.css-label {
 
 .popup_likeShopbag__close {
   position: absolute;
-  top: 10px;
+  top: 4px;
   right: 10px;
-  width: 12px;
-  height: 12px;
+  color: #2779aa;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  box-sizing: border-box;
   background: none;
   font-size: 18px;
   font-weight: 400;
@@ -4248,13 +4209,26 @@ label.css-label {
   margin: 3% auto 10px;
   font-size: 24px; }
 
-.popup_likeShopbag__text {
-  margin: 5px; }
+.popup_likeShopbag__product {
+  position: relative;
+  width: 100%; }
 
 .button_buyProduct {
+  float: right;
+  width: 200px;
+  margin-top: 20px;
+  background-color: #d7ebf9;
+  border: 1px solid #aed0ea;
+  border-radius: 6px;
   min-height: 30px; }
   .button_buyProduct:hover {
-    background-color: #157dd0; }
+    background-color: #E9F1F9;
+    border-color: #2694e8; }
+  .button_buyProduct:active {
+    border-color: #2694e8;
+    background-color: #3baae3;
+    font-weight: bold;
+    color: #fff; }
 
 .popup_likeShopbag__buttons {
   width: 100%;
@@ -4270,13 +4244,18 @@ label.css-label {
 .popup_likeShopbag__goToShopbag {
   width: 45%; }
 
-.button_buyProduct__text {
-  color: #fff; }
+.popup_likeShopbag__text {
+  color: #2779aa;
+  font-weight: bold; }
+  .popup_likeShopbag__text:hover {
+    text-decoration: none;
+    color: #2779aa; }
 
-.popup_likeShopbag__goToShopbag_text {
-  transition: 0.2s all; }
-  .popup_likeShopbag__goToShopbag_text:hover {
-    color: #fff; }
+.popup_likeShopbag__goToShopbag .popup_likeShopbag__text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 30px; }
 
 /*********************************************/
 /*TYPOGRAPHY*/
@@ -4333,6 +4312,9 @@ label.css-label {
   .subCategory.active {
     height: initial;
     transition: all .3s; }
+  .subCategory.active .menu_categories__item {
+    background-color: #f2fcff;
+    background-image: none; }
   .btn_menu {
     position: relative;
     float: right;

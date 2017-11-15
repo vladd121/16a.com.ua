@@ -41,6 +41,13 @@
     height:initial;
     transition: all .3s;
   }
+  .subCategory.active .menu_categories__item{
+    background-color: #f2fcff;
+    background-image: none;
+  }
+
+
+
   .btn_menu{
     position: relative;
     float: right;

@@ -37,10 +37,52 @@ $(document).ready(function () {
 
         $(this).toggleClass(active);
         $(this).siblings(".subCategory").toggleClass(active);
-
-        console.log("1");
-
     });
+
+//
+
+////////////////// POPUPS LOGIC
+
+    function popupWindowShow(btn, field) {
+        btn.on("click", function () {
+
+            field.removeClass("hidden");
+            blackWrapper.removeClass("hidden");
+            blackWrapper.animate({opacity: 0.6}, 300);
+        });
+    }
+
+    function closePopupWindow(btn, field) {
+        btn.on("click", function () {
+            field.addClass("hidden");
+            blackWrapper.addClass("hidden");
+            blackWrapper.animate({opacity: 0}, 400);
+        })
+    }
+
+
+/// POPUP BIFORE ADD TO SHOPBAG
+
+    function popupWindowBiforeAddToShopBag() {
+
+        var TESTBUTTON = $(".TEST_BUTTON");
+
+        var popupWindow = $(".popup_likeShopbag"),
+            buttonClose = $(".popup_likeShopbag__close"),
+            buttonContinueBuying = $(".popup_likeShopbag__continueBuying");
+
+        popupWindowShow(TESTBUTTON, popupWindow);
+
+        closePopupWindow(buttonClose, popupWindow);
+        closePopupWindow(buttonContinueBuying, popupWindow);
+        closePopupWindow(blackWrapper, popupWindow);
+
+    }
+
+    popupWindowBiforeAddToShopBag();
+
+
+
 
 
 

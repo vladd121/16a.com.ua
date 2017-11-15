@@ -533,113 +533,49 @@
     </footer>
 </div>
 
-<div class="blackWrapper"></div>
 
+<div class="blackWrapper hidden"></div>
 
-<div id='my_popup'>
-</div>
-<div id="dialog_delivery" class="dialog_delivery_basketClear" title="Доставка і оплата" style="display:none">Доставка
-    товару по всій території України відбувається за узгодженням сторін будь-яким зручним для Вас перевізником.
-    Можливий самовивіз з точки видачі за адресою: у м.Львові вул.Городоцька, 224.
-    (після замовлення Вам зателефонує менеджер для підтвердження і узгодження способу оплати та доставки)
-</div>
-
-<div id="dialog"></div>
-
-<form id="searchformHide" action="/" method="post" style="display:none">
-    <input name="getSearchHide" type="text" id="searchInputHide" value="" size="30" maxlength="80"/>
-</form>
-<!--<script>-->
-<!--document.getElementById('searchformHide').style.display = 'none';-->
-<!--$("#dialog").dialog({autoOpen: false});-->
-<!--$("#dialog_delivery").dialog({autoOpen: false});-->
-<!--$("#dialog_delivery").dialog({closeText: "закрити"});-->
-
-<!--</script>-->
-
-<div id="dialog_truncate" class="dialog_delivery_basketClear" title="Очистка кошика" style="display:none">Ви дійсно
-    бажаєте видалити всі товари з кошику?
+<!-- ANCOR -->
+<div id="back-top">
+    <a href="#top">
+        <span></span>
+    </a>
 </div>
 
-<!--<script>-->
-<!--$("#dialog_truncate").dialog({autoOpen: false});-->
-<!--$("#dialog_truncate").dialog({closeText: "закрити"});-->
-<!--$("#dialog_truncate").dialog({-->
-<!--buttons: [{-->
-<!--text: "Так", click: function () {-->
-<!--$(this).dialog("close");-->
-<!--truncate_basket();-->
-<!--}-->
-<!--},-->
-<!--{-->
-<!--text: "Ні", click: function () {-->
-<!--$(this).dialog("close");-->
-<!--}-->
-<!--}]-->
-<!--});-->
+<!-- POPUP BIFORE ADD TO SHOPBAG-->
 
-<!--</script>-->
+<div class="TEST_BUTTON"></div>  <!--  уберешь эту кнопку и повесешь собитие на то что тебе надо-->
 
-<!--<div id="dialog_form" title="Оформлення замовлення" style="display:none">-->
-    <!--<form id="form_b_send" name="form_b_send" method="post" action="?">-->
-        <!--<p class="send_text" align="center">Для відправки Вашого замовлення, будь-ласка, заповніть поля наступної форми-->
-            <!--та натисніть кнопку &quot;надіслати замовлення&quot;. <span class="send_comment">  Поля відмічені * повинні бути заповнені обов'язково.</span>-->
-        <!--</p>-->
-        <!--<table width="500" border="0" align="center">-->
-            <!--<tr>-->
-                <!--<td nowrap="nowrap" class="send_text">-->
-                    <!--<div align="right">Ім'я отримувача*</div>-->
-                <!--</td>-->
-                <!--<td class="send_text">-->
-                    <!--<div class="form_error_text" id="user_name_text" style="display:none" align="right">(поле не-->
-                        <!--заповнене)-->
-                    <!--</div>-->
-                    <!--<input name="user_name" type="text" id="user_name" onkeypress="onkeypressDialogs(event)"-->
-                           <!--class="send_input" size="50" maxlength="250"/></td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<td nowrap="nowrap" class="send_text">-->
-                    <!--<div align="right">Телефон(и)*</div>-->
-                <!--</td>-->
-                <!--<td class="send_text">-->
-                    <!--<div class="form_error_text" id="user_phone_text" style="display:none" align="right">(поле не-->
-                        <!--заповнене)-->
-                    <!--</div>-->
-                    <!--<input name="user_phone" type="text" id="user_phone" onkeypress="onkeypressDialogs(event)"-->
-                           <!--class="send_input" size="50" maxlength="250"/></td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<td nowrap="nowrap" class="send_text">-->
-                    <!--<div align="right">Адреса отримувача</div>-->
-                <!--</td>-->
-                <!--<td class="send_text"><input name="user_adres" type="text" id="user_adres"-->
-                                             <!--onkeypress="onkeypressDialogs(event)" class="send_input" size="50"-->
-                                             <!--maxlength="250"/></td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<td nowrap="nowrap" class="send_text">-->
-                    <!--<div align="right">Назва організації</div>-->
-                <!--</td>-->
-                <!--<td class="send_text"><input name="user_firm" class="send_input" type="text" id="user_firm"-->
-                                             <!--onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/></td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<td nowrap="nowrap" class="send_text">-->
-                    <!--<div align="right">Електронна пошта</div>-->
-                <!--</td>-->
-                <!--<td class="send_text"><input name="user_mail" type="text" id="user_mail" class="send_input"-->
-                                             <!--onkeypress="onkeypressDialogs(event)" size="50" maxlength="250"/>-->
-                    <!--<div id="send_my_wait"></div>-->
-                <!--</td>-->
-            <!--</tr>-->
-        <!--</table>-->
-    <!--</form>-->
-<!--</div>-->
+<div class="popup_likeShopbag hidden">
+    <div class="wrapperBlock">
+        <button class="popup_likeShopbag__close">
+            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
+        </button>
+        <p class="popup_likeShopbag__text_main">Подтверждение</p>
 
+        <!-- Возможно этот кусок надо будет дублировать если добавляеться ещё один товар в корзину-->
+        <div class="popup_likeShopbag__product">
+            <img class="shoppingBasket_product__image" src="image/Products/zefir/z1.jpg" alt="">
+            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываываываыва</p>
+        </div>
+        <!---->
 
-<p id="back-top" style="display:none">
-    <a href="#top"><span></span></a>
-</p>
+        <p class="popup_likeShopbag__text_main">добавлен в корзину</p>
+
+        <div class="popup_likeShopbag__buttons">
+            <button class="button_buyProduct popup_likeShopbag__continueBuying" type="button" title="continue buying">
+                <span class="popup_likeShopbag__text">Продолжить покупки</span>
+            </button>
+            <div class="button_buyProduct popup_likeShopbag__goToShopbag" title="go to shopbag">
+                <a href="#" class="popup_likeShopbag__text">Оформление заказа</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- -->
+
 
 
 <div id="dialog_pic_full" class="dialog_pic_full" title="Фото"></div>
