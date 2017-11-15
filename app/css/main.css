@@ -4299,6 +4299,7 @@ label.css-label {
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
   .left-group-menu {
+    display: none;
     position: relative;
     margin-bottom: 15px; }
   .menu_categories__link {
