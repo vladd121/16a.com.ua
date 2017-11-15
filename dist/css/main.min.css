@@ -3008,7 +3008,8 @@ button {
   padding-top: 72px;
   padding-bottom: 10px;
   list-style-type: none;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: default; }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
   height: auto;
@@ -3059,11 +3060,13 @@ button {
   color: #ff0000; }
 
 .about_item_box {
+  position: relative;
   display: inline-block;
   float: left;
   width: 50%;
   max-width: 50%;
-  min-height: 300px; }
+  min-height: 300px;
+  z-index: 3; }
 
 .blok_main_2_1_x_about_item_cont {
   position: relative;
@@ -3080,6 +3083,7 @@ button {
   z-index: 1; }
 
 .blok_main_2_1_x_about_item {
+  display: block;
   background-color: #FFF;
   position: relative;
   float: none;

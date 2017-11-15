@@ -2734,6 +2734,7 @@ button {
   padding-bottom: 10px;
   list-style-type: none;
   overflow: hidden;
+  cursor: default;
 }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
@@ -2796,11 +2797,13 @@ button {
 }
 
 .about_item_box {
+  position: relative;
   display: inline-block;
   float: left;
   width: 50%;
   max-width: 50%;
   min-height: 300px;
+  z-index: 3;
 }
 
 .blok_main_2_1_x_about_item_cont {
@@ -2821,6 +2824,7 @@ button {
 }
 
 .blok_main_2_1_x_about_item {
+  display: block;
   background-color: #FFF;
   position: relative;
   float: none;
