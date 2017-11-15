@@ -2050,6 +2050,13 @@ button {
   left: 10px;
   width: 80px;
   height: 40px;
+  opacity: .5;
+  transition: 1s;
+  z-index: 99;
+  &:hover {
+    background-color: #B3D1FF;
+    opacity: 1;
+  }
 }
 
 #back-top a {
@@ -2073,13 +2080,7 @@ button {
   padding: 5px 0;
   @include sprite($up-arrow);
   margin: 0 auto 7px;
-  transition: 1s;
-  opacity: .5;
-}
 
-#back-top a:hover span {
-  background-color: #B3D1FF;
-  opacity: 1;
 }
 
 .top_m_container {
@@ -2704,33 +2705,46 @@ button {
   opacity: 1;
 }
 
-.dialog_delivery_basketClear {
-  font-size: 18px;
-}
+//.dialog_delivery_basketClear {
+//  font-size: 18px;
+//}
 
-.dialog_pic_full {
-
-  font-size: 18px;
-}
-
-.about_tm_container {
-  width: auto;
-  min-width: 600px;
-  max-width: 3000px;
-  margin: 5px;
-  text-align: center;
-}
+//.dialog_pic_full {
+//
+//  font-size: 18px;
+//}
+//
+//.about_tm_container {
+//  width: auto;
+//  min-width: 600px;
+//  max-width: 3000px;
+//  margin: 5px;
+//  text-align: center;
+//}
 
 .subgr-list-block {
   position: relative;
   display: inline-block;
-  min-height: 240px;
+  height: 300px;
+  min-height:300px;
   width: 50%;
   padding-left: 10px;
   max-width: 50%;
   padding-top: 72px;
   padding-bottom: 10px;
   list-style-type: none;
+  overflow: hidden;
+}
+
+.blok_main_2_1_x_about_item:hover .subgr-list-block {
+  height:auto;
+  overflow: visible;
+  border-bottom: 1px solid #c3c3c3;
+  box-sizing: border-box;
+}
+
+.subgr-item-dv:hover {
+  overflow: visible;
 }
 
 .subgr-item-dv {
@@ -2738,6 +2752,10 @@ button {
   text-align: left;
   height: 25px;
   width: 190px;
+  background-color: #fff;
+  max-width: 190px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .blok_main_2_1_x_about_item:hover {
@@ -2749,11 +2767,7 @@ button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.blok_main_2_1_x_about_item:hover .subgr-list-block {
-  border-bottom: 1px solid #c3c3c3;
-  box-sizing: border-box;
-  overflow: visible;
-}
+
 
 .subgr-list-item {
 
@@ -2770,8 +2784,9 @@ button {
 }
 
 .subgr-item-dv:hover .subgr-list-item {
-  position: absolute;
+  position: relative;
   width: auto;
+  text-decoration: none;
   background-color: #fff;
   z-index: 8;
 }
@@ -2806,17 +2821,31 @@ button {
 }
 
 .blok_main_2_1_x_about_item {
+  background-color: #FFF;
   position: relative;
-  background-color: #fff;
-
-  height: 300px;
-  padding: 5px 5px 10px;
-  border-radius: 1px;
-  box-sizing: border-box;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  float: none;
   overflow: hidden;
-  z-index: 3;
+  min-width: 400px;
+  width: 400px;
+  max-width: 400px;
+  height: 300px;
+  padding: 5px;
+  cursor: default;
+  border-radius: 1px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.5);
 }
+
+.blok_main_2_1_x_about_item:hover {
+  position: relative;
+  float: left;
+  overflow: visible;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
 
 .blok_main_2_1_x_about_item:hover .about_item_text_hlim {
   color: #ff0000;
@@ -3510,12 +3539,10 @@ label.css-label {
   background-color: #FFF;
   display: block;
   font-size: 14px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
   text-decoration: none;
   white-space: nowrap;
-  padding: 0px 10px;
+  padding: 0 10px;
   color: #666;
   border: 1px solid #FF6666;
   &:hover {
@@ -3708,7 +3735,7 @@ label.css-label {
   float: none;
   height: 32px;
   color: #4d4d4d;
-  margin: 0px auto;
+  margin: 0 auto;
   width: auto;
   display: table;
 
@@ -4177,6 +4204,113 @@ label.css-label {
 .options .form-group {
   margin-bottom: 0 !important;
 }
+
+
+
+
+
+
+//
+
+
+// popup_likeShopbag
+
+.TEST_BUTTON { //////////////////////////
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  background-color: #f00;
+  cursor: pointer;
+}
+
+.popup_likeShopbag {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  max-width: 628px;
+
+  min-height: 250px;
+
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px 20px;
+  z-index: 1080;
+}
+
+.popup_likeShopbag__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 12px;
+  height: 12px;
+  background: none;
+  font-size: 18px;
+  font-weight: 400;
+  z-index: 4;
+
+  &:hover {
+    color: #f00;
+  }
+}
+
+.popup_likeShopbag__text_main {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 3% auto 10px;
+  font-size: 24px;
+}
+
+.popup_likeShopbag__text {
+  margin: 5px;
+}
+
+.popup_likeShopbag__product {
+
+}
+
+.button_buyProduct {
+  //background-color: $color_blue;
+  min-height: 30px;
+  &:hover {
+    background-color: #157dd0;
+  }
+}
+
+.popup_likeShopbag__buttons {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popup_likeShopbag__continueBuying,
+.popup_likeShopbag__goToShopbag {
+  width: 45%;
+}
+
+.button_buyProduct__text {
+  color: #fff;
+}
+
+.popup_likeShopbag__goToShopbag_text {
+
+  transition: 0.2s all;
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+
+
+
+
 
 /*********************************************/
 /*TYPOGRAPHY*/
