@@ -25,6 +25,14 @@
     font-size:16px;
   }
 
+  .minBasket_full{
+    float: right;
+  }
+
+  .binfo_image{
+    float: right;
+  }
+
   .menu_categories:first-of-type .menu_categories__item .menu_categories__link{
     text-align: center;
   }
@@ -46,7 +54,6 @@
     background-color: #f2fcff;
     background-image: none;
   }
-
 
 
   .btn_menu{
@@ -122,9 +129,13 @@
 
   }
 
+
+
   .blok_main_2_1_x_about_item{
-    height:auto;
     padding: 0;
+    min-width:initial;
+    width:auto;
+    height:auto;
   }
   .subgr-list-block{
     padding: 0;
@@ -156,20 +167,12 @@
   .logo_link {
     width: 100px;
   }
-  .binfo_image{
-    float: left;
-  }
   .button_menu-mobile{
     font-size: 26px;
   }
   .logo_link{
     width: 94px;
   }
-
-  .binfo{
-    min-width:initial;
-  }
-
 
 }
 /* Extra Small Devices, Phones 480px */
@@ -196,6 +199,14 @@
   .button_menu-mobile{
     font-size: 18px;
   }
+
+  .binfo{
+    min-width:initial;
+  }
+
+.minBasket_param{
+  display: none;
+}
 }
 @media only screen and (max-width: 400px) {
   .root-logo{

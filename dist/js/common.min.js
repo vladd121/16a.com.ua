@@ -3,6 +3,7 @@ $(document).ready(function () {
     var blackWrapper = $(".blackWrapper"),
         navMenu = $(".left-group-menu"),
         basketLink = $(".binfo"),
+        btnCatalog =$(".buttonStartMenu"),
         active = "active",
         body = $("body");
 
@@ -13,6 +14,21 @@ $(document).ready(function () {
             element.toggleClass("hidden");
         });
     }
+
+
+    ///  sliderEffect
+    function sliderEffectForButtons(button, element, duration) {
+        button.click(function () {
+            element.slideToggle(duration);
+        });
+    }
+
+
+
+
+   if ($(window).width() <= 991) {
+       sliderEffectForButtons(btnCatalog, navMenu, 300);
+   }
 
 
     var buttonLanguage = $(".bl_language__active"),
@@ -30,6 +46,9 @@ $(document).ready(function () {
             blackWrapper.css({"display": "none"});
         }
     );
+
+
+
 
     var buttonSubmenu = $(".btn_menu");
 
@@ -86,12 +105,7 @@ $(document).ready(function () {
 
 
 
-///  sliderEffect
-    function sliderEffectForButtons(button, element, duration) {
-        button.click(function () {
-            element.slideToggle(duration);
-        });
-    }
+
 
 
 
@@ -250,6 +264,16 @@ $(document).ready(function () {
             quantityProduct.val(1);
         }
     });
+
+
+
+
+// FILTER for telephone number
+
+    var telephonseInput = $("input[type='tel']");
+    telephonseInput.mask( "+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
+
+
 
 
 

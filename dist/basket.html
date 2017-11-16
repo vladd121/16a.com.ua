@@ -52,21 +52,32 @@
                     <div class="col-xs-12">
                         <div class="top-info__inner hidden-xs">
                             <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
-                            <a class="top-line-delivery" href="delivery.html">Доставка і оплата</a>
+                            <a class="top-line-delivery" href="#">Доставка і оплата</a>
                             <div class="top-phone">
                                 <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
                                 <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
                                 <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
                                 <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
                             </div>
-
-                            <form class="bl_language" method="" action="">
-                                <span class="bl_language__active">ua</span>
+                            <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language" action="http://16a.loc/index.php?route=common/language/language">
+                                <span class="bl_language__active">ru</span>
                                 <ul class="bl_language__variables hidden">
-                                    <li class="bl_language__variables_item language-select">ua</li>
-                                    <li class="bl_language__variables_item language-select">ru</li>
+                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
+                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
                                 </ul>
+                                <input id="lang_val_to_form" type="hidden" name="code" value="">
+                                <input type="hidden" name="redirect" value="">
+                                <script type="text/javascript">
+                                    function changeLang(element){
+                                        $('#lang_val_to_form').val(element.attr('name'));
+                                        $('#form_language').submit();
+                                    }
+                                    function chowElem(element){
+                                        element.siblings('ul').toggleClass('hidden');
+                                    }
+                                </script>
                             </form>
+
 
                         </div>
                     </div>
@@ -96,7 +107,7 @@
 
 
                         <div class="mini_basket" id="mini_basket">
-                            <a class="binfo" href="#"> <!-- ЕСЛИ В КОРЗИНЕ ЕСТЬ ТОВАР ДОБАВЛЯЙ КЛАСС active к binfo-->
+                            <a class="binfo" href="#">
                                 <img class="binfo_image" src="image/b_min1.gif" alt="Ваш кошик">
                                 <div class="minBasket_full">
                                     <p class="minBasket">Кошик</p>
@@ -118,7 +129,7 @@
 
         </div>
     </header>
-
+    <!------------------------------------------- MAIN ----------------------------------------------------------->
 
     <main class="main">
         <div class="container">

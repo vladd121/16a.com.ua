@@ -663,7 +663,7 @@ button {
 
 .minBasket_text {
   text-align: right;
-  margin-left: 15px;
+  //margin-left: 15px;
 }
 
 .bh1 {
@@ -755,7 +755,6 @@ button {
 .mini_basket {
   position: relative;
   margin-top: 10px;
-  width: 100px;
 }
 
 .ssearch {
@@ -3715,11 +3714,46 @@ label.css-label {
   display: table;
 
 }
-
-.cell-logo {
+.icon-tel{
   position: relative;
-  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 32px;
+
+  &__kievstar:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-kievstar);
+  }
+
+  &__vodafon:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-vodafon);
+  }
+  &__life:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-life);
+  }
+  &__lviv:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-lviv);
+  }
 }
+
+
+
+
 
 .cell-logo-text {
   font-size: 14px;
@@ -3744,15 +3778,14 @@ label.css-label {
 
 }
 
-.cell-logo-t1 {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+.text_phone {
+  position: relative;
+  top:8px;
   font-size: 11px;
+  vertical-align: top;
   color: #888a85;
-  text-decoration: none;
   font-weight: bold;
   margin-top: 8px;
-  position: relative;
-  float: left;
 }
 
 #back-top {

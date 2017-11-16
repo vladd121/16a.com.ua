@@ -59,6 +59,26 @@
                                 <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
                                 <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
                             </div>
+                            <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language" action="http://16a.loc/index.php?route=common/language/language">
+                                <span class="bl_language__active">ru</span>
+                                <ul class="bl_language__variables hidden">
+                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
+                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
+                                </ul>
+                                <input id="lang_val_to_form" type="hidden" name="code" value="">
+                                <input type="hidden" name="redirect" value="">
+                                <script type="text/javascript">
+                                    function changeLang(element){
+                                        $('#lang_val_to_form').val(element.attr('name'));
+                                        $('#form_language').submit();
+                                    }
+                                    function chowElem(element){
+                                        element.siblings('ul').toggleClass('hidden');
+                                    }
+                                </script>
+                            </form>
+
+
                         </div>
                     </div>
                 </div>

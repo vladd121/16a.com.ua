@@ -1075,7 +1075,7 @@ button {
   top: 2px;
   position: absolute;
   background-image: url(../image/sprite.png);
-  background-position: -37px 0px;
+  background-position: -65px -37px;
   width: 18px;
   height: 9px;
   z-index: 2; }
@@ -1337,8 +1337,7 @@ button {
   text-align: left; }
 
 .minBasket_text {
-  text-align: right;
-  margin-left: 15px; }
+  text-align: right; }
 
 .bh1 {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -1414,8 +1413,7 @@ button {
 
 .mini_basket {
   position: relative;
-  margin-top: 10px;
-  width: 100px; }
+  margin-top: 10px; }
 
 .ssearch {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
@@ -3761,9 +3759,47 @@ label.css-label {
   width: auto;
   display: table; }
 
-.cell-logo {
+.icon-tel {
   position: relative;
-  float: left; }
+  display: inline-block;
+  width: 30px;
+  height: 32px; }
+  .icon-tel__kievstar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../image/sprite.png);
+    background-position: 0px -37px;
+    width: 30px;
+    height: 32px; }
+  .icon-tel__vodafon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../image/sprite.png);
+    background-position: -72px 0px;
+    width: 30px;
+    height: 32px; }
+  .icon-tel__life:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../image/sprite.png);
+    background-position: -37px 0px;
+    width: 30px;
+    height: 32px; }
+  .icon-tel__lviv:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../image/sprite.png);
+    background-position: -35px -37px;
+    width: 25px;
+    height: 32px; }
 
 .cell-logo-text {
   font-size: 14px;
@@ -3785,15 +3821,14 @@ label.css-label {
   width: auto;
   display: table; }
 
-.cell-logo-t1 {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  color: #888a85;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 8px;
+.text_phone {
   position: relative;
-  float: left; }
+  top: 8px;
+  font-size: 11px;
+  vertical-align: top;
+  color: #888a85;
+  font-weight: bold;
+  margin-top: 8px; }
 
 #back-top {
   display: none; }
@@ -4304,6 +4339,10 @@ label.css-label {
     margin-bottom: 15px; }
   .menu_categories__link {
     font-size: 16px; }
+  .minBasket_full {
+    float: right; }
+  .binfo_image {
+    float: right; }
   .menu_categories:first-of-type .menu_categories__item .menu_categories__link {
     text-align: center; }
   .subCategory {
@@ -4375,8 +4414,10 @@ label.css-label {
     left: 35%;
     max-width: 300px; }
   .blok_main_2_1_x_about_item {
-    height: auto;
-    padding: 0; }
+    padding: 0;
+    min-width: initial;
+    width: auto;
+    height: auto; }
   .subgr-list-block {
     padding: 0;
     min-height: initial; }
@@ -4393,14 +4434,10 @@ label.css-label {
 @media only screen and (max-width: 600px) {
   .logo_link {
     width: 100px; }
-  .binfo_image {
-    float: left; }
   .button_menu-mobile {
     font-size: 26px; }
   .logo_link {
-    width: 94px; }
-  .binfo {
-    min-width: initial; } }
+    width: 94px; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
@@ -4417,7 +4454,11 @@ label.css-label {
   .decor_burger {
     font-size: 24px; }
   .button_menu-mobile {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .binfo {
+    min-width: initial; }
+  .minBasket_param {
+    display: none; } }
 
 @media only screen and (max-width: 400px) {
   .root-logo {
