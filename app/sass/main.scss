@@ -34,6 +34,14 @@ body {
 
 }
 
+.mainWrapper {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  padding: 0;
+  margin: 0 !important;
+}
+
 .wrapperBlock {
   display: flex;
   flex-direction: column;
@@ -70,13 +78,14 @@ body {
 }
 
 .header {
-  flex: 1 0 auto;
+
   width: 100%;
+  border-bottom: 5px solid rgb(236, 236, 236);
 }
 
 .main {
+  flex: 1 0 auto;
   width: 100%;
-  border-top: 5px solid rgb(236, 236, 236);
 }
 
 .footer {
@@ -204,6 +213,15 @@ button {
   min-width: 160px;
 }
 
+.buy_container .price {
+  width: 100%;
+  position: relative;
+  font-weight: bold;
+  background-color: #DFFFEF;
+  border-radius: 5px;
+  padding: 15px;
+}
+
 .pricename {
 
   font-size: 16px;
@@ -211,15 +229,9 @@ button {
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
-}
-
-.pricename:hover {
-
-  font-size: 16px;
-  color: #CC0000;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
+  &:hover {
+    color: #CC0000;
+  }
 }
 
 .pricedescr {
@@ -234,15 +246,6 @@ button {
   font-size: 9px;
   color: #990000;
   font-style: normal
-}
-
-.price {
-  width: 100%;
-  position: relative;
-  font-weight: bold;
-  background-color: #DFFFEF;
-  border-radius: 5px;
-  padding: 15px;
 }
 
 .price_box {
@@ -413,7 +416,7 @@ button {
   height: 100%;
   min-height: 35px;
   background: none;
-   ///////////
+  ///////////
 }
 
 .menu_categories__item:hover {
@@ -539,7 +542,7 @@ button {
   .owl-next {
 
     position: absolute;
-    left: -10%;
+    left: -6%;
     width: 23px;
     height: 23px;
     box-sizing: border-box;
@@ -565,7 +568,7 @@ button {
   }
 
   .owl-next {
-    left: 103%;
+    left: 100%;
     &:before {
       content: "\f054";
       width: 12px;
@@ -643,7 +646,6 @@ button {
 .minBasket_full {
   margin-left: 20px;
   display: inline-block;
-  text-align: right;
 }
 
 .minBasket {
@@ -651,6 +653,7 @@ button {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
   color: #006699;
+  text-align: center;
 }
 
 .minBasket:hover {
@@ -1503,15 +1506,21 @@ button {
 }
 
 /*text fade */
-.price-item-wrap1:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 30px;
-  background-color: #fff;
+//.price-item-wrap1:before {
+//  content: '';
+//  display: block;
+//  position: absolute;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  height: 30px;
+//  background-color: #fff;
+//}
+//
+
+.price-item-box img{
+  width: 100%;
+  margin: 0 auto;
 }
 
 .price-item-wrap1:hover:before {
@@ -2725,7 +2734,7 @@ button {
   position: relative;
   display: inline-block;
   height: 300px;
-  min-height:300px;
+  min-height: 300px;
   width: 50%;
   padding-left: 10px;
   max-width: 50%;
@@ -2737,7 +2746,7 @@ button {
 }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
-  height:auto;
+  height: auto;
   overflow: visible;
   border-bottom: 1px solid #c3c3c3;
   box-sizing: border-box;
@@ -2766,8 +2775,6 @@ button {
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .subgr-list-item {
 
@@ -2835,7 +2842,7 @@ button {
   padding: 5px;
   cursor: default;
   border-radius: 1px;
-  box-shadow: 0 0 1px rgba(0,0,0,0.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .blok_main_2_1_x_about_item:hover {
@@ -2845,10 +2852,8 @@ button {
   z-index: 1;
   cursor: pointer;
   border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .blok_main_2_1_x_about_item:hover .about_item_text_hlim {
   color: #ff0000;
@@ -3019,106 +3024,94 @@ button {
   vertical-align: middle;
 }
 
-input[type=checkbox].css-checkbox-null {
-  position: absolute;
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  margin: 1px;
-  padding: 0;
-  border: none;
-  cursor: default;
-}
-
-input[type=checkbox].css-checkbox-null + label.css-label-null {
-  padding-left: 35px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: 7px;
-  height: 30px;
-  width: 85%;
-  display: inline-block;
-  line-height: 30px;
-  background: no-repeat 0 0;
-  font-size: 14px;
-  vertical-align: middle;
-  cursor: default;
-  color: #c0c0c0;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-}
-
-label.css-label-null {
-  background-image: url(../image/csscheckbox_null.png);
-  user-select: none;
-  cursor: pointer;
-}
-
-input[type=checkbox].css-checkbox {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: 1px;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-}
-
-input[type=checkbox].css-checkbox + label.css-label {
-  padding-left: 35px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: 7px;
-  height: 30px;
-  width: 85%;
-  display: inline-block;
-  line-height: 30px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 14px;
-  vertical-align: middle;
-  cursor: pointer;
-  color: #006699;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-}
-
-input[type=checkbox].css-checkbox + label.css-label:hover,
-input[type=checkbox].css-checkbox + label.css-label:focus {
-  background-color: #EDFFED;
-  overflow: visible;
-  color: #CC0000;
-}
-
-input[type=checkbox].css-checkbox:checked + label.css-label {
-  background-position: 0 -30px;
-  cursor: pointer;
-}
 
 label.css-label {
-  background-image: url(../image/csscheckbox.png);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
+  width: 100%;
+  padding-right: 10px;
+  font-size: 14px;
+  min-height: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #EDFFED;
+  }
+}
+
+.css-checkbox {
+  position: absolute;
+  left: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.css-checkbox:checked + .vlast-param:after{
+  content: "\f00c";
+  font-family:$FontAwesome;
+  position: absolute;
+  left: 4px;
+  top: 0;
+  color: #8FBE36;
+  font-size: 28px;
+  z-index: 3;
+}
+
+
+
+.vlast-param {
+  position: relative;
+  display: inline-block;
+  color: #006699;
+  padding-left: 45px;
+  line-height: 35px;
+  margin: 3px 0 3px 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  &:hover,
+  &:focus {
+    color: #CC0000;
+    text-decoration: none;
+    overflow: visible;
+  }
+}
+
+.vlast-param:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #8FBE36;
+  border-radius: 2px;
+  z-index: 2;
 }
 
 .css-label-count {
   color: #a0a0a0;
-
+  display: inline-block;
+  line-height: 35px;
+  vertical-align: top;
+  margin-top: 4px;
+}
+.css-label-count:before{
+  content: "(";
+  color: inherit;
+  font-size:inherit;
+}
+.css-label-count:after{
+  content: ")";
+  color: inherit;
+  font-size:inherit;
 }
 
+
+
 .bl_breadcrumbs {
+  clear: both;
   position: relative;
   width: 100%;
   min-height: 30px;
@@ -3133,7 +3126,7 @@ label.css-label {
 .bl_breadcrumbs__item:not(:last-child):after {
   content: "/";
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
   font-size: 14px;
   color: #8DAEBF;
@@ -3149,6 +3142,9 @@ label.css-label {
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
+  &:last-child:after {
+    color: #007bb7;
+  }
 }
 
 .bl_breadcrumbs__link:hover {
@@ -3487,22 +3483,22 @@ label.css-label {
   color: #333;
 }
 
-.wait_im1 {
-  position: absolute;
-  left: 75px;
-  opacity: 0.4;
-  top: -5px;
-  z-index: 7;
+//.wait_im1 {
+//  position: absolute;
+//  left: 75px;
+//  opacity: 0.4;
+//  top: -5px;
+//  z-index: 7;
+//
+//}
 
-}
-
-.vlast_zn_container {
-  position: relative;
-}
-
-.price_filtr_container {
-  position: relative;
-}
+//.vlast_zn_container {
+//  position: relative;
+//}
+//
+//.price_filtr_container {
+//  position: relative;
+//}
 
 .no_item_found {
   color: #066;
@@ -3613,10 +3609,10 @@ label.css-label {
 }
 
 .shop_items {
+  clear: both;
   width: 100%;
   margin-top: 20px;
   text-align: center;
-
 }
 
 .mob_ver {
@@ -3629,11 +3625,10 @@ label.css-label {
   font-size: 14px;
   color: #FF9B9B;
   text-align: center;
-}
-
-.mob_ver a:hover {
-  color: #FF6666;
-  text-decoration: none;
+  &:hover {
+    color: #FF6666;
+    text-decoration: none;
+  }
 }
 
 .bt_text {
@@ -3714,13 +3709,14 @@ label.css-label {
   display: table;
 
 }
-.icon-tel{
+
+.icon-tel {
   position: relative;
   display: inline-block;
   width: 30px;
   height: 32px;
 
-  &__kievstar:before{
+  &__kievstar:before {
     content: "";
     position: absolute;
     top: 0;
@@ -3728,21 +3724,21 @@ label.css-label {
     @include sprite($icon-kievstar);
   }
 
-  &__vodafon:before{
+  &__vodafon:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     @include sprite($icon-vodafon);
   }
-  &__life:before{
+  &__life:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     @include sprite($icon-life);
   }
-  &__lviv:before{
+  &__lviv:before {
     content: "";
     position: absolute;
     top: 0;
@@ -3750,10 +3746,6 @@ label.css-label {
     @include sprite($icon-lviv);
   }
 }
-
-
-
-
 
 .cell-logo-text {
   font-size: 14px;
@@ -3780,7 +3772,7 @@ label.css-label {
 
 .text_phone {
   position: relative;
-  top:8px;
+  top: 8px;
   font-size: 11px;
   vertical-align: top;
   color: #888a85;
@@ -4030,11 +4022,10 @@ label.css-label {
 
 }
 
-.shoppingBasket_product__image{
+.shoppingBasket_product__image {
   float: left;
-  max-width:100px;
+  max-width: 100px;
 }
-
 
 .shoppingBasket_product__name {
   text-align: center !important;
@@ -4122,8 +4113,6 @@ label.css-label {
     background-color: $color_blue;
   }
 }
-
-
 
 .button_continueBuying__link {
 
@@ -4240,13 +4229,7 @@ label.css-label {
   margin-bottom: 0 !important;
 }
 
-
-
-
-
-
 //
-
 
 // popup_likeShopbag
 
@@ -4293,8 +4276,6 @@ label.css-label {
   }
 }
 
-
-
 .popup_likeShopbag__text_main {
   display: inline-block;
   text-align: center;
@@ -4321,9 +4302,9 @@ label.css-label {
     background-color: #E9F1F9;
     border-color: #2694e8;
   }
-  &:active{
-    border-color:#2694e8;
-    background-color: #3baae3 ;
+  &:active {
+    border-color: #2694e8;
+    background-color: #3baae3;
     font-weight: bold;
     color: #fff;
   }
@@ -4337,8 +4318,6 @@ label.css-label {
   justify-content: space-around;
 }
 
-
-
 .popup_likeShopbag__continueBuying,
 .popup_likeShopbag__goToShopbag {
   width: 45%;
@@ -4347,23 +4326,18 @@ label.css-label {
 .popup_likeShopbag__text {
   color: #2779aa;
   font-weight: bold;
-  &:hover{
+  &:hover {
     text-decoration: none;
     color: #2779aa;
   }
 }
-.popup_likeShopbag__goToShopbag .popup_likeShopbag__text{
+
+.popup_likeShopbag__goToShopbag .popup_likeShopbag__text {
   display: block;
   width: 100%;
   text-align: center;
   line-height: 30px;
 }
-
-
-
-
-
-
 
 /*********************************************/
 /*TYPOGRAPHY*/

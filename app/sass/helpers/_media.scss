@@ -37,6 +37,10 @@
     text-align: center;
   }
 
+  .category_menu .buttonStartMenu:hover + .left-group-menu{
+    position: relative;
+  }
+  
   .subCategory{
     position: relative;
     height: 0;  //////////// это псевдо слайдер для мобильного
@@ -50,7 +54,8 @@
     height:initial;
     transition: all .3s;
   }
-  .subCategory.active .menu_categories__item{
+  .subCategory.active > .menu_categories__item{
+    display: block;
     background-color: #f2fcff;
     background-image: none;
   }
@@ -174,6 +179,24 @@
     width: 94px;
   }
 
+  .price-item-pic-wrap{
+    height:auto;
+    margin: 0 auto;
+  }
+
+  .price-item-wrap1{
+    width: 48%;
+    height:auto;
+  }
+
+  .bl_description__short{
+    display: none;
+  }
+  .bl_description__attributes{
+    display: none;
+  }
+
+
 }
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
@@ -207,6 +230,11 @@
 .minBasket_param{
   display: none;
 }
+
+  .price-item-wrap1{
+    width: 100%;
+  }
+
 }
 @media only screen and (max-width: 400px) {
   .root-logo{

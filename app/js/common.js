@@ -179,9 +179,8 @@ $(document).ready(function () {
             inputFild.addClass("hidden");
 
             $(this).prev(".price_box").addClass("active");
-
-            basketLink.addClass("active");
         }
+        basketLink.addClass("active");
 
     });
 

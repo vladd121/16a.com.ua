@@ -840,6 +840,13 @@ body {
       flex-direction: column;
   min-height: 100vh; }
 
+.mainWrapper {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  padding: 0;
+  margin: 0 !important; }
+
 .wrapperBlock {
   display: -ms-flexbox;
   display: flex;
@@ -873,13 +880,13 @@ body {
   height: 100%; }
 
 .header {
+  width: 100%;
+  border-bottom: 5px solid #ececec; }
+
+.main {
   -ms-flex: 1 0 auto;
       flex: 1 0 auto;
   width: 100%; }
-
-.main {
-  width: 100%;
-  border-top: 5px solid #ececec; }
 
 .footer {
   -ms-flex: 0 0 auto;
@@ -987,19 +994,22 @@ button {
   width: 160px;
   min-width: 160px; }
 
+.buy_container .price {
+  width: 100%;
+  position: relative;
+  font-weight: bold;
+  background-color: #DFFFEF;
+  border-radius: 5px;
+  padding: 15px; }
+
 .pricename {
   font-size: 16px;
   color: #00C;
   font-style: normal;
   font-weight: normal;
   text-decoration: none; }
-
-.pricename:hover {
-  font-size: 16px;
-  color: #CC0000;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none; }
+  .pricename:hover {
+    color: #CC0000; }
 
 .pricedescr {
   font-size: 8px;
@@ -1010,14 +1020,6 @@ button {
   font-size: 9px;
   color: #990000;
   font-style: normal; }
-
-.price {
-  width: 100%;
-  position: relative;
-  font-weight: bold;
-  background-color: #DFFFEF;
-  border-radius: 5px;
-  padding: 15px; }
 
 .price_box {
   position: relative;
@@ -1239,7 +1241,7 @@ button {
   .owl-carousel .owl-nav .owl-prev,
   .owl-carousel .owl-nav .owl-next {
     position: absolute;
-    left: -10%;
+    left: -6%;
     width: 23px;
     height: 23px;
     box-sizing: border-box;
@@ -1260,7 +1262,7 @@ button {
       width: 14px;
       height: 14px; }
   .owl-carousel .owl-nav .owl-next {
-    left: 103%; }
+    left: 100%; }
     .owl-carousel .owl-nav .owl-next:before {
       content: "\f054";
       width: 12px;
@@ -1322,13 +1324,13 @@ button {
 
 .minBasket_full {
   margin-left: 20px;
-  display: inline-block;
-  text-align: right; }
+  display: inline-block; }
 
 .minBasket {
   font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
-  color: #006699; }
+  color: #006699;
+  text-align: center; }
 
 .minBasket:hover {
   color: #CC0000; }
@@ -2019,15 +2021,9 @@ button {
   z-index: 1; }
 
 /*text fade */
-.price-item-wrap1:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 30px;
-  background-color: #fff; }
+.price-item-box img {
+  width: 100%;
+  margin: 0 auto; }
 
 .price-item-wrap1:hover:before {
   display: none; }
@@ -3174,95 +3170,78 @@ button {
   display: table-cell;
   vertical-align: middle; }
 
-input[type=checkbox].css-checkbox-null {
-  position: absolute;
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  margin: 1px;
-  padding: 0;
-  border: none;
-  cursor: default; }
-
-input[type=checkbox].css-checkbox-null + label.css-label-null {
-  padding-left: 35px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: 7px;
-  height: 30px;
-  width: 85%;
-  display: inline-block;
-  line-height: 30px;
-  background: no-repeat 0 0;
-  font-size: 14px;
-  vertical-align: middle;
-  cursor: default;
-  color: #c0c0c0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
-label.css-label-null {
-  background-image: url(../image/csscheckbox_null.png);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  cursor: pointer; }
-
-input[type=checkbox].css-checkbox {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: 1px;
-  padding: 0;
-  border: 0;
-  cursor: pointer; }
-
-input[type=checkbox].css-checkbox + label.css-label {
-  padding-left: 35px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: 7px;
-  height: 30px;
-  width: 85%;
-  display: inline-block;
-  line-height: 30px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 14px;
-  vertical-align: middle;
-  cursor: pointer;
-  color: #006699;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
-input[type=checkbox].css-checkbox + label.css-label:hover,
-input[type=checkbox].css-checkbox + label.css-label:focus {
-  background-color: #EDFFED;
-  overflow: visible;
-  color: #CC0000; }
-
-input[type=checkbox].css-checkbox:checked + label.css-label {
-  background-position: 0 -30px;
-  cursor: pointer; }
-
 label.css-label {
-  background-image: url(../image/csscheckbox.png);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer; }
+  width: 100%;
+  padding-right: 10px;
+  font-size: 14px;
+  min-height: 30px; }
+  label.css-label:hover, label.css-label:focus {
+    background-color: #EDFFED; }
+
+.css-checkbox {
+  position: absolute;
+  left: 4px;
+  visibility: hidden;
+  opacity: 0; }
+
+.css-checkbox:checked + .vlast-param:after {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  color: #8FBE36;
+  font-size: 28px;
+  z-index: 3; }
+
+.vlast-param {
+  position: relative;
+  display: inline-block;
+  color: #006699;
+  padding-left: 45px;
+  line-height: 35px;
+  margin: 3px 0 3px 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px; }
+  .vlast-param:hover, .vlast-param:focus {
+    color: #CC0000;
+    text-decoration: none;
+    overflow: visible; }
+
+.vlast-param:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #8FBE36;
+  border-radius: 2px;
+  z-index: 2; }
 
 .css-label-count {
-  color: #a0a0a0; }
+  color: #a0a0a0;
+  display: inline-block;
+  line-height: 35px;
+  vertical-align: top;
+  margin-top: 4px; }
+
+.css-label-count:before {
+  content: "(";
+  color: inherit;
+  font-size: inherit; }
+
+.css-label-count:after {
+  content: ")";
+  color: inherit;
+  font-size: inherit; }
 
 .bl_breadcrumbs {
+  clear: both;
   position: relative;
   width: 100%;
   min-height: 30px; }
@@ -3275,7 +3254,7 @@ label.css-label {
 .bl_breadcrumbs__item:not(:last-child):after {
   content: "/";
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
   font-size: 14px;
   color: #8DAEBF;
@@ -3289,6 +3268,8 @@ label.css-label {
   font-style: normal;
   font-weight: bold;
   text-decoration: none; }
+  .bl_breadcrumbs__link:last-child:after {
+    color: #007bb7; }
 
 .bl_breadcrumbs__link:hover {
   color: #006699;
@@ -3570,19 +3551,6 @@ label.css-label {
   font-size: 16px;
   color: #333; }
 
-.wait_im1 {
-  position: absolute;
-  left: 75px;
-  opacity: 0.4;
-  top: -5px;
-  z-index: 7; }
-
-.vlast_zn_container {
-  position: relative; }
-
-.price_filtr_container {
-  position: relative; }
-
 .no_item_found {
   color: #066;
   font-size: 20px;
@@ -3674,6 +3642,7 @@ label.css-label {
   margin-left: 20px; }
 
 .shop_items {
+  clear: both;
   width: 100%;
   margin-top: 20px;
   text-align: center; }
@@ -3686,10 +3655,9 @@ label.css-label {
   font-size: 14px;
   color: #FF9B9B;
   text-align: center; }
-
-.mob_ver a:hover {
-  color: #FF6666;
-  text-decoration: none; }
+  .mob_ver a:hover {
+    color: #FF6666;
+    text-decoration: none; }
 
 .bt_text {
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -4345,6 +4313,8 @@ label.css-label {
     float: right; }
   .menu_categories:first-of-type .menu_categories__item .menu_categories__link {
     text-align: center; }
+  .category_menu .buttonStartMenu:hover + .left-group-menu {
+    position: relative; }
   .subCategory {
     position: relative;
     height: 0;
@@ -4356,7 +4326,8 @@ label.css-label {
   .subCategory.active {
     height: initial;
     transition: all .3s; }
-  .subCategory.active .menu_categories__item {
+  .subCategory.active > .menu_categories__item {
+    display: block;
     background-color: #f2fcff;
     background-image: none; }
   .btn_menu {
@@ -4437,7 +4408,17 @@ label.css-label {
   .button_menu-mobile {
     font-size: 26px; }
   .logo_link {
-    width: 94px; } }
+    width: 94px; }
+  .price-item-pic-wrap {
+    height: auto;
+    margin: 0 auto; }
+  .price-item-wrap1 {
+    width: 48%;
+    height: auto; }
+  .bl_description__short {
+    display: none; }
+  .bl_description__attributes {
+    display: none; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
@@ -4458,7 +4439,9 @@ label.css-label {
   .binfo {
     min-width: initial; }
   .minBasket_param {
-    display: none; } }
+    display: none; }
+  .price-item-wrap1 {
+    width: 100%; } }
 
 @media only screen and (max-width: 400px) {
   .root-logo {
