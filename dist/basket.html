@@ -35,10 +35,10 @@
 
 </head>
 
-<body class="body" onresize="resize_body_f()">
+<body class="body">
 <div class="wrapperBlock">
     <!--[if lt IE 10]>
-    <p class="browsehappy">Ваш браузер устарел. Пожалуйста <a
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a
             href="http://browsehappy.com/">обновите</a>
         его.</p>
     <![endif]-->
@@ -47,45 +47,43 @@
     <!------------------------------------------ HEADER ---------------------------------------------------------->
     <header id="top" class="header">
         <div class="mainWrapper">
-            <div class="" id="info">
-                <div class="container">
-                    <div class="col-xs-12">
-                        <div class="top-info__inner hidden-xs">
-                            <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
-                            <a class="top-line-delivery" href="#">Доставка і оплата</a>
-                            <div class="top-phone">
-                                <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
-                                <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
-                                <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
-                                <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
-                            </div>
-                            <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language" action="http://16a.loc/index.php?route=common/language/language">
-                                <span class="bl_language__active">ru</span>
-                                <ul class="bl_language__variables hidden">
-                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
-                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
-                                </ul>
-                                <input id="lang_val_to_form" type="hidden" name="code" value="">
-                                <input type="hidden" name="redirect" value="">
-                                <script type="text/javascript">
-                                    function changeLang(element){
-                                        $('#lang_val_to_form').val(element.attr('name'));
-                                        $('#form_language').submit();
-                                    }
-                                    function chowElem(element){
-                                        element.siblings('ul').toggleClass('hidden');
-                                    }
-                                </script>
-                            </form>
-
-
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="top-info__inner hidden-xs">
+                        <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
+                        <a class="top-line-delivery" href="#">Доставка і оплата</a>
+                        <div class="top-phone">
+                            <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
+                            <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
+                            <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
+                            <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
                         </div>
+                        <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language"
+                              action="http://16a.loc/index.php?route=common/language/language">
+                            <span class="bl_language__active">ru</span>
+                            <ul class="bl_language__variables hidden">
+                                <li class="bl_language__variables_item language-select"><span
+                                        onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
+                                <li class="bl_language__variables_item language-select"><span
+                                        onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
+                            </ul>
+                            <input id="lang_val_to_form" type="hidden" name="code" value="">
+                            <input type="hidden" name="redirect" value="">
+                            <script type="text/javascript">
+                                function changeLang(element) {
+                                    $('#lang_val_to_form').val(element.attr('name'));
+                                    $('#form_language').submit();
+                                }
+
+                                function chowElem(element) {
+                                    element.siblings('ul').toggleClass('hidden');
+                                }
+                            </script>
+                        </form>
+
+
                     </div>
                 </div>
-
-            </div>
-
-            <div class="container">
                 <div class="col-xs-12">
                     <div class="blok_top">
 
@@ -117,7 +115,7 @@
                                     </p>
                                     <p>
                                         <span class="minBasket_param">Сума</span>
-                                        <span class="minBasket_text">0</span>
+                                        <span class="minBasket_text">99999</span>
                                     </p>
                                 </div>
                             </a>
@@ -465,40 +463,39 @@
             </div>
         </div>
     </div>
-
+    <!---------------------------------------- FOOTER --------------------------------------------------------->
     <footer class="footer">
         <div class="container">
             <div class="col-md-4 footer_part3">
                 <div class="bt_div">
-                    <p class="bt_text">Режим роботи Call center (при замовленні по телефону):
-                        Пн-Пт: 9:00-18:00
-                        Cб: 10:00-15:00
+                    <p class="bt_text"><b>Режим роботи Call center</b> (при замовленні по телефону):<br>
+                        <b>Пн-Пт: 9:00-18:00<br>
+                            Cб: 10:00-15:00</b><br>
                         При замовленні по телефону прохання вказувати код товару.</p>
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"><img src="../image/ks_m1.png"></div>
-                        <div class="cell-logo-t1">(067) 340-81-46</div>
+                        <span class="icon-tel icon-tel__kievstar"></span>
+                        <span class="text_phone">(067) 340-81-46</span>
                     </div>
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"><img src="../image/vf_m1.png"></div>
-                        <div class="cell-logo-t1">(050) 421-70-70</div>
+                        <span class="icon-tel icon-tel__vodafon"></span>
+                        <span class="text_phone">(050) 421-70-70</span>
                     </div>
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"><img src="../image/lf_m1.png"></div>
-                        <div class="cell-logo-t1">(063) 247-70-70</div>
+                        <span class="icon-tel icon-tel__life"></span>
+                        <span class="text_phone">(063) 247-70-70</span>
                     </div>
 
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"><img src="../image/lviv_m1.png"></div>
-                        <div class="cell-logo-t1">(032) 247-70-70</div>
+                        <span class="icon-tel icon-tel__lviv"></span>
+                        <span class="text_phone">(032) 247-70-70</span>
                     </div>
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"></div>
-                        <div class="cell-logo-t1">(050) 421-70-70 (Viber)</div>
+                        <span class="text_phone">(050) 421-70-70 (Viber)</span>
                     </div>
 
 
@@ -518,13 +515,10 @@
 
             <div class="col-md-4 footer_part2">
                 <div class="bt_div">
-                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А  в соціальних
+                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А<br> в соціальних
                     мережах:</span>
-                    <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png"
-                                                                                        alt="facebook"></a>
-                    <a href="https://plus.google.com/109777980768435551079" target="_blank"><img
-                            src="../image/google.png"
-                            alt="google+"></a>
+                    <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png" alt="facebook"></a>
+                    <a href="https://plus.google.com/109777980768435551079" target="_blank"><img src="../image/google.png" alt="google+"></a>
                 </div>
             </div>
 

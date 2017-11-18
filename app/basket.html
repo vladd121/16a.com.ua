@@ -43,10 +43,10 @@
 
 </head>
 
-<body class="body" onresize="resize_body_f()">
+<body class="body">
 <div class="wrapperBlock">
     <!--[if lt IE 10]>
-    <p class="browsehappy">Ваш браузер устарел. Пожалуйста <a
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a
             href="http://browsehappy.com/">обновите</a>
         его.</p>
     <![endif]-->
@@ -55,45 +55,43 @@
     <!------------------------------------------ HEADER ---------------------------------------------------------->
     <header id="top" class="header">
         <div class="mainWrapper">
-            <div class="" id="info">
-                <div class="container">
-                    <div class="col-xs-12">
-                        <div class="top-info__inner hidden-xs">
-                            <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
-                            <a class="top-line-delivery" href="#">Доставка і оплата</a>
-                            <div class="top-phone">
-                                <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
-                                <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
-                                <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
-                                <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
-                            </div>
-                            <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language" action="http://16a.loc/index.php?route=common/language/language">
-                                <span class="bl_language__active">ru</span>
-                                <ul class="bl_language__variables hidden">
-                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
-                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
-                                </ul>
-                                <input id="lang_val_to_form" type="hidden" name="code" value="">
-                                <input type="hidden" name="redirect" value="">
-                                <script type="text/javascript">
-                                    function changeLang(element){
-                                        $('#lang_val_to_form').val(element.attr('name'));
-                                        $('#form_language').submit();
-                                    }
-                                    function chowElem(element){
-                                        element.siblings('ul').toggleClass('hidden');
-                                    }
-                                </script>
-                            </form>
-
-
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="top-info__inner hidden-xs">
+                        <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
+                        <a class="top-line-delivery" href="#">Доставка і оплата</a>
+                        <div class="top-phone">
+                            <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
+                            <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
+                            <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
+                            <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
                         </div>
+                        <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language"
+                              action="http://16a.loc/index.php?route=common/language/language">
+                            <span class="bl_language__active">ru</span>
+                            <ul class="bl_language__variables hidden">
+                                <li class="bl_language__variables_item language-select"><span
+                                        onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
+                                <li class="bl_language__variables_item language-select"><span
+                                        onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
+                            </ul>
+                            <input id="lang_val_to_form" type="hidden" name="code" value="">
+                            <input type="hidden" name="redirect" value="">
+                            <script type="text/javascript">
+                                function changeLang(element) {
+                                    $('#lang_val_to_form').val(element.attr('name'));
+                                    $('#form_language').submit();
+                                }
+
+                                function chowElem(element) {
+                                    element.siblings('ul').toggleClass('hidden');
+                                }
+                            </script>
+                        </form>
+
+
                     </div>
                 </div>
-
-            </div>
-
-            <div class="container">
                 <div class="col-xs-12">
                     <div class="blok_top">
 
@@ -125,7 +123,7 @@
                                     </p>
                                     <p>
                                         <span class="minBasket_param">Сума</span>
-                                        <span class="minBasket_text">0</span>
+                                        <span class="minBasket_text">99999</span>
                                     </p>
                                 </div>
                             </a>

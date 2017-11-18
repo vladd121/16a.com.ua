@@ -47,45 +47,43 @@
     <!------------------------------------------ HEADER ---------------------------------------------------------->
     <header id="top" class="header">
         <div class="mainWrapper">
-            <div class="" id="info">
-                <div class="container">
-                    <div class="col-xs-12">
-                        <div class="top-info__inner hidden-xs">
-                            <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
-                            <a class="top-line-delivery" href="#">Доставка і оплата</a>
-                            <div class="top-phone">
-                                <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
-                                <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
-                                <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
-                                <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
-                            </div>
-                            <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language" action="http://16a.loc/index.php?route=common/language/language">
-                                <span class="bl_language__active">ru</span>
-                                <ul class="bl_language__variables hidden">
-                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
-                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
-                                </ul>
-                                <input id="lang_val_to_form" type="hidden" name="code" value="">
-                                <input type="hidden" name="redirect" value="">
-                                <script type="text/javascript">
-                                    function changeLang(element){
-                                        $('#lang_val_to_form').val(element.attr('name'));
-                                        $('#form_language').submit();
-                                    }
-                                    function chowElem(element){
-                                        element.siblings('ul').toggleClass('hidden');
-                                    }
-                                </script>
-                            </form>
-
-
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="top-info__inner hidden-xs">
+                        <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
+                        <a class="top-line-delivery" href="#">Доставка і оплата</a>
+                        <div class="top-phone">
+                            <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
+                            <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
+                            <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
+                            <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
                         </div>
+                        <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language"
+                              action="http://16a.loc/index.php?route=common/language/language">
+                            <span class="bl_language__active">ru</span>
+                            <ul class="bl_language__variables hidden">
+                                <li class="bl_language__variables_item language-select"><span
+                                        onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
+                                <li class="bl_language__variables_item language-select"><span
+                                        onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
+                            </ul>
+                            <input id="lang_val_to_form" type="hidden" name="code" value="">
+                            <input type="hidden" name="redirect" value="">
+                            <script type="text/javascript">
+                                function changeLang(element) {
+                                    $('#lang_val_to_form').val(element.attr('name'));
+                                    $('#form_language').submit();
+                                }
+
+                                function chowElem(element) {
+                                    element.siblings('ul').toggleClass('hidden');
+                                }
+                            </script>
+                        </form>
+
+
                     </div>
                 </div>
-
-            </div>
-
-            <div class="container">
                 <div class="col-xs-12">
                     <div class="blok_top">
 
@@ -117,7 +115,7 @@
                                     </p>
                                     <p>
                                         <span class="minBasket_param">Сума</span>
-                                        <span class="minBasket_text">0</span>
+                                        <span class="minBasket_text">99999</span>
                                     </p>
                                 </div>
                             </a>
@@ -275,7 +273,6 @@
                     <div class="left-group-vlast">
 
 
-
                         <p class="vlast-top">Підбір по параметрам:</p>
 
                         <div class="price_filtr_container">
@@ -294,250 +291,22 @@
 
                         <p class="vlast-name">Виробник</p>
                         <div class="vlast_zn_container">
-                            <input name="dospel" id="dospel" class="css-checkbox" type="checkbox" checked="checked">
-                            <label for="dospel" class="css-label">Dospel</label>
-                            <div id="wait_im1_dospel" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="gorenje" id="gorenje" class="css-checkbox" type="checkbox">
-                            <label for="gorenje" class="css-label">Gorenje<span
-                                    class="css-label-count"> (+6)</span></label>
-                            <div id="wait_im1_gorenje" class="wait_im1"></div>
-                        </div>
-                        <!---->
 
-                        <p class="vlast-name">Можливі виконання</p>
-                        <div class="vlast_zn_container">
-                            <input name="standard" id="standard" class="css-checkbox" type="checkbox">
-                            <label for="standard" class="css-label">Стандарт<span
-                                    class="css-label-count"> (32)</span></label>
-                            <div id="wait_im1_standard" class="wait_im1"></div>
+                            <label class="css-label">
+                                <input name="dospel" class="css-checkbox" type="checkbox" checked="checked">
+                                <a class="vlast-param" href="#">Dospel</a>
+                            </label>
                         </div>
                         <div class="vlast_zn_container">
-                            <input name="automatic_shutters" id="automatic_shutters" class="css-checkbox"
-                                   type="checkbox">
-                            <label for="automatic_shutters" class="css-label">Автоматичні жалюзі<span
-                                    class="css-label-count"> (9)</span></label>
-                            <div id="wait_im1_automatic_shutters" class="wait_im1"></div>
+                            <label class="css-label">
+                                <input name="gorenje" class="css-checkbox" type="checkbox">
+                                <a class="vlast-param" href="#">Gorenje</a>
+                                <span class="css-label-count">+6</span>
+                            </label>
                         </div>
-                        <div class="vlast_zn_container">
-                            <input name="timer" id="timer" class="css-checkbox" type="checkbox">
-                            <label for="timer" class="css-label">Таймер<span
-                                    class="css-label-count"> (2)</span></label>
-                            <div id="wait_im1_timer" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="humidity_sensor" id="humidity_sensor" class="css-checkbox" type="checkbox">
-                            <label for="humidity_sensor" class="css-label">Датчик вологості<span
-                                    class="css-label-count"> (9)</span></label>
-                            <div id="wait_im1_humidity_sensor" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="return_valve" id="return_valve" class="css-checkbox" type="checkbox">
-                            <label for="return_valve" class="css-label">Зворотний клапан<span
-                                    class="css-label-count"> (6)</span></label>
-                            <div id="wait_im1_return_valve" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="switch" id="switch" class="css-checkbox" type="checkbox">
-                            <label for="switch" class="css-label">Шнурковий вимикач<span
-                                    class="css-label-count"> (20)</span></label>
-                            <div id="wait_im1_switch" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="ball_bearing" id="ball_bearing" class="css-checkbox" type="checkbox">
-                            <label for="ball_bearing" class="css-label">Кульковий підшипник<span
-                                    class="css-label-count"> (3)</span></label>
-                            <div id="wait_im1_ball_bearing" class="wait_im1"></div>
-                        </div>
-                        <!---->
-                        <p class="vlast-name">Діаметр, мм</p>
-                        <div class="vlast_zn_container">
-                            <input name="100" id="100" class="css-checkbox" type="checkbox">
-                            <label for="100" class="css-label">100<span class="css-label-count"> (26)</span></label>
-                            <div id="wait_im1_100" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="120" id="120" class="css-checkbox" type="checkbox">
-                            <label for="120" class="css-label">120<span class="css-label-count"> (19)</span></label>
-                            <div id="wait_im1_120" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="125" id="125" class="css-checkbox" type="checkbox">
-                            <label for="125" class="css-label">125<span
-                                    class="css-label-count"> (7)</span></label>
-                            <div id="wait_im1_125" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="150" id="150" class="css-checkbox" type="checkbox">
-                            <label for="150" class="css-label">150<span class="css-label-count"> (12)</span></label>
-                            <div id="wait_im1_150" class="wait_im1"></div>
-                        </div>
-                        <!---->
-
-                        <p class="vlast-name">Монтаж</p>
-                        <div class="vlast_zn_container">
-                            <input name="wall" id="wall" class="css-checkbox" type="checkbox">
-                            <label for="wall" class="css-label">Настінний<span
-                                    class="css-label-count"> (58)</span></label>
-                            <div id="wait_im1_wall" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="ceiling" id="ceiling" class="css-checkbox" type="checkbox">
-                            <label for="ceiling" class="css-label">На стелю<span
-                                    class="css-label-count"> (3)</span></label>
-                            <div id="wait_im1_ceiling" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="channel" id="channel" class="css-checkbox" type="checkbox">
-                            <label for="channel" class="css-label">Канальний<span
-                                    class="css-label-count"> (5)</span></label>
-                            <div id="wait_im1_channel" class="wait_im1"></div>
-                        </div>
-                        <!---->
-
-                        <p class="vlast-name">Продуктивність, м3/год</p>
-                        <div class="vlast_zn_container">
-                            <input name="70p" id="70p" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="70p" class="css-label-null">70 </label>
-                            <div id="wait_im1_70p" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="100p" id="100p" class="css-checkbox" type="checkbox">
-                            <label for="100p" class="css-label">100<span
-                                    class="css-label-count"> (25)</span></label>
-                            <div id="wait_im1_100p" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="120p" id="120p" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="120p" class="css-label-null">120 </label>
-                            <div id="wait_im1_120p" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="150p" id="150p" class="css-checkbox" type="checkbox">
-                            <label for="150p" class="css-label">150<span
-                                    class="css-label-count"> (25)</span></label>
-                            <div id="wait_im1_150p" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="180p" id="180p" class="css-checkbox" type="checkbox">
-                            <label for="180p" class="css-label">180<span class="css-label-count"> (1)</span></label>
-                            <div id="wait_im1_180p" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="210p" id="210p" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="210p" class="css-label-null">210 </label>
-                            <div id="wait_im1_210p" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="240p" id="240p" class="css-checkbox" type="checkbox">
-                            <label for="240p" class="css-label">240<span class="css-label-count"> (1)</span></label>
-                            <div id="wait_im1_240p" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="280p" id="280p" class="css-checkbox" type="checkbox">
-                            <label for="280p" class="css-label">280<span
-                                    class="css-label-count"> (12)</span></label>
-                            <div id="wait_im1_280p" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="400p" id="400p" class="css-checkbox" type="checkbox">
-                            <label for="400p" class="css-label">400<span class="css-label-count"> (2)</span></label>
-                            <div id="wait_im1_400p" class="wait_im1"></div>
-                        </div>
-                        <!---->
-
-                        <p class="vlast-name">Габарити (В*Ш), мм</p>
-                        <div class="vlast_zn_container">
-                            <input name="125_156" id="125_156" class="css-checkbox" type="checkbox">
-                            <label for="125_156" class="css-label">125*156<span
-                                    class="css-label-count"> (1)</span></label>
-                            <div id="wait_im1_125_156" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="144_179" id="144_179" class="css-checkbox" type="checkbox">
-                            <label for="144_179" class="css-label">144*179<span
-                                    class="css-label-count"> (1)</span></label>
-                            <div id="wait_im1_144_179" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="147_147" id="147_147" class="css-checkbox" type="checkbox">
-                            <label for="147_147" class="css-label">147*147<span
-                                    class="css-label-count"> (5)</span></label>
-                            <div id="wait_im1_147_147" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="147_171" id="147_171" class="css-checkbox" type="checkbox">
-                            <label for="147_171" class="css-label">147*171<span
-                                    class="css-label-count"> (1)</span></label>
-                            <div id="wait_im1_147_171" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="150_150" id="150_150" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="150_150" class="css-label-null">150*150 </label>
-                            <div id="wait_im1_150_150" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="154_156" id="154_156" class="css-checkbox" type="checkbox">
-                            <label for="154_156" class="css-label">154*156<span
-                                    class="css-label-count"> (6)</span></label>
-                            <div id="wait_im1_154_156" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="158_158" id="158_158" class="css-checkbox" type="checkbox">
-                            <label for="158_158" class="css-label">158*158<span
-                                    class="css-label-count"> (16)</span></label>
-                            <div id="wait_im1_158_158" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="164_163" id="164_163" class="css-checkbox" type="checkbox">
-                            <label for="164_163" class="css-label">164*163<span
-                                    class="css-label-count"> (4)</span></label>
-                            <div id="wait_im1_164_163" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="171_171" id="171_171" class="css-checkbox" type="checkbox">
-                            <label for="171_171" class="css-label">171*171<span
-                                    class="css-label-count"> (6)</span></label>
-                            <div id="wait_im1_171_171" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="174_216" id="174_216" class="css-checkbox" type="checkbox">
-                            <label for="174_216" class="css-label">174*216<span
-                                    class="css-label-count"> (1)</span></label>
-                            <div id="wait_im1_174_216" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="175_175" id="175_175" class="css-checkbox-null" type="checkbox" disabled>
-                            <label for="175_175" class="css-label-null">175*175 </label>
-                            <div id="wait_im1_175_175" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="179_181" id="179_181" class="css-checkbox" type="checkbox">
-                            <label for="179_181" class="css-label">179*181<span
-                                    class="css-label-count"> (6)</span></label>
-                            <div id="wait_im1_179_181" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="200_200" id="200_200" class="css-checkbox" type="checkbox">
-                            <label for="200_200" class="css-label">200*200<span
-                                    class="css-label-count"> (3)</span></label>
-                            <div id="wait_im1_200_200" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="208_209" id="208_209" class="css-checkbox" type="checkbox">
-                            <label for="208_209" class="css-label">208*209<span
-                                    class="css-label-count"> (6)</span></label>
-                            <div id="wait_im1_208_209" class="wait_im1"></div>
-                        </div>
-                        <div class="vlast_zn_container">
-                            <input name="264_264" id="264_264" class="css-checkbox" type="checkbox">
-                            <label for="264_264" class="css-label">264*264<span
-                                    class="css-label-count"> (2)</span></label>
-                            <div id="wait_im1_264_264" class="wait_im1"></div>
-                        </div>
-                        <!---->
                     </div>
+
+
                 </div>
             </div>
 
@@ -2960,40 +2729,39 @@
             </div>
         </div>
     </div>
-
+    <!---------------------------------------- FOOTER --------------------------------------------------------->
     <footer class="footer">
         <div class="container">
             <div class="col-md-4 footer_part3">
                 <div class="bt_div">
-                    <p class="bt_text"><b>Режим роботи Call center</b> (при замовленні по телефону):
-                        <b>Пн-Пт: 9:00-18:00
-                            Cб: 10:00-15:00</b>
+                    <p class="bt_text"><b>Режим роботи Call center</b> (при замовленні по телефону):<br>
+                        <b>Пн-Пт: 9:00-18:00<br>
+                            Cб: 10:00-15:00</b><br>
                         При замовленні по телефону прохання вказувати код товару.</p>
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"><img src="../image/ks_m1.png"></div>
-                        <div class="cell-logo-t1">(067) 340-81-46</div>
+                        <span class="icon-tel icon-tel__kievstar"></span>
+                        <span class="text_phone">(067) 340-81-46</span>
                     </div>
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"><img src="../image/vf_m1.png"></div>
-                        <div class="cell-logo-t1">(050) 421-70-70</div>
+                        <span class="icon-tel icon-tel__vodafon"></span>
+                        <span class="text_phone">(050) 421-70-70</span>
                     </div>
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"><img src="../image/lf_m1.png"></div>
-                        <div class="cell-logo-t1">(063) 247-70-70</div>
+                        <span class="icon-tel icon-tel__life"></span>
+                        <span class="text_phone">(063) 247-70-70</span>
                     </div>
 
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"><img src="../image/lviv_m1.png"></div>
-                        <div class="cell-logo-t1">(032) 247-70-70</div>
+                        <span class="icon-tel icon-tel__lviv"></span>
+                        <span class="text_phone">(032) 247-70-70</span>
                     </div>
 
                     <div class="cell-group_m1">
-                        <div class="cell-logo"></div>
-                        <div class="cell-logo-t1">(050) 421-70-70 (Viber)</div>
+                        <span class="text_phone">(050) 421-70-70 (Viber)</span>
                     </div>
 
 
@@ -3013,13 +2781,12 @@
 
             <div class="col-md-4 footer_part2">
                 <div class="bt_div">
-                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А  в соціальних
+                    <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А<br> в соціальних
                     мережах:</span>
                     <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png"
                                                                                         alt="facebook"></a>
                     <a href="https://plus.google.com/109777980768435551079" target="_blank"><img
-                            src="../image/google.png"
-                            alt="google+"></a>
+                            src="../image/google.png" alt="google+"></a>
                 </div>
             </div>
 
@@ -3055,7 +2822,8 @@
         <!-- Возможно этот кусок надо будет дублировать если добавляеться ещё один товар в корзину-->
         <div class="popup_likeShopbag__product">
             <img class="shoppingBasket_product__image" src="image/Products/zefir/z1.jpg" alt="">
-            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываываываыва</p>
+            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва
+                ываываываываываываыва</p>
         </div>
         <!---->
 
@@ -3075,7 +2843,6 @@
 <!-- -->
 
 
-
 <script type="text/javascript" src="libs/jquery.min.js"></script>
 
 <!--<script type="text/javascript" src="js/menu-vertical-root-func.js"></script>-->
@@ -3086,8 +2853,6 @@
 <script src="js/libs.min.js"></script>
 
 <script src="js/common.min.js"></script>
-
-
 
 
 <!-- BEGIN JIVOSITE CODE {literal} -->

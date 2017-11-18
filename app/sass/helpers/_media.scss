@@ -37,6 +37,10 @@
     text-align: center;
   }
 
+  .category_menu .buttonStartMenu:hover + .left-group-menu{
+    position: relative;
+  }
+  
   .subCategory{
     position: relative;
     height: 0;  //////////// это псевдо слайдер для мобильного
@@ -50,7 +54,8 @@
     height:initial;
     transition: all .3s;
   }
-  .subCategory.active .menu_categories__item{
+  .subCategory.active > .menu_categories__item{
+    display: block;
     background-color: #f2fcff;
     background-image: none;
   }
@@ -143,7 +148,11 @@
   }
 
   .about_item_box{
+    width:auto;
+    max-width:initial;
     min-height:initial;
+    height: 300px;
+
   }
 
   .searchtext_def {
@@ -155,24 +164,52 @@
   }
 
 
-  .button_menu-mobile{
-    font-size: 22px;
-    padding-left: 30px;
-  }
-  
+  //.button_menu-mobile{
+  //  font-size: 22px;
+  //  padding-left: 30px;
+  //}
+  //
 }
 
 @media only screen and (max-width: 600px) {
 
-  .logo_link {
-    width: 100px;
+  //.logo_link {
+  //  width: 100px;
+  //}
+  //.button_menu-mobile{
+  //  font-size: 26px;
+  //}
+  //.logo_link{
+  //  width: 94px;
+  //}
+
+  .price-item-pic-wrap{
+    height:auto;
+    margin: 0 auto;
   }
-  .button_menu-mobile{
-    font-size: 26px;
+
+  .price-item-wrap1{
+    width: 48%;
+    height:auto;
   }
-  .logo_link{
-    width: 94px;
+
+  .bl_description__short{
+    display: none;
   }
+  .bl_description__attributes{
+    display: none;
+  }
+
+  .button_buyProduct{
+    float: none;
+    margin: 20px auto;
+    display: block;
+  }
+  .button_continueBuying__link{
+    display: block;
+    text-align: center;
+  }
+
 
 }
 /* Extra Small Devices, Phones 480px */
@@ -180,25 +217,25 @@
   .block_ssearch {
     left: 15%;
   }
-  .logo_link{
-    width: 70px;
-  }
+  //.logo_link{
+  //  width: 70px;
+  //}
 
-  .button_menu-mobile{
-    font-size: 18px;
-    padding-left: 28px;
-  }
+  //.button_menu-mobile{
+  //  font-size: 18px;
+  //  padding-left: 28px;
+  //}
 
   .root-logo{
     left: -20px;
     float: none;
   }
-  .decor_burger{
-    font-size: 24px;
-  }
-  .button_menu-mobile{
-    font-size: 18px;
-  }
+  //.decor_burger{
+  //  font-size: 24px;
+  //}
+  //.button_menu-mobile{
+  //  font-size: 18px;
+  //}
 
   .binfo{
     min-width:initial;
@@ -207,17 +244,26 @@
 .minBasket_param{
   display: none;
 }
-}
-@media only screen and (max-width: 400px) {
-  .root-logo{
-    left: -30px;
-  }
-  .button_menu-mobile{
-    font-size: 12px;
+
+  .price-item-wrap1{
+    width: 100%;
   }
 
-  .logo_link{
-    width: 50px;
+}
+@media only screen and (max-width: 400px) {
+  //.root-logo{
+  //  left: -30px;
+  //}
+  //.button_menu-mobile{
+  //  font-size: 12px;
+  //}
+
+  //.logo_link{
+  //  width: 50px;
+  //}
+
+  .about_item_box{
+    height: 250px;
   }
 }
 /* Custom, iPhone Retina 320px */
