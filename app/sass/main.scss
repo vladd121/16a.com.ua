@@ -181,14 +181,19 @@ button {
   display: none;
 }
 
-.category_menu .buttonStartMenu:hover + .left-group-menu {
-  display: block;
-  position: absolute;
+@media only screen and (min-width: 991px) {
+  .category_menu .buttonStartMenu:hover + .left-group-menu {
+    display: block;
+    position: absolute;
+  }
+
+  .blok_main_1.category_menu .left-group-menu:hover {
+    display: block;
+  }
+
 }
 
-.blok_main_1.category_menu .left-group-menu:hover {
-  display: block;
-}
+
 
 .blok_main_2 {
   width: 100%;
@@ -1518,7 +1523,7 @@ button {
 //}
 //
 
-.price-item-box img{
+.price-item-box img {
   width: 100%;
   margin: 0 auto;
 }
@@ -2212,132 +2217,6 @@ button {
 
 }
 
-/*top_menu
-
-
-.menuTd1 {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFFFFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #09F;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.menuTd1:hover {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0033FF;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.menuTd1:hover .menuTd1-link{
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0033FF;
-}
-
-.menuTd1-link {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFFFFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #09F;
-}
-
-.menuTd1-link-selected {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFFFFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0066FF;
-}
-
-
-.menuTd1-selected {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0066FF;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.menuTd1-selected:hover {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0033FF;
-}
-
-.menuTd1-selected:hover .menuTd1-link-selected{
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0033FF;
-}
-*/
-
 .price-item-wrap1_one {
   position: relative;
   float: none;
@@ -2609,9 +2488,6 @@ button {
 .one_search_price {
   position: relative;
   float: left;
-
-  /*	display: block;*/
-
   width: 150px;
   min-width: 150px;
   font-size: 12px;
@@ -2713,23 +2589,6 @@ button {
   opacity: 1;
 }
 
-//.dialog_delivery_basketClear {
-//  font-size: 18px;
-//}
-
-//.dialog_pic_full {
-//
-//  font-size: 18px;
-//}
-//
-//.about_tm_container {
-//  width: auto;
-//  min-width: 600px;
-//  max-width: 3000px;
-//  margin: 5px;
-//  text-align: center;
-//}
-
 .subgr-list-block {
   position: relative;
   display: inline-block;
@@ -2742,7 +2601,7 @@ button {
   padding-bottom: 10px;
   list-style-type: none;
   overflow: hidden;
-  cursor: default;
+  cursor: pointer;
 }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
@@ -2835,12 +2694,11 @@ button {
   position: relative;
   float: none;
   overflow: hidden;
-  min-width: 400px;
-  width: 400px;
+  width: 100%;
   max-width: 400px;
   height: 300px;
   padding: 5px;
-  cursor: default;
+  cursor: pointer;
   border-radius: 1px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
@@ -2916,92 +2774,6 @@ button {
   display: none
 }
 
-//
-//.page_svod {
-//  background: url(pages/p_pic/image008.jpg) no-repeat;
-//  height: 525px;
-//  width: 700px;
-//}
-//
-//.page_svod_1 {
-//  background-image: url(pages/p_pic/image006.jpg);
-//  background-repeat: no-repeat;
-//  height: 525px;
-//  width: 700px;
-//}
-//
-//.svod_z1 {
-//  font-size: 18px;
-//  color: #fff;
-//  font-style: normal;
-//  font-weight: bold;
-//  text-decoration: none;
-//  padding-top: 30px;
-//  padding-left: 220px;
-//}
-//
-//.svod_p1 {
-//  font-size: 12px;
-//  color: #fff;
-//  font-style: normal;
-//  font-weight: bold;
-//  text-decoration: none;
-//  padding-left: 220px;
-//  width: 450px;
-//  padding-top: 20px;
-//  text-align: justify;
-//}
-//
-//.search_help {
-//  font-family: Arial, Helvetica, sans-serif;
-//  font-size: 12px;
-//  position: relative;
-//  float: right;
-//  padding-top: 15px;
-//  text-align: right;
-//}
-//
-
-//
-//.navItem_linkPage {
-//
-//  font-size: 14px;
-//  color: #006699;
-//  text-decoration: underline;
-//  font-weight: normal;
-//  cursor: pointer;
-//}
-//
-//.navItem_linkPage:hover {
-//
-//  font-size: 14px;
-//  color: #CC0000;
-//  text-decoration: underline;
-//  cursor: pointer;
-//}
-//
-//.textItem_linkPage {
-//
-//  font-size: 14px;
-//  color: #000;
-//  text-decoration: none;
-//  font-weight: normal;
-//}
-//
-//.expo_pic_electrika {
-//  position: relative;
-//  float: left;
-//  padding: 4px;
-//  background-color: #F00;
-//}
-//
-//.expo_pic {
-//  position: relative;
-//  float: left;
-//  padding: 4px;
-//  background-color: #0F6;
-//}
-
 .button_search-mobile {
   top: 25px;
 }
@@ -3024,7 +2796,6 @@ button {
   vertical-align: middle;
 }
 
-
 label.css-label {
   width: 100%;
   padding-right: 10px;
@@ -3044,9 +2815,9 @@ label.css-label {
   opacity: 0;
 }
 
-.css-checkbox:checked + .vlast-param:after{
+.css-checkbox:checked + .vlast-param:after {
   content: "\f00c";
-  font-family:$FontAwesome;
+  font-family: $FontAwesome;
   position: absolute;
   left: 4px;
   top: 0;
@@ -3054,8 +2825,6 @@ label.css-label {
   font-size: 28px;
   z-index: 3;
 }
-
-
 
 .vlast-param {
   position: relative;
@@ -3097,18 +2866,18 @@ label.css-label {
   vertical-align: top;
   margin-top: 4px;
 }
-.css-label-count:before{
+
+.css-label-count:before {
   content: "(";
   color: inherit;
-  font-size:inherit;
+  font-size: inherit;
 }
-.css-label-count:after{
+
+.css-label-count:after {
   content: ")";
   color: inherit;
-  font-size:inherit;
+  font-size: inherit;
 }
-
-
 
 .bl_breadcrumbs {
   clear: both;
@@ -3127,7 +2896,7 @@ label.css-label {
   content: "/";
   position: absolute;
   top: 2px;
-  right: 0;
+  right: -2px;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
@@ -3207,9 +2976,7 @@ label.css-label {
   background-color: #FFF;
   display: block;
   font-size: 14px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   text-decoration: none;
   white-space: nowrap;
   padding: 0 10px;
@@ -3331,7 +3098,7 @@ label.css-label {
 
 .blackWrapper {
   position: fixed;
-  z-index: 20;
+  z-index: 8;
   width: 100%;
   height: 100%;
   background: #000;
@@ -3448,7 +3215,7 @@ label.css-label {
 .button_filtr {
   position: relative;
   clear: both;
-  margin: 0 auto;
+  margin: 15px auto 10px;
   width: 190px;
   height: 40px;
   line-height: 40px;
@@ -3482,23 +3249,6 @@ label.css-label {
   font-size: 16px;
   color: #333;
 }
-
-//.wait_im1 {
-//  position: absolute;
-//  left: 75px;
-//  opacity: 0.4;
-//  top: -5px;
-//  z-index: 7;
-//
-//}
-
-//.vlast_zn_container {
-//  position: relative;
-//}
-//
-//.price_filtr_container {
-//  position: relative;
-//}
 
 .no_item_found {
   color: #066;
@@ -4308,6 +4058,25 @@ label.css-label {
     font-weight: bold;
     color: #fff;
   }
+}
+
+.popup_likeShopbag__buttonChange {
+  color: #fff;
+  font-style: normal;
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  background-color: #36F;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 3px;
+  &:hover {
+    background-color: #33F;
+  }
+}
+
+.popup_likeShopbag__input {
+  margin-left: 20px;
 }
 
 .popup_likeShopbag__buttons {

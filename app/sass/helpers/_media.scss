@@ -40,7 +40,8 @@
   .category_menu .buttonStartMenu:hover + .left-group-menu{
     position: relative;
   }
-  
+
+
   .subCategory{
     position: relative;
     height: 0;  //////////// это псевдо слайдер для мобильного
@@ -115,6 +116,21 @@
     order: 3;
   }
 
+  .price-item-wrap1:hover{
+    float: none;
+    width:auto;
+    height:auto;
+    margin-bottom: 0;
+  }
+  .price-item-wrap1:hover .price-item-box{
+    border: none;
+    box-shadow: none;
+  }
+
+  .price-item-wrap1{
+    width: 33%;
+  }
+
 }
 
 /* Small Devices, Tablets 768px */
@@ -132,6 +148,9 @@
     left: 35%;
     max-width: 300px;
 
+  }
+  .search_icon{
+    width: 40px;
   }
 
 
@@ -163,25 +182,9 @@
     margin-left: 0;
   }
 
-
-  //.button_menu-mobile{
-  //  font-size: 22px;
-  //  padding-left: 30px;
-  //}
-  //
 }
 
 @media only screen and (max-width: 600px) {
-
-  //.logo_link {
-  //  width: 100px;
-  //}
-  //.button_menu-mobile{
-  //  font-size: 26px;
-  //}
-  //.logo_link{
-  //  width: 94px;
-  //}
 
   .price-item-pic-wrap{
     height:auto;
@@ -193,11 +196,17 @@
     height:auto;
   }
 
-  .bl_description__short{
+
+  .price-item-box .bl_description__short{
     display: none;
   }
+
+
   .bl_description__attributes{
     display: none;
+  }
+  .buy_container{
+    padding: 10px;
   }
 
   .button_buyProduct{
@@ -210,6 +219,9 @@
     text-align: center;
   }
 
+  .blok_main_2_1_x_about_item_cont{
+    height: 300px;
+  }
 
 }
 /* Extra Small Devices, Phones 480px */
@@ -217,28 +229,22 @@
   .block_ssearch {
     left: 15%;
   }
-  //.logo_link{
-  //  width: 70px;
-  //}
 
-  //.button_menu-mobile{
-  //  font-size: 18px;
-  //  padding-left: 28px;
-  //}
+  .logo_link{
+    width: 110px;
+  }
 
   .root-logo{
-    left: -20px;
     float: none;
   }
-  //.decor_burger{
-  //  font-size: 24px;
-  //}
-  //.button_menu-mobile{
-  //  font-size: 18px;
-  //}
+
 
   .binfo{
     min-width:initial;
+  }
+
+  .buy_container .price{
+    padding: 0;
   }
 
 .minBasket_param{
@@ -246,21 +252,16 @@
 }
 
   .price-item-wrap1{
+    margin-top: 10px;
     width: 100%;
+  }
+
+  .blok_main_2_1_x_about_item_cont{
+    height:250px;
   }
 
 }
 @media only screen and (max-width: 400px) {
-  //.root-logo{
-  //  left: -30px;
-  //}
-  //.button_menu-mobile{
-  //  font-size: 12px;
-  //}
-
-  //.logo_link{
-  //  width: 50px;
-  //}
 
   .about_item_box{
     height: 250px;
