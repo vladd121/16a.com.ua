@@ -139,9 +139,8 @@
     <!------------------------------------------- MAIN ----------------------------------------------------------->
     <main class="main">
         <div class="container">
-            <div class="col-md-3">
+            <div class="col-xs-12 col-md-3">
                 <div class='blok_main_1 category_menu'>
- <!-- класс category_menu добавляется если мы не на главной странице -->
 
                     <button class="buttonStartMenu" type="button">Каталог товару</button>
 
@@ -264,230 +263,721 @@
                     </nav>
 
 
-                    <div class="left-group-menu2">
+                    <div class="left-group-menu2 hidden-xs">
                         <a class="left_cascad_line" href="/">Інтернет магазин 16А</a>
                         <ul class="left_cascad">
-                            <li class="left_cascad__item"> <a href="#" class="left_cascad_line ">Вентилятори та елементи вентиляційних систем</a></li>
+                            <li class="left_cascad__item"><a href="#"
+                                                             class="left_cascad_line ">Вентилятори та елементи вентиляційних систем</a>
+                            </li>
+                            <li class="left_cascad__item"><a href="#" class="left_cascad_line ">Побутові вентилятори</a>
+                            </li>
                         </ul>
                     </div>
 
 
-                    <div class="left-group-menu2">
-                        <div class="left-group-i-box">
-                            <p class="#">Категорії</p>
-                            <ul>                                
-                                <li class="gr-sub-level2"><a href="#">Побутові вентилятори</a></li>
-                                <li class="gr-sub-level2"><a href="#">Промислові вентилятори</a></li>
-                                <li class="gr-sub-level2"><a href="#">Вентиляційні решітки</a></li>
-                                <li class="gr-sub-level2"><a href="#">Повітроводи, розети, муфти</a></li>
-                                <li class="gr-sub-level2"><a href="#">Повітряно-опалювальні агрегати</a></li>
-                                <li class="gr-sub-level2"><a href="#">Дефлектори</a></li>
-                                <li class="gr-sub-level2"><a href="#">Аксесуари</a></li>
-                            </ul>
+                    <!-- FILTERS -->
+
+                    <button class="button_filtr visible-xs visible-sm">Фільтри</button>
+
+                    <div class="left-group-vlast">
+
+
+                        <p class="vlast-top">Підбір по параметрам:</p>
+
+                        <div class="price_filtr_container">
+                            <div id="wait_im1_price_filter" class="wait_im1"></div>
+
+                            <p class="vlast-name-price">Ціна, грн</p>
+                            <div class="price-filtr"> від
+                                <input type="text" class="price_fild" placeholder="1"/>
+                                <span>до</span>
+                                <input type="text" class="price_fild" placeholder="999"/>
+                                <button type="button" class="f_price_del">X</button>
+                            </div>
+                        </div>
+
+                        <!-- -->
+
+                        <p class="vlast-name">Виробник</p>
+                        <div class="vlast_zn_container">
+
+                            <label class="css-label">
+                                <input name="dospel" class="css-checkbox" type="checkbox" checked="checked">
+                                <a class="vlast-param" href="#">Dospel</a>
+                            </label>
+                        </div>
+                        <div class="vlast_zn_container">
+                            <label class="css-label">
+                                <input name="gorenje" class="css-checkbox" type="checkbox">
+                                <a class="vlast-param" href="#">Gorenje</a>
+                                <span class="css-label-count">+6</span>
+                            </label>
                         </div>
                     </div>
+
+
                 </div>
             </div>
-            <div class="col-md-9">
 
 
-                <div class='blok_main_2'>
+            <div class="col-xs-12 col-md-9">
+                <div id="blok_main_2" class='blok_main_2'>
 
                     <div id="blok_main_2_1" class='blok_main_2_1'>
+                        <div class="cl-price-item">
 
-                        <div id="elements-zone" class="cl-price-item">
-
-<!--BREADCRUMBS-->
-                            <ul class="bl_breadcrumbs clearfix">
-                                <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link"
-                                                                    href="#">16А</a></li>
+                            <!--BREADCRUMBS-->
+                            <ul class="bl_breadcrumbs clearfix hidden-xs">
+                                <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">16А</a></li>
+                                <li class="bl_breadcrumbs__item"><a
+                                        class="bl_breadcrumbs__link">Вентилятори та елементи вентиляційних систем</a>
+                                </li>
                                 <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">
-                                    Вентилятори та елементи вентиляційних систем</p></li>
+                                    Побутові вентиляторим</p></li>
                             </ul>
-<!---->
+                            <!---->
 
+                            <h1 class="oneSub">Побутові вентилятори</h1>
 
-                            <h1 class="oneSub">Вентилятори та елементи вентиляційних систем</h1>
-
-                            <div class="blok_main_2_1_x_about_item_cont">
-                                <a class="blok_main_2_1_x_about_item" href="catalog2.html">
-                                    <div class="about_item_im_fon"><img src="./photo/group/pob-vent-collage.jpg"
-                                                                        width="410"></div>
-
-                                        <div class="about_item_box">
-                                            <div class="about_item_text_hlim">Побутові вентилятори</div>
-                                            <div class="about_item_im"><img src="./photo/group/pob-vent-collage.jpg" alt="" width="180" border="0"></div>
-                                            <div class="about_item_text1"></div>
-                                        </div>
-
-
-                                </a>
-                            </div>
-                            <div class="blok_main_2_1_x_about_item_cont">
-                                <a   class="blok_main_2_1_x_about_item" href="catalog2.html">
-                                    <div class="about_item_im_fon"><img src="./photo/group/prom-vent-collage.jpg"
-                                                                        width="410"></div>
-
-                                        <div class="about_item_box">
-                                            <div class="about_item_text_hlim">Промислові вентилятори</div>
-                                            <div class="about_item_im"><img src="./photo/group/prom-vent-collage.jpg" alt="" width="180"></div>
-                                            <div class="about_item_text1"></div>
-                                        </div>
-
-
-                                </a>
+                            <div class="sort_all">Сортування:
+                                <select title="Sorter" name="sortmenu">
+                                    <option value="" selected>по рейтингу</option>
+                                    <option value="">від дешевших до дорожчих</option>
+                                    <option value="">від дорожчих до дешевших</option>
+                                </select>
                             </div>
 
-                            <!-- Дальше можно не смотреть -->
-                            <div class="blok_main_2_1_x_about_item_cont">
-                                <div   class="blok_main_2_1_x_about_item"
-                                     onclick="window.location='?k=ventilation_lattice'">
-                                    <div class="about_item_im_fon"><img src="./photo/group/kmz.jpg" width="410"
-                                                                        border="0"></div>
-                                    <a href="?k=ventilation_lattice">
-                                        <div class="about_item_box">
-                                            <div class="about_item_text_hlim">Вентиляційні решітки</div>
-                                            <div class="about_item_im"><img src="./photo/group/kmz.jpg"
-                                                                            alt="Вентиляційні решітки" width="180"
-                                                                            border="0"></div>
-                                            <div class="about_item_text1"></div>
-                                        </div>
-                                    </a>
+                            <!-- PAGINATION -->
+                            <nav class="bl_pagination clearfix">
+                                <span class="nav_text decor_gantel">Сторінки:</span>
+                                <ul class="bl_pagination__full">
+                                    <li class="bl_pagination__item"><p class="bl_pagination__link bl_pagination__before"
+                                                                       href="">ПОПЕРЕДНЯ</p></li>
+                                    <li class="bl_pagination__item"><p class="bl_pagination__link" href="">1</p></li>
+                                    <li class="bl_pagination__item"><span
+                                            class="bl_pagination__link bl_pagination__link_active">2</span></li>
+                                    <li class="bl_pagination__item"><a class="bl_pagination__link" href="">3</a></li>
+                                    <li class="bl_pagination__item"><a class="bl_pagination__link" href="">4</a></li>
+                                    <li class="bl_pagination__item"><a class="bl_pagination__link bl_pagination__next"
+                                                                       href="">НАСТУПНА</a></li>
+                                </ul>
+                            </nav>
+                            <!-- PAGINATION END -->
 
-                                </div>
-                            </div>
-                            <div class="blok_main_2_1_x_about_item_cont">
-                                <div   class="blok_main_2_1_x_about_item"
-                                     onclick="window.location='?k=air_ducts_coupling'">
 
-                                    <a href="?k=air_ducts_coupling">
-                                        <div class="about_item_box">
-                                            <div class="about_item_text_hlim">Повітроводи, розети, муфти</div>
-                                            <div class="about_item_im"><img src="./photo/group/g1.jpg"
-                                                                            alt="Повітроводи, розети, муфти" width="180"
-                                                                            border="0"></div>
-                                            <div class="about_item_text1"></div>
+                            <div class="shop_items">
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
+
+                                        <a href="product.html" class="price-item-pic-wrap">
+                                            <img src="photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
+
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
                                         </div>
-                                    </a>
-                                    <div class="subgr-list-block" onclick="window.location='?k=air_ducts_coupling'">
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=air_ducts">Повітроводи</a></div>
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=coupling">Муфти</a></div>
-                                        <div class="subgr-item-dv"><a class="subgr-list-item"
-                                                                      href="?k=rosettes">Розети</a></div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="blok_main_2_1_x_about_item_cont">
-                                <div   class="blok_main_2_1_x_about_item"
-                                     onclick="window.location='?k=air_heating_units'">
-                                    <div class="about_item_im_fon"><img src="./photo/group/kom2.jpg" width="410"
-                                                                        border="0"></div>
-                                    <a href="?k=air_heating_units">
-                                        <div class="about_item_box">
-                                            <div class="about_item_text_hlim">Повітряно-опалювальні агрегати</div>
-                                            <div class="about_item_im"><img src="./photo/group/kom2.jpg"
-                                                                            alt="Повітряно-опалювальні агрегати"
-                                                                            width="180" border="0"></div>
-                                            <div class="about_item_text1"></div>
-                                        </div>
-                                    </a>
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
 
-                                </div>
-                            </div>
-                            <div class="blok_main_2_1_x_about_item_cont">
-                                <div   class="blok_main_2_1_x_about_item"
-                                     onclick="window.location='?k=deflectors'">
-                                    <div class="about_item_im_fon"><img src="./photo/group/trn.jpg" width="410"
-                                                                        border="0"></div>
-                                    <a href="?k=deflectors">
-                                        <div class="about_item_box">
-                                            <div class="about_item_text_hlim">Дефлектори</div>
-                                            <div class="about_item_im"><img src="./photo/group/trn.jpg" alt="Дефлектори"
-                                                                            width="180" border="0"></div>
-                                            <div class="about_item_text1"></div>
-                                        </div>
-                                    </a>
+                                        <a href="product.html" class="price-item-pic-wrap">
+                                            <img src="photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
 
-                                </div>
-                            </div>
-                            <div class="blok_main_2_1_x_about_item_cont">
-                                <div   class="blok_main_2_1_x_about_item"
-                                     onclick="window.location='?k=accessories_vent'">
-                                    <div class="about_item_im_fon"><img src="./photo/group/vent-el-collage.jpg"
-                                                                        width="410" border="0"></div>
-                                    <a href="?k=accessories_vent">
-                                        <div class="about_item_box">
-                                            <div class="about_item_text_hlim">Аксесуари</div>
-                                            <div class="about_item_im"><img src="./photo/group/vent-el-collage.jpg"
-                                                                            alt="Аксесуари" width="180" border="0">
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
                                             </div>
-                                            <div class="about_item_text1"></div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
                                         </div>
-                                    </a>
+                                    </div>
+                                </div>
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
 
+                                        <a href="product.html" class="price-item-pic-wrap">
+                                            <img src="photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
 
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
+
+                                        <a href="product.html" class="price-item-pic-wrap">
+                                            <img src="photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
+
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
+
+                                        <a href="product.html" class="price-item-pic-wrap">
+                                            <img src="photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
+
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
+
+                                        <a href="product.html" class="price-item-pic-wrap">
+                                            <img src="photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
+
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
+
+                                        <a href="product.html" class="price-item-pic-wrap">
+                                            <img src="photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
+
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price-item-wrap1">
+                                    <div class="price-item-box">
+
+                                        <a href="product.html" class="price-item-pic-wrap">
+                                            <img src="photo/preview/ventilators/1.jpg"
+                                                 alt="Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)">
+
+                                            <!--Сюда всталяются изображения 180х180рх-->
+                                        </a>
+
+                                        <a class="pricename"
+                                           href="">Вентилятор PLAY Classic 125 S (стандарт) білий Dospel (Доспел)</a>
+                                        <p class="rest">(є в наявності)</p>
+                                        <!-- Если товаро нет в наличии выводи вместо класса rest класс norest и правильный текст-->
+
+                                        <div class="price">
+                                            <!-- Подключается класс active если после нажатия на кнопку Купить всё Ок-->
+                                            <div class="price_box active">402.07 грн.</div>
+                                            x
+                                            <input class="addnum" type="text" title="add good" size="3" maxlength="3"
+                                                   value="1"/>
+                                            <span class="price_afterAdd"></span>
+                                        </div>
+
+                                        <button class="addbutton" type="button">Купити!</button>
+
+                                        <!--Описание товара зачем то впихивают  тут-->
+                                        <div class="bl_description">
+                                            <!-- Короткое описание товараесли есть  -->
+                                            <div class="bl_description__short">Побутові вентилятори Dospel
+                                                універсальні. Вони використовуються для вентиляції у
+                                                ванних
+                                                кімнатах, туалетах, кухнях, бюро, житлових будинках і
+                                                квартирах. Доступні чотири типорозміри вентиляторів для
+                                                повітропроводів розмірами: 100, 120, 150 і 200 мм.
+                                                Корпуси
+                                                побутових вентиляторів виготовляються з високоякісного
+                                                АБС-а
+                                                з добавкою антистатика для захисту від пилу.
+                                            </div>
+                                            <!-- Атрибуты товара построчно -->
+                                            <ul class="bl_description__attributes">
+                                                <li>Тип: Настінний вентилятор</li>
+                                                <li>Призначення: побутові приміщення</li>
+                                                <li>Діаметр, мм:125</li>
+                                                <li>Монтажний розмір товору, мм: 124</li>
+                                                <li>Габарити (В*Ш), мм: 171*171</li>
+                                                <li>Виконання:PLAY Classic 125S(стандарт)</li>
+                                                <li>Продуктивність м3/г::150</li>
+                                                <li>Статичний тиск, Па: 40</li>
+                                                <li>Акустичний тиск, дБ :35</li>
+                                                <li>Напруга/частота, ВГц : 230</li>
+                                                <li>Обороти двигуна, обр./хв.:2150</li>
+                                                <li>Потужність, Вт: 10</li>
+                                                <li>Споживаний струм, А: 0,09</li>
+                                                <li>Робоча темп. макс.: 40</li>
+                                                <li>Вага, кг: 0,66</li>
+                                                <li>Матеріал: Пластик АВS</li>
+                                                <li>Колір: білий</li>
+                                                <li>Ступінь захисту двигуна Х4</li>
+                                                <li>Виробник: Dospel (Доспел),Польща</li>
+                                                <li>Термін гарантії: 5 років</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
+
+                            <!-- PAGINATION -->
+                            <nav class="bl_pagination clearfix">
+                                <span class="nav_text decor_gantel">Сторінки:</span>
+                                <ul class="bl_pagination__full">
+                                    <li class="bl_pagination__item"><p class="bl_pagination__link bl_pagination__before"
+                                                                       href="">ПОПЕРЕДНЯ</p></li>
+                                    <li class="bl_pagination__item"><p class="bl_pagination__link" href="">1</p></li>
+                                    <li class="bl_pagination__item"><span
+                                            class="bl_pagination__link bl_pagination__link_active">2</span></li>
+                                    <li class="bl_pagination__item"><a class="bl_pagination__link" href="">3</a></li>
+                                    <li class="bl_pagination__item"><a class="bl_pagination__link" href="">4</a></li>
+                                    <li class="bl_pagination__item"><a class="bl_pagination__link bl_pagination__next"
+                                                                       href="">НАСТУПНА</a></li>
+                                </ul>
+                            </nav>
+                            <!-- PAGINATION END -->
+
 
                         </div>
+
                     </div>
+
+
                 </div>
             </div>
         </div>
-
-
-        <!-- CEO -->
-        <div class="container">
-            <div class="col-xs-12">
-                <div class="bottom_info">
-                    <span style="font-weight: bold;">Батарейки та зарядні пристрої</span><br>
-                    <br>
-                    Інтернет-магазин 16А пропонує своїм покупцям різні батарейки та зарядні
-                    пристрої до них. Є такі побутові прилади, в яких постійно повинні
-                    знаходитися батарейки, наприклад, в пультах дистанційного керування,
-                    комп'ютерних мишках, ліхтарях, дитячих іграшках, фотоапаратах та інших
-                    пристроях. Саме тому батарейки є одним з найбільш затребуваних товарів.<br>
-                    <br>
-                    Якщо Ви не хочете постійно викидати гроші на покупку нових батарейок,
-                    можна один раз вкласти трохи більше коштів в акумуляторні батарейки та
-                    зарядний пристрій до них. І більше не повертатися до цього питання.<br>
-                    Як звичайні (марганцево-цинкові), так і акумуляторні батарейки
-                    випускаються в різних розмірах:<br>
-                    •&nbsp;&nbsp;&nbsp; мізинчикові (ААА);<br>
-                    •&nbsp;&nbsp;&nbsp; пальчикові (АА);<br>
-                    •&nbsp;&nbsp;&nbsp; паралелепіпедні.<br>
-                    Існують і круглі батарейки, а також батарейки великого розміру, але
-                    вони не випускаються в акумуляторному типі. Купуючи необхідні
-                    батарейки, особливо якщо вони мають круглу форму, необхідно знати
-                    спеціальне маркування, щоб не прогадати з розміром. Також при покупці
-                    продукції, Ви можете проконсультуватися з менеджером магазину.<br>
-                    <br style="font-weight: bold;">
-                    <span style="font-weight: bold;">Зарядні пристрої для акумуляторних
-батарей - характеристика продукції</span><br>
-                    Купуючи зарядні пристрої, звертайте увагу на кількість батарейок, які
-                    можливо потрібно буде заряджати одночасно. Мінімальна кількість
-                    одночасно установлених батарей – дві штуки. Такий пристрій підходить в
-                    тому випадку, коли Ви використовуєте тільки дві батарейки, тобто один
-                    пристрій з ними. Купуючи більшу кількість батарейок, вибирайте і той
-                    зарядний пристрій, який зможе їх одночасно заряджати. Також зарядний
-                    пристрій для батарейок може працювати від мережі, від прикурювача і від
-                    USB.<br>
-                    <br>
-                    Сольові і алкалінові батарейки є одноразовими, їх перезаряджати не
-                    можна.<br>
-                    <br>
-                    Вся представлена продукція має різних виробників, а також ємність, від
-                    цих параметрів залежить тривалість їх використання. Широкий асортимент
-                    і найнижчі ціни - це те, що пропонує інтернет-магазин 16А.<br>
-                </div>
-            </div>
-        </div>
-
     </main>
 
+    <!-- CEO -->
+    <div class="container">
+        <div class="col-xs-12">
+            <div class="bottom_info">
+                <span style="font-weight: bold;">Побутові вентилятори</span>
+
+                Для деякого підвищення потужності вентиляції, без необхідності
+                порушувати систему природної вентиляції будівлі, додатково застосовують
+                побутові вентилятори, які служать для поліпшення якості повітрообміну.
+                Їх використовують в невеликих побутових приміщеннях: санвузлах, ванних
+                кімнатах, кухнях та житлових приміщеннях.
+                Люди навіть не підозрюють, наскільки вентиляція важлива для
+                мікроклімату в приміщенні. Навіть побутові приміщення мають пилові
+                забруднення, бактерії, грибки, вологість та інші шкідливі домішки.
+
+                <span style="font-weight: bold;">Класифікація побутових вентиляторів</span>
+                Вентилятори побутові мають різну класифікацію. Використовувати треба
+                той тип вентиляції, котрий буде мати потрібну для того чи іншого
+                приміщення міцність. Крім цього, побутові системи вентиляції можна
+                доповнювати іонізацією, кондиціюванням, зволоженням, охолодженням або
+                підігрівом повітря.
+
+                Побутова вентиляція має два варіанти виконання:
+                •&nbsp;&nbsp;&nbsp; стаціонарна, яка встановлюється в будь-яких
+                житлових приміщеннях, наприклад, в багатоквартирних будинках, котеджах
+                і приватних будинках, громадських будівлях;
+                •&nbsp;&nbsp;&nbsp; мобільна, що встановлюється в вагончиках, підсобках.
+
+                Класифікація пристроїв по побутових приміщеннях
+                Досить часто в туалетах застосовуються звичайна решітка вентиляції, але
+                набагато ефективніше замінити її на повноцінний настінний вентилятор.
+                Найбільш часто така вентиляція має з'єднання з вимикачем світла. Таким
+                чином, буде відбуватися максимальна економія електроенергії.
+                Ванна кімната - приміщення з великою вологістю, тому елементи
+                вентиляції повинні бути вологонепроникними. Корпус вентилятора
+                виконують з вологонепроникних матеріалів. Кухня - це приміщення, в
+                якому вентилятор встановлювати необхідно, на відміну від інших
+                приміщень. Найкраще, якщо система буде встановлена в вікні, але
+                припустимі й інші варіанти.
+
+                Інтернет-магазин 16А пропонує якісні елементи для того, щоб зробити
+                побутову систему вентиляції.
+            </div>
+        </div>
+    </div>
     <!---------------------------------------- FOOTER --------------------------------------------------------->
     <footer class="footer">
         <div class="container">
@@ -542,8 +1032,10 @@
                 <div class="bt_div">
                     <span class="bt_text">Приєднуйтесь до Інтернет-магазину 16А<br> в соціальних
                     мережах:</span>
-                    <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png" alt="facebook"></a>
-                    <a href="https://plus.google.com/109777980768435551079" target="_blank"><img src="../image/google.png" alt="google+"></a>
+                    <a href="https://www.facebook.com/16a.com.ua/" target="_blank"><img src="../image/facebook.png"
+                                                                                        alt="facebook"></a>
+                    <a href="https://plus.google.com/109777980768435551079" target="_blank"><img
+                            src="../image/google.png" alt="google+"></a>
                 </div>
             </div>
 
@@ -554,7 +1046,6 @@
         </div>
     </footer>
 </div>
-
 
 
 <div class="blackWrapper hidden"></div>
@@ -570,21 +1061,18 @@
 
 <div class="TEST_BUTTON"></div>  <!--  уберешь эту кнопку и повесешь собитие на то что тебе надо-->
 
-<div class="popup_likeShopbag ">
+<div class="popup_likeShopbag hidden">
     <div class="wrapperBlock">
         <button class="popup_likeShopbag__close">
             <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
         </button>
         <p class="popup_likeShopbag__text_main">Подтверждение</p>
 
-
         <!-- Возможно этот кусок надо будет дублировать если добавляеться ещё один товар в корзину-->
         <div class="popup_likeShopbag__product">
             <img class="shoppingBasket_product__image" src="image/Products/zefir/z1.jpg" alt="">
-            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываываываыва</p>
-            <input class="popup_likeShopbag__input" type="text" size="3" value="1" maxlength="3">
-            <button type="button" class="popup_likeShopbag__buttonChange">Изменить</button>
-
+            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва
+                ываываываываываываыва</p>
         </div>
         <!---->
 
@@ -602,8 +1090,6 @@
     </div>
 </div>
 <!-- -->
-
-
 
 
 <script type="text/javascript" src="libs/jquery.min.js"></script>
@@ -624,133 +1110,6 @@
 <script src="js/common.js"></script>
 <!-- endbuild -->
 
-
-
-
-
-
-<script type="text/javascript">
-
-    function GetCssStyle(e) {
-        if (e.currentStyle) return e.currentStyle;
-        else if (window.getComputedStyle) return window.getComputedStyle(e, null)
-    }
-
-
-    var x = 0;
-
-    function resize_body_f() {
-        //return;
-        var txt = x += 1;
-        // document.getElementById("blok1").innerHTML = txt;
-        var elem2 = document.getElementById("blok_main_2");
-
-        var str = GetCssStyle(elem2).width;
-        var width2 = str.substr(0, str.length - 2);
-        var elem21 = document.getElementById("blok_main_2_1");
-
-
-        var elem22 = document.getElementById("blok_main_2_2");
-
-        var str21 = GetCssStyle(elem21).width;
-        var width21 = str21.substr(0, str21.length - 2);
-
-        var elem2_1_x = document.getElementById("blok_main_2_1_x");
-        if (elem2_1_x == null) {
-            return;
-        }
-        var str2_1_x = GetCssStyle(elem2_1_x).width;
-        var width2_1_x = str2_1_x.substr(0, str2_1_x.length - 2);
-
-        var full_21x_count = (Number(width21)) / (Number(width2_1_x) + 10);
-        var info = document.getElementById("info");
-        //var info1 = document.getElementById("info1");
-//	info.innerHTML = "21x: "+width2_1_x + ", count: "+full_21x_count+ ", 21: "+width21;
-
-        //
-//	elem22.innerHTML = width;
-        if (Number(width2) < Number('950')) {//перенос блока инфо вниз
-            //	console.log(width);
-            elem21.removeAttribute("style");
-
-            elem21.className = "blok_main_2_1_when_bl_main_2_2_in_new_line";
-            elem22.className = "blok_main_2_2_new_line";
-        } else {
-            elem21.className = "blok_main_2_1";
-            elem22.className = "blok_main_2_2";
-
-            //width2
-            var w_left_max = 0.9 * Number(width2);
-            var left_num_max = Math.floor(Number(w_left_max) / (Number(width2_1_x) + 10));
-            var w_left_new = left_num_max * (Number(width2_1_x) + 10);
-            var w_left_new_procent = Math.floor(w_left_new * 100 / Number(width2));
-            w_left_new_procent = w_left_new_procent + 1;
-            var w_right_new_procent = 100 - w_left_new_procent;
-//		info1.innerHTML =width2_1_x;
-
-            //	info1.innerHTML =w_left_new_procent + " - "+w_left_new+",  "+ w_right_new_procent;
-            elem21.style.width = w_left_new_procent + "%";
-            elem22.style.width = w_right_new_procent + "%";
-
-
-            //	var x_proc = (Math.floor(Number(full_21x_count))*170*90)/Number(width21);
-            //	info1.innerHTML =x_proc;
-            //	elem21.style.width = Math.floor(Number(x_proc))+"%";
-            //	elem22.style.width = Math.floor(100-Math.floor(Number(x_proc)))+"%";
-            //	console.log(Math.floor(Number(x_proc))+"%");
-            //	console.log(Math.floor(100-Math.floor(Number(x_proc)))+"%");
-
-        }
-
-    }
-
-</script>
-
-
-<!--<script>-->
-    <!--$("#dialog_form").dialog({autoOpen: false});-->
-    <!--$("#dialog_form").dialog({closeText: "закрити (замовлення не буде відправлене!)"});-->
-    <!--$("#dialog_form").dialog({-->
-        <!--buttons: [{-->
-            <!--id: "dialogSendbut", text: "Надіслати замовлення", click: function () {-->
-                <!--send_basket_dialog({-->
-                    <!--data: {-->
-                        <!--bsend: "bsend",-->
-                        <!--user_name: document.getElementById("user_name").value,-->
-                        <!--user_phone: document.getElementById("user_phone").value,-->
-                        <!--user_adres: document.getElementById("user_adres").value,-->
-                        <!--user_firm: document.getElementById("user_firm").value,-->
-                        <!--user_mail: document.getElementById("user_mail").value;-->
-            <!--}-->
-            <!--});-->
-            <!--}-->
-        <!--}]-->
-    <!--});-->
-
-
-    <!--resize_body_f();-->
-
-
-<!--</script>-->
-
-
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-38360333-2', 'auto');
-    ga('send', 'pageview');
-
-</script>
 
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
@@ -782,5 +1141,4 @@
 
 
 </body>
-
 </html>

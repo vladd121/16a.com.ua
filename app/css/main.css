@@ -1104,9 +1104,11 @@ button {
   display: block;
   color: #006699;
   padding: 0 6px; }
-  .bl_pagination__link:hover, .bl_pagination__link:active {
-    text-decoration: none;
-    color: #CC0000; }
+
+a.bl_pagination__link:hover,
+a.bl_pagination__link:active {
+  text-decoration: none;
+  color: #CC0000; }
 
 .bl_pagination__link_active {
   font-size: 18px;
@@ -1267,6 +1269,9 @@ button {
       content: "\f054";
       width: 12px;
       height: 12px; }
+
+.owl-next.disabled, .owl-prev.disabled {
+  display: none !important; }
 
 /*Sub level menu items
 ---------------------------------------*/

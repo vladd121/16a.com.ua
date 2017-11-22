@@ -209,14 +209,14 @@ $(document).ready(function () {
 
     });
 
-    var productSlides = $(".product_slider__item"),
-        quantitySlides = productSlides.length,
-        HowManySlides = 4;
-    var currentLoop = true;
-
-    if (quantitySlides < HowManySlides) {
-        currentLoop = false;
-    }
+    // var productSlides = $(".product_slider__item"),
+    //     quantitySlides = productSlides.length,
+    //     HowManySlides = 4;
+    // var currentLoop = true;
+    //
+    // if (quantitySlides < HowManySlides) {
+    //     currentLoop = false;
+    // }
 
 
     $(".product_slider").owlCarousel({

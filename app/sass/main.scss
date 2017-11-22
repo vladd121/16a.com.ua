@@ -193,8 +193,6 @@ button {
 
 }
 
-
-
 .blok_main_2 {
   width: 100%;
 }
@@ -359,16 +357,20 @@ button {
 
 }
 
-.bl_pagination__link {
+.bl_pagination__link{
   display: block;
   color: #006699;
   padding: 0 6px;
-  &:hover,
-  &:active {
-    text-decoration: none;
-    color: #CC0000;
-  }
+
+
 }
+
+a.bl_pagination__link:hover,
+a.bl_pagination__link:active {
+  text-decoration: none;
+  color: #CC0000;
+}
+
 
 .bl_pagination__link_active {
 
@@ -580,6 +582,10 @@ button {
       height: 12px;
     }
   }
+}
+
+.owl-next.disabled, .owl-prev.disabled {
+  display: none !important;
 }
 
 /*Sub level menu items
