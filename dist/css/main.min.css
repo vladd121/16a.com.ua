@@ -1079,8 +1079,7 @@ button {
   background-image: url(../image/sprite.png);
   background-position: -65px -37px;
   width: 18px;
-  height: 9px;
-  z-index: 2; }
+  height: 9px; }
 
 .bl_pagination {
   clear: both; }
@@ -1089,8 +1088,7 @@ button {
   content: '|';
   position: absolute;
   left: -4px;
-  color: inherit;
-  z-index: 2; }
+  color: inherit; }
 
 .bl_pagination__full {
   display: inline-block; }
@@ -1105,6 +1103,9 @@ button {
   color: #006699;
   padding: 0 6px; }
 
+span.bl_pagination__link {
+  color: #000; }
+
 a.bl_pagination__link:hover,
 a.bl_pagination__link:active {
   text-decoration: none;
@@ -1112,7 +1113,7 @@ a.bl_pagination__link:active {
 
 .bl_pagination__link_active {
   font-size: 18px;
-  color: #096;
+  color: #000;
   text-decoration: none;
   font-weight: bold; }
 
@@ -1332,7 +1333,7 @@ a.bl_pagination__link:active {
   display: inline-block; }
 
 .minBasket {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #006699;
   text-align: center; }
@@ -1347,7 +1348,7 @@ a.bl_pagination__link:active {
   text-align: right; }
 
 .bh1 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #990000;
   font-style: normal;
@@ -1358,7 +1359,7 @@ a.bl_pagination__link:active {
   width: 100%;
   display: inline-block;
   min-width: 150px;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #4d4d4d;
   text-decoration: none; }
@@ -1403,7 +1404,7 @@ a.bl_pagination__link:active {
   margin-top: 10px; }
 
 .ssearch {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000000;
   font-weight: bold;
@@ -1412,7 +1413,7 @@ a.bl_pagination__link:active {
 
 .searchtext_def {
   width: 90%;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 16px;
   height: 20px;
   color: #999;
@@ -1435,21 +1436,21 @@ a.bl_pagination__link:active {
   font-style: italic; }
 
 .bh1:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #0000FF;
   font-style: normal;
   font-weight: bold; }
 
 .b_table_h {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #FFFFFF;
   font-style: normal;
   font-weight: bold; }
 
 .chbutton {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #0000FF;
   border: 1px #009999 solid;
@@ -1457,7 +1458,7 @@ a.bl_pagination__link:active {
   cursor: pointer; }
 
 .delbutton {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #C36;
   border: 1px #009999 solid;
@@ -1465,7 +1466,7 @@ a.bl_pagination__link:active {
   cursor: pointer; }
 
 .sub {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #fff;
   font-style: normal;
@@ -1473,7 +1474,7 @@ a.bl_pagination__link:active {
 
 .z1,
 .title_paragraph {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #006699;
   text-align: center;
@@ -1482,7 +1483,7 @@ a.bl_pagination__link:active {
   text-decoration: none; }
 
 .sub2 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #006699;
   font-style: normal;
@@ -1503,31 +1504,28 @@ a.bl_pagination__link:active {
   color: #CC0000; }
 
 .subGr_one_tov {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #006699;
   font-style: normal;
-  font-weight: bold;
-  text-align: left; }
+  font-weight: bold; }
 
 .subGr_one_tov_link {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #007bb7;
   font-style: normal;
   font-weight: bold;
-  text-decoration: none;
-  text-align: left; }
-
-.subGr_one_tov_link:hover {
-  color: #006699;
-  text-decoration: underline; }
+  text-decoration: none; }
+  .subGr_one_tov_link:hover {
+    color: #006699;
+    text-decoration: underline; }
 
 .style111 {
   font-size: 9px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none;
-  color: #000000; }
+  color: #000; }
 
 .style2 {
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -1548,10 +1546,10 @@ a.bl_pagination__link:active {
 .style4 {
   font-size: 10px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #FF0000; }
+  color: #F00; }
 
 .style5 {
-  color: #FFFFFF;
+  color: #FFF;
   font-size: 12px;
   font-weight: bold;
   font-family: Verdana, Arial, Helvetica, sans-serif; }
@@ -1577,28 +1575,28 @@ a.bl_pagination__link:active {
   font-size: 13px; }
 
 .style15 {
-  color: #FFFFFF;
+  color: #FFF;
   font-weight: bold;
   font-size: 12px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none; }
 
 .style15:hover {
-  color: #CC0000;
+  color: #C00;
   font-weight: bold;
   font-size: 12px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none; }
 
 .style16 {
-  color: #CC0000;
+  color: #C00;
   font-weight: bold;
   font-size: 12px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none; }
 
 .style16:hover {
-  color: #CC0000;
+  color: #C00;
   font-weight: bold;
   font-size: 12px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -1611,17 +1609,8 @@ a.bl_pagination__link:active {
   font-weight: normal;
   text-decoration: none; }
 
-/*//////////////////////////////////////*/
-/*.subGr_separator {*/
-/*font-family: "MS Sans Serif", Verdana, Helvetica, Arial;*/
-/*font-size: 14px;*/
-/*color: #8DAEBF;*/
-/*font-style: normal;*/
-/*font-weight: bold;*/
-/*text-decoration: none*/
-/*}*/
 .subGr_line_last {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
@@ -1645,7 +1634,7 @@ a.bl_pagination__link:active {
 .z2,
 .delivery_text {
   font-size: 16px;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial; }
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif; }
   .z2 p,
   .delivery_text p {
     margin-top: 10px; }
@@ -1657,7 +1646,6 @@ a.bl_pagination__link:active {
     font-weight: bold; }
 
 .z2_0 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
   color: #2e3436;
   font-style: normal;
@@ -1668,7 +1656,6 @@ a.bl_pagination__link:active {
   margin-bottom: 15px; }
 
 .z2_0_b {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #555753;
   font-style: normal;
@@ -1679,7 +1666,6 @@ a.bl_pagination__link:active {
   margin-bottom: 15px; }
 
 .z2_1 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #555753;
   font-style: normal;
@@ -1690,7 +1676,6 @@ a.bl_pagination__link:active {
   margin-bottom: 15px; }
 
 .siarchMiniInfo {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
   color: #066;
   font-style: normal;
@@ -1698,7 +1683,6 @@ a.bl_pagination__link:active {
   text-decoration: none; }
 
 .z2error {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
   color: #FF0000;
   font-style: normal;
@@ -1706,15 +1690,13 @@ a.bl_pagination__link:active {
   text-decoration: none; }
 
 .z3 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
-  color: #000000;
+  color: #000;
   font-style: normal;
   font-weight: normal;
   text-decoration: none; }
 
 .z2b {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
   color: #006666;
   font-style: normal;
@@ -2404,7 +2386,7 @@ a.bl_pagination__link:active {
     color: #3e3e3e; }
 
 .search_input {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 16px;
   color: #999;
   font-style: oblique;
@@ -3296,14 +3278,14 @@ label.css-label {
   line-height: 1.5; }
 
 .zn-vlast:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 14px;
   color: #CC0000;
   text-decoration: none;
   cursor: pointer; }
 
 .zn-vlast-null {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 14px;
   color: #c0c0c0;
   text-decoration: none;
@@ -3313,13 +3295,13 @@ label.css-label {
   line-height: 1.5; }
 
 .zn-vlast-count {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 14px;
   color: #a0a0a0;
   text-decoration: none;
   font-weight: normal;
   cursor: pointer;
-  margin-left: 0px; }
+  margin-left: 0; }
 
 .vlast-top {
   font-size: 16px;
@@ -3336,7 +3318,7 @@ label.css-label {
 
 .vlast-name-price {
   font-size: 16px;
-  color: #333333;
+  color: #333;
   text-decoration: none;
   font-weight: normal;
   cursor: default;
@@ -3360,7 +3342,7 @@ label.css-label {
   font-style: normal;
   font-weight: normal; }
   .price_fild:focus {
-    color: #999999; }
+    color: #999; }
 
 .minmax-price-user {
   font-size: 1em;
@@ -4185,6 +4167,8 @@ label.css-label {
     float: right; }
   .binfo_image {
     float: right; }
+  .binfo.active:after {
+    left: 130px; }
   .menu_categories:first-of-type .menu_categories__item .menu_categories__link {
     text-align: center; }
   .category_menu .buttonStartMenu:hover + .left-group-menu {
@@ -4297,7 +4281,7 @@ label.css-label {
     height: auto; }
   .price-item-box .bl_description__short {
     display: none; }
-  .bl_description__attributes {
+  .price-item-box .bl_description__attributes {
     display: none; }
   .buy_container {
     padding: 10px; }
@@ -4321,6 +4305,8 @@ label.css-label {
     float: none; }
   .binfo {
     min-width: initial; }
+  .binfo.active:after {
+    left: 74px; }
   .buy_container .price {
     padding: 0; }
   .minBasket_param {
