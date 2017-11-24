@@ -372,10 +372,10 @@ a.bl_pagination__link:active {
   color: #CC0000;
 }
 
-.bl_pagination__link_active {
+span.bl_pagination__link_active {
 
   font-size: 18px;
-  color: #000;
+  color: #096 !important;
   text-decoration: none;
   font-weight: bold
 }
@@ -1216,7 +1216,6 @@ a.bl_pagination__link:active {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 5px;
   white-space: pre-wrap;
@@ -1232,7 +1231,6 @@ a.bl_pagination__link:active {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 5px;
   white-space: pre-wrap;
@@ -1242,32 +1240,16 @@ a.bl_pagination__link:active {
   background-color: #E0E6F3;
   color: #06C;
   display: block;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 5px;
   white-space: pre-wrap;
-}
-
-.gr-sub2 a:hover { /*�� ��� �����*/
-  background-color: #B3D1FF;
-  color: #06C;
-  display: block;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: left;
-  padding-top: 10px;
-  /*padding-right: 30px;*/
-  padding-bottom: 10px;
-  padding-left: 5px;
-  white-space: pre-wrap;
+  &:hover {
+    background-color: #B3D1FF;
+  }
 }
 
 .gr-sub-level2 a {
@@ -1307,8 +1289,6 @@ a.bl_pagination__link:active {
   padding-bottom: 10px;
   padding-left: 15px;
   white-space: pre-wrap;
-  -webkit-border-radius: 0 10px 10px 0;
-  -moz-border-radius: 0 10px 10px 0;
   border-radius: 0 10px 10px 0;
   margin-left: 5px;
 
@@ -1321,7 +1301,6 @@ a.bl_pagination__link:active {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 15px;
   white-space: pre-wrap;
@@ -1330,16 +1309,6 @@ a.bl_pagination__link:active {
 
 .gr-sub-level3:hover a {
   background-color: #B3D1FF;
-  color: #06C;
-  display: block;
-  text-decoration: none;
-  text-align: left;
-  padding-top: 10px;
-  /*padding-right: 30px;*/
-  padding-bottom: 10px;
-  padding-left: 15px;
-  white-space: pre-wrap;
-  margin-left: 35px;
 }
 
 .gr-sub-level3-select a {
@@ -1349,12 +1318,9 @@ a.bl_pagination__link:active {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 15px;
   white-space: pre-wrap;
-  -webkit-border-radius: 0 10px 10px 0;
-  -moz-border-radius: 0 10px 10px 0;
   border-radius: 0 10px 10px 0;
   margin-left: 35px;
 
@@ -1450,11 +1416,6 @@ a.bl_pagination__link:active {
 }
 
 .price-item-wrap1:hover {
-  position: relative;
-  float: left;
-  width: 200px;
-  height: 380px;
-  margin-bottom: 10px;
   overflow: visible;
   z-index: 1;
 }
@@ -2623,7 +2584,11 @@ a.bl_pagination__link:active {
 .blok_main_2_1_x_about_item_cont {
   position: relative;
   float: left;
-  width: 50%;
+  min-width: 410px;
+  width: 410px;
+  max-width: 410px;
+  height: 310px;
+  max-height: 310px;
 }
 
 .about_item_im_fon {
@@ -2845,7 +2810,7 @@ label.css-label {
   content: "/";
   position: absolute;
   top: 2px;
-  right: -2px;
+  right: 2px;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
