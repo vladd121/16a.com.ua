@@ -1003,12 +1003,17 @@ button {
   padding: 15px; }
 
 .pricename {
+  display: block;
+  height: 62px;
   font-size: 16px;
   color: #00C;
   font-style: normal;
   font-weight: normal;
-  text-decoration: none; }
+  text-decoration: none;
+  position: relative;
+  overflow: hidden; }
   .pricename:hover {
+    overflow: visible;
     color: #CC0000; }
 
 .pricedescr {
@@ -2222,7 +2227,7 @@ span.bl_pagination__link_active {
 .top-phone p {
   display: inline-block; }
 
-.top-phone_bold {
+.bold {
   font-weight: bold; }
 
 .bl_language {
@@ -2965,7 +2970,7 @@ span.bl_pagination__link_active {
   display: none; }
 
 .button_search-mobile {
-  top: 25px; }
+  top: 40px; }
 
 .logo_box {
   position: relative;
@@ -2984,11 +2989,14 @@ span.bl_pagination__link_active {
 
 label.css-label {
   width: 100%;
-  padding-right: 10px;
   font-size: 14px;
-  min-height: 30px; }
+  min-height: 30px;
+  margin-bottom: 0; }
   label.css-label:hover, label.css-label:focus {
     background-color: #EDFFED; }
+
+label.css-label:hover > .vlast-param {
+  color: #C00; }
 
 .css-checkbox {
   position: absolute;
@@ -3009,18 +3017,16 @@ label.css-label {
 .vlast-param {
   position: relative;
   display: inline-block;
-  color: #006699;
+  color: #069;
   padding-left: 45px;
   line-height: 35px;
-  margin: 3px 0 3px 7px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 14px; }
   .vlast-param:hover, .vlast-param:focus {
-    color: #CC0000;
-    text-decoration: none;
-    overflow: visible; }
+    color: #C00;
+    text-decoration: none; }
 
 .vlast-param:before {
   content: "";
@@ -3038,9 +3044,10 @@ label.css-label {
 .css-label-count {
   color: #a0a0a0;
   display: inline-block;
-  line-height: 35px;
-  vertical-align: top;
-  margin-top: 4px; }
+  line-height: 35px; }
+
+.css-label .css-label-count {
+  vertical-align: top; }
 
 .css-label-count:before {
   content: "(";
@@ -3063,25 +3070,28 @@ label.css-label {
   display: inline-block;
   padding-right: 1%; }
 
-.bl_breadcrumbs__item:not(:last-child):after {
-  content: "/";
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  font-size: 14px;
-  color: #8DAEBF;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: none; }
-
 .bl_breadcrumbs__link {
+  position: relative;
+  display: block;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
   font-weight: bold;
   text-decoration: none; }
-  .bl_breadcrumbs__link:last-child:after {
-    color: #007bb7; }
+  .bl_breadcrumbs__link:after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: -7px;
+    font-size: 14px;
+    color: #8DAEBF;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none; }
+
+.bl_breadcrumbs__item:last-child .bl_breadcrumbs__link:after {
+  content: "";
+  color: #007bb7; }
 
 .bl_breadcrumbs__link:hover {
   color: #006699;
@@ -4171,6 +4181,8 @@ label.css-label {
     float: right;
     border: 1px solid #000;
     background-color: #fff; }
+  .pricename {
+    height: 57px; }
   .blok_main_1.category_menu {
     width: 100%; }
   .buttonStartMenu {
@@ -4225,10 +4237,20 @@ label.css-label {
     top: 57px;
     left: 35%;
     max-width: 300px; }
+  .top-line-adr,
+  .top-line-delivery,
+  .top-phone {
+    display: none; }
+  .bl_language {
+    display: block;
+    margin-left: 0;
+    position: absolute;
+    z-index: 12; }
   .search_icon {
     width: 40px; }
   .blok_main_2_1_x_about_item {
     padding: 0;
+    margin-left: 10px;
     min-width: initial;
     width: auto;
     height: auto; }
@@ -4275,6 +4297,8 @@ label.css-label {
     left: 15%; }
   .logo_link {
     width: 110px; }
+  .bl_language {
+    margin-left: 16px; }
   .root-logo {
     float: none; }
   .binfo {
@@ -4286,8 +4310,7 @@ label.css-label {
   .minBasket_param {
     display: none; }
   .price-item-wrap1 {
-    margin-top: 10px;
-    width: 100%; }
+    margin-top: 10px; }
   .blok_main_2_1_x_about_item_cont {
     height: 250px; } }
 

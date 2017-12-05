@@ -24,9 +24,36 @@ $(document).ready(function () {
     }
 
 
-    if ($(window).width() <= 991) {
-        sliderEffectForButtons(btnCatalog, navMenu, 300);
-    }
+    // function buttonNavigation (){
+    //
+    //     if ($(window).width() <= 991) {
+    //
+    //         return false
+    //     }else {
+    //         sliderEffectForButtons(btnCatalog, navMenu, 300);
+    //
+    // }
+
+
+            var $window = $(window);
+
+        btnCatalog.each(function(){
+            $(this).on({
+                    click: function (){
+                        if ($window.width() <= 991) {
+                            navMenu.slideToggle(300);
+                        }
+                    }
+                });
+            });
+
+
+
+
+
+
+
+
 
 
     var buttonLanguage = $(".bl_language__active"),
@@ -37,28 +64,7 @@ $(document).ready(function () {
     hideShowEffect(buttonChooseRigthLanguage, fieldWithOtherLanguage);
 
 
-    var menuItem = $(".blok_main_1.category_menu .left-group-menu"),
-        eachMenuItems = $(".menu_categories__item");
-
-
-    // это проба притормозить открывание меню, пока не удачно
-    // var startShow;
-    // var stopShow;
-    //
-    // function startShowMenu (){
-    //     startShow = setTimeout(function () {
-    //         $(".blok_main_1.category_menu .left-group-menu").css({"display": "block"});
-    //     }, 1000)
-    // }
-    //
-    // function stopShowMenu() {
-    //     stopShow = setTimeout(function () {
-    //         $(".blok_main_1.category_menu .left-group-menu").css({"display": "none"});
-    //     }, 1000)
-    // }
-
-
-    eachMenuItems.hover(
+    $(".menu_categories__item").hover(
         function () {
             blackWrapper.removeClass("hidden");
         }, function () {
@@ -67,20 +73,11 @@ $(document).ready(function () {
     );
 
 
-
-    menuItem.hover(
+    $(".blok_main_1.category_menu .left-group-menu").hover(
         function () {
-            $(this).css({"display": "block"});
-            // clearTimeout(startShowMenu);
-            // clearTimeout(stopShowMenu);
-            // startShowMenu();
-
+            blackWrapper.removeClass("hidden");
         }, function () {
-
-            $(this).css({"display": "none"});
-            // clearTimeout(startShowMenu);
-            // clearTimeout(stopShowMenu);
-            // stopShowMenu();
+            blackWrapper.addClass("hidden");
         }
     );
 
@@ -94,7 +91,6 @@ $(document).ready(function () {
     });
 
 //
-
 ////////////////// POPUPS LOGIC
 
     function popupWindowShow(btn, field) {
@@ -220,7 +216,7 @@ $(document).ready(function () {
 
 
     $(".product_slider").owlCarousel({
-        items: HowManySlides,
+        items: 4,
         loop: false,
         nav: true,
         navText: true,

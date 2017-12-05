@@ -78,6 +78,9 @@
     background-color: #fff;
   }
 
+  .pricename{
+    height: 57px;
+  }
 
   //.price-item-wrap1:hover{
   //  visibility: hidden;
@@ -128,12 +131,6 @@
     order: 3;
   }
 
-  //.price-item-wrap1:hover {
-  //  float: none;
-  //  width: auto;
-  //  height: auto;
-  //  margin-bottom: 0;
-  //}
   .price-item-wrap1:hover .price-item-box {
     border: none;
     box-shadow: none;
@@ -161,12 +158,30 @@
     max-width: 300px;
 
   }
+
+  .top-line-adr,
+  .top-line-delivery,
+  .top-phone{
+    display:none;
+  }
+
+
+  .bl_language{
+    display: block;
+    margin-left: 0;
+    position: absolute;
+    z-index:12;
+  }
+
+
+
   .search_icon {
     width: 40px;
   }
 
   .blok_main_2_1_x_about_item {
     padding: 0;
+    margin-left: 10px;
     min-width: initial;
     width: auto;
     height: auto;
@@ -248,6 +263,11 @@
     width: 110px;
   }
 
+  .bl_language{
+    margin-left: 16px;
+  }
+
+
   .root-logo {
     float: none;
   }
@@ -270,7 +290,7 @@
 
   .price-item-wrap1 {
     margin-top: 10px;
-    width: 100%;
+    //width: 100%;
   }
 
   .blok_main_2_1_x_about_item_cont {

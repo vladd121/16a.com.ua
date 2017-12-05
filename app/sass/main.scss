@@ -226,13 +226,22 @@ button {
 }
 
 .pricename {
-
+  display: block;
+  height:62px;
   font-size: 16px;
   color: #00C;
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
+
+  position: relative;
+  overflow: hidden;
+
+  //text-overflow: ellipsis;
+  //white-space: nowrap;
+
   &:hover {
+    overflow: visible;
     color: #CC0000;
   }
 }
@@ -1739,17 +1748,15 @@ span.bl_pagination__link_active {
 .top-line-delivery:hover {
   color: #FF6666;
 }
-
 .top-phone {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
-
-.top-phone p {
+.top-phone p{
   display: inline-block;
 }
 
-.top-phone_bold {
+.bold {
   font-weight: bold;
 }
 
@@ -2689,7 +2696,7 @@ span.bl_pagination__link_active {
 }
 
 .button_search-mobile {
-  top: 25px;
+  top: 40px;
 }
 
 .logo_box {
@@ -2712,14 +2719,19 @@ span.bl_pagination__link_active {
 
 label.css-label {
   width: 100%;
-  padding-right: 10px;
+  //padding-right: 10px;
   font-size: 14px;
   min-height: 30px;
+  margin-bottom: 0;
 
   &:hover,
   &:focus {
     background-color: #EDFFED;
   }
+}
+
+label.css-label:hover > .vlast-param{
+  color: #C00;
 }
 
 .css-checkbox {
@@ -2743,19 +2755,18 @@ label.css-label {
 .vlast-param {
   position: relative;
   display: inline-block;
-  color: #006699;
+  color: #069;
   padding-left: 45px;
   line-height: 35px;
-  margin: 3px 0 3px 7px;
+  //margin: 3px 0 3px 7px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 14px;
   &:hover,
   &:focus {
-    color: #CC0000;
+    color: #C00;
     text-decoration: none;
-    overflow: visible;
   }
 }
 
@@ -2777,9 +2788,12 @@ label.css-label {
   color: #a0a0a0;
   display: inline-block;
   line-height: 35px;
-  vertical-align: top;
-  margin-top: 4px;
 }
+.css-label .css-label-count{
+  vertical-align: top;
+}
+
+
 
 .css-label-count:before {
   content: "(";
@@ -2806,28 +2820,35 @@ label.css-label {
   padding-right: 1%;
 }
 
-.bl_breadcrumbs__item:not(:last-child):after {
-  content: "/";
-  position: absolute;
-  top: 2px;
-  right: 2px;
+.bl_breadcrumbs__link {
+  position: relative;
+  display: block;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
+
+  &:after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: -7px;
+    font-size: 14px;
+    color: #8DAEBF;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
 
 }
 
-.bl_breadcrumbs__link {
-  font-size: 14px;
-  color: #8DAEBF;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: none;
-  &:last-child:after {
-    color: #007bb7;
-  }
+
+
+.bl_breadcrumbs__item:last-child .bl_breadcrumbs__link:after  {
+  content: "";
+  color: #007bb7;
 }
 
 .bl_breadcrumbs__link:hover {
