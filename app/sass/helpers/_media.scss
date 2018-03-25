@@ -6,77 +6,94 @@
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: 1200px) {
 
-  .blok_main_1{
-    min-width:initial;
+  .blok_main_1 {
+    min-width: initial;
   }
 }
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
-  
-  .left-group-menu{
+  .left-group-menu {
     display: none;
     position: relative;
     margin-bottom: 15px;
   }
 
-  .menu_categories__link{
-    font-size:16px;
+  .menu_categories__link {
+    font-size: 16px;
   }
 
-  .minBasket_full{
+  .minBasket_full {
     float: right;
   }
 
-  .binfo_image{
+  .binfo_image {
     float: right;
   }
+  .price-item-pic-wrap {
+    width:auto;
+    height:auto;
+    margin: 0 auto;
+  }
+  .price-item-box img{
+    width:auto;
+  }
 
-  .menu_categories:first-of-type .menu_categories__item .menu_categories__link{
+  .binfo.active:after {
+    left: 130px;
+  }
+
+  .menu_categories:first-of-type .menu_categories__item .menu_categories__link {
     text-align: center;
   }
 
-  .category_menu .buttonStartMenu:hover + .left-group-menu{
+  .category_menu .buttonStartMenu:hover + .left-group-menu {
     position: relative;
   }
-  
-  .subCategory{
+
+  .subCategory {
     position: relative;
-    height: 0;  //////////// это псевдо слайдер для мобильного
-    width: 100%!important;
+    height: 0; //////////// это псевдо слайдер для мобильного
+    width: 100% !important;
     border: none;
     background-color: #fff;
     right: 0;
     left: 0;
   }
-  .subCategory.active{
-    height:initial;
+  .subCategory.active {
+    height: initial;
     transition: all .3s;
   }
-  .subCategory.active > .menu_categories__item{
+  .subCategory.active > .menu_categories__item {
     display: block;
     background-color: #f2fcff;
     background-image: none;
   }
 
-
-  .btn_menu{
+  .btn_menu {
     position: relative;
     float: right;
     border: 1px solid #000;
     background-color: #fff;
   }
-  
-  .blok_main_1.category_menu{
+
+  .pricename{
+    height: 57px;
+  }
+
+  //.price-item-wrap1:hover{
+  //  visibility: hidden;
+  //}
+
+  .blok_main_1.category_menu {
     width: 100%;
   }
-  .buttonStartMenu{
+  .buttonStartMenu {
     display: block;
     margin: 0 auto;
     cursor: pointer;
   }
-
 
   .top-info__inner {
     justify-content: space-around;
@@ -88,10 +105,9 @@
     justify-content: space-between;
     width: 100%;
   }
-  .left-group-vlast{
+  .left-group-vlast {
     display: none;
   }
-
 
   .copyr {
     margin-top: 20px;
@@ -115,6 +131,15 @@
     order: 3;
   }
 
+  .price-item-wrap1:hover .price-item-box {
+    border: none;
+    box-shadow: none;
+  }
+
+  .price-item-wrap1 {
+    width: 33%;
+  }
+
 }
 
 /* Small Devices, Tablets 768px */
@@ -134,23 +159,46 @@
 
   }
 
-
-
-  .blok_main_2_1_x_about_item{
-    padding: 0;
-    min-width:initial;
-    width:auto;
-    height:auto;
-  }
-  .subgr-list-block{
-    padding: 0;
-    min-height:initial;
+  .top-line-adr,
+  .top-line-delivery,
+  .top-phone{
+    display:none;
   }
 
-  .about_item_box{
-    width:auto;
-    max-width:initial;
-    min-height:initial;
+
+  .bl_language{
+    display: block;
+    margin-left: -15px;
+    position: absolute;
+    z-index:12;
+  }
+
+  .search_icon {
+    width: 40px;
+  }
+
+  .blok_main_2_1_x_about_item {
+    padding: 0;
+    margin-left: 10px;
+    min-width: initial;
+    width: auto;
+    height: auto;
+  }
+  .blok_main_2_1_x_about_item_cont{
+    width:50%;
+    max-width: initial;
+    min-width: initial;
+  }
+
+  .subgr-list-block {
+    padding: 0;
+    min-height: initial;
+  }
+
+  .about_item_box {
+    width: auto;
+    max-width: initial;
+    min-height: initial;
     height: 300px;
 
   }
@@ -159,113 +207,103 @@
     width: 75%;
   }
 
-  .minBasket_full{
+  .minBasket_full {
     margin-left: 0;
   }
 
 
-  //.button_menu-mobile{
-  //  font-size: 22px;
-  //  padding-left: 30px;
-  //}
-  //
+
 }
 
 @media only screen and (max-width: 600px) {
 
-  //.logo_link {
-  //  width: 100px;
-  //}
-  //.button_menu-mobile{
-  //  font-size: 26px;
-  //}
-  //.logo_link{
-  //  width: 94px;
-  //}
 
-  .price-item-pic-wrap{
-    height:auto;
-    margin: 0 auto;
-  }
 
-  .price-item-wrap1{
+  .price-item-wrap1 {
     width: 48%;
-    height:auto;
+    height: auto;
   }
 
-  .bl_description__short{
-    display: none;
-  }
-  .bl_description__attributes{
+  .price-item-box .bl_description__short {
     display: none;
   }
 
-  .button_buyProduct{
+  .price-item-box .bl_description__attributes {
+    display: none;
+  }
+  .buy_container {
+    padding: 10px;
+  }
+
+  .button_buyProduct {
     float: none;
     margin: 20px auto;
     display: block;
   }
-  .button_continueBuying__link{
+  .button_continueBuying__link {
     display: block;
     text-align: center;
   }
 
+  .blok_main_2_1_x_about_item_cont {
+    height: 300px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
 
 }
+
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
   .block_ssearch {
     left: 15%;
   }
-  //.logo_link{
-  //  width: 70px;
+
+  .logo_link {
+    width: 110px;
+  }
+
+  //.bl_language{
+  //  margin-left: 16px;
   //}
 
-  //.button_menu-mobile{
-  //  font-size: 18px;
-  //  padding-left: 28px;
-  //}
-
-  .root-logo{
-    left: -20px;
+  .root-logo {
     float: none;
   }
-  //.decor_burger{
-  //  font-size: 24px;
-  //}
-  //.button_menu-mobile{
-  //  font-size: 18px;
-  //}
 
-  .binfo{
-    min-width:initial;
+  .binfo {
+    min-width: initial;
   }
 
-.minBasket_param{
-  display: none;
-}
+  .binfo.active:after {
+    left: 74px;
+  }
 
-  .price-item-wrap1{
-    width: 100%;
+  .buy_container .price {
+    padding: 0;
+  }
+
+  .minBasket_param {
+    display: none;
+  }
+
+  .price-item-wrap1 {
+    margin-top: 10px;
   }
 
 }
+
 @media only screen and (max-width: 400px) {
-  //.root-logo{
-  //  left: -30px;
-  //}
-  //.button_menu-mobile{
-  //  font-size: 12px;
-  //}
 
-  //.logo_link{
-  //  width: 50px;
-  //}
-
-  .about_item_box{
+  .about_item_box {
     height: 250px;
   }
+  .blok_main_2_1_x_about_item_cont {
+    height: 280px;
+  }
+
 }
+
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {
 

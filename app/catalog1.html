@@ -43,7 +43,7 @@
 
 </head>
 
-<body class="body" onresize="resize_body_f()">
+<body class="body">
 <div class="wrapperBlock">
     <!--[if lt IE 10]>
     <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a
@@ -55,43 +55,42 @@
     <!------------------------------------------ HEADER ---------------------------------------------------------->
     <header id="top" class="header">
         <div class="mainWrapper">
-            <div class="" id="info">
-                <div class="container">
-                    <div class="col-xs-12">
-                        <div class="top-info__inner hidden-xs">
-                            <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
-                            <a class="top-line-delivery" href="#">Доставка і оплата</a>
-                            <div class="top-phone">
-                                <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
-                                <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
-                                <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
-                                <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
-                            </div>
-                            <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language" action="http://16a.loc/index.php?route=common/language/language">
-                                <span class="bl_language__active">ru</span>
-                                <ul class="bl_language__variables hidden">
-                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
-                                    <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
-                                </ul>
-                                <input id="lang_val_to_form" type="hidden" name="code" value="">
-                                <input type="hidden" name="redirect" value="">
-                                <script type="text/javascript">
-                                    function changeLang(element){
-                                        $('#lang_val_to_form').val(element.attr('name'));
-                                        $('#form_language').submit();
-                                    }
-                                    function chowElem(element){
-                                        element.siblings('ul').toggleClass('hidden');
-                                    }
-                                </script>
-                            </form>
-
-
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="top-info__inner hidden-xs">
+                        <span class="top-line-adr">м.Львів, вул.Городоцька, 224</span>
+                        <a class="top-line-delivery" href="#">Доставка і оплата</a>
+                        <div class="top-phone">
+                            <p><span class="top-phone_bold">(067)</span> <span>340-81-46,</span></p>
+                            <p><span class="top-phone_bold">(050)</span> <span>421-70-70,</span></p>
+                            <p><span class="top-phone_bold">(063)</span> <span>247-70-70,</span></p>
+                            <p><span class="top-phone_bold">(032)</span> <span>247-70-70</span></p>
                         </div>
+                        <form class="bl_language" method="post" enctype="multipart/form-data" id="form_language" action="http://16a.loc/index.php?route=common/language/language">
+                            <span class="bl_language__active">ru</span>
+                            <ul class="bl_language__variables hidden">
+                                <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="ru-ru"> ru</span></li>
+                                <li class="bl_language__variables_item language-select"><span onclick="changeLang($(this));" name="uk-ua"> uk</span></li>
+                            </ul>
+                            <input id="lang_val_to_form" type="hidden" name="code" value="">
+                            <input type="hidden" name="redirect" value="">
+                            <script type="text/javascript">
+                                function changeLang(element){
+                                    $('#lang_val_to_form').val(element.attr('name'));
+                                    $('#form_language').submit();
+                                }
+                                function chowElem(element){
+                                    element.siblings('ul').toggleClass('hidden');
+                                }
+                            </script>
+                        </form>
+
+
                     </div>
                 </div>
-
             </div>
+
+
 
             <div class="container">
                 <div class="col-xs-12">
@@ -99,9 +98,9 @@
 
 
                         <div class="root-logo">
-                            <button class="button_menu-mobile decor_burger visible-xs-inline-block" type="button">
-                                Каталог
-                            </button>
+                            <!--<button class="button_menu-mobile decor_burger visible-xs-inline-block" type="button">-->
+                            <!--Каталог-->
+                            <!--</button>-->
                             <a class="logo_link" href="#"><img src="image/logo.png"></a>
                         </div>
 
@@ -125,7 +124,7 @@
                                     </p>
                                     <p>
                                         <span class="minBasket_param">Сума</span>
-                                        <span class="minBasket_text">0</span>
+                                        <span class="minBasket_text">99999</span>
                                     </p>
                                 </div>
                             </a>
@@ -578,10 +577,14 @@
         </button>
         <p class="popup_likeShopbag__text_main">Подтверждение</p>
 
+
         <!-- Возможно этот кусок надо будет дублировать если добавляеться ещё один товар в корзину-->
         <div class="popup_likeShopbag__product">
             <img class="shoppingBasket_product__image" src="image/Products/zefir/z1.jpg" alt="">
             <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываываываыва</p>
+            <input class="popup_likeShopbag__input" type="text" size="3" value="1" maxlength="3">
+            <button type="button" class="popup_likeShopbag__buttonChange">Изменить</button>
+
         </div>
         <!---->
 
@@ -624,33 +627,6 @@
 
 
 
-<script>
-
-
-    $("#dialog_pic_full").dialog({autoOpen: false});
-    $("#dialog_pic_full").dialog({closeText: "закрити"});
-    $("#dialog_pic_full").dialog({
-        buttons: [{
-            text: "Ok", click: function () {
-                $(this).dialog("close");
-            }
-        }]
-    });
-
-
-    window.onload = function () {
-        setTimeout(function () {
-
-            window.addEventListener("popstate", function (e) {
-                window.location = location.href;
-            }, false);
-
-
-        }, 0);
-    }
-
-
-</script>
 
 
 <script type="text/javascript">
@@ -731,31 +707,31 @@
 </script>
 
 
-<script>
-    $("#dialog_form").dialog({autoOpen: false});
-    $("#dialog_form").dialog({closeText: "закрити (замовлення не буде відправлене!)"});
-    $("#dialog_form").dialog({
-        buttons: [{
-            id: "dialogSendbut", text: "Надіслати замовлення", click: function () {
-                send_basket_dialog({
-                    data: {
-                        bsend: "bsend",
-                        user_name: document.getElementById("user_name").value,
-                        user_phone: document.getElementById("user_phone").value,
-                        user_adres: document.getElementById("user_adres").value,
-                        user_firm: document.getElementById("user_firm").value,
-                        user_mail: document.getElementById("user_mail").value;
-            }
-            });
-            }
-        }]
-    });
+<!--<script>-->
+    <!--$("#dialog_form").dialog({autoOpen: false});-->
+    <!--$("#dialog_form").dialog({closeText: "закрити (замовлення не буде відправлене!)"});-->
+    <!--$("#dialog_form").dialog({-->
+        <!--buttons: [{-->
+            <!--id: "dialogSendbut", text: "Надіслати замовлення", click: function () {-->
+                <!--send_basket_dialog({-->
+                    <!--data: {-->
+                        <!--bsend: "bsend",-->
+                        <!--user_name: document.getElementById("user_name").value,-->
+                        <!--user_phone: document.getElementById("user_phone").value,-->
+                        <!--user_adres: document.getElementById("user_adres").value,-->
+                        <!--user_firm: document.getElementById("user_firm").value,-->
+                        <!--user_mail: document.getElementById("user_mail").value;-->
+            <!--}-->
+            <!--});-->
+            <!--}-->
+        <!--}]-->
+    <!--});-->
 
 
-    resize_body_f();
+    <!--resize_body_f();-->
 
 
-</script>
+<!--</script>-->
 
 
 <script>

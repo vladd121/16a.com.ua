@@ -968,12 +968,12 @@ button {
 .blok_main_1.category_menu .left-group-menu {
   display: none; }
 
-.category_menu .buttonStartMenu:hover + .left-group-menu {
-  display: block;
-  position: absolute; }
-
-.blok_main_1.category_menu .left-group-menu:hover {
-  display: block; }
+@media only screen and (min-width: 991px) {
+  .category_menu .buttonStartMenu:hover + .left-group-menu {
+    display: block;
+    position: absolute; }
+  .blok_main_1.category_menu .left-group-menu:hover {
+    display: block; } }
 
 .blok_main_2 {
   width: 100%; }
@@ -1003,12 +1003,17 @@ button {
   padding: 15px; }
 
 .pricename {
+  display: block;
+  height: 62px;
   font-size: 16px;
   color: #00C;
   font-style: normal;
   font-weight: normal;
-  text-decoration: none; }
+  text-decoration: none;
+  position: relative;
+  overflow: hidden; }
   .pricename:hover {
+    overflow: visible;
     color: #CC0000; }
 
 .pricedescr {
@@ -1079,8 +1084,7 @@ button {
   background-image: url(../image/sprite.png);
   background-position: -65px -37px;
   width: 18px;
-  height: 9px;
-  z-index: 2; }
+  height: 9px; }
 
 .bl_pagination {
   clear: both; }
@@ -1089,8 +1093,7 @@ button {
   content: '|';
   position: absolute;
   left: -4px;
-  color: inherit;
-  z-index: 2; }
+  color: inherit; }
 
 .bl_pagination__full {
   display: inline-block; }
@@ -1104,13 +1107,18 @@ button {
   display: block;
   color: #006699;
   padding: 0 6px; }
-  .bl_pagination__link:hover, .bl_pagination__link:active {
-    text-decoration: none;
-    color: #CC0000; }
 
-.bl_pagination__link_active {
+span.bl_pagination__link {
+  color: #000; }
+
+a.bl_pagination__link:hover,
+a.bl_pagination__link:active {
+  text-decoration: none;
+  color: #CC0000; }
+
+span.bl_pagination__link_active {
   font-size: 18px;
-  color: #096;
+  color: #096 !important;
   text-decoration: none;
   font-weight: bold; }
 
@@ -1268,6 +1276,9 @@ button {
       width: 12px;
       height: 12px; }
 
+.owl-next.disabled, .owl-prev.disabled {
+  display: none !important; }
+
 /*Sub level menu items
 ---------------------------------------*/
 .decor_arrow:after {
@@ -1327,7 +1338,7 @@ button {
   display: inline-block; }
 
 .minBasket {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #006699;
   text-align: center; }
@@ -1342,7 +1353,7 @@ button {
   text-align: right; }
 
 .bh1 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #990000;
   font-style: normal;
@@ -1353,7 +1364,7 @@ button {
   width: 100%;
   display: inline-block;
   min-width: 150px;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #4d4d4d;
   text-decoration: none; }
@@ -1398,7 +1409,7 @@ button {
   margin-top: 10px; }
 
 .ssearch {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000000;
   font-weight: bold;
@@ -1407,7 +1418,7 @@ button {
 
 .searchtext_def {
   width: 90%;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 16px;
   height: 20px;
   color: #999;
@@ -1430,21 +1441,21 @@ button {
   font-style: italic; }
 
 .bh1:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #0000FF;
   font-style: normal;
   font-weight: bold; }
 
 .b_table_h {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #FFFFFF;
   font-style: normal;
   font-weight: bold; }
 
 .chbutton {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #0000FF;
   border: 1px #009999 solid;
@@ -1452,7 +1463,7 @@ button {
   cursor: pointer; }
 
 .delbutton {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #C36;
   border: 1px #009999 solid;
@@ -1460,7 +1471,7 @@ button {
   cursor: pointer; }
 
 .sub {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #fff;
   font-style: normal;
@@ -1468,7 +1479,7 @@ button {
 
 .z1,
 .title_paragraph {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #006699;
   text-align: center;
@@ -1477,7 +1488,7 @@ button {
   text-decoration: none; }
 
 .sub2 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #006699;
   font-style: normal;
@@ -1498,31 +1509,28 @@ button {
   color: #CC0000; }
 
 .subGr_one_tov {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #006699;
   font-style: normal;
-  font-weight: bold;
-  text-align: left; }
+  font-weight: bold; }
 
 .subGr_one_tov_link {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #007bb7;
   font-style: normal;
   font-weight: bold;
-  text-decoration: none;
-  text-align: left; }
-
-.subGr_one_tov_link:hover {
-  color: #006699;
-  text-decoration: underline; }
+  text-decoration: none; }
+  .subGr_one_tov_link:hover {
+    color: #006699;
+    text-decoration: underline; }
 
 .style111 {
   font-size: 9px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none;
-  color: #000000; }
+  color: #000; }
 
 .style2 {
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -1543,10 +1551,10 @@ button {
 .style4 {
   font-size: 10px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #FF0000; }
+  color: #F00; }
 
 .style5 {
-  color: #FFFFFF;
+  color: #FFF;
   font-size: 12px;
   font-weight: bold;
   font-family: Verdana, Arial, Helvetica, sans-serif; }
@@ -1572,28 +1580,28 @@ button {
   font-size: 13px; }
 
 .style15 {
-  color: #FFFFFF;
+  color: #FFF;
   font-weight: bold;
   font-size: 12px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none; }
 
 .style15:hover {
-  color: #CC0000;
+  color: #C00;
   font-weight: bold;
   font-size: 12px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none; }
 
 .style16 {
-  color: #CC0000;
+  color: #C00;
   font-weight: bold;
   font-size: 12px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none; }
 
 .style16:hover {
-  color: #CC0000;
+  color: #C00;
   font-weight: bold;
   font-size: 12px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -1606,17 +1614,8 @@ button {
   font-weight: normal;
   text-decoration: none; }
 
-/*//////////////////////////////////////*/
-/*.subGr_separator {*/
-/*font-family: "MS Sans Serif", Verdana, Helvetica, Arial;*/
-/*font-size: 14px;*/
-/*color: #8DAEBF;*/
-/*font-style: normal;*/
-/*font-weight: bold;*/
-/*text-decoration: none*/
-/*}*/
 .subGr_line_last {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
@@ -1640,7 +1639,7 @@ button {
 .z2,
 .delivery_text {
   font-size: 16px;
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial; }
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif; }
   .z2 p,
   .delivery_text p {
     margin-top: 10px; }
@@ -1652,7 +1651,6 @@ button {
     font-weight: bold; }
 
 .z2_0 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
   color: #2e3436;
   font-style: normal;
@@ -1663,7 +1661,6 @@ button {
   margin-bottom: 15px; }
 
 .z2_0_b {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #555753;
   font-style: normal;
@@ -1674,7 +1671,6 @@ button {
   margin-bottom: 15px; }
 
 .z2_1 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 14px;
   color: #555753;
   font-style: normal;
@@ -1685,7 +1681,6 @@ button {
   margin-bottom: 15px; }
 
 .siarchMiniInfo {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
   color: #066;
   font-style: normal;
@@ -1693,7 +1688,6 @@ button {
   text-decoration: none; }
 
 .z2error {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
   color: #FF0000;
   font-style: normal;
@@ -1701,15 +1695,13 @@ button {
   text-decoration: none; }
 
 .z3 {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 12px;
-  color: #000000;
+  color: #000;
   font-style: normal;
   font-weight: normal;
   text-decoration: none; }
 
 .z2b {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
   font-size: 16px;
   color: #006666;
   font-style: normal;
@@ -1797,7 +1789,6 @@ button {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 5px;
   white-space: pre-wrap; }
@@ -1810,7 +1801,6 @@ button {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 5px;
   white-space: pre-wrap; }
@@ -1823,24 +1813,11 @@ button {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 5px;
   white-space: pre-wrap; }
-
-.gr-sub2 a:hover {
-  /*�� ��� �����*/
-  background-color: #B3D1FF;
-  color: #06C;
-  display: block;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: left;
-  padding-top: 10px;
-  /*padding-right: 30px;*/
-  padding-bottom: 10px;
-  padding-left: 5px;
-  white-space: pre-wrap; }
+  .gr-sub2 a:hover {
+    background-color: #B3D1FF; }
 
 .gr-sub-level2 a {
   background-color: #FFF;
@@ -1887,24 +1864,13 @@ button {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 15px;
   white-space: pre-wrap;
   margin-left: 35px; }
 
 .gr-sub-level3:hover a {
-  background-color: #B3D1FF;
-  color: #06C;
-  display: block;
-  text-decoration: none;
-  text-align: left;
-  padding-top: 10px;
-  /*padding-right: 30px;*/
-  padding-bottom: 10px;
-  padding-left: 15px;
-  white-space: pre-wrap;
-  margin-left: 35px; }
+  background-color: #B3D1FF; }
 
 .gr-sub-level3-select a {
   background-color: #06C;
@@ -1913,7 +1879,6 @@ button {
   text-decoration: none;
   text-align: left;
   padding-top: 10px;
-  /*padding-right: 30px;*/
   padding-bottom: 10px;
   padding-left: 15px;
   white-space: pre-wrap;
@@ -1992,11 +1957,6 @@ button {
   overflow: hidden; }
 
 .price-item-wrap1:hover {
-  position: relative;
-  float: left;
-  width: 200px;
-  height: 380px;
-  margin-bottom: 10px;
   overflow: visible;
   z-index: 1; }
 
@@ -2267,7 +2227,7 @@ button {
 .top-phone p {
   display: inline-block; }
 
-.top-phone_bold {
+.bold {
   font-weight: bold; }
 
 .bl_language {
@@ -2399,7 +2359,7 @@ button {
     color: #3e3e3e; }
 
 .search_input {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 16px;
   color: #999;
   font-style: oblique;
@@ -2551,131 +2511,6 @@ button {
   padding-bottom: 5px;
   font-weight: bold; }
 
-/*top_menu
-
-
-.menuTd1 {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFFFFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #09F;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.menuTd1:hover {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0033FF;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.menuTd1:hover .menuTd1-link{
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0033FF;
-}
-
-.menuTd1-link {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFFFFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #09F;
-}
-
-.menuTd1-link-selected {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFFFFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0066FF;
-}
-
-
-.menuTd1-selected {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0066FF;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.menuTd1-selected:hover {
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0033FF;
-}
-
-.menuTd1-selected:hover .menuTd1-link-selected{
-	font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
-	font-size: 14px;
-	color: #FFF;
-	font-style: normal;
-	font-weight: bold;
-	cursor:pointer;
-	text-decoration: none;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	height: 2.5em;
-	width: 10em;
-	background-color: #0033FF;
-}
-*/
 .price-item-wrap1_one {
   position: relative;
   float: none;
@@ -2894,7 +2729,6 @@ button {
 .one_search_price {
   position: relative;
   float: left;
-  /*	display: block;*/
   width: 150px;
   min-width: 150px;
   font-size: 12px;
@@ -2983,7 +2817,7 @@ button {
   padding-bottom: 10px;
   list-style-type: none;
   overflow: hidden;
-  cursor: default; }
+  cursor: pointer; }
 
 .blok_main_2_1_x_about_item:hover .subgr-list-block {
   height: auto;
@@ -3045,7 +2879,11 @@ button {
 .blok_main_2_1_x_about_item_cont {
   position: relative;
   float: left;
-  width: 50%; }
+  min-width: 410px;
+  width: 410px;
+  max-width: 410px;
+  height: 310px;
+  max-height: 310px; }
 
 .about_item_im_fon {
   position: absolute;
@@ -3062,12 +2900,11 @@ button {
   position: relative;
   float: none;
   overflow: hidden;
-  min-width: 400px;
-  width: 400px;
+  width: 100%;
   max-width: 400px;
   height: 300px;
   padding: 5px;
-  cursor: default;
+  cursor: pointer;
   border-radius: 1px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
 
@@ -3133,7 +2970,7 @@ button {
   display: none; }
 
 .button_search-mobile {
-  top: 25px; }
+  top: 40px; }
 
 .logo_box {
   position: relative;
@@ -3152,11 +2989,14 @@ button {
 
 label.css-label {
   width: 100%;
-  padding-right: 10px;
   font-size: 14px;
-  min-height: 30px; }
+  min-height: 30px;
+  margin-bottom: 0; }
   label.css-label:hover, label.css-label:focus {
     background-color: #EDFFED; }
+
+label.css-label:hover > .vlast-param {
+  color: #C00; }
 
 .css-checkbox {
   position: absolute;
@@ -3177,18 +3017,16 @@ label.css-label {
 .vlast-param {
   position: relative;
   display: inline-block;
-  color: #006699;
+  color: #069;
   padding-left: 45px;
   line-height: 35px;
-  margin: 3px 0 3px 7px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 14px; }
   .vlast-param:hover, .vlast-param:focus {
-    color: #CC0000;
-    text-decoration: none;
-    overflow: visible; }
+    color: #C00;
+    text-decoration: none; }
 
 .vlast-param:before {
   content: "";
@@ -3206,9 +3044,10 @@ label.css-label {
 .css-label-count {
   color: #a0a0a0;
   display: inline-block;
-  line-height: 35px;
-  vertical-align: top;
-  margin-top: 4px; }
+  line-height: 35px; }
+
+.css-label .css-label-count {
+  vertical-align: top; }
 
 .css-label-count:before {
   content: "(";
@@ -3231,25 +3070,28 @@ label.css-label {
   display: inline-block;
   padding-right: 1%; }
 
-.bl_breadcrumbs__item:not(:last-child):after {
-  content: "/";
-  position: absolute;
-  top: 2px;
-  right: 0;
-  font-size: 14px;
-  color: #8DAEBF;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: none; }
-
 .bl_breadcrumbs__link {
+  position: relative;
+  display: block;
   font-size: 14px;
   color: #8DAEBF;
   font-style: normal;
   font-weight: bold;
   text-decoration: none; }
-  .bl_breadcrumbs__link:last-child:after {
-    color: #007bb7; }
+  .bl_breadcrumbs__link:after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: -7px;
+    font-size: 14px;
+    color: #8DAEBF;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none; }
+
+.bl_breadcrumbs__item:last-child .bl_breadcrumbs__link:after {
+  content: "";
+  color: #007bb7; }
 
 .bl_breadcrumbs__link:hover {
   color: #006699;
@@ -3302,7 +3144,7 @@ label.css-label {
   background-color: #FFF;
   display: block;
   font-size: 14px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   text-decoration: none;
   white-space: nowrap;
   padding: 0 10px;
@@ -3402,7 +3244,7 @@ label.css-label {
 
 .blackWrapper {
   position: fixed;
-  z-index: 20;
+  z-index: 8;
   width: 100%;
   height: 100%;
   background: #000;
@@ -3418,14 +3260,14 @@ label.css-label {
   line-height: 1.5; }
 
 .zn-vlast:hover {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 14px;
   color: #CC0000;
   text-decoration: none;
   cursor: pointer; }
 
 .zn-vlast-null {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 14px;
   color: #c0c0c0;
   text-decoration: none;
@@ -3435,13 +3277,13 @@ label.css-label {
   line-height: 1.5; }
 
 .zn-vlast-count {
-  font-family: "MS Sans Serif", Verdana, Helvetica, Arial;
+  font-family: "MS Sans Serif", Verdana, Helvetica, Arial sans-serif;
   font-size: 14px;
   color: #a0a0a0;
   text-decoration: none;
   font-weight: normal;
   cursor: pointer;
-  margin-left: 0px; }
+  margin-left: 0; }
 
 .vlast-top {
   font-size: 16px;
@@ -3458,7 +3300,7 @@ label.css-label {
 
 .vlast-name-price {
   font-size: 16px;
-  color: #333333;
+  color: #333;
   text-decoration: none;
   font-weight: normal;
   cursor: default;
@@ -3482,7 +3324,7 @@ label.css-label {
   font-style: normal;
   font-weight: normal; }
   .price_fild:focus {
-    color: #999999; }
+    color: #999; }
 
 .minmax-price-user {
   font-size: 1em;
@@ -3500,7 +3342,7 @@ label.css-label {
 .button_filtr {
   position: relative;
   clear: both;
-  margin: 0 auto;
+  margin: 15px auto 10px;
   width: 190px;
   height: 40px;
   line-height: 40px;
@@ -4217,6 +4059,22 @@ label.css-label {
     font-weight: bold;
     color: #fff; }
 
+.popup_likeShopbag__buttonChange {
+  color: #fff;
+  font-style: normal;
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  background-color: #36F;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 3px; }
+  .popup_likeShopbag__buttonChange:hover {
+    background-color: #33F; }
+
+.popup_likeShopbag__input {
+  margin-left: 20px; }
+
 .popup_likeShopbag__buttons {
   width: 100%;
   vertical-align: top;
@@ -4291,6 +4149,14 @@ label.css-label {
     float: right; }
   .binfo_image {
     float: right; }
+  .price-item-pic-wrap {
+    width: auto;
+    height: auto;
+    margin: 0 auto; }
+  .price-item-box img {
+    width: auto; }
+  .binfo.active:after {
+    left: 130px; }
   .menu_categories:first-of-type .menu_categories__item .menu_categories__link {
     text-align: center; }
   .category_menu .buttonStartMenu:hover + .left-group-menu {
@@ -4315,6 +4181,8 @@ label.css-label {
     float: right;
     border: 1px solid #000;
     background-color: #fff; }
+  .pricename {
+    height: 57px; }
   .blok_main_1.category_menu {
     width: 100%; }
   .buttonStartMenu {
@@ -4351,7 +4219,12 @@ label.css-label {
         order: 2; }
   .footer_part3 {
     -ms-flex-order: 3;
-        order: 3; } }
+        order: 3; }
+  .price-item-wrap1:hover .price-item-box {
+    border: none;
+    box-shadow: none; }
+  .price-item-wrap1 {
+    width: 33%; } }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
@@ -4364,11 +4237,27 @@ label.css-label {
     top: 57px;
     left: 35%;
     max-width: 300px; }
+  .top-line-adr,
+  .top-line-delivery,
+  .top-phone {
+    display: none; }
+  .bl_language {
+    display: block;
+    margin-left: -15px;
+    position: absolute;
+    z-index: 12; }
+  .search_icon {
+    width: 40px; }
   .blok_main_2_1_x_about_item {
     padding: 0;
+    margin-left: 10px;
     min-width: initial;
     width: auto;
     height: auto; }
+  .blok_main_2_1_x_about_item_cont {
+    width: 50%;
+    max-width: initial;
+    min-width: initial; }
   .subgr-list-block {
     padding: 0;
     min-height: initial; }
@@ -4383,40 +4272,50 @@ label.css-label {
     margin-left: 0; } }
 
 @media only screen and (max-width: 600px) {
-  .price-item-pic-wrap {
-    height: auto;
-    margin: 0 auto; }
   .price-item-wrap1 {
     width: 48%;
     height: auto; }
-  .bl_description__short {
+  .price-item-box .bl_description__short {
     display: none; }
-  .bl_description__attributes {
+  .price-item-box .bl_description__attributes {
     display: none; }
+  .buy_container {
+    padding: 10px; }
   .button_buyProduct {
     float: none;
     margin: 20px auto;
     display: block; }
   .button_continueBuying__link {
     display: block;
-    text-align: center; } }
+    text-align: center; }
+  .blok_main_2_1_x_about_item_cont {
+    height: 300px;
+    margin-bottom: 10px;
+    overflow: hidden; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
   .block_ssearch {
     left: 15%; }
+  .logo_link {
+    width: 110px; }
   .root-logo {
-    left: -20px;
     float: none; }
   .binfo {
     min-width: initial; }
+  .binfo.active:after {
+    left: 74px; }
+  .buy_container .price {
+    padding: 0; }
   .minBasket_param {
     display: none; }
   .price-item-wrap1 {
-    width: 100%; } }
+    margin-top: 10px; } }
 
 @media only screen and (max-width: 400px) {
   .about_item_box {
-    height: 250px; } }
+    height: 250px; }
+  .blok_main_2_1_x_about_item_cont {
+    height: 280px; } }
 
 /* Custom, iPhone Retina 320px */

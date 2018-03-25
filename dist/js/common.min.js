@@ -3,7 +3,7 @@ $(document).ready(function () {
     var blackWrapper = $(".blackWrapper"),
         navMenu = $(".left-group-menu"),
         basketLink = $(".binfo"),
-        btnCatalog =$(".buttonStartMenu"),
+        btnCatalog = $(".buttonStartMenu"),
         active = "active",
         body = $("body");
 
@@ -24,11 +24,36 @@ $(document).ready(function () {
     }
 
 
+    // function buttonNavigation (){
+    //
+    //     if ($(window).width() <= 991) {
+    //
+    //         return false
+    //     }else {
+    //         sliderEffectForButtons(btnCatalog, navMenu, 300);
+    //
+    // }
 
 
-   if ($(window).width() <= 991) {
-       sliderEffectForButtons(btnCatalog, navMenu, 300);
-   }
+            var $window = $(window);
+
+        btnCatalog.each(function(){
+            $(this).on({
+                    click: function (){
+                        if ($window.width() <= 991) {
+                            navMenu.slideToggle(300);
+                        }
+                    }
+                });
+            });
+
+
+
+
+
+
+
+
 
 
     var buttonLanguage = $(".bl_language__active"),
@@ -39,15 +64,22 @@ $(document).ready(function () {
     hideShowEffect(buttonChooseRigthLanguage, fieldWithOtherLanguage);
 
 
-    navMenu.hover(
+    $(".menu_categories__item").hover(
         function () {
-            blackWrapper.css({"display": "block"})
+            blackWrapper.removeClass("hidden");
         }, function () {
-            blackWrapper.css({"display": "none"});
+            blackWrapper.addClass("hidden");
         }
     );
 
 
+    $(".blok_main_1.category_menu .left-group-menu").hover(
+        function () {
+            blackWrapper.removeClass("hidden");
+        }, function () {
+            blackWrapper.addClass("hidden");
+        }
+    );
 
 
     var buttonSubmenu = $(".btn_menu");
@@ -59,7 +91,6 @@ $(document).ready(function () {
     });
 
 //
-
 ////////////////// POPUPS LOGIC
 
     function popupWindowShow(btn, field) {
@@ -101,17 +132,9 @@ $(document).ready(function () {
     popupWindowBiforeAddToShopBag();
 
 
-
-
-
-
-
-
-
-
 ///ButtonForSlideEffect
 
-    var buttonSearch =$(".button_search-mobile"),
+    var buttonSearch = $(".button_search-mobile"),
         fildSearch = $(".block_ssearch"),
 
 
@@ -119,10 +142,8 @@ $(document).ready(function () {
         fieldFilters = $(".left-group-vlast");
 
 
-
     sliderEffectForButtons(buttonSearch, fildSearch, 400);
     sliderEffectForButtons(buttonFilters, fieldFilters, 400);
-
 
 
 //    ANCOR
@@ -184,19 +205,19 @@ $(document).ready(function () {
 
     });
 
-    var productSlides = $(".product_slider__item"),
-        quantitySlides = productSlides.length,
-        HowManySlides = 4;
-    var currentLoop = true;
-
-    if (quantitySlides < HowManySlides) {
-        currentLoop = false;
-    }
+    // var productSlides = $(".product_slider__item"),
+    //     quantitySlides = productSlides.length,
+    //     HowManySlides = 4;
+    // var currentLoop = true;
+    //
+    // if (quantitySlides < HowManySlides) {
+    //     currentLoop = false;
+    // }
 
 
     $(".product_slider").owlCarousel({
-        items: HowManySlides,
-        loop: currentLoop,
+        items: 4,
+        loop: false,
         nav: true,
         navText: true,
         dots: false,
@@ -265,18 +286,10 @@ $(document).ready(function () {
     });
 
 
-
-
 // FILTER for telephone number
 
     var telephonseInput = $("input[type='tel']");
-    telephonseInput.mask( "+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
-
-
-
-
-
-
+    telephonseInput.mask("+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
 
 
 });
